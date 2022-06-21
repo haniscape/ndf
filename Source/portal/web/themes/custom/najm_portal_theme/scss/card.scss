@@ -1,0 +1,101 @@
+.card {
+  background-color: $white;
+  border: 1px solid #cecece;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px #00000029;
+  height: 444px;
+  padding: 14px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  .card-img-top {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    padding: 26px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: $primary-light;
+  }
+  .views-field-title {
+    color: $primary-light;
+    line-height: 25px;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .views-field-body {
+    text-align: center;
+    color: $gray-200;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 100;
+    min-height: 95px;
+    .field-content > p{
+      overflow: hidden;
+      max-height: 70px;
+    }
+  }
+  .views-field-view-node {
+    width: 100%;
+    a {
+      color: $white;
+      background-color: $primary;
+      height: 60px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+      border-radius: 20px;
+      margin-top: 10px;
+      line-height: 3rem;
+      margin: 0 auto;
+      width: 85%;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    .views-field-title {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    .card-img-top {
+      width: 85px;
+      height: 85px;
+      img {
+        width: 100%;
+      }
+    }
+    .views-field-title {
+      font-size: 15px;
+      font-weight: $font-weight-medium;
+    }
+    .views-field-body {
+      min-height: 112px;
+      font-size: 13px;
+    }
+    .views-field-view-node {
+      a {
+        height: 45px;
+        font-size: 1rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}
+#views-bootstrap-our-services-page-1 div.views-field.views-field-field-image div.field.field--name-field-media-image.field--type-image.field--label-hidden.field__item.quickedit-field{
+  max-width: 70px;
+}

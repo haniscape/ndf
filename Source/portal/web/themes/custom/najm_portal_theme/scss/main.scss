@@ -1,0 +1,136 @@
+/*
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+  background: $white;
+}
+
+/* COLORS
+--------------------------------------------------*/
+
+a {
+  color: $link-color;
+}
+
+.bg-inverse {
+  background: $primary-shade !important;
+}
+
+.site-footer {
+  background: $primary;
+}
+
+.site-name-slogan a {
+  text-decoration: none;
+}
+
+.card-group img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card-group .field--type-image {
+  margin: 0;
+}
+
+.slick {
+  width: 100%;
+}
+
+.slick > div {
+  margin: 0 15px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-#{$right}: 35px;
+    padding-#{$left}: 35px;
+  }
+}
+
+.highlighted {
+  background-color: $white-gray;
+  padding: 35px 0;
+}
+
+// ajax loader styling
+.ajax-progress-fullscreen {
+  background-color: transparent !important;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  background-image: url($theme-path + "/images/spinner.gif");
+  background-size: contain;
+  #{$left}: 0 !important;
+  #{$right}: 0 !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: $white;
+}
+
+// drop button in table actions
+div.dropbutton-wrapper {
+  position: absolute !important;
+  .dropbutton-widget {
+    position: absolute;
+  }
+}
+
+.js td .dropbutton-multiple {
+  padding-#{$right}: 10px;
+  margin-#{$right}: 0;
+}
+@media screen and (max-width: 600px) {
+  .js .dropbutton-wrapper {
+    width: auto;
+    max-width: unset !important;
+  }
+}
+
+// app status colors
+.wrapper--status.indicator-status-ok {
+  background-color: $primary;
+}
+// main content wrapper
+//#main-wrapper {
+//  padding-bottom: 50px;
+//}
+
+body.path-user .field--label-inline .field__item {
+  background-color: transparent;
+}
+
+#block-najm-portal-theme-actions {
+  margin-bottom: 25px;
+}
+
+#views-bootstrap-our-services-page-1
+  div.views-field.views-field-field-image
+  div.field.field--name-field-media-image.field--type-image.field--label-hidden.field__item.quickedit-field
+  svg {
+  max-width: 70px;
+}
+
+html[dir="rtl"] {
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0px;
+    padding-right: 0.5rem;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0px;
+  }
+}
+

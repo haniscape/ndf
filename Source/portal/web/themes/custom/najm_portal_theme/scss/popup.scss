@@ -1,0 +1,65 @@
+.ui-dialog {
+  z-index: 101;
+  border-radius: 20px;
+  max-width: 90%;
+  @media screen and (max-width: 360px) {
+    left: 10%;
+  }
+  .ui-dialog-titlebar {
+    background: transparent;
+    border: none;
+    .ui-dialog-title {
+      color: $primary;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 2rem;
+      padding: 50px 0 20px 0;
+      text-align: center;
+      font-family: $font-family-base;
+    }
+    .ui-dialog-titlebar-close {
+      border: none;
+      background-color: transparent;
+      &::after {
+        content: "x";
+        position: relative;
+        top: -30px;
+        right: 10px;
+        font-size: 1.5rem;
+        line-height: 0.9375rem;
+        color: #555559;
+        font-family: $font-family-base;
+        text-transform: none;
+        font-weight: bold;
+        text-shadow: 0 1px 0 #fff;
+        opacity: 0.5;
+      }
+    }
+  }
+  .ui-dialog-content {
+    height: auto !important;
+  }
+  .btn-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    background-image: none;
+  }
+  .ui-dialog-buttonpane {
+    .ui-dialog-buttonset {
+      float: $right;
+    }
+  }
+}
+
+.modal-content {
+  border-radius: 20px;
+  .modal-header {
+    border: 0;
+    > button > span {
+      font-weight: 100;
+      font-size: 38px;
+      line-height: 15px;
+    }
+  }
+}
