@@ -1,0 +1,111 @@
+{#
+/**
+ * @file
+ * Theme override to display a table.
+ *
+ * Available variables:
+ * - attributes: HTML attributes to apply to the <table> tag.
+ * - caption: A localized string for the <caption> tag.
+ * - colgroups: Column groups. Each group contains the following properties:
+ *   - attributes: HTML attributes to apply to the <col> tag.
+ *     Note: Drupal currently supports only one table header row, see
+ *     https://www.drupal.org/node/893530 and
+ *     http://api.drupal.org/api/drupal/includes!theme.inc/function/theme_table/7#comment-5109.
+ * - header: Table header cells. Each cell contains the following properties:
+ *   - tag: The HTML tag name to use; either TH or TD.
+ *   - attributes: HTML attributes to apply to the tag.
+ *   - content: A localized string for the title of the column.
+ *   - field: Field name (required for column sorting).
+ *   - sort: Default sort order for this column ("asc" or "desc").
+ * - sticky: A flag indicating whether to use a "sticky" table header.
+ * - rows: Table rows. Each row contains the following properties:
+ *   - attributes: HTML attributes to apply to the <tr> tag.
+ *   - data: Table cells.
+ *   - no_striping: A flag indicating that the row should receive no
+ *     'even / odd' styling. Defaults to FALSE.
+ *   - cells: Table cells of the row. Each cell contains the following keys:
+ *     - tag: The HTML tag name to use; either TH or TD.
+ *     - attributes: Any HTML attributes, such as "colspan", to apply to the
+ *       table cell.
+ *     - content: The string to display in the table cell.
+ *     - active_table_sort: A boolean indicating whether the cell is the active
+         table sort.
+ * - footer: Table footer rows, in the same format as the rows variable.
+ * - empty: The message to display in an extra row if table does not have
+ *   any rows.
+ * - no_striping: A boolean indicating that the row should receive no striping.
+ * - header_columns: The number of columns in the header.
+ * - thead_class: Class for the table header
+ *
+ * @see template_preprocess_table()
+ */
+#}
+
+
+<div id="view-applications-page">
+  <div class="header-title"><h1>{{ 'My Applications'|t }}</h1></div>
+  <div class="apps-content">
+    {% set iter = 0 %}
+    {# {{dd(rows)}} #}
+    {% for key,row in rows %}
+      {% if  row.cells is not empty and 'warning' not in key %}
+        {% set iter = iter + 1 %}
+        <div class="app-card">
+          <div class="app-info">
+              {% for key, cell in row.cells %}
+                {% if key != 'operations' %}
+                  <div class="{{ key }}">
+                    {{- cell.content -}}
+                  </div>
+                {% endif %}
+              {% endfor %}
+          </div>
+
+          <div class="app-body">
+            {% set appName = row['cells']['status']['content']['#object'].Name %}
+            {% set appId = row['cells']['status']['content']['#object'].id %}
+            {% if appName is not empty %}
+            <ul class="app-operation">
+
+              {# Edit #}
+              <li class="edit-action">
+                <a href="{{ path('entity.developer_app.edit_form_for_developer', {'user': user.id,'app': appName}, {'query': {'destination': path('<current>') }} ) }}">
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'najm_portal_theme') }}/images/icon/edit_icon.png" alt="{{ appName }}" />
+                  <span>{{'Edit' |t }}</span>
+                </a>
+              </li>
+
+              {# Analytics #}
+              <li class="analytics-action">
+                <a href="{{ path('entity.developer_app.analytics_for_developer', {'user': user.id,'app': appName} ) }}">
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'najm_portal_theme') }}/images/icon/analytics_icon.png" alt="{{ appName }}" />
+                  <span>{{'Analytics' |t }}</span>
+                </a>
+              </li>
+
+              {# Delete #}
+              <li class="delete-action">
+                <a href="{{ path('entity.developer_app.delete_form_for_developer', {'user': user.id,'app': appName},  {'query': {'destination': path('<current>') }}) }}">
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'najm_portal_theme') }}/images/icon/delete_icon.png" alt="{{ appName }}" />
+                  <span>{{'Delete' |t }}</span>
+                </a>
+              </li>
+
+              {# Details #}
+              <li class="details-action">
+                <a href="{{ path('entity.developer_app.canonical_by_developer', {'user': user.id,'app': appName} ) }}">
+                  <span>{{'Details' |t }}</span>
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'najm_portal_theme') }}/images/icon/details_icon.png" alt="{{ appName }}" />
+                </a>
+              </li>
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% if iter == 0 %}
+      <div>{{'Looks like you do not have any apps. Get started by adding one.'|t}}</div>
+    {% endif %}
+  </div>
+</div>

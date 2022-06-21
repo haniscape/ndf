@@ -1,0 +1,47 @@
+$font-path: $theme-path + "/font/DINNextLTArabic";
+
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 100;
+  src: url($font-path + "/DINNextLTArabic-Regular-2.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 200;
+  src: url($font-path + "/DINNextLTArabic-Regular-3.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 300;
+  src: url($font-path + "/DINNextLTArabic-Regular-4.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 400;
+  src: url($font-path + "/DINNextLTArabic-Medium-2.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 500;
+  src: url($font-path + "/DINNextLTArabic-Medium-3.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 600;
+  src: url($font-path + "/DINNextLTArabic-Medium-4.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 700;
+  src: url($font-path + "/DINNextLTArabic-Bold-2.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 800;
+  src: url($font-path + "/DINNextLTArabic-Bold-3.ttf");
+}
+@font-face {
+  font-family: "DINNextLTArabic";
+  font-weight: 900;
+  src: url($font-path + "/DINNextLTArabic-Bold-4.ttf");
+}

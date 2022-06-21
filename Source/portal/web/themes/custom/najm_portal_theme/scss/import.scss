@@ -1,0 +1,60 @@
+/* IMPORTS */
+
+//@import url(font-awesome.min.css);
+// variables
+@import "variables";
+// typography
+@import "font";
+@import "typography";
+
+//material design bootstrap
+//bootstrap
+//@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
+@import "bootstrap";
+
+// mixins
+@import "mixins";
+// barrio
+@import "barrio";
+
+@import "utilities";
+@import "card";
+
+// hero paragraph type (used in home header)
+@import "hero-paragraph";
+
+@import "popup";
+
+// navigation style
+@import "navigation";
+
+// block general style
+@import "block";
+
+// form general style
+@import "form";
+
+@import "footer";
+
+// page style
+@import "page";
+
+// general views style
+@import "views";
+
+// general table style
+@import "table";
+
+// home style
+@import "home";
+
+// register & login style
+@import "user";
+
+// admin dashboard style
+@import "dashboard";
+
+// our services style
+@import "services";
+
+@import "app";

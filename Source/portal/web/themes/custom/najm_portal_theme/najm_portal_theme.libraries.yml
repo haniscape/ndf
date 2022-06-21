@@ -1,0 +1,26 @@
+global-styling:
+  version: 1.0
+  js:
+    #to load bootstrap after core jquery
+    js/bootstrap.min.js: {}
+    js/barrio.js: {}
+    js/owl.carousel.min.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/popperjs
+
+styles-ltr:
+  css:
+    theme:
+      css/owl.carousel.min.css: {}
+      css/owl.theme.default.min.css: {}
+      css/style.min.css: {}
+
+styles-rtl:
+  css:
+    theme:
+      css/owl.carousel.min.css: { }
+      css/owl.theme.default.min.css: { }
+      css/style-rtl.css: {}

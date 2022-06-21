@@ -1,0 +1,23 @@
+// overrides bootstrap one for rtl support
+@mixin make-col-offset2($size, $columns: $grid-columns) {
+  $num: divide($size, $columns);
+  margin-#{$left}: if($num == 0, 0, percentage($num));
+  margin-#{$right}: 0 !important ;
+}
+
+$breakpoints: $grid-breakpoints;
+$columns: $grid-columns;
+
+@each $breakpoint in map-keys($breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $breakpoints);
+  @include media-breakpoint-up($breakpoint, $breakpoints) {
+    @for $i from 0 through ($columns - 1) {
+      @if not($infix == "" and $i == 0) {
+        // Avoid emitting useless .offset-0
+        .offset#{$infix}-#{$i} {
+          @include make-col-offset2($i, $columns);
+        }
+      }
+    }
+  }
+}
