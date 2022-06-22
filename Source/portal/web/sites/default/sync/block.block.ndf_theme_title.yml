@@ -1,0 +1,36 @@
+uuid: 771d4f00-0a12-41f5-8818-35d1a98acf3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_kickstart_enhancement
+    - system
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: qMuBLiTt1e_9EX9vMThgWyBbTNSA0QTmaskpGZfHPJw
+id: ndf_theme_title
+theme: ndf_theme
+region: header
+weight: 10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/article/*\r\n/apis\r\n/blog\r\n/contact\r\n/faq\r\n/forum\r\n/forum/*\r\n/search\r\n/search/*\r\n/user/*/plans\r\n/user/*/monetization/product-bundle/*/plan/*"
+  block_type:
+    id: block_type
+    uuid: 676576be-83bf-4d28-92aa-47160be749d5
+    bundles:
+      title_bar: title_bar
+    is_adjacent: 0
+    negate: false
+    context_mapping: {  }

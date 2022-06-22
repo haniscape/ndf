@@ -1,0 +1,56 @@
+uuid: f8f18383-de1b-4bfd-acb2-a07ecba76419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_image.field_background_style
+    - field.field.paragraph.text_image.field_buttons
+    - field.field.paragraph.text_image.field_image
+    - field.field.paragraph.text_image.field_text
+    - field.field.paragraph.text_image.field_title
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - entity_reference_revisions
+    - text
+_core:
+  default_config_hash: A5JjAAqxRwytJzmNwmJJKu4vmzh8xDupfbZmBZAH6zs
+id: paragraph.text_image.default
+targetEntityType: paragraph
+bundle: text_image
+mode: default
+content:
+  field_buttons:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: text_image
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_background_style: true

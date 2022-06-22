@@ -1,0 +1,25 @@
+uuid: 70283444-15b7-4085-ba6f-32d2f253aca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_api_product
+    - node.type.apidoc
+_core:
+  default_config_hash: 8yPSD3P-b9di9-bGhWfQSPDi2zIIJCnisc-5UbwA6U8
+id: node.apidoc.field_api_product
+field_name: field_api_product
+entity_type: node
+bundle: apidoc
+label: 'API Product'
+description: 'Apigee API Product'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:api_product'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

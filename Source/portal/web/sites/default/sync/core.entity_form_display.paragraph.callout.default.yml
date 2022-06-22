@@ -1,0 +1,55 @@
+uuid: b020efe5-d908-4914-858e-4ef01272d4af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.callout.field_icon
+    - field.field.paragraph.callout.field_link
+    - field.field.paragraph.callout.field_text
+    - field.field.paragraph.callout.field_title
+    - paragraphs.paragraphs_type.callout
+  module:
+    - fontawesome
+    - link
+    - text
+_core:
+  default_config_hash: W3iJAp4dUK-Wx1ZL5Pd95GK9NQq84AxCoA61fyYDEB4
+id: paragraph.callout.default
+targetEntityType: paragraph
+bundle: callout
+mode: default
+content:
+  field_icon:
+    type: fontawesome_icon_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: 'https://google.com'
+      placeholder_title: 'Read more'
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

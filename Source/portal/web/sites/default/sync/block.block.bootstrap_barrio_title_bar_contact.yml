@@ -1,0 +1,36 @@
+uuid: 553c7484-dd1b-4d79-8928-7e38e04de4fe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_bar:c9d29264-1428-4f25-ba78-736d7748459e'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: EDpxuDbzAHg9wuQuTtzgb_2ucB_HoxxmJWIohfWm4FA
+id: bootstrap_barrio_title_bar_contact
+theme: bootstrap_barrio
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:c9d29264-1428-4f25-ba78-736d7748459e'
+settings:
+  id: 'block_content:c9d29264-1428-4f25-ba78-736d7748459e'
+  label: 'Title bar: Contact Us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /contact

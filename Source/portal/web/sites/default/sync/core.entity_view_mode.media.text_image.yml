@@ -1,0 +1,12 @@
+uuid: 1a4c103b-9c86-4f45-bf70-fd912a8f4b01
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: cRTtZzdj3C59QkKmHltJTnj_m9LgaRpikTpxZ-8ni2M
+id: media.text_image
+label: 'Text & Image'
+targetEntityType: media
+cache: true

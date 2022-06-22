@@ -1,0 +1,33 @@
+uuid: 7937408e-4f91-4cea-a77e-2f378bde6424
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card_small
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.card_small
+  module:
+    - responsive_image
+_core:
+  default_config_hash: G3-bmw-yln7NAgA6VR-cOrTswW1Thw59ksU9TVtXdFg
+id: media.image.card_small
+targetEntityType: media
+bundle: image
+mode: card_small
+content:
+  field_media_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: card_small
+      image_link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

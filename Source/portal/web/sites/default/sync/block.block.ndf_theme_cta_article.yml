@@ -1,0 +1,38 @@
+uuid: 71bc7c7c-3a56-44b6-a789-bc89be3a4240
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:cta:003ef719-eca7-4ad1-83a3-dc9b403a49b3'
+  module:
+    - block_content
+    - node
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: bmNXmKc0sYulk6RpeRObAujqh9s0RaaP4Fz1uO_KJ6c
+id: ndf_theme_cta_article
+theme: ndf_theme
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:003ef719-eca7-4ad1-83a3-dc9b403a49b3'
+settings:
+  id: 'block_content:003ef719-eca7-4ad1-83a3-dc9b403a49b3'
+  label: 'CTA: Article'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

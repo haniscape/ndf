@@ -1,0 +1,36 @@
+uuid: 0672a849-2e78-444c-be3f-7ef92a4a42ff
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:cta:de9351da-3424-4401-ba46-64709a9f12d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: AUVRtxmZNBYUoBryf-6aPgX0LYMmZvYi0p-p98orIRw
+id: ndf_theme_cta_blog
+theme: ndf_theme
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:de9351da-3424-4401-ba46-64709a9f12d4'
+settings:
+  id: 'block_content:de9351da-3424-4401-ba46-64709a9f12d4'
+  label: 'CTA: Blog'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /blog

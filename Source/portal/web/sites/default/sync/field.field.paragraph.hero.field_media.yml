@@ -1,0 +1,30 @@
+uuid: 14e70d82-3101-4ca7-a671-227b3b4d76e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - paragraphs.paragraphs_type.hero
+_core:
+  default_config_hash: JvKB0osgQhl8pVXuUXVVaEYkvFAv3uh2MVi-8CJ8-p0
+id: paragraph.hero.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: hero
+label: Media
+description: 'Recommended dimensions: 2560 × 800 px.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

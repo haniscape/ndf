@@ -1,0 +1,20 @@
+uuid: d0af753b-6159-4adc-91ad-8a274d2e1159
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: hwdHa18yjGOYn7Aag8iof5QKhzg6RPA4VCDEAmiVqP8
+id: ndf_theme_actions
+theme: ndf_theme
+region: highlighted
+weight: -11
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

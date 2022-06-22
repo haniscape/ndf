@@ -1,0 +1,12 @@
+uuid: e6a15fa2-5c8e-49a2-82a0-4859f123738c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uH7gVxhxVjeSoDcFg3G9n7nQhH1ixepQnjWbTqtYA-k
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: '<em>Text</em> component contains a single, WYSIWYG-enabled text field. The contents are displayed as a row, and the overall width is slightly narrower.'
+behavior_plugins: {  }

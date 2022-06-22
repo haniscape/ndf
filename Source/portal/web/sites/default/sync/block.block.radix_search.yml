@@ -1,0 +1,23 @@
+uuid: 681a3244-f112-4f84-a727-6dd694d1c6eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - radix
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: radix_search
+theme: radix
+region: navbar_branding
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

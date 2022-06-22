@@ -1,0 +1,26 @@
+uuid: b6a3d294-935f-4385-a008-bfca4760f877
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - apigee_api_catalog
+_core:
+  default_config_hash: nkCpE2IGr9r8x4DBFDyXtOfFzQJphzzbExQpr0gzDrw
+id: node.field_apidoc_spec_md5
+field_name: field_apidoc_spec_md5
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

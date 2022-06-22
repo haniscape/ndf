@@ -1,0 +1,54 @@
+uuid: 3563e059-8779-4b0b-b5d4-319b0945f3e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buttons
+    - paragraphs.paragraphs_type.button_group
+    - paragraphs.paragraphs_type.callout_group
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Ae6Puh5rDP-WNCGpUg3N5k1-_PhSzyPgOpqD6vzT4lo
+id: paragraph.callout_group.field_buttons
+field_name: field_buttons
+entity_type: paragraph
+bundle: callout_group
+label: 'Callout group button(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button_group: button_group
+    negate: 0
+    target_bundles_drag_drop:
+      blockquote:
+        enabled: false
+      button:
+        enabled: false
+      button_group:
+        enabled: true
+      callout:
+        enabled: false
+      callout_group:
+        enabled: false
+      card:
+        enabled: false
+      card_group:
+        enabled: false
+      cta:
+        enabled: false
+      hero:
+        enabled: false
+      text:
+        enabled: false
+      text_image:
+        enabled: false
+      title_bar:
+        enabled: false
+field_type: entity_reference_revisions

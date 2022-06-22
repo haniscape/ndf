@@ -1,0 +1,26 @@
+uuid: 503b7619-e415-441f-ac2f-c7e238f8a3d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_user_company
+  module:
+    - user
+_core:
+  default_config_hash: T3stMqftYuil_qYnDcHEHyAqE-qv_Zv05s_FHr-mdqo
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content: {  }
+hidden:
+  billingtype: true
+  display_name: true
+  email: true
+  field_user_company: true
+  langcode: true
+  member_for: true
+  roles: true
+  timezone: true
+  username: true

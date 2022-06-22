@@ -1,0 +1,22 @@
+uuid: 9944a3ce-3d33-46b6-902d-0044344c1972
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.title_bar
+id: block_content.title_bar.status
+field_name: status
+entity_type: block_content
+bundle: title_bar
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

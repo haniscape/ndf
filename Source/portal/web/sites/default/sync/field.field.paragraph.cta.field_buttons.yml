@@ -1,0 +1,54 @@
+uuid: eef96a27-4f84-40cb-9d43-6037056ef0fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buttons
+    - paragraphs.paragraphs_type.button_group
+    - paragraphs.paragraphs_type.cta
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: j3bANF7s9LYBrp6GSB-BQUvaVs9A9Uh4Cy99ovEy650
+id: paragraph.cta.field_buttons
+field_name: field_buttons
+entity_type: paragraph
+bundle: cta
+label: 'CTA button(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button_group: button_group
+    negate: 0
+    target_bundles_drag_drop:
+      blockquote:
+        enabled: false
+      button:
+        enabled: false
+      button_group:
+        enabled: true
+      callout:
+        enabled: false
+      callout_group:
+        enabled: false
+      card:
+        enabled: false
+      card_group:
+        enabled: false
+      cta:
+        enabled: false
+      hero:
+        enabled: false
+      text:
+        enabled: false
+      text_image:
+        enabled: false
+      title_bar:
+        enabled: false
+field_type: entity_reference_revisions

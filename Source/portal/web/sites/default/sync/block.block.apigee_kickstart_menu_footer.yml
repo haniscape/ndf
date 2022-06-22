@@ -1,0 +1,27 @@
+uuid: 0605e237-4979-49de-97b5-921ee13713c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - apigee_kickstart
+_core:
+  default_config_hash: v38kVbvr1WqBgqP_c7i1PEZynbGNPCTn5vyPFpaGrh4
+id: apigee_kickstart_menu_footer
+theme: apigee_kickstart
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

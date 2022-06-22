@@ -1,0 +1,12 @@
+uuid: e68fa658-537b-442d-a577-74a301601bbb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M63zt4wvUddUhrUkvFz0KPV0F1XbIyIsf2JbgQTxhY0
+id: text_image
+label: 'Text & Image'
+icon_uuid: null
+icon_default: null
+description: '<em>Text & Image</em> contains an image, title, text, and button field. The contents are displayed in two columns: The textual elements are displayed in the first column, and image is displayed in the second.'
+behavior_plugins: {  }

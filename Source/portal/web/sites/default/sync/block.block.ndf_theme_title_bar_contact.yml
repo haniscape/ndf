@@ -1,0 +1,36 @@
+uuid: c8be9b41-6985-423a-8341-dfd502c3d5df
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_bar:c9d29264-1428-4f25-ba78-736d7748459e'
+  module:
+    - block_content
+    - system
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: EDpxuDbzAHg9wuQuTtzgb_2ucB_HoxxmJWIohfWm4FA
+id: ndf_theme_title_bar_contact
+theme: ndf_theme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:c9d29264-1428-4f25-ba78-736d7748459e'
+settings:
+  id: 'block_content:c9d29264-1428-4f25-ba78-736d7748459e'
+  label: 'Title bar: Contact Us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /contact

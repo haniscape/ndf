@@ -1,0 +1,78 @@
+uuid: 3b09b7ef-7cd0-4fe4-ac1f-83176851c74d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.developer_app.collapsible_card
+  module:
+    - apigee_edge
+_core:
+  default_config_hash: hFitkaV65WYeYwamGu8zL1Hk-V17FsnacPAYAzXoIb4
+id: developer_app.developer_app.collapsible_card
+targetEntityType: developer_app
+bundle: developer_app
+mode: collapsible_card
+content:
+  callbackUrl:
+    type: uri_link
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  createdAt:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  credentials:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  description:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  lastModifiedAt:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  status:
+    type: status_property
+    label: hidden
+    settings:
+      indicator_status_ok: approved
+      indicator_status_warning: ''
+      indicator_status_error: revoked
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  warnings:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  appFamily: true
+  appId: true
+  createdBy: true
+  developerId: true
+  displayName: true
+  lastModifiedBy: true
+  name: true
+  scopes: true

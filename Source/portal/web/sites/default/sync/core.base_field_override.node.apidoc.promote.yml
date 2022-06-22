@@ -1,0 +1,22 @@
+uuid: c9152da5-0d8f-4c0a-8307-c1d59ab3145c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+id: node.apidoc.promote
+field_name: promote
+entity_type: node
+bundle: apidoc
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 53e005dc-bd6a-4959-a211-1f9e14251f4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: NfhJaYkah0ef19KcJZC_AOChMjQP-EBfsrOAM9UvWpc
+id: bootstrap_barrio_breadcrumbs_title
+theme: bootstrap_barrio
+region: top_header
+weight: 1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Breadcrumbs: Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

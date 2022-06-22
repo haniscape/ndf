@@ -1,0 +1,18 @@
+uuid: 4afe970d-7f4e-491e-a99a-b4d9319c70ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+id: block_content.cta.info
+field_name: info
+entity_type: block_content
+bundle: cta
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

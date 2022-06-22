@@ -1,0 +1,22 @@
+uuid: d7e80baa-bbb1-418e-a237-b6176ffe80b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: U8J1Fny7jZb_gGP7JvUh2rlRnlzgUK0QzforRHFrM_c
+id: ndf_theme_help
+theme: ndf_theme
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

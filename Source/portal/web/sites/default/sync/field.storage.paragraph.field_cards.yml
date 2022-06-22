@@ -1,0 +1,22 @@
+uuid: a9b27a18-aecb-4e0c-b01a-a06929ef9205
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: pyPHvkYHCHx1cJiizfzqImwfGR6MGauF5871WcdwAlg
+id: paragraph.field_cards
+field_name: field_cards
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

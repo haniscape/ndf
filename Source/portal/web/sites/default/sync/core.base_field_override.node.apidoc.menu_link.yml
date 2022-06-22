@@ -1,0 +1,20 @@
+uuid: c630ef45-d74c-4869-9e25-557cc20a87d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+id: node.apidoc.menu_link
+field_name: menu_link
+entity_type: node
+bundle: apidoc
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
