@@ -16,6 +16,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -42,6 +43,7 @@ module:
   help: 0
   history: 0
   image: 0
+  image_captcha: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
@@ -55,6 +57,7 @@ module:
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
+  ndf_register: 0
   node: 0
   options: 0
   page_cache: 0

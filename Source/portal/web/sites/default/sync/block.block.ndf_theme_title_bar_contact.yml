@@ -17,7 +17,7 @@ _core:
 id: ndf_theme_title_bar_contact
 theme: ndf_theme
 region: header
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:c9d29264-1428-4f25-ba78-736d7748459e'
 settings:

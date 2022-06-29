@@ -1,0 +1,11 @@
+uuid: e6c4d346-9652-4594-a625-ed3f49204035
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_welcome_message_action
+label: 'Send the welcome message to the selected user(s)'
+type: user
+plugin: user_welcome_message_action
+configuration: {  }

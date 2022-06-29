@@ -1,6 +1,6 @@
 uuid: 233ecc75-8002-4348-8a79-7590f1408a0d
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:title_bar:922c5ce8-6d11-4aa6-8d82-542c77b33bec'
@@ -17,7 +17,7 @@ _core:
 id: ndf_theme_title_bar_forum
 theme: ndf_theme
 region: header
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:922c5ce8-6d11-4aa6-8d82-542c77b33bec'
 settings:

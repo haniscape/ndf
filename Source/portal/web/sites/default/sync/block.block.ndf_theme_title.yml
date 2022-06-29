@@ -11,8 +11,8 @@ _core:
   default_config_hash: qMuBLiTt1e_9EX9vMThgWyBbTNSA0QTmaskpGZfHPJw
 id: ndf_theme_title
 theme: ndf_theme
-region: header
-weight: 10
+region: content
+weight: -10
 provider: null
 plugin: page_title_block
 settings:
