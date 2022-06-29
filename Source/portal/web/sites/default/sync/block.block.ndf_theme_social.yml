@@ -1,0 +1,30 @@
+uuid: 64cadd6c-13a7-4f85-a4ac-7c21b63ac520
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b0b4fd9e-4a0c-4c21-b1b4-77ed6586d40c'
+  module:
+    - block_content
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: Ba_dX7DwMToKfWkjMcOXh5Dshcb2tUS9RNy1ZP73riA
+id: ndf_theme_social
+theme: ndf_theme
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:b0b4fd9e-4a0c-4c21-b1b4-77ed6586d40c'
+settings:
+  id: 'block_content:b0b4fd9e-4a0c-4c21-b1b4-77ed6586d40c'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

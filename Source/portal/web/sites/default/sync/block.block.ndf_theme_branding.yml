@@ -1,0 +1,25 @@
+uuid: 33659fa1-a515-4c93-836a-e681110ce5d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: TPGaK2lHnw3pM4AXSliTil-MxPlSsfmVka40dgIxQdg
+id: ndf_theme_branding
+theme: ndf_theme
+region: top_header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

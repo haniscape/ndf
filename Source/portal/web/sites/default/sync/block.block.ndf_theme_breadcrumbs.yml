@@ -1,0 +1,27 @@
+uuid: fcae1b7e-6b9d-45f8-8c66-649e55466bae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: Q4F0HKnwTkYwRtNTZtnl87LwCzaWruT9CCISd9pNGCc
+id: ndf_theme_breadcrumbs
+theme: ndf_theme
+region: breadcrumb
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/article/*\r\n/blog/*'

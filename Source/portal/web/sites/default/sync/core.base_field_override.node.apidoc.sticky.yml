@@ -1,0 +1,22 @@
+uuid: b3b7618a-89ba-4e96-9dda-00062260e3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+id: node.apidoc.sticky
+field_name: sticky
+entity_type: node
+bundle: apidoc
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

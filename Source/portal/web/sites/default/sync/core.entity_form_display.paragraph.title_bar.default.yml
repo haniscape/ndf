@@ -1,0 +1,45 @@
+uuid: 34f351d7-5020-45b6-9eda-bcd81163c0c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_bar.field_icon
+    - field.field.paragraph.title_bar.field_text
+    - field.field.paragraph.title_bar.field_title
+    - paragraphs.paragraphs_type.title_bar
+  module:
+    - fontawesome
+    - text
+_core:
+  default_config_hash: KuD4oiEkDrKez5ils8X4h51oqtshGh3hQCTuTdjQpRQ
+id: paragraph.title_bar.default
+targetEntityType: paragraph
+bundle: title_bar
+mode: default
+content:
+  field_icon:
+    type: fontawesome_icon_widget
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

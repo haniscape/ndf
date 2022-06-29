@@ -1,0 +1,36 @@
+uuid: 233ecc75-8002-4348-8a79-7590f1408a0d
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:title_bar:922c5ce8-6d11-4aa6-8d82-542c77b33bec'
+  module:
+    - block_content
+    - system
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: RTC8fZNdJS_J8zzA6wJxYaMVfDULC00TG6WBRl74YUY
+id: ndf_theme_title_bar_forum
+theme: ndf_theme
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:922c5ce8-6d11-4aa6-8d82-542c77b33bec'
+settings:
+  id: 'block_content:922c5ce8-6d11-4aa6-8d82-542c77b33bec'
+  label: 'Title bar: Forum'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/forum\r\n/forum/*"

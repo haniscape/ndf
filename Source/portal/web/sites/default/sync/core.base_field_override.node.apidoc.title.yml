@@ -1,0 +1,20 @@
+uuid: 2d65ece2-7f60-41d6-ac3c-5024231d65c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+_core:
+  default_config_hash: FnKo0C9gZ6j3i4gteskA_RUgDTclyjHwkgvWXWMXcSc
+id: node.apidoc.title
+field_name: title
+entity_type: node
+bundle: apidoc
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: a83dfb85-bb95-4d65-b7ad-96f933e63af1
+langcode: en
+status: true
+dependencies:
+  module:
+    - file_link
+    - node
+  enforced:
+    module:
+      - apigee_api_catalog
+_core:
+  default_config_hash: L7Up8fkKDPpy7E5GC1bK0dZa5dYqcLidwWY3-W4WJ3k
+id: node.field_apidoc_file_link
+field_name: field_apidoc_file_link
+entity_type: node
+type: file_link
+settings: {  }
+module: file_link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

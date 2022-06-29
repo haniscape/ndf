@@ -1,0 +1,22 @@
+uuid: 94dd7f65-68bb-4b4b-9e2f-cc1cb52afffa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: CGGnuhy-JU0oIvm4VxSAeb_Yb0zoLVjBltRXGxrUkHs
+id: ndf_theme_content
+theme: ndf_theme
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

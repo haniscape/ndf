@@ -1,0 +1,147 @@
+uuid: de564a70-5cdc-4e8e-9227-0a597d7df5bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apidoc.body
+    - field.field.node.apidoc.field_api_product
+    - field.field.node.apidoc.field_apidoc_fetched_timestamp
+    - field.field.node.apidoc.field_apidoc_file_link
+    - field.field.node.apidoc.field_apidoc_spec
+    - field.field.node.apidoc.field_apidoc_spec_file_source
+    - field.field.node.apidoc.field_apidoc_spec_md5
+    - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_image
+    - node.type.apidoc
+  module:
+    - file
+    - file_link
+    - media_library
+    - path
+    - text
+_core:
+  default_config_hash: t5aZvTKDd9MENayaCi093rNsNjgy7IYi7--1-eKpIx8
+id: node.apidoc.default
+targetEntityType: node
+bundle: apidoc
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_api_product:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_apidoc_file_link:
+    type: file_link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_apidoc_spec:
+    type: file_generic
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_apidoc_spec_file_source:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_categories:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_apidoc_fetched_timestamp: true
+  field_apidoc_spec_md5: true

@@ -1,0 +1,9 @@
+uuid: 5a2804af-2aab-4284-a046-de5bb703864d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UmD039jtxkeQOW-mJ8yGsYN82ObYsD7bBpaKT3cV_S4
+name: 4_3_320x240
+label: '4:3 Ratio - Max 320 x 240'
+effects: {  }

@@ -1,0 +1,20 @@
+uuid: 5a210834-7309-44ce-a8c9-bdfb5a03652a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+  module:
+    - path
+id: node.apidoc.path
+field_name: path
+entity_type: node
+bundle: apidoc
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

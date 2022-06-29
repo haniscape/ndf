@@ -1,0 +1,32 @@
+uuid: c5e4e5dc-764f-43ed-b48c-150b9060d3af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - apigee_api_catalog
+_core:
+  default_config_hash: AMKq8zwSddiRuvfGgC-iBi_uAxYPTwIoRcxpLmGQ-IQ
+id: node.field_apidoc_spec_file_source
+field_name: field_apidoc_spec_file_source
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: file
+      label: File
+    -
+      value: url
+      label: URL
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

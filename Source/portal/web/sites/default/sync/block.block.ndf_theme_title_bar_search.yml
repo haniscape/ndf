@@ -1,0 +1,36 @@
+uuid: 78cb8c79-8b70-4bee-a89c-c613a522f74f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:title_bar:1efa0b42-0ce4-4c67-bd3d-bdb26ed63934'
+  module:
+    - block_content
+    - system
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: c4Pv4K_SaWMF6V2luQV3970K2ba0OgJNq8x3m00acBU
+id: ndf_theme_title_bar_search
+theme: ndf_theme
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:1efa0b42-0ce4-4c67-bd3d-bdb26ed63934'
+settings:
+  id: 'block_content:1efa0b42-0ce4-4c67-bd3d-bdb26ed63934'
+  label: 'Title bar: Search'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/search\r\n/search/*"

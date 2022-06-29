@@ -1,0 +1,23 @@
+uuid: 3d85baf0-941b-4033-b4c1-3c7cf729b1e3
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ndf_theme
+_core:
+  default_config_hash: jyhmFEQ7_lL7K-Pu1LwhxT_aZuvjG30eipFkc2K0Vcg
+id: ndf_theme_search_form
+theme: ndf_theme
+region: top_header
+weight: 1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

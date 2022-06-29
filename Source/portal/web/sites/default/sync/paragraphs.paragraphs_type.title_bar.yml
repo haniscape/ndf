@@ -1,0 +1,12 @@
+uuid: 7d1a2265-3d88-4271-8e50-eae2294e8b36
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UDczteM7U3YzILs6ZjmmHvW5IvIF66eDFwP6zQ5NJsc
+id: title_bar
+label: 'Title bar'
+icon_uuid: null
+icon_default: null
+description: '<em>Title bar</em> contains a title, summary, and icon. It is designed to be used as an alternative to the standard "Page title" block and can be used via the "Header" field where available, or via the custom <em>Title bar block</em> type.'
+behavior_plugins: {  }

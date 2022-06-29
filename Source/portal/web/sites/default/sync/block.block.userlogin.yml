@@ -1,0 +1,27 @@
+uuid: b97897e6-fe43-4ee4-9784-bf3ed4234b01
+langcode: en
+status: false
+dependencies:
+  module:
+    - apigee_kickstart_enhancement
+    - user
+  theme:
+    - ndf_theme
+id: userlogin
+theme: ndf_theme
+region: content
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: visible
+  provider: user
+visibility:
+  block_type:
+    id: block_type
+    uuid: b97897e6-fe43-4ee4-9784-bf3ed4234b01
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

@@ -1,0 +1,50 @@
+uuid: 3fb4b830-fc82-43f1-bde5-8427f3db109d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buttons
+    - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.button_group
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: N1ee_a1vjfsGmP2-LrF6rNzQcQd6X8z51SIGTRMAatQ
+id: paragraph.button_group.field_buttons
+field_name: field_buttons
+entity_type: paragraph
+bundle: button_group
+label: Buttons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button: button
+    negate: 0
+    target_bundles_drag_drop:
+      blockquote:
+        enabled: false
+      button:
+        enabled: true
+      button_group:
+        enabled: false
+      callout:
+        enabled: false
+      callout_group:
+        enabled: false
+      card:
+        enabled: false
+      card_group:
+        enabled: false
+      hero:
+        enabled: false
+      text_image:
+        enabled: false
+      title_bar:
+        enabled: false
+field_type: entity_reference_revisions

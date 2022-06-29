@@ -1,0 +1,22 @@
+uuid: 0a455e8f-6861-4880-a180-e41a7c52f578
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.callout_group
+id: paragraph.callout_group.status
+field_name: status
+entity_type: paragraph
+bundle: callout_group
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

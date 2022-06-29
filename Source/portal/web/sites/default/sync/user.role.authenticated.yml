@@ -1,0 +1,37 @@
+uuid: fea12613-5a1c-4cbf-a333-e45425b5419c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - apigee_edge
+    - comment
+    - contact
+    - filter
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: Ad14g-dfF-BfUNsmedzmYK3aNp-fL2DRyFGIIOhnA2w
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'analytics own developer_app'
+  - 'create developer_app'
+  - 'delete own developer_app'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update own developer_app'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view own developer_app'
+  - 'view published apidoc entities'

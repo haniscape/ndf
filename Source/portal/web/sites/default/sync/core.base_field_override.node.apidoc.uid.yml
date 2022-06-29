@@ -1,0 +1,20 @@
+uuid: 8e984a52-0e6a-4b17-8aec-ccd72230e2a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+id: node.apidoc.uid
+field_name: uid
+entity_type: node
+bundle: apidoc
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

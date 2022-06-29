@@ -1,0 +1,18 @@
+uuid: 7a7f6724-c6bb-4b5d-8143-c304b3f1e138
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apidoc
+id: node.apidoc.changed
+field_name: changed
+entity_type: node
+bundle: apidoc
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

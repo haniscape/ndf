@@ -1,0 +1,44 @@
+uuid: 01db02ee-f75b-41ce-a9e2-3dbf0e5d0048
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:cta:5766af56-5f64-4eb3-81d2-c4c5e4df3f76'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - ndf_theme
+  enforced:
+    module:
+      - apigee_kickstart_content
+_core:
+  default_config_hash: fweqXTdZQmHpgVQZF6-3KBg47itkY_oV3c5pjQR7Ktk
+id: ndf_theme_cta_developer_account
+theme: ndf_theme
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:5766af56-5f64-4eb3-81d2-c4c5e4df3f76'
+settings:
+  id: 'block_content:5766af56-5f64-4eb3-81d2-c4c5e4df3f76'
+  label: 'CTA: Create developer account'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      landing: landing
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /node/1

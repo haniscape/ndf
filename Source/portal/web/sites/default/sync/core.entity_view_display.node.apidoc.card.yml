@@ -1,0 +1,52 @@
+uuid: f13e1fb9-ef07-4129-a5c3-7aec6fa49ada
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.apidoc.body
+    - field.field.node.apidoc.field_api_product
+    - field.field.node.apidoc.field_apidoc_fetched_timestamp
+    - field.field.node.apidoc.field_apidoc_file_link
+    - field.field.node.apidoc.field_apidoc_spec
+    - field.field.node.apidoc.field_apidoc_spec_file_source
+    - field.field.node.apidoc.field_apidoc_spec_md5
+    - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_image
+    - node.type.apidoc
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: e3MVv2N0p0PjlKCh9yzZbJ2hJjh_OPrx1W46LF2sh8c
+id: node.apidoc.card
+targetEntityType: node
+bundle: apidoc
+mode: card
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_small
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_api_product: true
+  field_apidoc_fetched_timestamp: true
+  field_apidoc_file_link: true
+  field_apidoc_spec: true
+  field_apidoc_spec_file_source: true
+  field_apidoc_spec_md5: true
+  field_categories: true
+  langcode: true
+  links: true

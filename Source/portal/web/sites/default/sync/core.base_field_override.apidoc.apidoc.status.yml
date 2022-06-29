@@ -1,0 +1,22 @@
+uuid: c227af99-3425-4331-98d4-786458d6a40f
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_api_catalog
+id: apidoc.apidoc.status
+field_name: status
+entity_type: apidoc
+bundle: apidoc
+label: 'Publishing status'
+description: 'A boolean indicating whether the API Doc is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

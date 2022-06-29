@@ -1,0 +1,76 @@
+uuid: d9eab568-fa92-4902-9d66-050d03fab70e
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge
+_core:
+  default_config_hash: eyP1l5MG2rKEGgBX9yTa5ETQZ2YLstvZKDeW-Gz1oKg
+id: developer_app.developer_app.default
+targetEntityType: developer_app
+bundle: developer_app
+mode: default
+content:
+  callbackUrl:
+    type: uri_link
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  createdAt:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  credentials:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  description:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  lastModifiedAt:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  status:
+    type: status_property
+    label: inline
+    settings:
+      indicator_status_ok: approved
+      indicator_status_warning: ''
+      indicator_status_error: revoked
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  warnings:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  appFamily: true
+  appId: true
+  createdBy: true
+  developerId: true
+  displayName: true
+  lastModifiedBy: true
+  name: true
+  scopes: true

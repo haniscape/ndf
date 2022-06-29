@@ -1,0 +1,12 @@
+uuid: 29543f2f-50e7-4a29-ac26-86b43286c79d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YDKCeeM-fN1PPqCmh0BahXeS4XRQoamHhn1CARvy-es
+id: callout
+label: Callout
+icon_uuid: null
+icon_default: null
+description: 'A <em>Callout</em> contains icon, a brief title, summary, and link.'
+behavior_plugins: {  }
