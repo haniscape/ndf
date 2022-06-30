@@ -1,0 +1,19 @@
+uuid: 2c1a83c8-687c-446b-83f2-df1d9440eab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_goals_title
+    - paragraphs.paragraphs_type.goals
+id: paragraph.goals.field_goals_title
+field_name: field_goals_title
+entity_type: paragraph
+bundle: goals
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

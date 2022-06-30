@@ -1,0 +1,70 @@
+uuid: 80482201-6e0c-4e4e-8360-cc85d9401f57
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.registation
+    - field.storage.block_content.field_step
+    - paragraphs.paragraphs_type.registation
+  module:
+    - entity_reference_revisions
+id: block_content.registation.field_step
+field_name: field_step
+entity_type: block_content
+bundle: registation
+label: step
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      registation: registation
+    negate: 0
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 15
+        enabled: false
+      button:
+        weight: 16
+        enabled: false
+      button_group:
+        weight: 17
+        enabled: false
+      callout:
+        weight: 18
+        enabled: false
+      callout_group:
+        weight: 19
+        enabled: false
+      card:
+        weight: 20
+        enabled: false
+      card_group:
+        weight: 21
+        enabled: false
+      cta:
+        weight: 22
+        enabled: false
+      goals:
+        weight: 23
+        enabled: false
+      hero:
+        weight: 24
+        enabled: false
+      registation:
+        weight: 25
+        enabled: true
+      text:
+        weight: 26
+        enabled: false
+      text_image:
+        weight: 27
+        enabled: false
+      title_bar:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

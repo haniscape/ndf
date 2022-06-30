@@ -1,0 +1,47 @@
+uuid: 8c865a62-577f-453f-babc-7bc685978bd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.goals.field_goals_icon
+    - field.field.paragraph.goals.field_goals_image
+    - field.field.paragraph.goals.field_goals_title
+    - paragraphs.paragraphs_type.goals
+  module:
+    - image
+id: paragraph.goals.default
+targetEntityType: paragraph
+bundle: goals
+mode: default
+content:
+  field_goals_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_goals_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_goals_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 21e4a96d-dfd1-441e-94b1-08ee1414c932
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+id: block_content.goals.changed
+field_name: changed
+entity_type: block_content
+bundle: goals
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

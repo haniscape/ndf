@@ -1,0 +1,29 @@
+uuid: b58563a3-f65b-4bb0-b9d6-058b2a1f3590
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.registation.field_registation_description
+    - field.field.paragraph.registation.field_registation_title
+    - paragraphs.paragraphs_type.registation
+id: paragraph.registation.default
+targetEntityType: paragraph
+bundle: registation
+mode: default
+content:
+  field_registation_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_registation_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

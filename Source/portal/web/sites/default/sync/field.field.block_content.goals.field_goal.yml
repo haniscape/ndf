@@ -1,0 +1,67 @@
+uuid: 415dee2a-d14c-436d-91a5-555c69c47e9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+    - field.storage.block_content.field_goal
+    - paragraphs.paragraphs_type.goals
+  module:
+    - entity_reference_revisions
+id: block_content.goals.field_goal
+field_name: field_goal
+entity_type: block_content
+bundle: goals
+label: goal
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      goals: goals
+    negate: 0
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 14
+        enabled: false
+      button:
+        weight: 15
+        enabled: false
+      button_group:
+        weight: 16
+        enabled: false
+      callout:
+        weight: 17
+        enabled: false
+      callout_group:
+        weight: 18
+        enabled: false
+      card:
+        weight: 19
+        enabled: false
+      card_group:
+        weight: 20
+        enabled: false
+      cta:
+        weight: 21
+        enabled: false
+      goals:
+        weight: 22
+        enabled: true
+      hero:
+        weight: 23
+        enabled: false
+      text:
+        weight: 24
+        enabled: false
+      text_image:
+        weight: 25
+        enabled: false
+      title_bar:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

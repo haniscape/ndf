@@ -1,0 +1,10 @@
+uuid: 2649ad52-5a24-4873-9258-c59f6359cc8b
+langcode: en
+status: true
+dependencies: {  }
+id: link_service
+label: 'Link services'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

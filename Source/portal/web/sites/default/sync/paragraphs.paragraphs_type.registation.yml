@@ -1,0 +1,10 @@
+uuid: f32fd4fd-51c0-45ef-9d8f-f2f6fbfe59dd
+langcode: en
+status: true
+dependencies: {  }
+id: registation
+label: Registation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

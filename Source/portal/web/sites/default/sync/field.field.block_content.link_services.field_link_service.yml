@@ -1,0 +1,73 @@
+uuid: b7125cf3-8d32-4a17-910d-8626ae20641d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_services
+    - field.storage.block_content.field_link_service
+    - paragraphs.paragraphs_type.link_service
+  module:
+    - entity_reference_revisions
+id: block_content.link_services.field_link_service
+field_name: field_link_service
+entity_type: block_content
+bundle: link_services
+label: 'Link service'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      link_service: link_service
+    negate: 0
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 16
+        enabled: false
+      button:
+        weight: 17
+        enabled: false
+      button_group:
+        weight: 18
+        enabled: false
+      callout:
+        weight: 19
+        enabled: false
+      callout_group:
+        weight: 20
+        enabled: false
+      card:
+        weight: 21
+        enabled: false
+      card_group:
+        weight: 22
+        enabled: false
+      cta:
+        weight: 23
+        enabled: false
+      goals:
+        weight: 24
+        enabled: false
+      hero:
+        weight: 25
+        enabled: false
+      link_service:
+        weight: 26
+        enabled: true
+      registation:
+        weight: 27
+        enabled: false
+      text:
+        weight: 28
+        enabled: false
+      text_image:
+        weight: 29
+        enabled: false
+      title_bar:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions
