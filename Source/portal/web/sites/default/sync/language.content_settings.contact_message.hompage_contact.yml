@@ -1,0 +1,11 @@
+uuid: a43d75d9-48d0-4025-9c75-96ee23b540c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.hompage_contact
+id: contact_message.hompage_contact
+target_entity_type_id: contact_message
+target_bundle: hompage_contact
+default_langcode: site_default
+language_alterable: true

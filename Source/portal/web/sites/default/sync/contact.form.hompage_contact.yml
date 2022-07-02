@@ -1,0 +1,12 @@
+uuid: 8829d18b-4a9f-4ba4-baa8-80c54713de7c
+langcode: en
+status: true
+dependencies: {  }
+id: hompage_contact
+label: 'Hompage contact'
+recipients:
+  - mostafa.m@cloudypedia.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

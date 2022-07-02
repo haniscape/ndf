@@ -1,0 +1,37 @@
+uuid: 6bf75cba-50da-47a1-be18-d24c956515d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:goals:a8f4bf38-9c71-4deb-9ba2-d8e31d55becb'
+  module:
+    - apigee_kickstart_enhancement
+    - block_content
+    - system
+  theme:
+    - ndf_theme
+id: homepagegoals
+theme: ndf_theme
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:a8f4bf38-9c71-4deb-9ba2-d8e31d55becb'
+settings:
+  id: 'block_content:a8f4bf38-9c71-4deb-9ba2-d8e31d55becb'
+  label: 'Homepage goals'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  block_type:
+    id: block_type
+    uuid: 6bf75cba-50da-47a1-be18-d24c956515d9
+    bundles: {  }
+    is_adjacent: 0
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
