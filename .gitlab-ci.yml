@@ -1,13 +1,83 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-stages:
-- test
-sast:
-  stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml
+image: ubuntu
+ 
+stages: 
+  - database-import
+  - code-deploy
+
+
+before_script:
+  ## Install ssh-agent if not already installed, it is required by Docker.
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client curl git -y )'
+  ## Run ssh-agent (inside the build environment)
+  - eval $(ssh-agent -s)
+  ## Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  ## Create the SSH directory and give it the right permissions
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  ## Useing ssh-keyscan to scan the keys of the private server.
+  - ssh-keyscan $NODE_IP >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+
+dev-database-import:
+  stage: database-import
+  script:
+    - curl --request PUT --header "private-token:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/variables/DEV_CURRENT_VERSION_TAG" --form "value=null"
+    - scp ./database/ndf_portal.sql $NODE_USER@$NODE_IP:/tmp/
+    - ssh $NODE_USER@$NODE_IP "touch /tmp/temp.sql"  
+    - ssh $NODE_USER@$NODE_IP "mysqldump --add-drop-table --no-data -u root -p$DB_PASSWD $DB_NAME | grep 'DROP TABLE' >> /tmp/temp.sql"
+    - ssh $NODE_USER@$NODE_IP "mysql -u root -p$DB_PASSWD $DB_NAME < /tmp/ndf_portal.sql"
+    - ssh $NODE_USER@$NODE_IP "sudo rm /tmp/ndf_portal.sql"
+  only:
+    refs:
+      - development
+    changes:
+      - "**/ndf_portal.sql"
+
+  # rules:
+  #   - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  #     when: never
+  #   - if: '$CI_COMMIT_SHORT_SHA == $DEV_BUILD_COMMIT'
+  #     when: always
+
+dev-code-deploy:
+  stage: code-deploy
+  script:
+    - curl --request PUT --header "private-token:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/variables/DEV_CURRENT_VERSION_TAG" --form "value=null"
+    - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/web"
+    - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/patches"
+    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/web"
+    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/patches"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/libraries"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/patches"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/modules/custom"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/themes/custom"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/sites/default/sync"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/sites/default/translation"
+#    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/patches"
+    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/composer.json"
+    # coping files to the server
+    - scp -r ./Source/patches $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/patches
+    - scp -r ./Source/web/libraries $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/libraries
+    - scp -r ./Source/web/modules/custom $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/modules/custom
+    - scp -r ./Source/web/themes/custom/ $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/themes/custom
+    - scp -r ./Source/web/sites/default/sync $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/sync
+    - scp -r ./Source/web/sites/default/translation $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/translation
+#    - scp -r ./Source/patches $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/patches
+    - scp -r ./Source/composer.json $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/composer.json
+    # set pr
+    - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && composer update --no-interaction"
+    - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && drush updb -y"
+    - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && drush cr"
+    - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && drush cim -y"
+    - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && drush cr"
+    # pr
+    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/web/"
+    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/patches/"
+    - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/web/"
+    # deush comands
+    # adding tage
+    - curl --request PUT --header "private-token:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/variables/DEV_CURRENT_VERSION_TAG" --form "value=$CI_COMMIT_TAG"
+
+  only:
+    - development
