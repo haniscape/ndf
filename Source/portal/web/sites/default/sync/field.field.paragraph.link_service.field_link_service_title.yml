@@ -1,0 +1,19 @@
+uuid: b6ae6b6b-4d69-4d00-a430-03a03d4ee212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_service_title
+    - paragraphs.paragraphs_type.link_service
+id: paragraph.link_service.field_link_service_title
+field_name: field_link_service_title
+entity_type: paragraph
+bundle: link_service
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

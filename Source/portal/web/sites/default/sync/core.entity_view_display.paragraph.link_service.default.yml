@@ -1,0 +1,44 @@
+uuid: f89afefe-9dc2-4f2c-bfdc-cdad1b871867
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_service.field_link_service_description
+    - field.field.paragraph.link_service.field_link_service_title
+    - field.field.paragraph.link_service.field_service_link
+    - paragraphs.paragraphs_type.link_service
+  module:
+    - link
+id: paragraph.link_service.default
+targetEntityType: paragraph
+bundle: link_service
+mode: default
+content:
+  field_link_service_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_service_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_service_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

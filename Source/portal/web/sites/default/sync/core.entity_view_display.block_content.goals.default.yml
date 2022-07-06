@@ -1,0 +1,42 @@
+uuid: 96149963-df69-4524-b787-9c28b84b4eb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+    - field.field.block_content.goals.field_description
+    - field.field.block_content.goals.field_goal
+    - field.field.block_content.goals.field_title
+  module:
+    - entity_reference_revisions
+id: block_content.goals.default
+targetEntityType: block_content
+bundle: goals
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_goal:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

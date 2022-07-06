@@ -1,0 +1,19 @@
+uuid: 77a82979-fefd-41b1-8fbf-7052484dc541
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_registation_title
+    - paragraphs.paragraphs_type.registation
+id: paragraph.registation.field_registation_title
+field_name: field_registation_title
+entity_type: paragraph
+bundle: registation
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

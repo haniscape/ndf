@@ -1,0 +1,23 @@
+uuid: c700f4b1-cd92-4b79-af47-9a1a5df5eceb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.registation
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.registation.field_link
+field_name: field_link
+entity_type: block_content
+bundle: registation
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

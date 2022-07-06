@@ -1,0 +1,22 @@
+uuid: 790e6cc7-064d-45a6-80a0-7046a4b110d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.goals
+id: paragraph.goals.status
+field_name: status
+entity_type: paragraph
+bundle: goals
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

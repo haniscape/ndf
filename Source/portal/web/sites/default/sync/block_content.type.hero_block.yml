@@ -1,0 +1,8 @@
+uuid: e67f6dc9-4698-4fb3-801d-8b00bd4dcf46
+langcode: en
+status: true
+dependencies: {  }
+id: hero_block
+label: 'Hero block'
+revision: 0
+description: ''

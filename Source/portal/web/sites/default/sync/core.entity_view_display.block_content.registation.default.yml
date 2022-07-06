@@ -1,0 +1,48 @@
+uuid: 66eb77bd-374a-4889-81c9-f6cffe28364c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.registation
+    - field.field.block_content.registation.field_link
+    - field.field.block_content.registation.field_step
+    - field.field.block_content.registation.field_title
+  module:
+    - entity_reference_revisions
+    - link
+id: block_content.registation.default
+targetEntityType: block_content
+bundle: registation
+mode: default
+content:
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_step:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

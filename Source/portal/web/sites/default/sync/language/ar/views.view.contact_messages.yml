@@ -1,0 +1,44 @@
+label: 'رسائل جهة الإتصال'
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+          tags:
+            previous: '‹ السابقة'
+            next: 'التالية ›'
+            first: '« الأولى'
+      fields:
+        subject:
+          label: الموضوع
+          separator: ', '
+        name:
+          separator: ', '
+        contact_form_label:
+          label: 'استمارة الاتصال'
+        created:
+          label: الإنشاء
+        operations:
+          label: عمليات
+      filters:
+        contact_form:
+          expose:
+            label: 'استمارة الاتصال'
+      title: 'رسائل جهة الإتصال'
+  page_1:
+    display_title: الصفحة
+    display_options:
+      menu:
+        title: لائحة
+        description: 'رسائل جهة الإتصال'

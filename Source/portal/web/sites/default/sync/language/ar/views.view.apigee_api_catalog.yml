@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      fields:
+        title:
+          separator: ', '
+        body:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'التالي ›'
+            previous: '‹ السابق'
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      exposed_form:
+        options:
+          submit_button: بحث
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+          bef:
+            general:
+              secondary_label: 'الخيارات المتقدمة'
+  page_1:
+    display_title: الصفحة

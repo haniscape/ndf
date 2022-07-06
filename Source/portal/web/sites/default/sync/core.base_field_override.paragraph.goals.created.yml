@@ -1,0 +1,18 @@
+uuid: 59be18a8-3568-4c40-9156-db992a73db61
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.goals
+id: paragraph.goals.created
+field_name: created
+entity_type: paragraph
+bundle: goals
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

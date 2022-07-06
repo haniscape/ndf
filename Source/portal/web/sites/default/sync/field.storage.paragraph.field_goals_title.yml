@@ -1,0 +1,21 @@
+uuid: b9f32a69-e9df-4fda-a3b5-5cb0a8f7ceee
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_goals_title
+field_name: field_goals_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

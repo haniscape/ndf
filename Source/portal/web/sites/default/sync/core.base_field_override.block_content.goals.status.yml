@@ -1,0 +1,22 @@
+uuid: 3d736f26-8705-4eec-af9f-c8b6fef80554
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+id: block_content.goals.status
+field_name: status
+entity_type: block_content
+bundle: goals
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

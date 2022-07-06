@@ -1,0 +1,37 @@
+uuid: e0e72551-b9ad-42aa-820b-f7708dc04362
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:registation:1a71312d-dd2d-4e75-abf2-f39f5deafed8'
+  module:
+    - apigee_kickstart_enhancement
+    - block_content
+    - system
+  theme:
+    - ndf_theme
+id: homepageregistations
+theme: ndf_theme
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:1a71312d-dd2d-4e75-abf2-f39f5deafed8'
+settings:
+  id: 'block_content:1a71312d-dd2d-4e75-abf2-f39f5deafed8'
+  label: 'Homepage : registations'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  block_type:
+    id: block_type
+    uuid: e0e72551-b9ad-42aa-820b-f7708dc04362
+    bundles: {  }
+    is_adjacent: 0
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
