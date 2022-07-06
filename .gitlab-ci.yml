@@ -47,7 +47,7 @@ dev-code-deploy:
     - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/web"
     - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION"
     - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/web"
-    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION
+    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/libraries"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/modules"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/themes/custom"
