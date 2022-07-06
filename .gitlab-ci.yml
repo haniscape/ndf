@@ -23,7 +23,7 @@ dev-database-import:
   stage: database-import
   script:
     - curl --request PUT --header "private-token:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/variables/DEV_CURRENT_VERSION_TAG" --form "value=null"
-    - scp ./database/ndf.sql $NODE_USER@$NODE_IP:/tmp/
+    - scp ./Source/database/ndf.sql $NODE_USER@$NODE_IP:/tmp/
     - ssh $NODE_USER@$NODE_IP "touch /tmp/temp.sql"  
     - ssh $NODE_USER@$NODE_IP "mysqldump --add-drop-table --no-data -u root -p$DB_PASSWD $DB_NAME | grep 'DROP TABLE' >> /tmp/temp.sql"
     - ssh $NODE_USER@$NODE_IP "mysql -u root -p$DB_PASSWD $DB_NAME < /tmp/ndf.sql"
@@ -54,11 +54,11 @@ dev-code-deploy:
 #    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/patches"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/composer.json"
     # coping files to the server
-    - scp -r ./Source/web/libraries $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/libraries
-    - scp -r ./Source/web/modules $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/modules
-    - scp -r ./Source/web/themes/custom/ $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/themes/custom
-    - scp -r ./Source/web/sites/default/sync $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/sync
-    - scp -r ./Source/web/sites/default/language $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/language
+    - scp -r ./Source/portal/web/libraries $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/libraries
+    - scp -r ./Source/portal/web/modules $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/modules
+    - scp -r ./Source/portal/web/themes/custom/ $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/themes/custom
+    - scp -r ./Source/portal/web/sites/default/sync $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/sync
+    - scp -r ./Source/portal/web/sites/default/language $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/language
 #    - scp -r ./Source/patches $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/patches
     - scp -r ./Source/composer.json $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/composer.json
     # set pr
