@@ -23,16 +23,16 @@ dev-database-import:
   stage: database-import
   script:
     - curl --request PUT --header "private-token:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/variables/DEV_CURRENT_VERSION_TAG" --form "value=null"
-    - scp ./database/ndf.sql.zip $NODE_USER@$NODE_IP:/tmp/
+    - scp ./database/ndf.sql $NODE_USER@$NODE_IP:/tmp/
     - ssh $NODE_USER@$NODE_IP "touch /tmp/temp.sql"  
     - ssh $NODE_USER@$NODE_IP "mysqldump --add-drop-table --no-data -u root -p$DB_PASSWD $DB_NAME | grep 'DROP TABLE' >> /tmp/temp.sql"
-    - ssh $NODE_USER@$NODE_IP "mysql -u root -p$DB_PASSWD $DB_NAME < /tmp/ndf.sql.zip"
-    - ssh $NODE_USER@$NODE_IP "sudo rm /tmp/ndf.sql.zip"
+    - ssh $NODE_USER@$NODE_IP "mysql -u root -p$DB_PASSWD $DB_NAME < /tmp/ndf.sql"
+    - ssh $NODE_USER@$NODE_IP "sudo rm /tmp/ndf.sql"
   only:
     refs:
       - development
     changes:
-      - "**/ndf.sql.zip"
+      - "**/ndf.sql"
 
   # rules:
   #   - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
@@ -45,11 +45,8 @@ dev-code-deploy:
   script:
     - curl --request PUT --header "private-token:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/variables/DEV_CURRENT_VERSION_TAG" --form "value=null"
     - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/web"
-    - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/patches"
     - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/web"
-    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/patches"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/libraries"
-    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/patches"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/modules"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/themes/custom"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/sites/default/sync"
@@ -57,7 +54,6 @@ dev-code-deploy:
 #    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/patches"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/composer.json"
     # coping files to the server
-    - scp -r ./Source/patches $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/patches
     - scp -r ./Source/web/libraries $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/libraries
     - scp -r ./Source/web/modules $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/modules
     - scp -r ./Source/web/themes/custom/ $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/themes/custom
@@ -73,7 +69,6 @@ dev-code-deploy:
     - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && drush cr"
     # pr
     - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/web/"
-    - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/patches/"
     - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/web/"
     # deush comands
     # adding tage
