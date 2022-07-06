@@ -1,16 +1,16 @@
-uuid: e095ca3b-6e39-4113-ba46-fece04dc7ac2
+uuid: d8779ffa-4a2c-4b69-a4ce-1c20d404af3c
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - bootstrap4
 _core:
-  default_config_hash: JKEKCG-Dir-2WbaTFY3XlWrE4iio42RPOYzLnUfg4Gk
-id: bootstrap_barrio_drupal
-theme: bootstrap_barrio
-region: top_header
+  default_config_hash: pCYcyBIVbwKUmraga_6Ycz5P-bhQJLJS_8HtOFpMq-o
+id: bootstrap4_powered_by_drupal
+theme: bootstrap4
+region: footer
 weight: 0
 provider: null
 plugin: system_powered_by_block

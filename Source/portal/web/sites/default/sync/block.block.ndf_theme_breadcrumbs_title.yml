@@ -10,7 +10,7 @@ _core:
   default_config_hash: NfhJaYkah0ef19KcJZC_AOChMjQP-EBfsrOAM9UvWpc
 id: ndf_theme_breadcrumbs_title
 theme: ndf_theme
-region: top_header
+region: header
 weight: 1
 provider: null
 plugin: page_title_block

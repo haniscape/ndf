@@ -101,6 +101,8 @@ theme:
   bartik: 0
   radix: 0
   apigee_kickstart: 0
-  bootstrap_barrio: 0
   ndf_theme: 0
+  stable: 0
+  classy: 0
+  bootstrap4: 0
 profile: apigee_devportal_kickstart

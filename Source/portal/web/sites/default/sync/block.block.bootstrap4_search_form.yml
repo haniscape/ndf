@@ -1,17 +1,17 @@
-uuid: e11f6566-682c-4e6f-ac80-20bdd300371b
+uuid: e35ea252-ee95-43ed-a963-b502a78bea35
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bootstrap_barrio
+    - bootstrap4
 _core:
-  default_config_hash: jyhmFEQ7_lL7K-Pu1LwhxT_aZuvjG30eipFkc2K0Vcg
-id: bootstrap_barrio_search_form
-theme: bootstrap_barrio
-region: top_header
-weight: 1
+  default_config_hash: Ja6tDzYId0ZPQE1SEJTQNb0ZNv5ttB1iO5xv6hIToQ8
+id: bootstrap4_search_form
+theme: bootstrap4
+region: nav_additional
+weight: 0
 provider: null
 plugin: search_form_block
 settings:

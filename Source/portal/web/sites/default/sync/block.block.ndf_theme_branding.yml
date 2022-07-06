@@ -10,7 +10,7 @@ _core:
   default_config_hash: TPGaK2lHnw3pM4AXSliTil-MxPlSsfmVka40dgIxQdg
 id: ndf_theme_branding
 theme: ndf_theme
-region: top_header
+region: header
 weight: 0
 provider: null
 plugin: system_branding_block

@@ -1,4 +1,4 @@
-uuid: d16b68cd-ce70-405a-ad39-0e653144abdc
+uuid: 5d2b5cb2-7e81-439b-98d2-ab76ad4665d2
 langcode: en
 status: true
 dependencies:
@@ -7,19 +7,19 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - bootstrap4
 _core:
-  default_config_hash: e5o-OgvsySwm3H6ZKpYqCoxvfkhvnNsRYIX7pk1gVzc
-id: bootstrap_barrio_menu_account
-theme: bootstrap_barrio
-region: top_header
-weight: 0
+  default_config_hash: bSenKfxHQ1-_DHnPlsMsap_D6fif7bbe3kh9k31LkdU
+id: bootstrap4_account_menu
+theme: bootstrap4
+region: nav_additional
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
   label: 'User account menu'
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: 0

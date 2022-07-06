@@ -1,15 +1,15 @@
-uuid: 73c1d6c7-4525-4d0a-83a7-05cdb5f6ab56
+uuid: 0bd4f7ba-ad4c-4a53-a9af-54aed4be2682
 langcode: en
 status: true
 dependencies:
   theme:
-    - bootstrap_barrio
+    - bootstrap4
 _core:
-  default_config_hash: axlgVStpEIt5eiZDldRFgur-7puYccXDfimn4rXh8gA
-id: bootstrap_barrio_tabs
-theme: bootstrap_barrio
-region: top_header
-weight: 0
+  default_config_hash: IzSbK3zk-Gon9y7WLEWop15Wn__7LeKzBJIXqajlb00
+id: bootstrap4_local_tasks
+theme: bootstrap4
+region: content
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
