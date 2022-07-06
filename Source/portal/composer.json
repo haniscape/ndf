@@ -30,7 +30,7 @@
     "apigee/apigee_devportal_kickstart": "^2",
     "composer/installers": "^1.9",
     "drupal/apigee_m10n": "^2",
-    "drupal/bootstrap_barrio": "5.5.4",
+    "drupal/bootstrap4": "^2.1",
     "drupal/commerce": "^2.21",
     "drupal/core-composer-scaffold": "^9",
     "drupal/core-project-message": "^9",
@@ -102,8 +102,7 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch",
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/1883120.patch"
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
       },
       "drupal/jsonapi_extras":{
           "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch"

@@ -1,6 +1,6 @@
 uuid: aa1b3302-28ca-4f8e-a9c4-0dc5c43bd8eb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,7 +12,7 @@ _core:
   default_config_hash: xSpz-XHmNr285sEeqvZ_G1_C5bWeY9yjgaDdyjCc7cU
 id: ndf_theme_main_menu
 theme: ndf_theme
-region: primary_menu
+region: header
 weight: -11
 provider: null
 plugin: 'system_menu_block:main'

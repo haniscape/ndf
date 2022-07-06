@@ -12,7 +12,7 @@ _core:
   default_config_hash: e5o-OgvsySwm3H6ZKpYqCoxvfkhvnNsRYIX7pk1gVzc
 id: ndf_theme_menu_account
 theme: ndf_theme
-region: secondary_menu
+region: header
 weight: -11
 provider: null
 plugin: 'system_menu_block:account'

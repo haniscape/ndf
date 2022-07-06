@@ -1,0 +1,36 @@
+// Override default style
+@media (min-width: 991px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
