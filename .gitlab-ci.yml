@@ -58,7 +58,7 @@ dev-code-deploy:
     - scp -r ./Source/portal/web/themes/custom/ $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/themes/custom
     - scp -r ./Source/portal/web/sites/default/sync $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/sync
 #    - scp -r ./Source/patches $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/patches
-    - scp -r ./Source/composer.json $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/composer.json
+    - scp -r ./Source/portal/composer.json $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/composer.json
     # set pr
     - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && composer update --no-interaction"
     - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && drush updb -y"
