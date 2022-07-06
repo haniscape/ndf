@@ -50,7 +50,6 @@ dev-code-deploy:
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/modules"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/themes/custom"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/sites/default/sync"
-    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/web/sites/default/language"
 #    - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/patches"
     - ssh $NODE_USER@$NODE_IP "sudo rm -rf $DEV_DIR_LOCATION/composer.json"
     # coping files to the server
@@ -58,7 +57,6 @@ dev-code-deploy:
     - scp -r ./Source/portal/web/modules $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/modules
     - scp -r ./Source/portal/web/themes/custom/ $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/themes/custom
     - scp -r ./Source/portal/web/sites/default/sync $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/sync
-    - scp -r ./Source/portal/web/sites/default/language $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/web/sites/default/language
 #    - scp -r ./Source/patches $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/patches
     - scp -r ./Source/composer.json $NODE_USER@$NODE_IP:$DEV_DIR_LOCATION/composer.json
     # set pr
