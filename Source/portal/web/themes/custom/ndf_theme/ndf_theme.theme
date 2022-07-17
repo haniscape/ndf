@@ -6,3 +6,16 @@ use Drupal\Core\Template\Attribute;
  * @file
  * SUBTHEME theme file.
  */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function sdaia_theme_preprocess_page(&$variables) {
+  // Load main styles library (LTR/RTL)
+  $curr_lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  if ($curr_lang == 'ar') {
+    $variables['#attached']['library'][] = 'sdaia_theme/styles-rtl';
+  } else {
+    $variables['#attached']['library'][] = 'sdaia_theme/styles-ltr';
+  }
+}
