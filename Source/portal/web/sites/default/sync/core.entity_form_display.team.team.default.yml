@@ -1,0 +1,22 @@
+uuid: ba759ece-9a69-4395-a5fa-2b3c17c0f9d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge_teams
+_core:
+  default_config_hash: VNQ0OMxyPod0mU3Hie4btZ_f6yI4bIBnhadyEo6VVpw
+id: team.team.default
+targetEntityType: team
+bundle: team
+mode: default
+content:
+  displayName:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -6,6 +6,7 @@ dependencies:
     - filter.format.basic_html
   module:
     - apigee_edge
+    - apigee_edge_teams
     - comment
     - contact
     - filter
@@ -20,12 +21,14 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'accept own team invitation'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'analytics own developer_app'
   - 'create developer_app'
+  - 'decline own team invitation'
   - 'delete own developer_app'
   - 'post comments'
   - 'search content'

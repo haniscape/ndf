@@ -1,0 +1,53 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      fields:
+        recipient:
+          label: المتسلم
+          separator: ', '
+        team_roles_target_id:
+          label: الأدوار
+          separator: ', '
+        created:
+          label: الإنشاء
+          separator: ', '
+        expiry:
+          separator: ', '
+        status:
+          label: الحالة
+          separator: ', '
+        uid:
+          separator: ', '
+        operations:
+          label: عمليات
+      arguments:
+        team:
+          exception:
+            title: الكل
+  user:
+    display_title: المستخدم
+    display_options:
+      arguments:
+        uid:
+          exception:
+            title: الكل
+      fields:
+        label:
+          separator: ', '
+        expiry:
+          separator: ', '
+        status:
+          label: الحالة
+          separator: ', '
+        uid:
+          separator: ', '
+        operations:
+          label: عمليات

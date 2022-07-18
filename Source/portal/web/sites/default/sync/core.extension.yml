@@ -7,6 +7,8 @@ module:
   adminimal_admin_toolbar: 0
   apigee_api_catalog: 0
   apigee_edge: 0
+  apigee_edge_apiproduct_rbac: 0
+  apigee_edge_teams: 0
   apigee_kickstart_content: 0
   apigee_kickstart_customizer: 0
   apigee_kickstart_enhancement: 0
