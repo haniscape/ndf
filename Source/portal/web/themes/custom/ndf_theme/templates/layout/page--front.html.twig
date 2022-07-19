@@ -44,46 +44,35 @@
 #}
 
 
-<div class="container">
+<header id="header">
+  {{ page.header }}
 
-{% include directory ~ '/templates/elements/ndf_logo-dark.twig' %}
+  {% if page.nav_branding or page.nav_main or page.nav_additional %}
 
-  <header id="header">
-    {{ page.header }}
 
-    {% if page.nav_branding or page.nav_main or page.nav_additional %}
-      <nav class="{{ nav_classes }}">
-        <div class="{{ b4_top_container }} row mx-auto">
-          <div class="col-auto p-0">
-            {{ page.nav_branding }}
-          </div>
-
-          <div class="col-3 col-md-auto p-0 text-right">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-
-          <div class="collapse navbar-collapse col-12 col-md-auto p-0 justify-content-end" id="navbarSupportedContent">
-            {{ page.nav_main }}
-            {{ page.nav_additional }}
-          </div>
-
+    <nav class="ndf-nav">
+      <div class="container">
+        <div class="ndf-logo">
+          {{ page.nav_branding }}
         </div>
-      </nav>
-    {% endif %}
+        <div class="ndf-navigation">
+        {{ page.nav_main }}
+        {{ page.nav_additional }}
+        </div>
+      </div>
 
-  </header>
+    </nav>
+
+  {% endif %}
+
+</header>
 
 
-  
 {{ page.content.hompageheroblock }}
-{{ page.content.homepagegoals }}
-{{ page.content.homepageregistations }}
-{{ page.content.homepagelinks }}
-{{ page.content.contactblock }}
+  {{ page.content.homepagegoals }}
+  {{ page.content.homepageregistations }}
+  {{ page.content.homepagelinks }}
+  {{ page.content.contactblock }}
 
 
-</div>
+

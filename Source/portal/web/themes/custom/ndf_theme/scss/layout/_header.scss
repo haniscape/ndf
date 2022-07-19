@@ -1,0 +1,20 @@
+#header {
+  .ndf-nav {
+    .container {
+      display: flex;
+      flex-direction: row;
+
+      .ndf-logo {
+        height: 2rem;
+        margin: 0 1.5rem;
+        padding: 1rem;
+      }
+
+      .ndf-navigation {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
