@@ -14,6 +14,7 @@ dependencies:
     - search
     - shortcut
     - system
+    - vud
 _core:
   default_config_hash: Ad14g-dfF-BfUNsmedzmYK3aNp-fL2DRyFGIIOhnA2w
 id: authenticated
@@ -31,10 +32,12 @@ permissions:
   - 'decline own team invitation'
   - 'delete own developer_app'
   - 'post comments'
+  - 'reset vote up/down votes'
   - 'search content'
   - 'skip comment approval'
   - 'update own developer_app'
   - 'use text format basic_html'
+  - 'use vote up/down'
   - 'view media'
   - 'view own developer_app'
   - 'view published apidoc entities'

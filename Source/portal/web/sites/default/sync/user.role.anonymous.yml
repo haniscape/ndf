@@ -11,6 +11,7 @@ dependencies:
     - media
     - search
     - system
+    - vud
 _core:
   default_config_hash: D9aK3qaiuH6ybhHQ-DFA1-_HfGvyahrKWNHE67snm8c
 id: anonymous
@@ -21,7 +22,9 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'reset vote up/down votes'
   - 'search content'
   - 'use text format restricted_html'
+  - 'use vote up/down'
   - 'view media'
   - 'view published apidoc entities'

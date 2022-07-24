@@ -1,0 +1,23 @@
+uuid: acc4d988-b28b-4c7b-bd4f-c44600fd60f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_voting
+    - node.type.apidoc
+  module:
+    - vud
+id: node.apidoc.field_voting
+field_name: field_voting
+entity_type: node
+bundle: apidoc
+label: Voting
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: vote_up_down_field

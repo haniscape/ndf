@@ -11,11 +11,12 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
-    - field.field.node.apidoc.field_image
+    - field.field.node.apidoc.field_voting
     - node.type.apidoc
   module:
     - apigee_api_catalog
     - user
+    - vud
 _core:
   default_config_hash: H9ybU42_c58LXg6KyGIG1cU6Zn7rA1P6zdFLv_6Siec
 id: node.apidoc.default
@@ -30,6 +31,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_voting:
+    type: vote_up_down_formatter_type
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -43,5 +51,4 @@ hidden:
   field_apidoc_spec_file_source: true
   field_apidoc_spec_md5: true
   field_categories: true
-  field_image: true
   langcode: true
