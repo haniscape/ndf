@@ -104,7 +104,8 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch",
+          "Fix Undefined index: #field_name ":"https://www.drupal.org/files/issues/2021-05-17/1903010-68.patch"
       },
       "drupal/jsonapi_extras":{
           "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch"
