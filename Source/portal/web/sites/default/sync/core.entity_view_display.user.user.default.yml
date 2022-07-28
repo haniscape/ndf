@@ -3,11 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_date_of_birth
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
     - field.field.user.user.field_last_password_reset
+    - field.field.user.user.field_mobile_number
     - field.field.user.user.field_password_expiration
     - field.field.user.user.field_pending_expire_sent
     - field.field.user.user.field_user_company
   module:
+    - datetime
+    - mobile_number
     - user
 _core:
   default_config_hash: 2PPZpiAkDybC7S98lR35v0eSQgWuqfyojQTZS8OGsHM
@@ -16,20 +22,43 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  billingtype:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 7
-    region: content
-  display_name:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   email:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
+  field_date_of_birth:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 3
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_mobile_number:
+    type: mobile_number_international
+    label: above
+    settings:
+      as_link: false
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_user_company:
     type: string
@@ -37,30 +66,20 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 8
-    region: content
-  member_for:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
   roles:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
-    region: content
-  timezone:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  username:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
+  billingtype: true
+  display_name: true
   field_last_password_reset: true
   field_password_expiration: true
   field_pending_expire_sent: true
   langcode: true
+  member_for: true
+  timezone: true
+  username: true

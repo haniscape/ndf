@@ -3,13 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_date_of_birth
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
     - field.field.user.user.field_last_password_reset
+    - field.field.user.user.field_mobile_number
     - field.field.user.user.field_password_expiration
     - field.field.user.user.field_pending_expire_sent
     - field.field.user.user.field_user_company
   module:
     - datetime
-    - path
+    - mobile_number
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -19,65 +23,58 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
-  contact:
-    weight: 5
-    region: content
-  field_last_password_reset:
+    settings: {  }
+    third_party_settings: {  }
+  field_date_of_birth:
     type: datetime_default
     weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_password_expiration:
-    type: boolean_checkbox
+  field_first_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
     weight: 3
     region: content
     settings:
-      display_label: true
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mobile_number:
+    type: mobile_number_default
+    weight: 5
+    region: content
+    settings:
+      countries: {  }
+      default_country: SA
+      placeholder: 'Phone number'
     third_party_settings: {  }
   field_user_company:
     type: string_textfield
-    weight: 31
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  first_name:
-    type: string_textfield
-    weight: -11
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  language:
-    weight: 0
-    region: content
-  last_name:
-    type: string_textfield
-    weight: -11
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
-    weight: 6
-    region: content
-  translation:
-    weight: 10
-    region: content
-    settings: {  }
     third_party_settings: {  }
 hidden:
+  contact: true
+  field_last_password_reset: true
+  field_password_expiration: true
   field_pending_expire_sent: true
+  first_name: true
   langcode: true
+  language: true
+  last_name: true
+  path: true
+  timezone: true
+  translation: true
