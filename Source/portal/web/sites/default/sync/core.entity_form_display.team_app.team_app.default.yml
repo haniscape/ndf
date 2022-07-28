@@ -13,30 +13,30 @@ bundle: team_app
 mode: default
 content:
   callbackUrl:
+    type: app_callback_url
     weight: 1
     region: content
     settings:
       size: 60
       placeholder: null
       callback_url_pattern: null
-      callback_url_description: null
       callback_url_pattern_error_message: null
+      callback_url_description: null
     third_party_settings: {  }
-    type: app_callback_url
   description:
+    type: string_textarea
     weight: 2
     region: content
     settings:
-      placeholder: ''
       rows: 5
+      placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
   displayName:
+    type: string_textfield
     weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
 hidden: {  }

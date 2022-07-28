@@ -13,58 +13,58 @@ bundle: team_app
 mode: default
 content:
   callbackUrl:
+    type: uri_link
     label: inline
-    weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
-    type: uri_link
+    weight: 2
+    region: content
   createdAt:
     type: timestamp_ago
     label: inline
-    weight: 4
-    region: content
     settings:
       future_format: '@interval hence'
       past_format: '@interval ago'
       granularity: 2
     third_party_settings: {  }
+    weight: 4
+    region: content
   credentials:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
+  description:
+    type: basic_string
+    label: inline
     settings: {  }
     third_party_settings: {  }
-  description:
-    label: inline
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
   lastModifiedAt:
     type: timestamp_ago
     label: inline
-    weight: 5
-    region: content
     settings:
       future_format: '@interval hence'
       past_format: '@interval ago'
       granularity: 2
     third_party_settings: {  }
-  status:
-    label: inline
-    type: status_property
-    weight: 0
+    weight: 5
     region: content
+  status:
+    type: status_property
+    label: inline
     settings:
       indicator_status_ok: approved
       indicator_status_warning: ''
       indicator_status_error: revoked
     third_party_settings: {  }
+    weight: 0
+    region: content
   warnings:
-    weight: -100
     settings: {  }
     third_party_settings: {  }
+    weight: -100
     region: content
 hidden:
   appFamily: true

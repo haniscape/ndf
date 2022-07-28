@@ -13,23 +13,23 @@ bundle: team
 mode: default
 content:
   displayName:
+    type: string
     label: inline
-    weight: 0
-    region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
+    region: content
   status:
     type: status_property
-    weight: 1
-    region: content
     label: inline
     settings:
       indicator_status_ok: active
       indicator_status_warning: ''
       indicator_status_error: inactive
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   createdAt: true
   lastModifiedAt: true
