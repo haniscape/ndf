@@ -1,0 +1,14 @@
+uuid: d96577d0-e9fd-40d3-a750-b20b647dda47
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.governmental_developer
+  module:
+    - user
+id: user_remove_role_action.governmental_developer
+label: 'Remove the Governmental developer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: governmental_developer
