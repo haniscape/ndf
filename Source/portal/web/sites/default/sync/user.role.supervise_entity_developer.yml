@@ -1,0 +1,9 @@
+uuid: 3f53f6f7-3bd8-4e3a-b69e-065837c21e7c
+langcode: en
+status: true
+dependencies: {  }
+id: supervise_entity_developer
+label: 'Supervise entity developer'
+weight: 5
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 992c6fc8-1790-4866-b98d-6103a3390696
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ndf_developer
+  module:
+    - user
+id: user_add_role_action.ndf_developer
+label: 'Add the NDF developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ndf_developer

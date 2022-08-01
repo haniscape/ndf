@@ -1,0 +1,14 @@
+uuid: be7d8a6f-acfe-4e0b-a012-cdbaab879e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supervise_entity_developer
+  module:
+    - user
+id: user_remove_role_action.supervise_entity_developer
+label: 'Remove the Supervise entity developer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supervise_entity_developer

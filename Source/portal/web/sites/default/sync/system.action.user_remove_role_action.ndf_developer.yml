@@ -1,0 +1,14 @@
+uuid: be27a417-8ea1-4fa8-90b2-aa562f5a6a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ndf_developer
+  module:
+    - user
+id: user_remove_role_action.ndf_developer
+label: 'Remove the NDF developer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ndf_developer

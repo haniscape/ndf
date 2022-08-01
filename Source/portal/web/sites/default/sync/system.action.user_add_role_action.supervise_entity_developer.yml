@@ -1,0 +1,14 @@
+uuid: 588251ca-7940-4407-b454-8b672f39fbb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supervise_entity_developer
+  module:
+    - user
+id: user_add_role_action.supervise_entity_developer
+label: 'Add the Supervise entity developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: supervise_entity_developer
