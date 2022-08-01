@@ -14,8 +14,15 @@ regions:
   nav_main: 'Main navigation region'
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
+  banner: 'Banner'
+  custom_title: 'Custom Title'
   content: 'Main content'
+  front_second_content: 'Front second content'
+  front_third_content: 'Front Third Content'
+  front_fourth_content: 'Front Fourth Content'
+  front_fifth_content: 'Front Fifth Content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: Footer
+  footer_second: 'Footer Second'
 logo: "logo.svg"

@@ -52,7 +52,6 @@
   (b4_footer_schema != 'none' ? (b4_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
   (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ') %}
 
-<div class="{{ b4_top_container }}">
   <header id="header">
     {{ page.header }}
 
@@ -80,7 +79,6 @@
       </nav>
     {% endif %}
   </header>
-</div>
 
 <main role="main">
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
