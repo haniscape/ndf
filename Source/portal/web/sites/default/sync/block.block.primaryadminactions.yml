@@ -1,0 +1,26 @@
+uuid: ed781bfc-e473-4530-a6eb-352ffb12d49c
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_kickstart_enhancement
+  theme:
+    - ndf_theme
+id: primaryadminactions
+theme: ndf_theme
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  block_type:
+    id: block_type
+    uuid: ed781bfc-e473-4530-a6eb-352ffb12d49c
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

@@ -12,8 +12,8 @@ dependencies:
     - ndf_theme
 id: homepagelinks
 theme: ndf_theme
-region: content
-weight: 0
+region: front_fourth_content
+weight: -8
 provider: null
 plugin: 'block_content:99b1bf74-eb1b-404f-ad43-0565d5991cb0'
 settings:

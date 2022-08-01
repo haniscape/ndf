@@ -1,0 +1,27 @@
+uuid: ad941f75-9bca-43e4-b2a4-20a7192f34ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_kickstart_enhancement
+    - system
+  theme:
+    - ndf_theme
+id: messages
+theme: ndf_theme
+region: banner
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility:
+  block_type:
+    id: block_type
+    uuid: ad941f75-9bca-43e4-b2a4-20a7192f34ab
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

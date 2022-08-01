@@ -1,0 +1,30 @@
+uuid: 1529116c-eb89-400b-9e38-4dd4981071a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.apidoc
+_core:
+  default_config_hash: AWn_DJQXnlAjedXwf_aI2Pfcg7GNO8qni7ROFScxt-U
+id: node.apidoc.field_image
+field_name: field_image
+entity_type: node
+bundle: apidoc
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -11,10 +11,12 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_image
     - node.type.apidoc
   module:
     - file
     - file_link
+    - media_library
     - path
     - text
 _core:
@@ -80,6 +82,13 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

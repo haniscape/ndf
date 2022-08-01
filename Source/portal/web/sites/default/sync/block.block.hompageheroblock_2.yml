@@ -1,4 +1,4 @@
-uuid: 1d9aba25-9afd-430d-90ab-d5fea37249ea
+uuid: c8c94660-03f9-42a2-a91a-543e42a11e61
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,12 @@ dependencies:
   module:
     - apigee_kickstart_enhancement
     - block_content
-    - system
   theme:
     - ndf_theme
-id: hompageheroblock
+id: hompageheroblock_2
 theme: ndf_theme
-region: content
-weight: -3
+region: banner
+weight: -7
 provider: null
 plugin: 'block_content:4050182c-1e49-496f-a70b-7e53f29678b0'
 settings:
@@ -27,11 +26,7 @@ settings:
 visibility:
   block_type:
     id: block_type
-    uuid: 1d9aba25-9afd-430d-90ab-d5fea37249ea
+    uuid: c8c94660-03f9-42a2-a91a-543e42a11e61
     bundles: {  }
     is_adjacent: 0
     negate: false
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'

@@ -1,16 +1,15 @@
-uuid: 33659fa1-a515-4c93-836a-e681110ce5d6
+uuid: c10f8642-ea9f-4bb6-98e4-1641e7238b06
 langcode: en
-status: false
+status: true
 dependencies:
   module:
+    - apigee_kickstart_enhancement
     - system
   theme:
     - ndf_theme
-_core:
-  default_config_hash: TPGaK2lHnw3pM4AXSliTil-MxPlSsfmVka40dgIxQdg
-id: ndf_theme_branding
+id: sitebranding
 theme: ndf_theme
-region: header
+region: nav_branding
 weight: 0
 provider: null
 plugin: system_branding_block
@@ -22,4 +21,10 @@ settings:
   use_site_logo: true
   use_site_name: false
   use_site_slogan: false
-visibility: {  }
+visibility:
+  block_type:
+    id: block_type
+    uuid: c10f8642-ea9f-4bb6-98e4-1641e7238b06
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

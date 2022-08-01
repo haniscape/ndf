@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_image
     - node.type.apidoc
   module:
     - text
@@ -29,6 +30,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_small
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_api_product: true
