@@ -33,10 +33,10 @@
         }
         .block-link {
           span {
-            color: $green;
+            color: $brown_dark;
           }
           a {
-            color: $green;
+            color: $brown_dark;
             text-decoration: underline;
           }
         }
@@ -100,7 +100,7 @@ form.user-register-form.user-form {
     padding: 0px 15px;
     width: calc(50% - 30px);
     .label {
-      color: $green;
+      color: $brown_dark;
       font-size: 17px;
       font-weight: 700;
       margin-bottom: 5px;
@@ -127,7 +127,7 @@ form.user-register-form.user-form {
       padding: 0px;
       margin: 0px;
       legend {
-        color: $green;
+        color: $brown_dark;
         font-size: 17px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -171,7 +171,7 @@ form.user-register-form.user-form {
     clear: both;
     padding: 15px;
     .field-label {
-      color: #1FA99A;
+      color: $goldie;
       font-size: 17px;
       font-weight: 700;
       margin-bottom: 5px;
@@ -220,7 +220,7 @@ form.user-register-form.user-form {
             background-color: $white;
             tr {
               th {
-                color: $green;
+                color: $brown_dark;
               }
             }
           }
@@ -299,7 +299,7 @@ form.user-register-form.user-form {
       clear: both;
       padding: 15px;
       .field-label {
-        color: #1FA99A;
+        color: $goldie;
         font-size: 17px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -348,7 +348,7 @@ form.user-register-form.user-form {
               background-color: $white;
               tr {
                 th {
-                  color: $green;
+                  color: $brown_dark;
                 }
               }
             }
@@ -441,7 +441,7 @@ form.user-register-form.user-form {
     #{$right}: 0;
     margin-bottom: 15px;
     a {
-      color: $green;
+      color: $brown_dark;
       font-weight: 700;
     }
   }
@@ -473,12 +473,12 @@ form.user-register-form.user-form {
   .register-link {
     text-align: center;
     span {
-      color: $green;
+      color: $brown_dark;
       margin-#{$right}: 5px;
       font-weight: 700;
     }
     a {
-      color: $green;
+      color: $brown_dark;
       font-weight: 700;
     }
   }
@@ -503,7 +503,7 @@ form.user-register-form.user-form {
   &.page-user-login,
   &.page-user-register {
     main {
-      background-image: url($theme-path + "/images/ui/two_shaps_bg.png");
+      background-image: url($theme-path + "/images/background-page.svg");
     }
   }
 }

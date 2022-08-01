@@ -41,7 +41,7 @@ table {
     background-color: $light_green;
     tr {
       th {
-        color: $green;
+        color: $brown_dark;
       }
     }
   }
@@ -62,8 +62,8 @@ table {
                     text-align: center;
                     padding: 0px 2px 3px 2px;
                     border-radius: 6px;
-                    border: 1px solid $green;
-                    color: $green;
+                    border: 1px solid $brown_dark;
+                    color: $brown_dark;
                     @include transition(background-color .3s, color .3s);
                     &:hover, &:focus {
                       text-decoration: none;

@@ -78,7 +78,7 @@
             @include transition(color .3s);
             &:hover, &:focus {
               text-decoration: none;
-              color: $green;
+              color: $brown_dark;
             }
           }
         }

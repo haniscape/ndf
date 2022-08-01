@@ -32,7 +32,7 @@
             .form-item {
               overflow-wrap: break-word;
               input, textarea {
-                border: 1px solid #0E8D7C;
+                border: 1px solid $brown_dark;
               }
               input[type="checkbox"] {
                 width: 14px;
@@ -40,13 +40,13 @@
                 display: inline-block;
                 position: relative;
                 top: 2px;
-                border: 1px solid #0E8D7C;
+                border: 1px solid $goldie;
                 margin-#{$right}: 4px;
                 &:checked,
                 &[checked="checked"] {
-                  accent-color: #268177;
+                  accent-color: $goldie;
                   &:hover, &:focus {
-                    accent-color: #268177;
+                    accent-color: $goldie;
                   }
                 }
               }
@@ -59,7 +59,7 @@
               #edit-api-products--wrapper {
                 padding: 0 0 2rem;
                 .fieldset-legend {
-                  color: #1FA99A;
+                  color: $brown_dark;
                   font-size: 17px;
                   font-weight: 700;
                   margin-bottom: 5px;
@@ -79,7 +79,7 @@
 
           .profile-header {
             padding: 20px 25px;
-            border-bottom: 5px solid $green;
+            border-bottom: 5px solid $brown_dark;
             background: linear-gradient(0deg, $light_green 75%, $white 25%);
 
             .header-container {
@@ -115,7 +115,7 @@
                 .user-pic {
                   border-radius: 100%;
                   overflow: hidden;
-                  border: 1px solid $green;
+                  border: 1px solid $brown_dark;
                   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.05));
                   width: 150px;
                   height: 150px;

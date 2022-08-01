@@ -58,7 +58,7 @@
             }
           }
           .field-label {
-            background-color: $green;
+            background-color:$brown_dark;
             text-align: center;
             color: $white;
             padding: 8px 15px 10px 15px;
@@ -164,7 +164,7 @@
             @include transition(color .3s);
             &:hover, &:focus {
               text-decoration: none;
-              color: $green;
+              color: $brown_dark;
             }
           }
         }
@@ -187,7 +187,7 @@
                 display: block;
                 width: 110px;
                 height: 3px;
-                background-color: $green;
+                background-color: $brown_dark;
                 margin-top: 6px;
               }
             }
@@ -272,7 +272,7 @@
               @include transition(color .3s);
               &:hover, &:focus {
                 text-decoration: none;
-                color: $green;
+                color:$brown_dark;
               }
             }
           }

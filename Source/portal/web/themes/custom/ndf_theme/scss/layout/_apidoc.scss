@@ -131,9 +131,9 @@
             padding: 9px 10px;
             background: #def2f0;
             &::file-selector-button {
-              background-color: $green;
+              background-color: $brown_dark;
               color: $white;
-              border: 1px solid $green;
+              border: 1px solid $brown_dark;
               border-radius: 7px;
               width: 200px;
               text-align: center;
@@ -144,7 +144,7 @@
         }
         table {
           a {
-            color: $green;
+            color: $brown_dark;
           }
         }
       }
@@ -160,14 +160,14 @@
         .form-item{
           legend {
             span {
-              color: $green;
+              color: $brown_dark;
             }
           }
         }
       }
       table {
         a {
-          color: $green;
+          color: $brown_dark;
         }
       }
     }
@@ -175,7 +175,7 @@
       .field {
         margin-bottom: 15px;
         .field__label {
-          color: $green;
+          color: $brown_dark;
         }
         .field__items,
         .field__item {
@@ -186,7 +186,7 @@
       }
       .field--name-uid {
         a {
-          color: $green;
+          color: $brown_dark;
         }
       }
     }

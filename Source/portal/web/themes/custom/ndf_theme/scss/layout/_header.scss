@@ -59,24 +59,24 @@
               text-align: center;
               &[data-drupal-link-system-path="user"],
               &[data-drupal-link-system-path="user/login"] {
-                background-color: $green;
-                color: $white;
-                border-color: $green;
+                background-color: transparent;
+                color: $goldie;
+                border-color: $goldie;
                 @include transition(all .3s);
                 &:hover, &:focus {
-                  background-color: $green_hover;
-                  border-color: $green_hover;
+                  background-color: $brown_dark;
+                  border-color:$goldie;
                 }
               }
               &[data-drupal-link-system-path="user/logout"],
               &[data-drupal-link-system-path="user/register"] {
-                background-color: $white;
-                color: $green;
-                border-color: $green;
+                background-color: $goldie;
+                color: $white;
+                border-color: $goldie;
                 @include transition(all .3s);
                 &:hover, &:focus {
-                  background-color: $green;
-                  border-color: $green;
+                  background-color: $goldie;
+                  border-color: $brown_dark
                   color: $white;
                 }
               }

@@ -2,10 +2,10 @@
   .action-links {
     li {
       a.button-action {
-        background-color: $green;
+        background-color: $brown_dark;
         color: $white;
         border: 1px solid;
-        border-color: $green;
+        border-color: $brown_dark;
         border-radius: 3px;
         text-align: center;
         padding: 6px 16px 10px 16px;
@@ -36,7 +36,7 @@
     margin: 1rem;
     padding: 1rem;
     display: flex;
-    border: 1px solid #0E8D7C;
+    border: 1px solid $brown_dark;
     .app-naming {
       margin: 1rem;
       width: 50%;
