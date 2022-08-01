@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_user_role
     - node.type.apidoc
   module:
     - file
@@ -80,6 +81,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_user_role:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
