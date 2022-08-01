@@ -19,10 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
-    #block-sdaia-theme-breadcrumbs {
+    #block-ndf-theme-breadcrumbs {
       display: none;
     }
-    #block-sdaia-theme-title {
+    #block-ndf-theme-title {
       margin-bottom: 40px;
     }
     #custom-title {
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .sdaia-logo {
+        .ndf-logo {
           margin-bottom: 30px;
           text-align: center;
           img {
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Breadcrumbs.
-#block-sdaia-theme-breadcrumbs {
+#block-ndf-theme-breadcrumbs {
   padding: 30px 0px;
   nav {
     h2 {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Admin tabs.
-#block-sdaia-theme-tabs {
+#block-ndf-theme-tabs {
   margin-bottom: 20px;
   nav {
     ul {
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Admin tabs RTL.
 .lang-ar {
-  #block-sdaia-theme-tabs {
+  #block-ndf-theme-tabs {
       ul {
         li {
           a {
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .sdaia-logo {
+        .ndf-logo {
           margin-bottom: 30px;
           img {
             max-width: 100%;

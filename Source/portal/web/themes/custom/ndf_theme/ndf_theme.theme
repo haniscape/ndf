@@ -6,3 +6,141 @@ use Drupal\Core\Template\Attribute;
  * @file
  * SUBTHEME theme file.
  */
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function ndf_theme_preprocess_html(&$variables) {
+  // Load main styles library (LTR/RTL) in maintenance page.
+  $curr_lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  if ($curr_lang == 'ar') {
+    $variables['#attached']['library'][] = 'ndf_theme/styles-rtl';
+  } else {
+    $variables['#attached']['library'][] = 'ndf_theme/styles-ltr';
+  }
+
+  $variables['base_url'] = base_path();
+  $current_path = \Drupal::service('path.current')->getPath();
+  $variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  $variables['#attached']['drupalSettings']['path']['themeUrl'] = \Drupal::theme()->getActiveTheme()->getPath();
+
+  // Set body class.
+  $current_route_name = \Drupal::routeMatch()->getRouteName();
+
+  if ($current_route_name == 'user.reset.form') {
+    $variables['attributes']['class'][] = 'path-user-reset';
+  } elseif ($current_route_name == 'entity.user.canonical') {
+    $variables['attributes']['class'][] = 'path-user-view';
+  } elseif ($current_route_name == 'entity.user.edit_form') {
+    $variables['attributes']['class'][] = 'path-user-edit';
+  } elseif ($current_route_name == 'profile.user_page.single') {
+    $variables['attributes']['class'][] = 'path-company-edit';
+  } elseif ($current_route_name == 'system.404') {
+    $variables['attributes']['class'][] = 'path-404';
+  } elseif ($current_route_name == 'entity.developer_app.collection_by_developer_group') {
+    $variables['attributes']['class'][] = 'path-apps-list';
+  } elseif ($current_route_name == 'entity.developer_app.canonical_by_developer') {
+    $variables['attributes']['class'][] = 'path-app-view';
+  } elseif ($current_route_name == 'entity.developer_app.analytics_for_developer') {
+    $variables['attributes']['class'][] = 'path-app-analytics';
+  } elseif ($current_route_name == 'entity.developer_app.edit_form_for_developer') {
+    $variables['attributes']['class'][] = 'path-app-edit';
+  } elseif ($current_route_name == 'view.user_company_group_members.page_1') {
+    $variables['attributes']['class'][] = 'path-group-members';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ndf_theme_theme_suggestions_page_title_alter(array &$suggestions, array $variables) {
+  $current_route_name = \Drupal::routeMatch()->getRouteName();
+  $allowed_pages = [
+    'view.apigee_api_catalog.page_1',
+    'entity.node.canonical'
+  ];
+  if (in_array($current_route_name, $allowed_pages)) {
+    $suggestions[] = 'page_title__none_center';
+  }
+}
+
+/**
+ * Implements MYTHEME_preprocess_breadcrumb().
+ */
+function ndf_theme_preprocess_breadcrumb(&$variables) {
+  if ($variables['breadcrumb']) {
+    $request = \Drupal::request();
+    $route_match = \Drupal::routeMatch();
+    $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+    if (!empty($page_title)) {
+      $variables['breadcrumb'][] = [
+        'text' => $page_title,
+        'attributes' => new Attribute(['class' => ['active']])
+      ];
+    }
+  }
+}
+
+/**
+ * Implements THEME_preprocess_page_title()
+ */
+function ndf_theme_preprocess_page_title(&$variables) {
+  $current_route_name = \Drupal::routeMatch()->getRouteName();
+  if ($current_route_name == 'entity.user.canonical') {
+    $variables['title'] = t('Profile');
+  } elseif ($current_route_name == 'entity.user.edit_form') {
+    $variables['title'] = t('Edit Profile');
+  }
+}
+
+/**
+ * Implements Hook_preprocess_block()
+ */
+function ndf_theme_preprocess_block(&$variables) {
+  // Attach content type bundle name as var.
+  $current_route_name = \Drupal::routeMatch()->getRouteName();
+
+  if ($current_route_name == 'entity.node.canonical') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface) {
+      $variables['current_node']['content_bundle'] = $node->bundle();
+      $variables['current_node']['content_id'] = $node->id();
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function ndf_theme_preprocess(&$variables) {
+  // Get user Id.
+  $variables['current_uid'] = \Drupal::currentUser()->id();
+
+  // Get app id in app page for twig.
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name == 'entity.developer_app.canonical_by_developer') {
+    $app = \Drupal::routeMatch()->getParameter('app');
+    $variables['current_app_name'] = $app->getName();
+  }
+
+  // Set current language in vars.
+  $language_interface = \Drupal::languageManager()->getCurrentLanguage();
+  $variables['curr_lang'] = $language_interface->getId();
+}
+
+/**
+ * Implements hook_theme_suggestions_fieldset_alter().
+ */
+function ndf_theme_theme_suggestions_fieldset_alter(array &$suggestions, array $variables, $hook) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  if (isset($variables['element']['#id'])) {
+    $id = str_replace("-", "_", $variables['element']['#id']);
+    $suggestions[] = $hook . '__' . $id;
+
+    if ($route_name == 'entity.developer_app.edit_form_for_developer') {
+      $suggestions[] = $hook . '__' . str_replace('-','_', 'developer_app_edit_form' . '--' . $variables['element']['#parents']['0'] . '--' . $variables['element']['#type']);
+    }
+  }
+}

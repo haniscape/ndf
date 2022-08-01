@@ -42,60 +42,67 @@
  * @see html.html.twig
  */
 #}
-{% set nav_classes = 'navbar navbar-expand-lg' ~
+{%
+  set nav_classes = 'navbar navbar-expand-lg' ~
   (b4_navbar_schema != 'none' ? " navbar-#{b4_navbar_schema}" : ' ') ~
   (b4_navbar_schema != 'none' ? (b4_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ') %}
+  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ')
+%}
 
-{% set footer_classes = ' ' ~
+{%
+  set footer_classes = ' ' ~
   (b4_footer_schema != 'none' ? " footer-#{b4_footer_schema}" : ' ') ~
   (b4_footer_schema != 'none' ? (b4_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ') %}
+  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ')
+%}
 
-<div class="{{ b4_top_container }}">
-  <header id="header">
-    {{ page.header }}
+<header id="header">
+  {{ page.header }}
 
-    {% if page.nav_branding or page.nav_main or page.nav_additional %}
-      <nav class="{{ nav_classes }}">
-        <div class="{{ b4_top_container }} row mx-auto">
-          <div class="col-auto p-0">
-            {{ page.nav_branding }}
-          </div>
-
-          <div class="col-3 col-md-auto p-0 text-right">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-
-          <div class="collapse navbar-collapse col-12 col-md-auto p-0 justify-content-end" id="navbarSupportedContent">
-            {{ page.nav_main }}
-            {{ page.nav_additional }}
-          </div>
-
+  {% if page.nav_branding or page.nav_main or page.nav_additional %}
+    <nav class="{{ nav_classes }}">
+      <div class="{{ b4_top_container }} row mx-auto">
+        <div class="col-auto p-0">
+          {{ page.nav_branding }}
         </div>
-      </nav>
-    {% endif %}
-  </header>
-</div>
+
+        <div class="col-3 col-md-auto p-0 text-right">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse col-12 col-md-auto p-0 justify-content-end" id="navbarSupportedContent">
+          {{ page.nav_main }}
+          {{ page.nav_additional }}
+        </div>
+      </div>
+    </nav>
+  {% endif %}
+
+</header>
 
 <main role="main">
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  {% set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
+  {%
+    set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
+  %}
 
-  {% set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
+  {%
+    set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
+  %}
 
-  {% set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' ) %}
+  {%
+    set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
+  %}
 
   {# Banner region #}
   {% if page.banner %}
-    <div id="banner"
-         style="background-image: url({{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/{{ bamboo_i18n_current_lang() == 'ar' ? 'background-hero.svg' : 'background-hero-rtl.svg' }})">
-      <div class="banner-region {{ b4_top_container }}">
+    <div id="banner">
+      <div class="banner-region">
         {{ page.banner }}
       </div>
     </div>
@@ -112,6 +119,13 @@
         </div>
       {% endif %}
       <div class="order-1 order-lg-2 {{ content_classes }}">
+        {% if page.custom_title %}
+          <div id="custom-title">
+            <div class="custom-title-region">
+              {{ page.custom_title }}
+            </div>
+          </div>
+        {% endif %}
         {{ page.content }}
       </div>
       {% if page.sidebar_second %}
@@ -121,48 +135,6 @@
       {% endif %}
     </div>
   </div>
-
-  {# Front Second content region #}
-  {% if page.front_second_content %}
-    <div id="second-content-region">
-      <div class="front-second-content-region">
-        <div class="container">
-          {{ page.front_second_content }}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-  {# Front third content region #}
-  {% if page.front_third_content %}
-    <div id="third-content-region">
-      <div class="front-third-content-region">
-        <div class="container">
-          {{ page.front_third_content }}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-
-
-  {# Front fourth content region #}
-  {% if page.front_fourth_content %}
-    <div id="fourth-content-region">
-      <div class="front-fourth-content-region">
-        <div class="container">
-          {{ page.front_fourth_content }}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-  {# Newsletter block #}
-  {# <div id="newsletter-region">
-    <div class="newsletter-content-region">
-      {% include directory ~ '/templates/elements/newsletter_block.twig' %}
-    </div>
-  </div> #}
 
 </main>
 

@@ -20,9 +20,9 @@ global-styling:
 styles-ltr:
   css:
     theme:
-      css/style.css: {}
+      css/style.css: { minified: true }
 
 styles-rtl:
   css:
     theme:
-      css/style-rtl.css: {}
+      css/style-rtl.css: { minified: true }

@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ */
+#}
+
+
+<main role="main">
+  <div class="container">
+    <div id="custom-title">
+      <div class="custom-title-region">
+
+        {# Import header block #}
+        {% include directory ~ '/templates/elements/ndf_logo.twig' %}
+
+        {% if title %}
+          <h1>{{ title }}</h1>
+        {% endif %}
+
+      </div>
+    </div>
+
+  {{ page.highlighted }}
+
+  {{ page.content }}
+  </div>
+</main>
+
+{% if page.sidebar_first %}
+  <aside class="layout-sidebar-first" role="complementary">
+    {{ page.sidebar_first }}
+  </aside>{# /.layout-sidebar-first #}
+{% endif %}
+
+{% if page.sidebar_second %}
+  <aside class="layout-sidebar-second" role="complementary">
+    {{ page.sidebar_second }}
+  </aside>{# /.layout-sidebar-second #}
+{% endif %}
+
+{% if page.footer %}
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+{% endif %}
+
