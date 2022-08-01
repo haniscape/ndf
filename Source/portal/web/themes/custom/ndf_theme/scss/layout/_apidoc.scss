@@ -1,0 +1,194 @@
+.node--type-apidoc {
+  main {
+    background-image: url($theme-path + "/images/background-page.svg");
+    background-size: 100%;
+    background-position-x: $left;
+    background-position-y: 300px;
+    background-repeat: no-repeat;
+  }
+  #block-sdaia-theme-title {
+    h1 {
+      color: $black;
+    }
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border;
+    &.subscribe-service {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .subscribe-service-action {
+        a {
+          background-color: $service_green;
+          border: 1px solid $service_green;
+          border-radius: 5px;
+          color: $white;
+          text-align: center;
+          display: block;
+          width: 200px;
+          padding: 8px 14px;
+          @include transition(background-color .3s, border .3s);
+          &:hover, &:focus {
+            text-decoration: none;
+            background-color: $service_green_hover;
+            border: 1px solid $service_green_hover;
+          }
+        }
+      }
+    }
+  }
+  .node {
+    .field--name-field-present-description,
+    .field--name-body {
+      margin-bottom: 30px;
+      .field__label {
+        color: $black;
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      .field__item {
+        color: $gray_2;
+        font-size: 18px;
+      }
+    }
+    .field--name-field-api-product {
+      margin-bottom: 30px;
+      .field__label {
+        color: $black;
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      .field__items {
+        color: $gray_2;
+        padding-#{$left}: 15px;
+        .field__item {
+          color: $green;
+          margin-bottom: 4px;
+          font-size: 18px;
+          &:before {
+            content:"•";
+            color: $green;
+            font-size: 24px;
+            width: 18px;
+            height: 27px;
+            display: inline-block;
+            line-height: 20px;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+    .field--name-field-apidoc-spec {
+      margin-bottom: 26px;
+      .field__label {
+        color: $black;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// RTL.
+.lang-ar {
+  &.node--type-apidoc {
+    main {
+      background-image: url($theme-path + "/images/background-page-rtl.svg");
+    }
+  }
+}
+
+
+// Request page.
+.path-eckt-subscribe,
+.page-admin-content-eckt-subscribe-add-ecktb-subscribe-service {
+  main {
+    background-image: url($theme-path + "/images/background-page.svg");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    #block-sdaia-theme-title {
+      padding: 70px 0px 40px;
+      h1 {
+        font-size: 32px;
+        color: $black;
+      }
+    }
+    form.eckt-subscribe-form {
+      .field--name-field-ecktb-request-attachments {
+        details {
+          margin-bottom: 0px;
+          summary {
+            display: none;
+          }
+          .details-wrapper {
+            padding: 0px;
+          }
+        }
+        .js-form-type-managed-file {
+          margin-bottom: 0px;
+          input[type="file"] {
+            padding: 9px 10px;
+            background: #def2f0;
+            &::file-selector-button {
+              background-color: $green;
+              color: $white;
+              border: 1px solid $green;
+              border-radius: 7px;
+              width: 200px;
+              text-align: center;
+              height: 34px;
+              padding: 2px 6px 8px 6px;
+            }
+          }
+        }
+        table {
+          a {
+            color: $green;
+          }
+        }
+      }
+      .field-info {
+        font-size: 14px;
+        color: $gray_3;
+        padding-top: 2px;
+        margin-bottom: 1rem;
+      }
+    }
+    form {
+      .workflow-transition-container {
+        .form-item{
+          legend {
+            span {
+              color: $green;
+            }
+          }
+        }
+      }
+      table {
+        a {
+          color: $green;
+        }
+      }
+    }
+    .eck-entity {
+      .field {
+        margin-bottom: 15px;
+        .field__label {
+          color: $green;
+        }
+        .field__items,
+        .field__item {
+          a {
+            color: #212529;
+          }
+        }
+      }
+      .field--name-uid {
+        a {
+          color: $green;
+        }
+      }
+    }
+  }
+}

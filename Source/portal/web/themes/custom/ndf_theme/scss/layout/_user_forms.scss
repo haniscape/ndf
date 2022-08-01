@@ -1,0 +1,542 @@
+.path-user-reset,
+.page-user-password,
+.page-user-login,
+.page-user-register {
+  background-color: $gray_bg;
+  height: 100vh;
+  main {
+    background-image: url($theme-path + "/images/ui/two_shaps_bg_ltr.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    #custom-title {
+      padding: 9rem 0rem 5rem 0rem;
+      .custom-title-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .block-logo {
+          margin-bottom: 30px;
+          img {
+            max-width: 100%;
+          }
+        }
+        .block-title {
+          margin-bottom: 10px;
+          h1 {
+            font-size: 30px;
+            color: $black;
+            font-family: 'DINNextLTArabic-Regular';
+          }
+        }
+        .block-link {
+          span {
+            color: $green;
+          }
+          a {
+            color: $green;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    #block-sdaia-theme-tabs,
+    #block-sdaia-theme-title {
+      display: none !important;
+    }
+  }
+}
+
+form.user-register-form.user-form {
+  width: 1100px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  .details-wrapper {
+    padding: 0px;
+  }
+  .form-item {
+    padding: 0px 15px;
+  }
+  [data-drupal-selector="edit-account"] {
+    > .form-item {
+      display: block;
+      .form-item {
+        padding: 18px 0px 0px 0px;
+        .password-strength__title,
+        .js-password-confirm-message {
+          color: $gray_3;
+          font-size: 15px;
+        }
+      }
+    }
+    .password-suggestions {
+      color: $gray_3;
+      font-size: 15px;
+    }
+  }
+  .field--name-field-user-id-type-select,
+  .field--name-field-user-phone-number,
+  [data-drupal-selector="edit-account"],
+  .field--name-field-user-third-name,
+  .field--name-first-name,
+  .field--name-field-user-birth-date,
+  .field--name-field-user-id-type {
+    width: 50%;
+    float: $left;
+  }
+  .field--name-field-user-nationality,
+  .field--name-last-name,
+  .field--name-field-user-second-name,
+  .profile-data-item,
+  .field--name-field-user-id-number {
+    width: 50%;
+    float: $right;
+  }
+  .field--name-field-user-birth-date {
+    margin-bottom: 1em;
+    padding: 0px 15px;
+    width: calc(50% - 30px);
+    .label {
+      color: $green;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      display: inline-block;
+      height: 26px;
+      font-family: 'DINNextLTArabic-Regular';
+    }
+    .form-inline {
+      .form-item {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        .label {
+          display: none;
+        }
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .field--widget-datetime-datelist {
+    fieldset {
+      padding: 0px;
+      margin: 0px;
+      legend {
+        color: $green;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 26px;
+      }
+      .fieldset-wrapper {
+        .form-inline {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: start;
+          align-items: start;
+          .form-item {
+            width: auto;
+            margin-#{$right}: 8px;
+          }
+        }
+      }
+    }
+
+  }
+  .profile-data-item {
+    margin-bottom: 1em;
+    .item-container {
+      padding: 33px 15px 0px 15px;
+      input {
+        height: 52px;
+        padding: 0px 15px;
+        background-color: $white;
+        border: 1px solid $black;
+        color: $black;
+        border-radius: 5px;
+        margin: 0px;
+        &.form-disabled {
+          cursor: no-drop;
+        }
+      }
+    }
+  }
+  .custom-user-upload-attachments {
+    clear: both;
+    padding: 15px;
+    .field-label {
+      color: #1FA99A;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      height: 26px;
+    }
+    .field-info {
+      font-size: 14px;
+      color: $gray_3;
+      padding-top: 2px;
+    }
+    #custom-user-upload-btn {
+      width: 300px;
+      padding: 14px 10px;
+      display: block;
+      background-color: $white;
+      color: $black;
+      border: 1px solid $black;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+  .field--name-field-user-attachments {
+    clear: both;
+    padding: 0px 15px;
+    details {
+      summary {
+        display: none;
+        pointer-events: none;
+      }
+      .details-wrapper {
+        padding: 0px;
+        tableresponsive-toggle-columns,
+        .tabledrag-toggle-weight-wrapper {
+          display: none;
+        }
+        table {
+          input[type="file"] {
+            display: none;
+          }
+          thead {
+            background-color: $white;
+            tr {
+              th {
+                color: $green;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                .tabledrag-handle {
+                  display: none;
+                }
+                .form-submit {
+                  background-color: $white;
+                  border: 1px solid $black;
+                  color: $black;
+                  border-radius: 5px;
+                  padding: 0px 10px 4px 10px;
+                }
+                .form-managed-file {
+                  .form-type-checkbox {
+                    input[type="checkbox"] {
+                      display: inline-block;
+                      float: $left;
+                      margin-#{$right}: 10px;
+                      width: 16px;
+                      height: 16px;
+                      position: relative;
+                      top: 5px;
+                    }
+                    label {
+                      a {
+                        color: $black;
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .js-form-type-managed-file {
+      input[type="file"],
+      label {
+        display: none;
+      }
+    }
+  }
+  // Profile.
+  .field--name-profile-company-profiles {
+    padding-top: 50px;
+    .field--name-field-pr-company-org-phone-num,
+    .field--name-field-pr-company-org-700-num,
+    .field--name-field-pr-company-org-name-ar {
+      width: 50%;
+      float: $left;
+    }
+    .field--name-field-pr-company-industry-type,
+    .field--name-field-pr-company-org-name-en {
+      width: 50%;
+      float: $right;
+    }
+    .field--name-field-pr-company-industry-type {
+      .form-item {
+        .js-form-type-select {
+          padding: 0px;
+          margin: 0px;
+        }
+        .js-form-type-textfield {
+          padding: 0px;
+          margin-top: 63px;
+        }
+      }
+    }
+    .custom-profile-upload-attachments {
+      clear: both;
+      padding: 15px;
+      .field-label {
+        color: #1FA99A;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 26px;
+      }
+      .field-info {
+        font-size: 14px;
+        color: $gray_3;
+        padding-top: 2px;
+      }
+      #custom-profile-upload-btn {
+        width: 300px;
+        padding: 14px 10px;
+        display: block;
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+    .field--name-field-pr-company-org-attachments {
+      clear: both;
+      padding: 0px 15px;
+      details {
+        summary {
+          display: none;
+          pointer-events: none;
+        }
+        .details-wrapper {
+          //padding: 0px 15px;
+          .tableresponsive-toggle-columns,
+          .tabledrag-toggle-weight-wrapper {
+            display: none;
+          }
+          table {
+            input[type="file"] {
+              display: none;
+            }
+            thead {
+              background-color: $white;
+              tr {
+                th {
+                  color: $green;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  .tabledrag-handle {
+                    display: none;
+                  }
+                  .form-submit {
+                    background-color: $white;
+                    border: 1px solid $black;
+                    color: $black;
+                    border-radius: 5px;
+                    padding: 0px 10px 4px 10px;
+                  }
+                  .form-managed-file {
+                    .form-type-checkbox {
+                      input[type="checkbox"] {
+                        display: inline-block;
+                        float: $left;
+                        margin-#{$right}: 10px;
+                        width: 16px;
+                        height: 16px;
+                        position: relative;
+                        top: 5px;
+                      }
+                      label {
+                        a {
+                          color: $black;
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .js-form-type-managed-file {
+        input[type="file"],
+        label {
+          display: none;
+        }
+      }
+    }
+  }
+  details[data-drupal-selector="edit-terms-of-use"] {
+    clear: both;
+    padding: 20px 0px;
+    summary {
+      display: none;
+      pointer-events: none;
+    }
+    .details-wrapper {
+      padding: 0px;
+      .form-type-checkbox {
+        display: flex;
+        justify-content: $left;
+        align-items: center;
+        label {
+          order: 1;
+          color: $black;
+          font-weight: normal;
+          a {
+            color: $black;
+            font-weight: bold;
+          }
+        }
+        input {
+          order: 2;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+}
+
+#user-login-form {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  .forget-link {
+    text-align: $right;
+    position: relative;
+    #{$right}: 0;
+    margin-bottom: 15px;
+    a {
+      color: $green;
+      font-weight: 700;
+    }
+  }
+  .form-type-password {
+    margin-bottom: 0px;
+  }
+  .form-actions {
+    margin: 30px 0px 50px 0px;
+    flex-wrap: wrap;
+    .form-submit {
+      width: 100%;
+      max-width: 100%;
+    }
+    .login-disclaimer {
+      background: #E0EDFF;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 16px;
+      padding: 8px 4px;
+      p {
+        margin-bottom: 0px;
+        color: $black;
+      }
+    }
+  }
+  .register-link {
+    text-align: center;
+    span {
+      color: $green;
+      margin-#{$right}: 5px;
+      font-weight: 700;
+    }
+    a {
+      color: $green;
+      font-weight: 700;
+    }
+  }
+}
+
+#user-pass {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  .form-actions {
+    .form-submit {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.lang-ar {
+  &.path-user-reset,
+  &.page-user-password,
+  &.page-user-login,
+  &.page-user-register {
+    main {
+      background-image: url($theme-path + "/images/ui/two_shaps_bg.png");
+    }
+  }
+}
+
+// Responsive.
+@media only screen and (max-width: 767px) {
+  #user-register-form {
+    .field--name-field-user-birth-date {
+      width: calc(100% - 30px);
+      float: none;
+    }
+    .field--name-field-user-phone-number,
+    #edit-account,
+    .field--name-field-user-third-name,
+    .field--name-first-name,
+    .field--name-field-user-nationality,
+    .field--name-last-name,
+    .field--name-field-user-second-name,
+    .profile-data-item,
+    .field--name-field-user-id-number,
+    .field--name-field-user-id-type {
+      width: 100%;
+      float: none;
+    }
+    .field--name-profile-company-profiles {
+      .field--name-field-pr-company-org-phone-num,
+      .field--name-field-pr-company-org-700-num,
+      .field--name-field-pr-company-org-name-ar ,
+      .field--name-field-pr-company-industry-type,
+      .field--name-field-pr-company-org-name-en {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+}

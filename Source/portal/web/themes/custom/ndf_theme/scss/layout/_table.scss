@@ -1,0 +1,81 @@
+// view table.
+.view {
+  .view-filters {
+    padding: 15px 30px;
+    form {
+      .form--inline {
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        flex-wrap: wrap;
+        .form-item {
+          input, select {
+            height: 40px;
+          }
+        }
+        .form-actions {
+          clear: none;
+          display: inline-block;
+          margin: 0px;
+          margin-bottom: 1em;
+          .form-submit.btn-primary {
+            min-width: 120px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .view-empty {
+    padding: 45px 30px;
+    text-align: center;
+  }
+  .table-container {
+    padding: 15px 30px;
+  }
+}
+
+table {
+  color: $black;
+  thead {
+    background-color: $light_green;
+    tr {
+      th {
+        color: $green;
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:nth-of-type(odd) {
+        background-color: $white !important;
+      }
+      td {
+        &.views-field-operations {
+          .dropbutton-single {
+            .dropbutton-widget {
+              border: none;
+              ul {
+                li {
+                  a {
+                    min-width: 80px;
+                    text-align: center;
+                    padding: 0px 2px 3px 2px;
+                    border-radius: 6px;
+                    border: 1px solid $green;
+                    color: $green;
+                    @include transition(background-color .3s, color .3s);
+                    &:hover, &:focus {
+                      text-decoration: none;
+                      background-color: $light_green;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

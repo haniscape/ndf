@@ -1,0 +1,33 @@
+.primary-btn {
+  background-color: $goldie;
+  color: $white;
+  border: 1px solid;
+  border-color: $goldie;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 16px 10px 16px;
+  min-width: 124px;
+  @include transition(all .3s);
+  &:hover, &:focus {
+    background-color: $goldie;
+    border-color: $brown_dark;
+    color: $white;
+  }
+}
+
+.secondary-btn {
+  background-color: $white;
+  color: $goldie;
+  border: 1px solid;
+  border-color: $goldie;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 16px 10px 16px;
+  min-width: 124px;
+  @include transition(all .3s);
+  &:hover, &:focus {
+    background-color: $goldie;
+    border-color: $goldie;
+    color: $white;
+  }
+}

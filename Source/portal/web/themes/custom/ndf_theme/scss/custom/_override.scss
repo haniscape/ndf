@@ -34,3 +34,75 @@ img {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+
+// Form input.
+form {
+  .form-item {
+    input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-#{$right}: 4px;
+      &:checked,
+      &[checked="checked"] {
+        accent-color: #7B5B3E;
+        &:hover, &:focus {
+          accent-color: #7B5B3E;
+        }
+      }
+    }
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-#{$right}: 4px;
+      &:checked,
+      &[checked="checked"] {
+        accent-color: #7B5B3E;
+        &:hover, &:focus {
+          accent-color: #7B5B3E;
+        }
+      }
+    }
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: $goldie;
+  border-color: $goldie;
+  @include transition(background-color .3s, color .3s, border-color .3s);
+  &:hover, &:focus {
+    background-color: $goldie;
+    border-color: $brown_dark;
+  }
+}
+
+.btn-secondary {
+  color: $goldie;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  border-color: $goldie;
+  @include transition(background-color .3s, color .3s, border-color .3s);
+  &:hover, &:focus {
+    background-color: $goldie;
+    color: $white;
+    border-color: $brown_dark;
+  }
+}
+
+
+
+
+
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 2px solid $red;
+}

@@ -1,0 +1,153 @@
+body {
+  font-family: 'DINNextLTArabic-Regular';
+  background-color: $white;
+  text-align: $left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DINNextLTArabic-Medium';
+}
+
+// 404 page.
+.path-404 {
+  background-color: $gray_bg;
+  height: 100vh;
+  main {
+    background-image: url($theme-path + "/images/ui/two_shaps_bg.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    #block-sdaia-theme-breadcrumbs {
+      display: none;
+    }
+    #block-sdaia-theme-title {
+      margin-bottom: 40px;
+    }
+    #custom-title {
+      padding: 9rem 0rem 5rem 0rem;
+      .custom-title-region {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sdaia-logo {
+          margin-bottom: 30px;
+          text-align: center;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Breadcrumbs.
+#block-sdaia-theme-breadcrumbs {
+  padding: 30px 0px;
+  nav {
+    h2 {
+      display: none;
+    }
+    ol.breadcrumb {
+      background-color: transparent;
+      padding-right: 0px;
+      padding-left: 0px;
+      li {
+        color: $black;
+        a {
+          color: $gray_1;
+          &:hover, &:focus {
+            text-decoration: none;
+          }
+        }
+        &:before {
+          color: $gray_1;
+        }
+      }
+    }
+  }
+}
+
+// Breadcrumbs RTL.
+.lang-ar {
+  .breadcrumb-item+.breadcrumb-item {
+    padding-left: 0rem;
+    padding-right: 0.5rem;
+  }
+  .breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 0rem;
+    padding-left: 0.5rem;
+  }
+}
+
+// Admin tabs.
+#block-sdaia-theme-tabs {
+  margin-bottom: 20px;
+  nav {
+    ul {
+      padding: 0px;
+      li {
+        a {
+          color: $black;
+        }
+        &.active {
+          a {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Admin tabs RTL.
+.lang-ar {
+  #block-sdaia-theme-tabs {
+      ul {
+        li {
+          a {
+            &:after {
+              margin-left: 0em;
+              margin-right: 0.255em;
+            }
+          }
+        }
+      }
+  }
+}
+
+.maintenance-page {
+  background-color: $gray_bg;
+  main {
+    background-image: url($theme-path + "/images/ui/two_shaps_bg_ltr.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    #custom-title {
+      padding: 70px 0px 40px;
+      .custom-title-region {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sdaia-logo {
+          margin-bottom: 30px;
+          img {
+            max-width: 100%;
+          }
+        }
+        h1 {
+          margin-bottom: 10px;
+          font-size: 30px;
+          color: $black;
+          font-family: 'DINNextLTArabic-Regular';
+        }
+      }
+    }
+  }
+}
+

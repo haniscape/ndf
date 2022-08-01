@@ -1,0 +1,175 @@
+
+.user-logged-in {
+  &.path-user {
+    background-color: $gray_bg;
+
+    .app-add-edit {
+      main {
+        background-image: url($theme-path + "/images/background-page.svg");
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        #block-sdaia-theme-title {
+          padding: 70px 0px 40px;
+
+          h1 {
+            font-size: 32px;
+            color: $black;
+          }
+        }
+
+
+        #block-sdaia-theme-content {
+          background-color: $white;
+          border: 1px solid $brown_dark;
+          margin-bottom: 100px;
+          filter: none;
+          padding: 5rem;
+
+
+          form#developer-app-add-for-developer-group-form {
+            .form-item {
+              overflow-wrap: break-word;
+              input, textarea {
+                border: 1px solid #0E8D7C;
+              }
+              input[type="checkbox"] {
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                border: 1px solid #0E8D7C;
+                margin-#{$right}: 4px;
+                &:checked,
+                &[checked="checked"] {
+                  accent-color: #268177;
+                  &:hover, &:focus {
+                    accent-color: #268177;
+                  }
+                }
+              }
+              label.option {
+                color: $black;
+                font-weight: normal;
+                font-size: 1rem;
+              }
+            }
+              #edit-api-products--wrapper {
+                padding: 0 0 2rem;
+                .fieldset-legend {
+                  color: #1FA99A;
+                  font-size: 17px;
+                  font-weight: 700;
+                  margin-bottom: 5px;
+                  height: 26px;
+                }
+                #edit-api-products {
+                  padding: 0.5rem 0 2rem;
+                  display: block;
+                  width: 100%;
+                  height: 12rem;
+                  overflow-y: auto;
+                  overflow-x: hidden;
+                }
+              }
+            }
+
+
+          .profile-header {
+            padding: 20px 25px;
+            border-bottom: 5px solid $green;
+            background: linear-gradient(0deg, $light_green 75%, $white 25%);
+
+            .header-container {
+              display: flex;
+              justify-content: space-between;
+              align-items: end;
+
+              .name-side {
+                flex-basis: 100%;
+                text-align: $left;
+
+                .account-type {
+                  margin-bottom: 15px;
+
+                  span {
+                    background-color: #045CE0;
+                    color: #FFFFFF;
+                    padding: 2px 12px 5px 12px;
+                    border-radius: 3px;
+                  }
+                }
+
+                .full-name {
+                  font-weight: bold;
+                }
+              }
+
+              .pic-side {
+                display: flex;
+                justify-content: center;
+                flex-basis: 100%;
+
+                .user-pic {
+                  border-radius: 100%;
+                  overflow: hidden;
+                  border: 1px solid $green;
+                  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.05));
+                  width: 150px;
+                  height: 150px;
+
+                  img {
+                    border-radius: 100%;
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                  }
+                }
+              }
+
+              .status-side {
+                flex-basis: 100%;
+                text-align: $right;
+
+                .account-status {
+                  display: flex;
+                  justify-content: end;
+
+                  .status-label {
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: $black;
+                    margin-#{$right}: 10px;
+                  }
+
+                  .status-icon {
+                    width: 24px;
+                    height: 24px;
+                    display: block;
+                    border-radius: 100%;
+                  }
+                }
+              }
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+.lang-ar {
+  &.user-logged-in {
+    &.path-user {
+      .app-add-edit {
+        main {
+          background-image: url($theme-path + "/images/ui/two_shaps_bg.png");
+        }
+      }
+    }
+  }
+}

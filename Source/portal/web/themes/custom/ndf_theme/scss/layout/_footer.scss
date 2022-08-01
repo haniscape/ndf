@@ -1,0 +1,145 @@
+footer {
+  background-repeat: no-repeat;
+  background-position-x: $left;
+  background-position-y: top;
+  padding: 220px 0px 50px 0px;
+  border-bottom: 1px solid $border;
+  background-color: $white;
+  .region-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    #block-footersocial {
+      width: 40%;
+      .social-block-container {
+        .site-logo {
+          margin-bottom: 20px;
+        }
+        .social-disclaimer {
+          color: $des_font;
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+        .social-links {
+          display: flex;
+          flex-direction: row;
+          .social-item {
+            padding-#{$right}: 8px;
+          }
+        }
+      }
+    }
+    .block-menu {
+      width: 20%;
+      h5 {
+        font-size: 18px;
+        color: $black;
+        font-weight: normal;
+        margin-bottom: 10px;
+      }
+      ul.nav {
+        padding: 0px;
+        list-style-type: none;
+        li {
+          margin-bottom: 10px;
+          a {
+            color: $des_font;
+            font-size: 19px;
+            padding: 0px;
+            @include transition(color .3s);
+            &:hover, &:focus {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.second-footer {
+  padding: 30px 0px;
+  background-color: $white;
+  .region-footer-second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    #block-footerlogo {
+      margin-#{$right}: 80px;
+      .footer-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        img {
+          height: auto;
+          &.tawakkalna-logo {
+            height: 67px;
+            align-self: center;
+          }
+          &.vision-logo {
+            height: 55px;
+            align-self: center;
+          }
+        }
+        .divider {
+          width: 1px;
+          height: 20px;
+          background-color: $border;
+          display: flex;
+          align-self: center;
+          margin: 0px 10px;
+        }
+      }
+    }
+    .block-menu.navigation {
+      flex-grow: 1;
+      padding: 0px 40px;
+      align-items: center;
+      display: flex;
+      ul.nav {
+        flex-direction: row;
+        padding: 0px;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 100%;
+        li {
+          a {
+            color: $dark_gray;
+            font-size: 18px;
+            @include transition(color .3s);
+            &:hover, &:focus {
+              color: $green;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    #block-languageswitcher {
+      display: flex;
+      align-items: center;
+      margin-#{$left}: 80px;
+      ul.links {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        li.is-active {
+          display: none;
+        }
+        li {
+          a {
+            color: $dark_gray;
+            font-size: 18px;
+            @include transition(color .3s);
+            &:hover, &:focus {
+              color: $green;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,14 @@
 @import 'custom/variables';
 @import 'layout/header', 'layout/footer';
 @import 'layout/front', 'layout/general';
+@import 'layout/form', 'layout/user_forms';
+@import 'layout/apis', 'layout/apidoc';
+@import 'layout/user', 'layout/table';
+@import 'layout/buttons';
+@import 'layout/app';
+@import 'layout/app_forms';
 @import 'custom/override';
+@import 'layout/responsive';
 
 
 

@@ -1,0 +1,624 @@
+.user-logged-in {
+  &.path-user {
+    background-color: $gray_bg;
+    main {
+      background-image: url($theme-path + "/images/ui/two_shaps_bg_ltr.png");
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      #block-sdaia-theme-title {
+        padding: 70px 0px 40px;
+        h1 {
+          font-size: 32px;
+          color: $black;
+        }
+      }
+      #block-sdaia-theme-tabs {
+        background-color: $light_green;
+        margin-bottom: 0px;
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.10));
+        nav.tabs-wrapper {
+          ul.nav-tabs {
+            li.nav-item {
+              border-radius: 0px;
+              border: 1px solid;
+              border-color: $border_light;
+              background-color: $gray_bg;
+              margin-#{$right}: 1px;
+              a {
+                color: $dark_gray;
+                &:hover, &:focus {
+                  text-decoration: none;
+                }
+              }
+              a.tab-toggle {
+                display: none;
+              }
+              &.active {
+                background-color: $white;
+                border-color: $border_light $border_light $white;
+                a {
+                  color: $green;
+                }
+              }
+              &:last-child {
+                margin-#{$right}: 0px;
+              }
+            }
+          }
+        }
+      }
+      #block-sdaia-theme-content {
+        background-color: $white;
+        border: 1px solid $border_light;
+        border-top: none;
+        margin-bottom: 100px;
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.10));
+        .profile-header {
+          padding: 20px 25px;
+          border-bottom: 5px solid $green;
+          background: linear-gradient(0deg, $light_green 75%, $white 25%);
+          //background: rgb(215,230,228);
+          //background: linear-gradient(0deg, rgba(215,230,228,1) 39%, rgba(255,255,255,1) 90%);
+          .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .name-side {
+              flex-basis: 100%;
+              text-align: $left;
+              .account-type {
+                margin-bottom: 15px;
+                span {
+                  background-color: #045CE0;
+                  color: #FFFFFF;
+                  padding: 2px 12px 5px 12px;
+                  border-radius: 3px;
+                }
+              }
+              .full-name {
+                font-weight: bold;
+              }
+            }
+            .pic-side {
+              display: flex;
+              justify-content: center;
+              flex-basis: 100%;
+              .user-pic {
+                border-radius: 100%;
+                overflow: hidden;
+                border: 1px solid $green;
+                filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.05));
+                width: 150px;
+                height: 150px;
+                img {
+                  border-radius: 100%;
+                  display: block;
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+            .status-side {
+              flex-basis: 100%;
+              text-align: $right;
+              .account-status {
+                display: flex;
+                justify-content: end;
+                .status-label {
+                  font-weight: bold;
+                  font-size: 15px;
+                  color: $black;
+                  margin-#{$right}: 10px;
+                }
+                .status-icon {
+                  width: 24px;
+                  height: 24px;
+                  display: block;
+                  border-radius: 100%;
+                }
+              }
+            }
+          }
+        }
+        .profile-body {
+          .user-info {
+            padding: 55px 55px 25px 55px;
+            margin: 0px;
+            border: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .field {
+              width: 100%;
+              flex: 50%;
+              margin-bottom: 40px;
+              display: flex;
+              color: $black;
+              .field__label {
+                color: $green;
+                padding-#{$right}: 0.5em;
+              }
+            }
+          }
+          .company-info {
+            padding: 55px 55px 25px 55px;
+            background-color: $light_gray_bg;
+            margin: 0px;
+            border: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .field {
+              width: 100%;
+              flex: 50%;
+              margin-bottom: 40px;
+              display: flex;
+              .field-label {
+                color: $green;
+                padding-#{$right}: 0.5em;
+                font-weight: bold;
+              }
+              .field-data {
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.lang-ar {
+  &.user-logged-in {
+    &.path-user {
+      main {
+        background-image: url($theme-path + "/images/ui/two_shaps_bg.png");
+      }
+    }
+  }
+}
+
+.path-user-edit {
+  form.user-form {
+    width: 1100px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 50px;
+    summary {
+      display: none;
+    }
+    .details-wrapper {
+      padding: 0px;
+    }
+    .form-item {
+      padding: 0px 15px;
+    }
+    [data-drupal-selector="edit-account"] {
+      > .form-item {
+        display: block;
+        overflow: hidden;
+        .form-item {
+          padding: 18px 0px 0px 0px;
+        }
+      }
+    }
+    .field--name-user-picture {
+      clear: both;
+      .image-widget {
+        .image-widget-data {
+          input[type="submit"] {
+            background-color: $white;
+            border: 1px solid $black;
+            color: $black;
+            border-radius: 5px;
+            padding: 0px 10px 4px 10px;
+            height: auto;
+          }
+        }
+      }
+    }
+    [data-drupal-selector="edit-account"] {
+      width: 100%;
+      clear: both;
+      overflow: hidden;
+      .form-type-password-confirm {
+        .js-form-item-pass-pass1 {
+          width: calc(50% - 15px);
+          float: $left;
+          max-width: 50%;
+          clear: none;
+          padding-#{$right}: 15px;
+        }
+        .js-form-item-pass-pass2 {
+          width: calc(50% - 15px);
+          float: $right;
+          max-width: 50%;
+          clear: none;
+          padding-#{$left}: 15px;
+        }
+        .password-suggestions {
+          clear: both;
+        }
+      }
+    }
+    .field--name-field-user-id-type-select,
+    .field--name-field-user-phone-number,
+    .field--name-field-user-third-name,
+    .field--name-first-name,
+    .field--name-field-user-birth-date,
+    .field--name-field-user-id-type {
+      width: 50%;
+      float: $left;
+    }
+    .field--name-field-user-nationality,
+    .field--name-last-name,
+    .field--name-field-user-second-name,
+    .profile-data-item,
+    .field--name-field-user-id-number {
+      width: 50%;
+      float: $right;
+    }
+    .field--name-field-user-birth-date {
+      margin-bottom: 1em;
+      padding: 0px 15px;
+      width: calc(50% - 30px);
+      .label {
+        color: $green;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        display: inline-block;
+        height: 26px;
+        font-family: 'DINNextLTArabic-Regular';
+      }
+      .form-inline {
+        .form-item {
+          padding: 0px;
+          margin: 0px;
+          width: 100%;
+          .label {
+            display: none;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .field--widget-datetime-datelist {
+      fieldset {
+        padding: 0px;
+        margin: 0px;
+        legend {
+          color: $green;
+          font-size: 17px;
+          font-weight: 700;
+          margin-bottom: 5px;
+          height: 26px;
+        }
+        .fieldset-wrapper {
+          .form-inline {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: start;
+            .form-item {
+              width: auto;
+              margin-#{$right}: 8px;
+            }
+          }
+        }
+      }
+
+    }
+    .profile-data-item {
+      margin-bottom: 1em;
+      .item-container {
+        padding: 33px 15px 0px 15px;
+        input {
+          height: 52px;
+          padding: 0px 15px;
+          background-color: $white;
+          border: 1px solid $black;
+          color: $black;
+          border-radius: 5px;
+          margin: 0px;
+          &.form-disabled {
+            cursor: no-drop;
+          }
+        }
+      }
+    }
+    .custom-user-upload-attachments {
+      clear: both;
+      padding: 15px;
+      .field-label {
+        color: #1FA99A;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 26px;
+      }
+      .field-info {
+        font-size: 14px;
+        color: $gray_3;
+        padding-top: 2px;
+      }
+      #custom-user-upload-btn {
+        width: 300px;
+        padding: 14px 10px;
+        display: block;
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+    .field--name-field-user-attachments {
+      clear: both;
+      padding: 0px 15px;
+      details {
+        summary {
+          display: none;
+          pointer-events: none;
+        }
+        .details-wrapper {
+          padding: 0px;
+          tableresponsive-toggle-columns,
+          .tabledrag-toggle-weight-wrapper {
+            display: none;
+          }
+          table {
+            input[type="file"] {
+              display: none;
+            }
+            thead {
+              background-color: $white;
+              tr {
+                th {
+                  color: $green;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  .tabledrag-handle {
+                    display: none;
+                  }
+                  .form-submit {
+                    background-color: $white;
+                    border: 1px solid $black;
+                    color: $black;
+                    border-radius: 5px;
+                    padding: 0px 10px 4px 10px;
+                  }
+                  .form-managed-file {
+                    .form-type-checkbox {
+                      input[type="checkbox"] {
+                        display: inline-block;
+                        float: $left;
+                        margin-#{$right}: 10px;
+                        width: 16px;
+                        height: 16px;
+                        position: relative;
+                        top: 5px;
+                      }
+                      label {
+                        a {
+                          color: $black;
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .js-form-type-managed-file {
+        input[type="file"],
+        label {
+          display: none;
+        }
+      }
+    }
+    // Profile.
+
+    details[data-drupal-selector="edit-terms-of-use"] {
+      clear: both;
+      padding: 20px 0px;
+      summary {
+        display: none;
+        pointer-events: none;
+      }
+      .details-wrapper {
+        padding: 0px;
+        .form-type-checkbox {
+          display: flex;
+          justify-content: $left;
+          align-items: center;
+          label {
+            order: 1;
+            color: $black;
+            font-weight: normal;
+            a {
+              color: $black;
+              font-weight: bold;
+            }
+          }
+          input {
+            order: 2;
+            width: 13px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+form.profile-form {
+  width: 1100px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 50px;
+  summary {
+    display: none;
+  }
+  .details-wrapper {
+    padding: 0px;
+  }
+  > .form-item {
+    padding: 0px 15px;
+  }
+  .js-form-type-vertical-tabs {
+    display: none;
+  }
+  .field--name-field-pr-company-org-phone-num,
+  .field--name-field-pr-company-org-700-num,
+  .field--name-field-pr-company-org-name-ar {
+    width: 50%;
+    float: $left;
+    .form-item {
+      padding: 0px 15px;
+    }
+  }
+  .field--name-field-pr-company-industry-type,
+  .field--name-field-pr-company-org-name-en {
+    width: 50%;
+    float: $right;
+    .form-item {
+      padding: 0px 15px;
+    }
+  }
+  .field--name-field-pr-company-industry-type {
+    .form-item {
+      .js-form-type-select {
+        padding: 0px;
+        margin: 0px;
+      }
+      .js-form-type-textfield {
+        padding: 0px;
+        margin-top: 63px;
+      }
+    }
+  }
+  .custom-profile-upload-attachments {
+    clear: both;
+    padding: 15px;
+    .field-label {
+      color: #1FA99A;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      height: 26px;
+    }
+    .field-info {
+      font-size: 14px;
+      color: $gray_3;
+      padding-top: 2px;
+    }
+    #custom-profile-upload-btn {
+      width: 300px;
+      padding: 14px 10px;
+      display: block;
+      background-color: $white;
+      color: $black;
+      border: 1px solid $black;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+  .field--name-field-pr-company-org-attachments {
+    clear: both;
+    padding: 0px 15px;
+    details {
+      summary {
+        display: none;
+        pointer-events: none;
+      }
+      .details-wrapper {
+        //padding: 0px 15px;
+        .tableresponsive-toggle-columns,
+        .tabledrag-toggle-weight-wrapper {
+          display: none;
+        }
+        table {
+          input[type="file"] {
+            display: none;
+          }
+          thead {
+            background-color: $white;
+            tr {
+              th {
+                color: $green;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                .tabledrag-handle {
+                  display: none;
+                }
+                .form-submit {
+                  background-color: $white;
+                  border: 1px solid $black;
+                  color: $black;
+                  border-radius: 5px;
+                  padding: 0px 10px 4px 10px;
+                }
+                .form-managed-file {
+                  .form-type-checkbox {
+                    input[type="checkbox"] {
+                      display: inline-block;
+                      float: $left;
+                      margin-#{$right}: 10px;
+                      width: 16px;
+                      height: 16px;
+                      position: relative;
+                      top: 5px;
+                    }
+                    label {
+                      a {
+                        color: $black;
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .js-form-type-managed-file {
+      input[type="file"],
+      label {
+        display: none;
+      }
+    }
+  }
+}

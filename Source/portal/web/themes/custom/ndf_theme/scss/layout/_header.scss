@@ -1,0 +1,98 @@
+// Header
+#header {
+  padding: 6px 0px;
+  background-color: $white;
+  #block-sdaia-theme-branding {
+    .navbar-brand {
+      margin-#{$right}: 1rem;
+      margin-#{$left}: 0rem;
+      img {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        max-width: 180px;
+      }
+    }
+  }
+  .collapse.navbar-collapse {
+    flex-grow: 1;
+    .region-nav-main {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      nav.menu--main {
+        display: flex;
+        ul.navbar-nav {
+          padding: 0px;
+          padding-#{$left}: 2rem;
+          li {
+            align-self: center;
+            margin-#{$right}: 20px;
+            a {
+              color: $gray;
+              @include transition(color .3s);
+              &:hover, &:focus {
+                color: $black;
+              }
+              &.active {
+                color: $black;
+              }
+            }
+            &:last-child {
+              margin-#{$right}: 0px;
+            }
+          }
+        }
+      }
+      nav.menu--account {
+        display: flex;
+        ul.navbar-nav {
+          padding: 0px;
+          li {
+            align-self: center;
+            margin-#{$right}: 10px;
+            a {
+              padding: 6px 16px 10px 16px;
+              border-radius: 3px;
+              border: 1px solid;
+              width: 124px;
+              text-align: center;
+              &[data-drupal-link-system-path="user"],
+              &[data-drupal-link-system-path="user/login"] {
+                background-color: $green;
+                color: $white;
+                border-color: $green;
+                @include transition(all .3s);
+                &:hover, &:focus {
+                  background-color: $green_hover;
+                  border-color: $green_hover;
+                }
+              }
+              &[data-drupal-link-system-path="user/logout"],
+              &[data-drupal-link-system-path="user/register"] {
+                background-color: $white;
+                color: $green;
+                border-color: $green;
+                @include transition(all .3s);
+                &:hover, &:focus {
+                  background-color: $green;
+                  border-color: $green;
+                  color: $white;
+                }
+              }
+            }
+            &:last-child {
+              margin-#{$right}: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .vision-logo {
+    margin-#{$left}: 20px;
+    img {
+      max-width: 90px;
+    }
+  }
+}
