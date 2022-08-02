@@ -1,0 +1,48 @@
+uuid:
+  -
+    value: 4c67617c-54d9-4537-ae81-19e13e8c699d
+langcode:
+  -
+    value: en
+vid:
+  -
+    target_id: forums
+    target_type: taxonomy_vocabulary
+    target_uuid: 9de3abbd-2b41-42e4-a329-d1c6ad84fda2
+revision_created:
+  -
+    value: '2022-06-21T13:34:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+name:
+  -
+    value: 'General discussion'
+description:
+  -
+    value: null
+    format: null
+    processed: ''
+weight:
+  -
+    value: 0
+parent:
+  -
+    target_id: 0
+changed:
+  -
+    value: '2022-06-21T13:34:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+forum_container: {  }
+_content_sync:
+  entity_type: taxonomy_term
+  entity_dependencies: {  }

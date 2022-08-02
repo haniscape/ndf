@@ -1,0 +1,29 @@
+uuid: 6115afa6-6eec-4608-8fb0-1c0e2ea7b606
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_role
+    - node.type.apidoc
+    - taxonomy.vocabulary.roles
+id: node.apidoc.field_user_role
+field_name: field_user_role
+entity_type: node
+bundle: apidoc
+label: 'User role'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      roles: roles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
