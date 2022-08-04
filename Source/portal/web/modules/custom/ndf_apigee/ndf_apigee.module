@@ -1,0 +1,48 @@
+<?php
+
+define('APP_DISPLAY_NAME_LENGTH', 50);
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Form\FormState;
+use Drupal\Core\Routing\RouteMatchInterface;
+function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
+
+
+  if ($form_id == 'developer_app_add_for_developer_form') {
+
+      $form['#validate'][] = 'validateAppFormatterSelection';
+    }
+  /**
+   * Validate the formatter selection step.
+   */
+  function validateAppFormatterSelection(&$form, $form_state) {
+
+    $form_values = $form_state->getValues();
+    $app_type = $form_values['form_id'] == 'team_app_add_for_team_form' ? 'team_app' : 'developer_app';
+    $orignal_app_name = $form_state->getValue('name');
+    $orignal_app_display_name = $form_state->getValue('displayName')[0]['value'];
+    // Replaces all spaces with hyphens.
+    $app_name = str_replace(' ', '_', $orignal_app_name);
+    // Removes special chars.
+    $app_name = preg_replace('/[^A-Za-z0-9\-_]/', '', $app_name);
+
+    $check_orignal_app_display_name = preg_replace('/[^A-Za-z0-9\-_\s]/', '', $orignal_app_display_name);
+
+    if ($check_orignal_app_display_name != $orignal_app_display_name) {
+      $form_state->setError($form['displayName'], t('Invalid app name.'));
+    }
+
+    if ($orignal_app_name != $app_name) {
+      $form_state->setError($form['name'], t('Invalid app name.'));
+    }
+
+      if (strlen($orignal_app_display_name) > APP_DISPLAY_NAME_LENGTH) {
+        $form_state->setError($form['displayName'], t('The length of display name with prefix more than @length characters.', ['@length' => APP_DISPLAY_NAME_LENGTH]));
+      }
+      // $company_app_name = 'company_' . str_replace(' ','_',$app_name);
+
+    }
+  
+
+}

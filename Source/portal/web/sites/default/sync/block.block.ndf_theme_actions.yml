@@ -1,6 +1,6 @@
 uuid: d0af753b-6159-4adc-91ad-8a274d2e1159
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - ndf_theme
@@ -9,7 +9,7 @@ _core:
 id: ndf_theme_actions
 theme: ndf_theme
 region: header
-weight: -11
+weight: -8
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,0 +1,6 @@
+name: NDF Apigee
+description: 'Add custom logic on apigee process.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+version: 9.x-1.0
+package: 'NDF'
