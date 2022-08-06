@@ -37,6 +37,14 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/favicon-16x16.png">
+    <link rel="manifest" href="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/site.webmanifest">
+    <link rel="mask-icon" href="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/safari-pinned-tab.svg" color="#c6aa76">
+    <meta name="msapplication-TileColor" content="#3d3935">
+    <meta name="theme-color" content="#ffffff">
+
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
