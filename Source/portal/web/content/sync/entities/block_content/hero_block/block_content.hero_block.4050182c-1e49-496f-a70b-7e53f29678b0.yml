@@ -23,7 +23,7 @@ info:
     value: 'Hompage : Hero block'
 changed:
   -
-    value: '2022-08-06T19:59:02+00:00'
+    value: '2022-08-06T20:22:48+00:00'
     format: 'Y-m-d\TH:i:sP'
 reusable:
   -
@@ -61,7 +61,7 @@ field_image:
     target_uuid: 6afcfdc3-7b2a-43a0-b7dc-67690e9ebd9e
 field_title:
   -
-    value: 'بوابة المطورين'
+    value: 'Developer Portal'
 _content_sync:
   entity_type: block_content
   entity_dependencies:

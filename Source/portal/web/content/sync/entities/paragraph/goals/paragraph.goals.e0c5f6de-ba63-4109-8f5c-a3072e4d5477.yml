@@ -42,7 +42,7 @@ content_translation_outdated:
     value: false
 content_translation_changed:
   -
-    value: '2022-08-06T19:57:24+00:00'
+    value: '2022-08-06T21:09:46+00:00'
     format: 'Y-m-d\TH:i:sP'
 field_goals_icon: {  }
 field_goals_image:
@@ -55,7 +55,7 @@ field_goals_image:
     target_uuid: e22ae2b2-ba05-49ed-b603-d77cd9875c63
 field_goals_title:
   -
-    value: 'ﺗﻌﺰﻳﺰ ﺍﻟﺎﺭﺗﺒﺎﻁ'
+    value: 'Connectivity Enhancement'
 _content_sync:
   entity_type: paragraph
   entity_dependencies:

@@ -42,7 +42,7 @@ content_translation_outdated:
     value: false
 content_translation_changed:
   -
-    value: '2022-08-06T19:57:24+00:00'
+    value: '2022-08-06T21:09:46+00:00'
     format: 'Y-m-d\TH:i:sP'
 field_goals_icon: {  }
 field_goals_image:
@@ -55,7 +55,7 @@ field_goals_image:
     target_uuid: 896eed80-c91f-41c4-8127-29bbfbff7ddc
 field_goals_title:
   -
-    value: 'ﻭﻗﺖ ﺃﻗﻞ ﻟﻠﺈﺭﺗﺒﺎﻁ'
+    value: 'Less time to bond'
 _content_sync:
   entity_type: paragraph
   entity_dependencies:
