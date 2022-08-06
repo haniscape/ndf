@@ -11,11 +11,13 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_product_link
     - field.field.node.apidoc.field_user_role
     - node.type.apidoc
   module:
     - file
     - file_link
+    - link
     - path
     - text
 _core:
@@ -81,6 +83,14 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_product_link:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_user_role:
     type: options_select

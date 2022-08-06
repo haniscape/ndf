@@ -1,0 +1,14 @@
+uuid: 95ed50c7-c65b-431f-b0df-104527b2ed2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.company_owner
+  module:
+    - user
+id: user_add_role_action.company_owner
+label: 'Add the Company owner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: company_owner

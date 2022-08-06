@@ -11,10 +11,12 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_product_link
     - field.field.node.apidoc.field_user_role
     - node.type.apidoc
   module:
     - apigee_api_catalog
+    - link
     - text
     - user
 _core:
@@ -37,6 +39,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_product_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }

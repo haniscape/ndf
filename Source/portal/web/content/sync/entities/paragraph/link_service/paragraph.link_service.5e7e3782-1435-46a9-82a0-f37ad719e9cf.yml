@@ -1,0 +1,122 @@
+uuid:
+  -
+    value: 5e7e3782-1435-46a9-82a0-f37ad719e9cf
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: link_service
+    target_type: paragraphs_type
+    target_uuid: 2649ad52-5a24-4873-9258-c59f6359cc8b
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-07-02T20:00:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '4'
+parent_type:
+  -
+    value: block_content
+parent_field_name:
+  -
+    value: field_link_service
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2022-07-02T20:01:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_link_service_description:
+  -
+    value: "يمكنك الدفع مقابل الخدمات\r\nإعداد بوابات الدفع لعملائنا بحيث\r\nلا يتعلق الأمر بكيفية"
+field_link_service_title:
+  -
+    value: 'الدفع الإلكتروني'
+field_service_link:
+  -
+    uri: 'internal:/'
+    title: 'عرض التفاصيل'
+    options: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }
+_translations:
+  ar:
+    uuid:
+      -
+        value: 5e7e3782-1435-46a9-82a0-f37ad719e9cf
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: link_service
+        target_type: paragraphs_type
+        target_uuid: 2649ad52-5a24-4873-9258-c59f6359cc8b
+    status:
+      -
+        value: true
+    created:
+      -
+        value: '2022-07-02T20:00:37+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    parent_id:
+      -
+        value: '4'
+    parent_type:
+      -
+        value: block_content
+    parent_field_name:
+      -
+        value: field_link_service
+    behavior_settings:
+      -
+        value: {  }
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_changed:
+      -
+        value: '2022-07-02T20:01:28+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_link_service_description:
+      -
+        value: "يمكنك الدفع مقابل الخدمات\r\nإعداد بوابات الدفع لعملائنا بحيث\r\nلا يتعلق الأمر بكيفية"
+    field_link_service_title:
+      -
+        value: 'الدفع الإلكتروني'
+    field_service_link:
+      -
+        uri: 'internal:/'
+        title: 'عرض التفاصيل'
+        options: {  }
+    _content_sync:
+      entity_type: paragraph
+      entity_dependencies: {  }

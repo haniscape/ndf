@@ -1,0 +1,112 @@
+uuid:
+  -
+    value: f382237d-f363-4a6e-929c-7280222c63e5
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: registation
+    target_type: paragraphs_type
+    target_uuid: f32fd4fd-51c0-45ef-9d8f-f2f6fbfe59dd
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-07-02T19:57:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '3'
+parent_type:
+  -
+    value: block_content
+parent_field_name:
+  -
+    value: field_step
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2022-08-06T20:04:03+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_registation_description:
+  -
+    value: 'A brief explanation of the company''s data and how it works'
+field_registation_title:
+  -
+    value: 'Company Data'
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }
+_translations:
+  ar:
+    uuid:
+      -
+        value: f382237d-f363-4a6e-929c-7280222c63e5
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: registation
+        target_type: paragraphs_type
+        target_uuid: f32fd4fd-51c0-45ef-9d8f-f2f6fbfe59dd
+    status:
+      -
+        value: true
+    created:
+      -
+        value: '2022-07-02T19:57:16+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    parent_id:
+      -
+        value: '3'
+    parent_type:
+      -
+        value: block_content
+    parent_field_name:
+      -
+        value: field_step
+    behavior_settings:
+      -
+        value: {  }
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_changed:
+      -
+        value: '2022-07-02T19:58:32+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_registation_description:
+      -
+        value: 'شرح مختصر عن بيانات الشركة وكيفية عمل ذلك'
+    field_registation_title:
+      -
+        value: 'بيانات الشركة'
+    _content_sync:
+      entity_type: paragraph
+      entity_dependencies: {  }

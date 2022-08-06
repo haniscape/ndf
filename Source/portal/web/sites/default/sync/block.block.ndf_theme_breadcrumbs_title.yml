@@ -11,7 +11,7 @@ _core:
 id: ndf_theme_breadcrumbs_title
 theme: ndf_theme
 region: header
-weight: 1
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

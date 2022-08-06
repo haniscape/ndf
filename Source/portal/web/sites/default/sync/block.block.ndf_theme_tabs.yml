@@ -2,6 +2,9 @@ uuid: 24c63b0b-2181-4e9c-b417-004a682fc325
 langcode: en
 status: true
 dependencies:
+  module:
+    - apigee_kickstart_enhancement
+    - system
   theme:
     - ndf_theme
 _core:
@@ -19,4 +22,14 @@ settings:
   provider: core
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  block_type:
+    id: block_type
+    uuid: 24c63b0b-2181-4e9c-b417-004a682fc325
+    bundles: {  }
+    is_adjacent: 0
+    negate: false
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

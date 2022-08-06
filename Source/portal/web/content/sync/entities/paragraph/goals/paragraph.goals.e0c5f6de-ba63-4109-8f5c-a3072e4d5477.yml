@@ -1,0 +1,128 @@
+uuid:
+  -
+    value: e0c5f6de-ba63-4109-8f5c-a3072e4d5477
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: goals
+    target_type: paragraphs_type
+    target_uuid: 22a5f374-024b-44db-820c-271b6adb8785
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-07-02T19:55:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '2'
+parent_type:
+  -
+    value: block_content
+parent_field_name:
+  -
+    value: field_goal
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2022-08-06T19:57:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_goals_icon: {  }
+field_goals_image:
+  -
+    alt: ''
+    title: ''
+    width: 300
+    height: 299
+    target_type: file
+    target_uuid: e22ae2b2-ba05-49ed-b603-d77cd9875c63
+field_goals_title:
+  -
+    value: 'ﺗﻌﺰﻳﺰ ﺍﻟﺎﺭﺗﺒﺎﻁ'
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    file:
+      - file.file.e22ae2b2-ba05-49ed-b603-d77cd9875c63
+_translations:
+  ar:
+    uuid:
+      -
+        value: e0c5f6de-ba63-4109-8f5c-a3072e4d5477
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: goals
+        target_type: paragraphs_type
+        target_uuid: 22a5f374-024b-44db-820c-271b6adb8785
+    status:
+      -
+        value: true
+    created:
+      -
+        value: '2022-07-02T19:55:47+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    parent_id:
+      -
+        value: '2'
+    parent_type:
+      -
+        value: block_content
+    parent_field_name:
+      -
+        value: field_goal
+    behavior_settings:
+      -
+        value: {  }
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_changed:
+      -
+        value: '2022-08-06T19:57:24+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_goals_icon: {  }
+    field_goals_image:
+      -
+        alt: ''
+        title: ''
+        width: 300
+        height: 299
+        target_type: file
+        target_uuid: e22ae2b2-ba05-49ed-b603-d77cd9875c63
+    field_goals_title:
+      -
+        value: 'ﺗﻌﺰﻳﺰ ﺍﻟﺎﺭﺗﺒﺎﻁ'
+    _content_sync:
+      entity_type: paragraph
+      entity_dependencies:
+        file:
+          - file.file.e22ae2b2-ba05-49ed-b603-d77cd9875c63

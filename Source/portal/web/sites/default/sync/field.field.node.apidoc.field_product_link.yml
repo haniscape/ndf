@@ -1,0 +1,23 @@
+uuid: 9953370b-ebaa-4326-85c2-852bcde24cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_link
+    - node.type.apidoc
+  module:
+    - link
+id: node.apidoc.field_product_link
+field_name: field_product_link
+entity_type: node
+bundle: apidoc
+label: 'Product Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

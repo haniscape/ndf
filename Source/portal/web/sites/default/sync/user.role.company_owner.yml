@@ -1,0 +1,9 @@
+uuid: 78cce204-aa56-43c2-ab23-1093df2e7dc5
+langcode: en
+status: true
+dependencies: {  }
+id: company_owner
+label: 'Company owner'
+weight: 6
+is_admin: null
+permissions: {  }
