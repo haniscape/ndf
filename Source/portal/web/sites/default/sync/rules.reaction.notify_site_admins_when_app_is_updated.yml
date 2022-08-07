@@ -12,23 +12,28 @@ tags: {  }
 config_version: '3'
 expression:
   id: rules_rule
-  uuid: a3c7f453-75a4-4d1b-87f7-973831d18365
+  uuid: a3c7f423-75a4-4d1b-87f7-973831d18365
+  weight: 0
   conditions:
     id: rules_and
-    uuid: 3e95f490-4379-412e-9bf3-2a2b8b68e6e3
+    uuid: 3e35f490-4379-412e-9bf3-2a2b8b68e6e3
+    weight: 0
     conditions: {  }
   actions:
     id: rules_action_set
-    uuid: ea47410d-065e-4cf4-8f8e-9fafdcdbee9b
+    uuid: ea47430d-065e-4cf4-8f8e-9fafdcdbee9b
+    weight: 0
     actions:
       -
         id: rules_action
-        uuid: b2826e2c-5322-4dfe-9020-fc622f0bbf2e
+        uuid: b2826e3c-5322-4dfe-9020-fc622f0bbf2e
+        weight: 0
+        action_id: rules_email_to_users_of_role
         context_values:
           roles:
             - administrator
-          subject: 'App {{ developer_app.displayName }} was added to the site.'
-          message: 'App {{ developer_app.displayName }} was added to the site.'
+          subject: 'App {{ developer_app.displayName }} was updated'
+          message: 'App {{ developer_app.displayName }} was updated'
           reply: ''
           language: ''
         context_mapping: {  }
@@ -44,4 +49,3 @@ expression:
           language:
             rules_tokens: {  }
         provides_mapping: {  }
-        action_id: rules_email_to_users_of_role
