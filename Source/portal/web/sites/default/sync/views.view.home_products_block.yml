@@ -297,8 +297,8 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_product_link'
-  block_1:
-    id: block_1
+  block_home_products:
+    id: block_home_products
     display_title: Block
     display_plugin: block
     position: 1

@@ -103,9 +103,7 @@
   {% if page.front_second_content %}
     <div id="second-content-region">
       <div class="front-second-content-region">
-        <div class="container">
           {{ page.front_second_content }}
-        </div>
       </div>
     </div>
   {% endif %}
@@ -114,9 +112,7 @@
   {% if page.front_third_content %}
     <div id="third-content-region">
       <div class="front-third-content-region">
-        <div class="container">
           {{ page.front_third_content }}
-        </div>
       </div>
     </div>
   {% endif %}
@@ -127,9 +123,17 @@
   {% if page.front_fourth_content %}
     <div id="fourth-content-region">
       <div class="front-fourth-content-region">
-        <div class="container">
           {{ page.front_fourth_content }}
-        </div>
+      </div>
+    </div>
+  {% endif %}
+
+
+  {# Front fifth content region #}
+  {% if page.front_fifth_content %}
+    <div id="fifth-content-region">
+      <div class="front-fifth-content-region">
+          {{ page.front_fifth_content }}
       </div>
     </div>
   {% endif %}

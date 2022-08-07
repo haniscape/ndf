@@ -12,8 +12,8 @@ dependencies:
     - ndf_theme
 id: views_block__home_products_block_block_1
 theme: ndf_theme
-region: content
-weight: 0
+region: front_fourth_content
+weight: -9
 provider: null
 plugin: 'views_block:home_products_block-block_1'
 settings:

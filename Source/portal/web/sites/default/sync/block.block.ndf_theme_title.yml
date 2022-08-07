@@ -12,7 +12,7 @@ _core:
 id: ndf_theme_title
 theme: ndf_theme
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: page_title_block
 settings:

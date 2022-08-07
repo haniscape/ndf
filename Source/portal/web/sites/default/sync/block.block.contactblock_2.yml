@@ -1,36 +1,31 @@
-uuid: efc6e9c1-d2b9-496c-9127-0395f50165e9
+uuid: 29f04daf-2c83-4940-a527-87a8870cd82e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - contact.form.hompage_contact
+    - contact.form.feedback
   module:
     - apigee_kickstart_enhancement
     - contact_block
-    - system
   theme:
     - ndf_theme
-id: contactblock
+id: contactblock_2
 theme: ndf_theme
-region: header
-weight: -9
+region: front_fifth_content
+weight: 0
 provider: null
 plugin: contact_block
 settings:
   id: contact_block
   label: 'Contact block'
-  label_display: '0'
+  label_display: visible
   provider: contact_block
-  contact_form: hompage_contact
+  contact_form: feedback
   form_display: default
 visibility:
   block_type:
     id: block_type
-    uuid: efc6e9c1-d2b9-496c-9127-0395f50165e9
+    uuid: 29f04daf-2c83-4940-a527-87a8870cd82e
     bundles: {  }
     is_adjacent: 0
     negate: false
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'

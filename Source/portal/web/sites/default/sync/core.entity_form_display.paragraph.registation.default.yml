@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.registation.field_registation_description
     - field.field.paragraph.registation.field_registation_title
+    - field.field.paragraph.registation.field_step_number
     - paragraphs.paragraphs_type.registation
 id: paragraph.registation.default
 targetEntityType: paragraph
@@ -26,6 +27,18 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_step_number:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

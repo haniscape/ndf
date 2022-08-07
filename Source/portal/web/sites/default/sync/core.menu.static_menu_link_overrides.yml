@@ -7,3 +7,15 @@ definitions:
     parent: ''
     weight: 0
     expanded: false
+  apigee_edge_teams__teams:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: -50
+  apigee_edge__apps:
+    enabled: false
+    menu_name: account
+    parent: ''
+    weight: -30
+    expanded: false

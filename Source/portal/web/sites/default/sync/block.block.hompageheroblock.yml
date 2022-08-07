@@ -12,8 +12,8 @@ dependencies:
     - ndf_theme
 id: hompageheroblock
 theme: ndf_theme
-region: content
-weight: -3
+region: banner
+weight: -9
 provider: null
 plugin: 'block_content:4050182c-1e49-496f-a70b-7e53f29678b0'
 settings:

@@ -23,7 +23,7 @@ info:
     value: 'Homepage : registations'
 changed:
   -
-    value: '2022-08-06T20:04:03+00:00'
+    value: '2022-08-07T06:39:24+00:00'
     format: 'Y-m-d\TH:i:sP'
 reusable:
   -
@@ -102,7 +102,7 @@ _translations:
         value: 'Homepage : registations'
     changed:
       -
-        value: '2022-07-02T20:05:08+00:00'
+        value: '2022-08-07T06:39:46+00:00'
         format: 'Y-m-d\TH:i:sP'
     reusable:
       -
