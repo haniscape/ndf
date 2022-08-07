@@ -23,18 +23,22 @@
           align-items: center;
 
           #block-ndf-theme-main-menu {
-            width: max-content;
             height: 40px;
+
             .nav-item {
+              min-width: 6rem;
+              text-align: center;
+
               a {
                 color: $white;
                 border-bottom: 1.5px solid transparent;
                 transition: border .25s ease-out;
-                font-weight: 300;
+                font-size: .85rem;
+                font-weight: 400;
 
                 &:hover {
                   border-bottom: 1.5px solid #C6AA76;
-                  font-weight: 500;
+                  font-weight: 700;
                 }
               }
             }
@@ -42,19 +46,22 @@
         }
 
         #block-ndf-theme-menu-account {
-          width: max-content;
           height: 40px;
+
           .nav-item {
-            width: fit-content;
+            min-width: 6rem;
+            text-align: center;
+
             a {
               color: $white;
               border-bottom: 1.5px solid transparent;
               transition: border .25s ease-out;
-              font-weight: 300;
+              font-weight: 400;
+              font-size: .85rem;
 
               &:hover {
                 border-bottom: 1.5px solid #C6AA76;
-                font-weight: 500;
+                font-weight: 700;
               }
             }
           }
@@ -67,12 +74,38 @@
     position: unset;
   }
 
-
-  #hompageheroblock {
+  #block-hompageheroblock {
     background-image: url(/themes/custom/ndf_theme/images/home/hero-bg.jpeg);
-    height: 39rem;
+    width: 100%;
+    height: 750px;
     color: #fff;
-    padding: 35% 15% 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .watermark {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      background-position-y: 60%;
+      .field--name-field-title {
+        font-size: 34px;
+        font-weight: 700;
+        margin: 1rem;
+        text-align: center;
+      }
+      .field--name-field-description {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 1rem 7rem;
+        text-align: center;
+        line-height: 2;
+      }
+    }
   }
 
 }
+

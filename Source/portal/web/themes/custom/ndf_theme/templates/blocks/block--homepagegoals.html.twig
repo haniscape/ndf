@@ -45,7 +45,7 @@
 
   {% block content %}
     {# Pending discussion Hamzeh and Mahmoud to choose a method of printing elements (custom s variables / Drupal array fields ) #}
-    <div class="watermark" style="background-image: url({{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/home/{{ bamboo_i18n_current_lang() == 'ar' ? 'hero-watermark-rtl.png' : 'hero-watermark.png' }})">
+    <div class="watermark" style="background-image: url({{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/home/{{ bamboo_i18n_current_lang() == 'ar' ? 'home-watermark-rtl.svg' : 'home-watermark.svg' }})">
       {{ content.field_title }}
       {{ content.field_description }}
     </div>

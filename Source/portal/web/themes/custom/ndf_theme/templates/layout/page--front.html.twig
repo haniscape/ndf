@@ -75,15 +75,10 @@
 
   {# Banner region #}
   {% if page.banner %}
-    <div id="banner" style="background-image: url({{ base_url }}/{{ bamboo_path_system('theme', 'sdaia_theme') }}/images/ui/{{ bamboo_i18n_current_lang() == 'ar' ? 'hero-bg.png' : 'hero-bg-ltr.png' }})">
-      <div class="banner-region {{ b4_top_container }}">
         {{ page.banner }}
-
-      </div>
-    </div>
   {% endif %}
 
-  <div class="{{ b4_top_container }}">
+
     {% if page.breadcrumb %}
       {{ page.breadcrumb }}
     {% endif %}
@@ -102,7 +97,7 @@
         </div>
       {% endif %}
     </div>
-  </div>
+
 
   {# Front Second content region #}
   {% if page.front_second_content %}
