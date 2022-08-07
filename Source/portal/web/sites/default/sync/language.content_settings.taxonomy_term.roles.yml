@@ -1,0 +1,11 @@
+uuid: 397a3b5c-65b5-4ae3-b52f-408c7a640f9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.roles
+id: taxonomy_term.roles
+target_entity_type_id: taxonomy_term
+target_bundle: roles
+default_langcode: site_default
+language_alterable: false
