@@ -31,7 +31,6 @@
   'block-' ~ plugin_id|clean_class,
 ] %}
 
-{% set image_url = content.field_image[0]['#markup']|striptags|render|trim|raw %}
 
 
 <div{{ attributes.addClass(classes) }}>
@@ -46,7 +45,7 @@
 
   {% block content %}
     {# Pending discussion Hamzeh and Mahmoud to choose a method of printing elements (custom s variables / Drupal array fields ) #}
-    <div id="hero-section" style="background-image: url({{ image_url }});">
+    <div id="hero-section" style='background-image: url("{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/home/hero-bg.jpeg");'>
       {{ content.field_title }}
       {{ content.field_description }}
     </div>

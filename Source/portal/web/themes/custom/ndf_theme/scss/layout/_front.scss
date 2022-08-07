@@ -1,0 +1,78 @@
+.path-frontpage {
+  #header-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    height: 80px;
+    padding: 5px 0;
+
+    #header {
+      width: 100%;
+
+      .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .region-nav-main {
+          display: flex;
+          justify-content: space-between;
+          height: 67px;
+          align-items: center;
+
+          #block-ndf-theme-main-menu {
+            width: max-content;
+            height: 40px;
+            .nav-item {
+              a {
+                color: $white;
+                border-bottom: 1.5px solid transparent;
+                transition: border .25s ease-out;
+                font-weight: 300;
+
+                &:hover {
+                  border-bottom: 1.5px solid #C6AA76;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+
+        #block-ndf-theme-menu-account {
+          width: max-content;
+          height: 40px;
+          .nav-item {
+            width: fit-content;
+            a {
+              color: $white;
+              border-bottom: 1.5px solid transparent;
+              transition: border .25s ease-out;
+              font-weight: 300;
+
+              &:hover {
+                border-bottom: 1.5px solid #C6AA76;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #header-normal {
+    position: unset;
+  }
+
+
+  #hompageheroblock {
+    background-image: url(/themes/custom/ndf_theme/images/home/hero-bg.jpeg);
+    height: 39rem;
+    color: #fff;
+    padding: 35% 15% 20%;
+  }
+
+}

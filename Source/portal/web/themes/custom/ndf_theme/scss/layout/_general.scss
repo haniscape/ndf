@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 
-  ol {
+  body {
+    font-family: 'Cairo', sans-serif;
+    a {
+      color: $ndf_dark_choco;
+      text-decoration: none;
+    }
+    ol {
     list-style: none;
   }
 
@@ -11,4 +17,5 @@
     list-style: none;
   }
 
+}
 }

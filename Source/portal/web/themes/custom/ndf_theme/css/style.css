@@ -26,14 +26,70 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
+.path-frontpage #header-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  height: 80px;
+  padding: 5px 0; }
+  .path-frontpage #header-absolute #header {
+    width: 100%; }
+    .path-frontpage #header-absolute #header .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .path-frontpage #header-absolute #header .navbar .region-nav-main {
+        display: flex;
+        justify-content: space-between;
+        height: 67px;
+        align-items: center; }
+        .path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu {
+          width: max-content;
+          height: 40px; }
+          .path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a {
+            color: #ffffff;
+            border-bottom: 1.5px solid transparent;
+            transition: border .25s ease-out;
+            font-weight: 300; }
+            .path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a:hover {
+              border-bottom: 1.5px solid #C6AA76;
+              font-weight: 500; }
+      .path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account {
+        width: max-content;
+        height: 40px; }
+        .path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item {
+          width: fit-content; }
+          .path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a {
+            color: #ffffff;
+            border-bottom: 1.5px solid transparent;
+            transition: border .25s ease-out;
+            font-weight: 300; }
+            .path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a:hover {
+              border-bottom: 1.5px solid #C6AA76;
+              font-weight: 500; }
+.path-frontpage #header-normal {
+  position: unset; }
+.path-frontpage #hompageheroblock {
+  background-image: url(/themes/custom/ndf_theme/images/home/hero-bg.jpeg);
+  height: 39rem;
+  color: #fff;
+  padding: 35% 15% 20%; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-  * ol {
-    list-style: none; }
-  * ul {
-    list-style: none; }
+  * body {
+    font-family: 'Cairo', sans-serif; }
+    * body a {
+      color: #3D3935;
+      text-decoration: none; }
+    * body ol {
+      list-style: none; }
+    * body ul {
+      list-style: none; }
 
 @media (min-width: 991px) {
   .container {
