@@ -1,0 +1,34 @@
+<?php
+
+define('APP_DISPLAY_NAME_LENGTH', 50);
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Form\FormState;
+use Drupal\Core\Routing\RouteMatchInterface;
+function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
+
+
+  if ($form_id == 'developer_app_add_for_developer_form') {
+
+      $form['#validate'][] = 'validateAppFormatterSelection';
+    }
+  /**
+   * Validate the formatter selection step.
+   */
+  function validateAppFormatterSelection(&$form, $form_state) {
+
+  $displayname_field = $form_state->getValue('displayName');
+  $displayname_value = $displayname_field['0']['value'];
+  if (isset($displayname_value) && strlen($displayname_value) > APP_DISPLAY_NAME_LENGTH) {
+    $form_state->setErrorByName('displayName][0', t('App name must be less or equal to 50 characters.'));
+  }
+      // $company_app_name = 'company_' . str_replace(' ','_',$app_name);
+
+    }
+  if ($form_id == 'developer_app_edit_for_developer_form' ) {
+    $form['displayName']['widget'][0]['value']['#disabled'] = TRUE;
+    $form['description']['widget'][0]['value']['#required']=TRUE;
+  }  
+
+}
