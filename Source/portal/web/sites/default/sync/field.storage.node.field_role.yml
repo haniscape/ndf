@@ -1,12 +1,12 @@
-uuid: 04c1430b-f6b5-4144-a998-1b8a959937c2
+uuid: fc30eda4-5446-4a1d-a37d-942de75d3a35
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_user_role
-field_name: field_user_role
+id: node.field_role
+field_name: field_role
 entity_type: node
 type: entity_reference
 settings:

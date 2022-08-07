@@ -1,18 +1,18 @@
-uuid: 6115afa6-6eec-4608-8fb0-1c0e2ea7b606
+uuid: 12c05a6a-a802-4401-b1c9-40f355b8e928
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_user_role
+    - field.storage.node.field_role
     - node.type.apidoc
     - taxonomy.vocabulary.roles
-id: node.apidoc.field_user_role
-field_name: field_user_role
+id: node.apidoc.field_role
+field_name: field_role
 entity_type: node
 bundle: apidoc
-label: 'User role'
+label: Role
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -1,6 +1,0 @@
-name: NDF registeration
-description: 'Add custom logic on registeration process.'
-type: module
-core_version_requirement: '^8.9 || ^9'
-version: 9.x-1.0
-package: 'NDF'

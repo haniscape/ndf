@@ -1,0 +1,14 @@
+uuid: a13d747f-2a7d-46e1-9096-b28f540921f3
+langcode: en
+status: true
+dependencies: {  }
+id: notify_site_admins_when_app_is_updated
+label: 'Notify site admins when app is updated'
+events:
+  -
+    event_name: 'apigee_edge_actions_entity_update:developer_app'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule

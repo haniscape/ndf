@@ -7,6 +7,8 @@ module:
   adminimal_admin_toolbar: 0
   apigee_api_catalog: 0
   apigee_edge: 0
+  apigee_edge_actions: 0
+  apigee_edge_actions_examples: 0
   apigee_edge_apiproduct_rbac: 0
   apigee_edge_teams: 0
   apigee_kickstart_content: 0
@@ -27,6 +29,7 @@ module:
   contact: 0
   contact_block: 0
   contact_storage: 0
+  content_sync: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -62,7 +65,7 @@ module:
   menu_ui: 0
   mobile_number: 0
   mysql: 0
-  ndf_register: 0
+  ndf_apigee: 0
   node: 0
   options: 0
   page_cache: 0
@@ -79,6 +82,7 @@ module:
   quickedit: 0
   rdf: 0
   responsive_image: 0
+  rules: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -90,6 +94,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  typed_data: 0
   update: 0
   user: 0
   views_ui: 0

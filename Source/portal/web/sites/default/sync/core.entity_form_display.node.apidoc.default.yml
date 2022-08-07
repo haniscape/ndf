@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
-    - field.field.node.apidoc.field_user_role
+    - field.field.node.apidoc.field_role
     - node.type.apidoc
   module:
     - file
@@ -82,11 +82,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_user_role:
-    type: options_select
+  field_role:
+    type: entity_reference_autocomplete
     weight: 26
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
