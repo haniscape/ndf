@@ -82,7 +82,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-<<<<<<< HEAD
   field_role:
     type: entity_reference_autocomplete
     weight: 26
@@ -92,13 +91,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-=======
-  field_user_role:
-    type: options_select
-    weight: 26
-    region: content
-    settings: {  }
->>>>>>> 81e36fa21edac31832497ae3bd4b68ffbb3ffa00
     third_party_settings: {  }
   langcode:
     type: language_select

@@ -39,10 +39,6 @@ hidden:
   field_apidoc_spec_file_source: true
   field_apidoc_spec_md5: true
   field_categories: true
-<<<<<<< HEAD
   field_role: true
-=======
-  field_user_role: true
->>>>>>> 81e36fa21edac31832497ae3bd4b68ffbb3ffa00
   langcode: true
   links: true
