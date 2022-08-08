@@ -30,3 +30,7 @@ visibility:
     bundles: {  }
     is_adjacent: 0
     negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n*"
