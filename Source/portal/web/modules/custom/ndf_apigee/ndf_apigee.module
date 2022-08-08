@@ -13,7 +13,12 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'developer_app_add_for_developer_form') {
     $form['#validate'][] = '_validateAppFormatterSelection';
+
+    $products = \Drupal::service('ndf_services.user_service')->getCurrentUserAccessibleProducts();
+    dd($products);
   }
+
+
 }
 
 /**
