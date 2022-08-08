@@ -40,5 +40,6 @@ hidden:
   field_apidoc_spec_md5: true
   field_categories: true
   field_role: true
+  field_user_role: true
   langcode: true
   links: true
