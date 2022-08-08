@@ -1,9 +1,13 @@
 uuid: 5d94a847-e863-4489-a0f9-494e8718fc4e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - apigee_edge
 id: governmental_developer
 label: 'Governmental developer'
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'add_api_key own developer_app'
+  - 'delete_api_key own developer_app'
