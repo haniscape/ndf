@@ -1,0 +1,52 @@
+uuid:
+  -
+    value: 48caa9bf-5429-40e7-87e9-dbd36230b3fa
+langcode:
+  -
+    value: en
+vid:
+  -
+    target_id: roles
+    target_type: taxonomy_vocabulary
+    target_uuid: 220428aa-2e38-4162-b4da-afd6e2dcedc0
+revision_created:
+  -
+    value: '2022-08-01T23:44:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+name:
+  -
+    value: 'Governmental developer'
+description:
+  -
+    value: null
+    format: null
+    processed: ''
+weight:
+  -
+    value: 0
+parent:
+  -
+    target_id: 0
+changed:
+  -
+    value: '2022-08-01T23:44:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+_content_sync:
+  entity_type: taxonomy_term
+  entity_dependencies: {  }
