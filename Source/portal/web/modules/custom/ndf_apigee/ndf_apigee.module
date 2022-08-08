@@ -36,6 +36,8 @@ function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
         // Get matched products.
         $matched_products = array_intersect($products, $key_products);
         $form['credential'][$key]["api_products"]['#options'] = $matched_products;
+        $form['displayName']['widget'][0]['value']['#disabled'] = TRUE;
+        $form['description']['widget'][0]['value']['#required']=TRUE;
       }
     }
 
