@@ -1,9 +1,13 @@
 uuid: ef1291dd-db4b-4c56-8f79-5fe403bef250
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - apigee_edge
 id: ndf_developer
 label: 'NDF developer'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'add_api_key own developer_app'
+  - 'delete_api_key own developer_app'

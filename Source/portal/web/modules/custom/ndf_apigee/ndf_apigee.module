@@ -1,0 +1,73 @@
+<?php
+
+define('APP_DISPLAY_NAME_LENGTH', 50);
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Form\FormState;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implement Hook_form_alter().
+ */
+function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'developer_app_add_for_developer_form') {
+    $form['#validate'][] = '_validateAppFormatterSelection';
+
+    // Get current user accessible products.
+    $products = \Drupal::service('ndf_services.user_service')->getCurrentUserAccessibleProducts();
+    // Get form products.
+    $org_products = $form['api_products']['#options'];
+
+    // Get matched products.
+    $matched_products = array_intersect($products, $org_products);
+    $form['api_products']['#options'] = $matched_products;
+  }
+
+  if ($form_id == 'developer_app_edit_for_developer_form') {
+    // Get current user accessible products.
+    $products = \Drupal::service('ndf_services.user_service')->getCurrentUserAccessibleProducts();
+
+    foreach ($form['credential'] as $key => $value) {
+      if (isset($value["api_products"])) {
+        // Get form key products.
+        $key_products = $form['credential'][$key]["api_products"]['#options'];
+
+        // Get matched products.
+        $matched_products = array_intersect($products, $key_products);
+        $form['credential'][$key]["api_products"]['#options'] = $matched_products;
+      }
+    }
+
+  }
+}
+
+/**
+ * Validate the formatter selection step.
+ */
+function _validateAppFormatterSelection(&$form, $form_state) {
+  $form_values = $form_state->getValues();
+  $orignal_app_name = $form_state->getValue('name');
+  $orignal_app_display_name = $form_state->getValue('displayName')[0]['value'];
+
+  // Replaces all spaces with hyphens.
+  $app_name = str_replace(' ', '_', $orignal_app_name);
+
+  // Removes special chars.
+  $app_name = preg_replace('/[^A-Za-z0-9\-_]/', '', $app_name);
+
+  $check_orignal_app_display_name = preg_replace('/[^A-Za-z0-9\-_\s]/', '', $orignal_app_display_name);
+
+  if ($check_orignal_app_display_name != $orignal_app_display_name) {
+    $form_state->setError($form['displayName'], t('Invalid app name.'));
+  }
+
+  if ($orignal_app_name != $app_name) {
+    $form_state->setError($form['name'], t('Invalid app name.'));
+  }
+
+  if (strlen($orignal_app_display_name) > APP_DISPLAY_NAME_LENGTH) {
+    $form_state->setError($form['displayName'], t('The length of display name with prefix more than @length characters.', ['@length' => APP_DISPLAY_NAME_LENGTH]));
+  }
+}
+

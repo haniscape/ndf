@@ -8,8 +8,8 @@ _core:
   default_config_hash: axlgVStpEIt5eiZDldRFgur-7puYccXDfimn4rXh8gA
 id: ndf_theme_tabs
 theme: ndf_theme
-region: content
-weight: -8
+region: header
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

@@ -27,6 +27,7 @@ module:
   contact: 0
   contact_block: 0
   contact_storage: 0
+  content_sync: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -62,7 +63,8 @@ module:
   menu_ui: 0
   mobile_number: 0
   mysql: 0
-  ndf_register: 0
+  ndf_apigee: 0
+  ndf_services: 0
   node: 0
   options: 0
   page_cache: 0
