@@ -31,7 +31,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999999;
+  z-index: 9;
   height: 80px;
   padding: 5px 0; }
   .path-frontpage #header-absolute #header {
@@ -207,6 +207,56 @@
       padding: 0.75rem 5rem;
       border-radius: 4px;
       font-size: .85rem; }
+.path-frontpage #block-views-block-home-products-block-block-home-products h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 3rem 3rem 3rem;
+  text-align: center;
+  color: #3C3935; }
+.path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper {
+  padding: 3rem;
+  background-color: #C6AA76;
+  background-blend-mode: darken;
+  margin: 7rem 0; }
+  .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck {
+    justify-content: center;
+    margin: auto; }
+    .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -5rem auto; }
+      .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row {
+        height: 18rem;
+        max-width: 16rem;
+        margin: 0 3rem;
+        flex-direction: column; }
+        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-title {
+          padding: 1rem 1rem 1.5rem;
+          border-bottom: solid 1px #E8E8E8;
+          text-align: center;
+          color: #3C3935;
+          font-size: .95rem; }
+        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-body {
+          padding: 1rem 2rem;
+          height: auto;
+          color: #7C7A77;
+          font-size: .9rem;
+          text-align: center;
+          line-height: 1.75rem; }
+        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-field-product-link {
+          justify-self: flex-end;
+          align-self: center;
+          width: 90%;
+          text-align: center;
+          height: 2.75rem;
+          background: #fff;
+          border: 1px solid #C6AA76;
+          border-radius: 3px;
+          display: grid;
+          place-items: center; }
+.path-frontpage.adminimal-admin-toolbar #header-absolute {
+  top: 79px; }
 
 * {
   margin: 0;

@@ -1,4 +1,4 @@
-uuid: 7a9bb34f-5d03-48c4-ac6d-78cdd5e58cdf
+uuid: 102ba6dc-62ad-4d3f-9d4b-5311827d2f7e
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,14 @@ dependencies:
     - views
   theme:
     - ndf_theme
-id: views_block__home_products_block_block_1
+id: views_block__home_products_block_block_home_products
 theme: ndf_theme
 region: front_fourth_content
-weight: -9
+weight: 0
 provider: null
-plugin: 'views_block:home_products_block-block_1'
+plugin: 'views_block:home_products_block-block_home_products'
 settings:
-  id: 'views_block:home_products_block-block_1'
+  id: 'views_block:home_products_block-block_home_products'
   label: ''
   label_display: visible
   provider: views
@@ -26,7 +26,7 @@ settings:
 visibility:
   block_type:
     id: block_type
-    uuid: 7a9bb34f-5d03-48c4-ac6d-78cdd5e58cdf
+    uuid: 102ba6dc-62ad-4d3f-9d4b-5311827d2f7e
     bundles: {  }
     is_adjacent: 0
     negate: false

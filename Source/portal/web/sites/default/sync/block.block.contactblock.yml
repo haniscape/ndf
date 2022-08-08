@@ -1,6 +1,6 @@
 uuid: efc6e9c1-d2b9-496c-9127-0395f50165e9
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - contact.form.hompage_contact
@@ -12,7 +12,7 @@ dependencies:
     - ndf_theme
 id: contactblock
 theme: ndf_theme
-region: header
+region: front_fifth_content
 weight: -9
 provider: null
 plugin: contact_block

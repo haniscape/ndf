@@ -42,68 +42,58 @@
  * @see html.html.twig
  */
 #}
-{%
-  set nav_classes = 'navbar navbar-expand-lg' ~
+{% set nav_classes = 'navbar navbar-expand-lg' ~
   (b4_navbar_schema != 'none' ? " navbar-#{b4_navbar_schema}" : ' ') ~
   (b4_navbar_schema != 'none' ? (b4_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ')
-%}
+  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ') %}
 
-{%
-  set footer_classes = ' ' ~
+{% set footer_classes = ' ' ~
   (b4_footer_schema != 'none' ? " footer-#{b4_footer_schema}" : ' ') ~
   (b4_footer_schema != 'none' ? (b4_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ')
-%}
+  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ') %}
 
 {% include directory ~ '/templates/includes/header-absolute.html.twig' %}
 
 <main role="main">
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  {%
-    set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
-  %}
+  {% set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
 
-  {%
-    set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
-  %}
+  {% set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3' %}
 
-  {%
-    set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
-  %}
+  {% set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' ) %}
 
   {# Banner region #}
   {% if page.banner %}
-        {{ page.banner }}
+    {{ page.banner }}
   {% endif %}
 
 
-    {% if page.breadcrumb %}
-      {{ page.breadcrumb }}
-    {% endif %}
-    <div class="row no-gutters">
-      {% if page.sidebar_first %}
-        <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
-          {{ page.sidebar_first }}
-        </div>
-      {% endif %}
-      <div class="order-1 order-lg-2 {{ content_classes }}">
-        {{ page.content }}
+  {% if page.breadcrumb %}
+    {{ page.breadcrumb }}
+  {% endif %}
+  <div class="row no-gutters">
+    {% if page.sidebar_first %}
+      <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
+        {{ page.sidebar_first }}
       </div>
-      {% if page.sidebar_second %}
-        <div class="order-3 {{ sidebar_second_classes }}">
-          {{ page.sidebar_second }}
-        </div>
-      {% endif %}
+    {% endif %}
+    <div class="order-1 order-lg-2 {{ content_classes }}">
+      {{ page.content }}
     </div>
+    {% if page.sidebar_second %}
+      <div class="order-3 {{ sidebar_second_classes }}">
+        {{ page.sidebar_second }}
+      </div>
+    {% endif %}
+  </div>
 
 
   {# Front Second content region #}
   {% if page.front_second_content %}
     <div id="second-content-region">
       <div class="front-second-content-region">
-          {{ page.front_second_content }}
+        {{ page.front_second_content }}
       </div>
     </div>
   {% endif %}
@@ -112,7 +102,7 @@
   {% if page.front_third_content %}
     <div id="third-content-region">
       <div class="front-third-content-region">
-          {{ page.front_third_content }}
+        {{ page.front_third_content }}
       </div>
     </div>
   {% endif %}
@@ -123,7 +113,7 @@
   {% if page.front_fourth_content %}
     <div id="fourth-content-region">
       <div class="front-fourth-content-region">
-          {{ page.front_fourth_content }}
+        {{ page.front_fourth_content }}
       </div>
     </div>
   {% endif %}
@@ -132,8 +122,10 @@
   {# Front fifth content region #}
   {% if page.front_fifth_content %}
     <div id="fifth-content-region">
-      <div class="front-fifth-content-region">
+      <div class="container">
+        <div class="front-fifth-content-region">
           {{ page.front_fifth_content }}
+        </div>
       </div>
     </div>
   {% endif %}

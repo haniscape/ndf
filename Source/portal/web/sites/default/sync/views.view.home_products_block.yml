@@ -273,6 +273,10 @@ display:
             operator_list: {  }
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: card
+          default_row_class: true
       row:
         type: fields
       query:
@@ -284,6 +288,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: card-deck
       header: {  }
       footer: {  }
       display_extenders: {  }
