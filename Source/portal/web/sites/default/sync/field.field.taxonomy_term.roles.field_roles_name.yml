@@ -1,0 +1,19 @@
+uuid: b7284078-84b7-4654-adf6-f118b5a52839
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_roles_name
+    - taxonomy.vocabulary.roles
+id: taxonomy_term.roles.field_roles_name
+field_name: field_roles_name
+entity_type: taxonomy_term
+bundle: roles
+label: 'Role name'
+description: 'Enter the user role machine name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
