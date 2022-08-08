@@ -1,0 +1,32 @@
+uuid: 2e370f3d-5710-42ac-b544-707222ddff3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - apigee_kickstart_enhancement
+    - system
+  theme:
+    - ndf_theme
+id: footer
+theme: ndf_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  block_type:
+    id: block_type
+    uuid: 2e370f3d-5710-42ac-b544-707222ddff3b
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

@@ -257,6 +257,23 @@
           place-items: center; }
 .path-frontpage.adminimal-admin-toolbar #header-absolute {
   top: 79px; }
+.path-frontpage .fifth-content-region {
+  padding: 1rem;
+  background-image: url(/themes/custom/ndf_theme/images/home/contact-bg.jpeg);
+  background-size: cover;
+  height: 40rem;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center; }
+  .path-frontpage .fifth-content-region .contact-message-hompage-contact-form {
+    width: 80%;
+    margin: auto; }
+  .path-frontpage .fifth-content-region .edit-submit {
+    background-color: #C6AA76;
+    border: none;
+    margin: auto;
+    padding: 0.5rem 3rem;
+    font-size: .9rem; }
 
 * {
   margin: 0;

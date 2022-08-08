@@ -1,0 +1,26 @@
+<footer role="contentinfo">
+  <div class="top-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 mb-3 mb-md-0">
+          <h5 class="heading">{{ 'Stay contact'|t }}</h5>
+
+        </div>
+        <div class="col-md-3 mb-3 mb-md-0">
+          <h5 class="heading">{{ 'Support'|t }}</h5>
+          {{ drupal_menu('support') }}
+        </div>
+        <div class="col-md-3 mb-3 mb-md-0">
+          <h5 class="heading">{{ 'News'|t }}</h5>
+          {{ drupal_menu('news') }}
+        </div>
+        <div class="col-md-3 mb-3 mb-md-0">
+          <div class="social-icons">
+            <img src="{{ base_path ~ directory }}/images/logos/nwc-logo-white.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
