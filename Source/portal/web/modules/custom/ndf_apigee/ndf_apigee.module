@@ -14,11 +14,32 @@ function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'developer_app_add_for_developer_form') {
     $form['#validate'][] = '_validateAppFormatterSelection';
 
+    // Get current user accessible products.
     $products = \Drupal::service('ndf_services.user_service')->getCurrentUserAccessibleProducts();
-    dd($products);
+    // Get form products.
+    $org_products = $form['api_products']['#options'];
+
+    // Get matched products.
+    $matched_products = array_intersect($products, $org_products);
+    $form['api_products']['#options'] = $matched_products;
   }
 
+  if ($form_id == 'developer_app_edit_for_developer_form') {
+    // Get current user accessible products.
+    $products = \Drupal::service('ndf_services.user_service')->getCurrentUserAccessibleProducts();
 
+    foreach ($form['credential'] as $key => $value) {
+      if (isset($value["api_products"])) {
+        // Get form key products.
+        $key_products = $form['credential'][$key]["api_products"]['#options'];
+
+        // Get matched products.
+        $matched_products = array_intersect($products, $key_products);
+        $form['credential'][$key]["api_products"]['#options'] = $matched_products;
+      }
+    }
+
+  }
 }
 
 /**

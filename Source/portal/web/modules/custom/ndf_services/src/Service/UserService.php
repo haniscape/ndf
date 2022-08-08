@@ -86,7 +86,7 @@ class UserService {
       foreach ($apidocs as $apidoc) {
         // Access multiple products.
         foreach ($apidoc->get('field_api_product')->getValue() as $product) {
-          $products[] = $product['target_id'];
+          $products[$product['target_id']] = $product['target_id'];
         }
       }
     }
