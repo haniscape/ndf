@@ -67,6 +67,7 @@ dev-code-deploy:
     - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && vendor/drush/drush/drush cr"
     - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && vendor/drush/drush/drush cim -y"
     - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && vendor/drush/drush/drush cr"
+    - ssh $NODE_USER@$NODE_IP "cd $DEV_DIR_LOCATION && vendor/drush/drush/drush content-sync:import"
     # pr
     - ssh $NODE_USER@$NODE_IP "sudo chmod 777 -R $DEV_DIR_LOCATION/web/"
     - ssh $NODE_USER@$NODE_IP "sudo chown -R ndfdevportal:nginx $DEV_DIR_LOCATION/web/"

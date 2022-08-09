@@ -1,0 +1,14 @@
+uuid: 3e351eda-e0e2-4763-b3bc-cb4a49a23191
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+events:
+  -
+    event_name: 'apigee_edge_actions_entity_update:team_app'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule

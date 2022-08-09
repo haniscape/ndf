@@ -1,0 +1,51 @@
+uuid: 706d27fe-da1a-442b-9e33-830382758a19
+langcode: en
+status: true
+dependencies: {  }
+id: notify_site_admins_when_app_is_updated
+label: 'Notify site admins when app is updated'
+events:
+  -
+    event_name: 'apigee_edge_actions_entity_update:developer_app'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: cd0736a6-5575-4ed5-80b8-41b3a900dc85
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 17929195-902a-492d-9293-0a94964cfae1
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: d17e1a4d-f913-4c13-ac4b-35fccaf390b7
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: cfc89cc6-3bb2-4a29-a3d3-dca0cb0b1be3
+        weight: 0
+        action_id: rules_email_to_users_of_role
+        context_values:
+          roles:
+            - '[administrator]'
+          subject: 'App {{ developer_app.displayName }} was updated'
+          message: 'App {{ developer_app.displayName }} was updated'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          roles:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
