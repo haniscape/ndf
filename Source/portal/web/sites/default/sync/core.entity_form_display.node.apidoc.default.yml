@@ -145,4 +145,5 @@ content:
 hidden:
   field_apidoc_fetched_timestamp: true
   field_apidoc_spec_md5: true
+  field_product_link: true
   field_user_role: true
