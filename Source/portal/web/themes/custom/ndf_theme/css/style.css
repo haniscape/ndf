@@ -217,10 +217,27 @@
   padding: 3rem;
   background-color: #C6AA76;
   background-blend-mode: darken;
-  margin: 7rem 0; }
+  margin: 7rem 0;
+  height: 14rem; }
+  .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .action {
+    margin: 5rem auto;
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    place-items: center; }
+    .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .action button {
+      background-color: #C6AA76;
+      color: #fff;
+      padding: 0.65rem 6rem;
+      border: none;
+      border-radius: 3px; }
   .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck {
     justify-content: center;
     margin: auto; }
+    .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-header {
+      margin-top: -8rem;
+      color: #7C7A77;
+      font-size: .85rem; }
     .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content {
       display: flex;
       justify-content: center;
@@ -255,25 +272,34 @@
           border-radius: 3px;
           display: grid;
           place-items: center; }
-.path-frontpage.adminimal-admin-toolbar #header-absolute {
-  top: 79px; }
-.path-frontpage .fifth-content-region {
+.path-frontpage #fifth-content-region {
+  margin: 12rem 0 5rem;
   padding: 1rem;
-  background-image: url(/themes/custom/ndf_theme/images/home/contact-bg.jpeg);
   background-size: cover;
-  height: 40rem;
+  height: 50rem;
   background-repeat: no-repeat;
   color: #fff;
   text-align: center; }
-  .path-frontpage .fifth-content-region .contact-message-hompage-contact-form {
-    width: 80%;
+  .path-frontpage #fifth-content-region .contact-message-hompage-contact-form {
+    width: 50%;
+    min-width: 400px;
     margin: auto; }
-  .path-frontpage .fifth-content-region .edit-submit {
-    background-color: #C6AA76;
-    border: none;
-    margin: auto;
-    padding: 0.5rem 3rem;
-    font-size: .9rem; }
+    .path-frontpage #fifth-content-region .contact-message-hompage-contact-form #contact-message-hompage-contact-form {
+      background-color: #ffffff;
+      color: #3C3935;
+      padding: 2rem;
+      margin: 3rem;
+      border-radius: 5px; }
+      .path-frontpage #fifth-content-region .contact-message-hompage-contact-form #contact-message-hompage-contact-form .form-item {
+        text-align: justify; }
+      .path-frontpage #fifth-content-region .contact-message-hompage-contact-form #contact-message-hompage-contact-form #edit-actions #edit-submit {
+        background-color: #C6AA76;
+        border: none;
+        margin: auto;
+        padding: 0.5rem 3rem;
+        font-size: .9rem; }
+.path-frontpage.adminimal-admin-toolbar #header-absolute {
+  top: 79px; }
 
 * {
   margin: 0;

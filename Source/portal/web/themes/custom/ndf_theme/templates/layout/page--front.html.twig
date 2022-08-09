@@ -121,7 +121,8 @@
 
   {# Front fifth content region #}
   {% if page.front_fifth_content %}
-    <div id="fifth-content-region">
+    <div id="fifth-content-region"
+         style="background-image: url({{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/home/contact-bg.jpeg)">
       <div class="container">
         <div class="front-fifth-content-region">
           {{ page.front_fifth_content }}

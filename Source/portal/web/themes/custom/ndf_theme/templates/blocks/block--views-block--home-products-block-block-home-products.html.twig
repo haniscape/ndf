@@ -31,6 +31,8 @@
   'block-' ~ plugin_id|clean_class,
 ] %}
 
+{% set apis_url = render_var(url('<front>')) ~ 'apis' %}
+
 
 <div{{ attributes.addClass(classes) }}>
 
@@ -48,6 +50,14 @@
 
       <div class="card-deck">
         {{ content }}
+      </div>
+      <div class="action">
+
+        {%- if bamboo_i18n_current_lang() == 'ar' %}
+          <a href="{{ base_url }}/ar/apis"><button>View All</button></a>
+        {% else %}
+          <a href="{{ base_url }}/apis"><button>View All</button></a>
+        {% endif %}
       </div>
 
     </div>
