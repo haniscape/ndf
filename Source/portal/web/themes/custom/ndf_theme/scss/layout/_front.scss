@@ -422,6 +422,22 @@
       }
     }
 
+    .action {
+      margin: 5rem auto;
+      width: 100%;
+      height: 10rem;
+      display: grid;
+      place-items: center;
+
+      button {
+        background-color: #C6AA76;
+        color: #fff;
+        padding: 0.65rem 6rem;
+        border: none;
+        border-radius: 3px;
+      }
+    }
+
     #block-views-block-home-products-block-block-home-products1 {
       .home-products-wrapper {
         .card-deck {
