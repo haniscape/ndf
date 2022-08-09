@@ -23,7 +23,7 @@ info:
     value: 'Homepage goals'
 changed:
   -
-    value: '2022-08-07T03:29:01+00:00'
+    value: '2022-08-09T09:44:21+00:00'
     format: 'Y-m-d\TH:i:sP'
 reusable:
   -
@@ -50,7 +50,7 @@ content_translation_created:
     format: 'Y-m-d\TH:i:sP'
 field_description:
   -
-    value: "الاشتراك في هذه الخدمات بشكل آلي وضمن إجراءات الموافقة المصممة لقبول طلب الاشتراك\r\nتهدف بوابة المطورين إلى العمل على تصنيف الخدمات ومراجعتها واستقبال الطلبات"
+    value: "Subscribing to these services automatically and within the approval procedures designed to accept the subscription request\r\nThe developer portal aims to classify, review and receive requests for services"
 field_goal:
   -
     target_type: paragraph
@@ -104,7 +104,7 @@ _translations:
         value: 'Homepage goals'
     changed:
       -
-        value: '2022-08-07T03:29:01+00:00'
+        value: '2022-08-09T09:44:21+00:00'
         format: 'Y-m-d\TH:i:sP'
     reusable:
       -

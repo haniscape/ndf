@@ -16,7 +16,7 @@ bundle: apidoc
 label: 'Specification source type'
 description: 'Indicate if the OpenAPI spec will be provided as a file for upload or a URL.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

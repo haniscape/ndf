@@ -261,7 +261,7 @@
           font-size: .9rem;
           text-align: center;
           line-height: 1.75rem; }
-        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-field-product-link {
+        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-view-node {
           justify-self: flex-end;
           align-self: center;
           width: 90%;
