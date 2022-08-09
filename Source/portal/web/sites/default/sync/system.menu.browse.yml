@@ -1,0 +1,8 @@
+uuid: 0ea28055-77cb-4a30-a2ae-3bd441ff3a6f
+langcode: en
+status: true
+dependencies: {  }
+id: browse
+label: browse
+description: ''
+locked: false

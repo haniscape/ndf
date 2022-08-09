@@ -1,0 +1,152 @@
+uuid:
+  -
+    value: b8bc28ed-193e-4a79-ac03-f4f82f05c901
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+revision_created:
+  -
+    value: '2022-08-06T22:42:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+enabled:
+  -
+    value: true
+title:
+  -
+    value: 'About us'
+description: {  }
+menu_name:
+  -
+    value: main
+link:
+  -
+    uri: 'internal:/about-us'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: true
+weight:
+  -
+    value: -48
+expanded:
+  -
+    value: false
+parent: {  }
+changed:
+  -
+    value: '2022-08-07T00:39:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+content_translation_status:
+  -
+    value: true
+content_translation_created:
+  -
+    value: '2022-08-06T22:42:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: menu_link_content
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+_translations:
+  ar:
+    uuid:
+      -
+        value: b8bc28ed-193e-4a79-ac03-f4f82f05c901
+    langcode:
+      -
+        value: ar
+    bundle:
+      -
+        value: menu_link_content
+    revision_created:
+      -
+        value: '2022-08-06T22:42:31+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_user: {  }
+    revision_log_message: {  }
+    enabled:
+      -
+        value: true
+    title:
+      -
+        value: 'نبذة عنا'
+    description: {  }
+    menu_name:
+      -
+        value: main
+    link:
+      -
+        uri: 'internal:/about-us'
+        title: ''
+        options: {  }
+    external:
+      -
+        value: false
+    rediscover:
+      -
+        value: true
+    weight:
+      -
+        value: -48
+    expanded:
+      -
+        value: false
+    parent: {  }
+    changed:
+      -
+        value: '2022-08-07T00:39:43+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: '2022-08-06T22:43:03+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    _content_sync:
+      entity_type: menu_link_content
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36

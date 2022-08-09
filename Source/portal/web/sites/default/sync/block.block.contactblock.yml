@@ -12,8 +12,8 @@ dependencies:
     - ndf_theme
 id: contactblock
 theme: ndf_theme
-region: content
-weight: 1
+region: front_fifth_content
+weight: -9
 provider: null
 plugin: contact_block
 settings:

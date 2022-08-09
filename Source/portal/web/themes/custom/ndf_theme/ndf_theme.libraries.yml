@@ -8,7 +8,8 @@ global-styling:
       css/fontawesome-stars-o.css: {}
       css/owl.carousel.min.css: {}
       css/owl.theme.default.min.css: {}
-
+    component:
+      'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap': { type: external }
   js:
     js/bootstrap.min.js: {}
     js/owl.carousel.min.js: {}

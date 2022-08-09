@@ -501,9 +501,10 @@ display:
       path: apis
       menu:
         type: normal
-        title: APIs
+        title: Products
         description: 'API Catalog'
-        weight: 0
+        weight: -49
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''

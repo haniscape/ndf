@@ -1,0 +1,144 @@
+uuid:
+  -
+    value: 4050182c-1e49-496f-a70b-7e53f29678b0
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: hero_block
+    target_type: block_content_type
+    target_uuid: e67f6dc9-4698-4fb3-801d-8b00bd4dcf46
+revision_created:
+  -
+    value: '2022-07-02T19:48:46+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log: {  }
+status:
+  -
+    value: true
+info:
+  -
+    value: 'Hompage : Hero block'
+changed:
+  -
+    value: '2022-08-06T20:22:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+reusable:
+  -
+    value: true
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+content_translation_created:
+  -
+    value: '2022-07-02T19:48:46+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_description:
+  -
+    value: "Opportunities to access services and expand the relationship with governmental and non-governmental agencies. Exiting the services with the authorities through a unified channel and within a controlled procedure in order to allow the demand for the services of the National Development Fund to external parties. I found the need for the National Development Department and the integration of the security of other government agencies and the private sector and an increase based on the principle of expanding the services of the Fund\r\n"
+field_image:
+  -
+    alt: ''
+    title: ''
+    width: 1200
+    height: 623
+    target_type: file
+    target_uuid: 6afcfdc3-7b2a-43a0-b7dc-67690e9ebd9e
+field_title:
+  -
+    value: 'Developer Portal'
+_content_sync:
+  entity_type: block_content
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+    file:
+      - file.file.6afcfdc3-7b2a-43a0-b7dc-67690e9ebd9e
+_translations:
+  ar:
+    uuid:
+      -
+        value: 4050182c-1e49-496f-a70b-7e53f29678b0
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: hero_block
+        target_type: block_content_type
+        target_uuid: e67f6dc9-4698-4fb3-801d-8b00bd4dcf46
+    revision_created:
+      -
+        value: '2022-07-02T19:48:46+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_user: {  }
+    revision_log: {  }
+    status:
+      -
+        value: true
+    info:
+      -
+        value: 'Hompage : Hero block'
+    changed:
+      -
+        value: '2022-08-06T18:02:51+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    reusable:
+      -
+        value: true
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    content_translation_created:
+      -
+        value: '2022-07-02T20:05:13+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_description:
+      -
+        value: 'فرص  الدخول للخدمات والتوسع في الارتباط مع الجهات الحكومية وغير الحكومية. خروج الخدمات مع الجهات من خلال قناة موحدة وضمن إجراء محكوم وذلك لإتاحة الطلب على خدمات صندوق التنمية الوطني للجهات الخارجية، وجدت الحاجة لإدارة التنمية الوطني وتكامل أمن الجهات الحكومية الأخرى والقطاع الخاص وزيادة انطلاقاً من مبدأ التوسع في خدمات الصندوق'
+    field_image:
+      -
+        alt: ''
+        title: ''
+        width: 1200
+        height: 623
+        target_type: file
+        target_uuid: 6afcfdc3-7b2a-43a0-b7dc-67690e9ebd9e
+    field_title:
+      -
+        value: 'بوابة المطورين'
+    _content_sync:
+      entity_type: block_content
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+        file:
+          - file.file.6afcfdc3-7b2a-43a0-b7dc-67690e9ebd9e

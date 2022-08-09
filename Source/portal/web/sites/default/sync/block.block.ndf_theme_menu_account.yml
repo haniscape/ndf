@@ -1,10 +1,11 @@
 uuid: 657ba311-3ade-45e3-b301-59e01eec334e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
   module:
+    - apigee_kickstart_enhancement
     - system
   theme:
     - ndf_theme
@@ -12,16 +13,22 @@ _core:
   default_config_hash: e5o-OgvsySwm3H6ZKpYqCoxvfkhvnNsRYIX7pk1gVzc
 id: ndf_theme_menu_account
 theme: ndf_theme
-region: header
-weight: -11
+region: nav_main
+weight: -8
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
   label: 'User account menu'
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  block_type:
+    id: block_type
+    uuid: 657ba311-3ade-45e3-b301-59e01eec334e
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

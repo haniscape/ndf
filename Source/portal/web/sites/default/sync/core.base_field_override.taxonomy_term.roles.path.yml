@@ -1,0 +1,20 @@
+uuid: e78140a2-478a-41b9-94d8-c9e9e456a07b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.roles
+  module:
+    - path
+id: taxonomy_term.roles.path
+field_name: path
+entity_type: taxonomy_term
+bundle: roles
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

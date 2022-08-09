@@ -1,0 +1,32 @@
+uuid: 2f239a31-a16b-421f-bced-24e44edea853
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer:0a9695d2-c5ad-4c12-8df0-c22a4eff3693'
+  module:
+    - apigee_kickstart_enhancement
+    - block_content
+  theme:
+    - ndf_theme
+id: hompagefooter
+theme: ndf_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:0a9695d2-c5ad-4c12-8df0-c22a4eff3693'
+settings:
+  id: 'block_content:0a9695d2-c5ad-4c12-8df0-c22a4eff3693'
+  label: 'Hompage : footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  block_type:
+    id: block_type
+    uuid: 2f239a31-a16b-421f-bced-24e44edea853
+    bundles: {  }
+    is_adjacent: 0
+    negate: false

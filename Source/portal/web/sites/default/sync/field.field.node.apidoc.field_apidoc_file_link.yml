@@ -16,12 +16,12 @@ bundle: apidoc
 label: 'URL to OpenAPI specification file'
 description: 'The URL to an OpenAPI file spec.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 17
   title: 0
+  link_type: 17
   file_extensions: 'yml yaml json'
   no_extension: false
   deferred_request: false

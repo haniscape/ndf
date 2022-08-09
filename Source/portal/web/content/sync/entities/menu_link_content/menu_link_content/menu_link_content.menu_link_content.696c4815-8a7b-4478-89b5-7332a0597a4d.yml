@@ -1,0 +1,143 @@
+uuid:
+  -
+    value: 696c4815-8a7b-4478-89b5-7332a0597a4d
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+revision_created:
+  -
+    value: '2019-11-07T01:19:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+enabled:
+  -
+    value: true
+title:
+  -
+    value: 'Sign up'
+description: {  }
+menu_name:
+  -
+    value: account
+link:
+  -
+    uri: 'internal:/user/register'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: true
+weight:
+  -
+    value: 100
+expanded:
+  -
+    value: false
+parent: {  }
+changed:
+  -
+    value: '2019-11-07T01:19:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid: {  }
+content_translation_status:
+  -
+    value: true
+content_translation_created: {  }
+_content_sync:
+  entity_type: menu_link_content
+_translations:
+  ar:
+    uuid:
+      -
+        value: 696c4815-8a7b-4478-89b5-7332a0597a4d
+    langcode:
+      -
+        value: ar
+    bundle:
+      -
+        value: menu_link_content
+    revision_created:
+      -
+        value: '2019-11-07T01:19:50+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_user: {  }
+    revision_log_message: {  }
+    enabled:
+      -
+        value: true
+    title:
+      -
+        value: 'إنشاء حساب'
+    description: {  }
+    menu_name:
+      -
+        value: account
+    link:
+      -
+        uri: 'internal:/user/register'
+        title: ''
+        options: {  }
+    external:
+      -
+        value: false
+    rediscover:
+      -
+        value: true
+    weight:
+      -
+        value: 100
+    expanded:
+      -
+        value: false
+    parent: {  }
+    changed:
+      -
+        value: '2022-08-06T22:46:38+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: '2022-08-06T22:46:29+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    _content_sync:
+      entity_type: menu_link_content
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36

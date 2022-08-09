@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 2ba8fe46-e6c9-428b-8441-fbc531de46b3
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+filename:
+  -
+    value: explore.png
+uri:
+  -
+    value: 'public://2022-08/explore.png'
+    url: /sites/default/files/2022-08/explore.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 40568
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-08-06T19:56:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2022-08-06T19:57:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36

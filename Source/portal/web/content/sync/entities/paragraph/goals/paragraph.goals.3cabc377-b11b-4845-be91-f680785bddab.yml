@@ -1,0 +1,128 @@
+uuid:
+  -
+    value: 3cabc377-b11b-4845-be91-f680785bddab
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: goals
+    target_type: paragraphs_type
+    target_uuid: 22a5f374-024b-44db-820c-271b6adb8785
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-07-02T19:54:55+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '2'
+parent_type:
+  -
+    value: block_content
+parent_field_name:
+  -
+    value: field_goal
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2022-08-09T09:44:21+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_goals_icon: {  }
+field_goals_image:
+  -
+    alt: ''
+    title: ''
+    width: 300
+    height: 299
+    target_type: file
+    target_uuid: 2ba8fe46-e6c9-428b-8441-fbc531de46b3
+field_goals_title:
+  -
+    value: 'Explore the services'
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    file:
+      - file.file.2ba8fe46-e6c9-428b-8441-fbc531de46b3
+_translations:
+  ar:
+    uuid:
+      -
+        value: 3cabc377-b11b-4845-be91-f680785bddab
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: goals
+        target_type: paragraphs_type
+        target_uuid: 22a5f374-024b-44db-820c-271b6adb8785
+    status:
+      -
+        value: true
+    created:
+      -
+        value: '2022-07-02T19:54:55+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    parent_id:
+      -
+        value: '2'
+    parent_type:
+      -
+        value: block_content
+    parent_field_name:
+      -
+        value: field_goal
+    behavior_settings:
+      -
+        value: {  }
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_changed:
+      -
+        value: '2022-08-09T09:44:21+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_goals_icon: {  }
+    field_goals_image:
+      -
+        alt: ''
+        title: ''
+        width: 300
+        height: 299
+        target_type: file
+        target_uuid: 2ba8fe46-e6c9-428b-8441-fbc531de46b3
+    field_goals_title:
+      -
+        value: 'ﺍﺳﺘﻜﺸﺎﻑ ﺍﻟﺨﺪﻣﺎﺕ'
+    _content_sync:
+      entity_type: paragraph
+      entity_dependencies:
+        file:
+          - file.file.2ba8fe46-e6c9-428b-8441-fbc531de46b3

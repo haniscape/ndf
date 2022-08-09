@@ -27,6 +27,7 @@ expression:
       -
         id: rules_action
         uuid: b2826e2c-5322-4dfe-9020-fc622f0bbf2e
+        action_id: rules_email_to_users_of_role
         context_values:
           roles:
             - administrator
@@ -47,4 +48,3 @@ expression:
           language:
             rules_tokens: {  }
         provides_mapping: {  }
-        action_id: rules_email_to_users_of_role

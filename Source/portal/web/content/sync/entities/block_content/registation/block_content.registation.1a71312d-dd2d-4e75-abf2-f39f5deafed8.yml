@@ -1,0 +1,156 @@
+uuid:
+  -
+    value: 1a71312d-dd2d-4e75-abf2-f39f5deafed8
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: registation
+    target_type: block_content_type
+    target_uuid: cbc840ee-3497-41ec-820c-49a405b9d9de
+revision_created:
+  -
+    value: '2022-07-02T19:57:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log: {  }
+status:
+  -
+    value: true
+info:
+  -
+    value: 'Homepage : registations'
+changed:
+  -
+    value: '2022-08-07T06:39:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+reusable:
+  -
+    value: true
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+content_translation_created:
+  -
+    value: '2022-07-02T19:57:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_link:
+  -
+    uri: 'internal:/'
+    title: 'Create an account'
+    options: {  }
+field_step:
+  -
+    target_type: paragraph
+    target_uuid: b3d6941f-d0b5-4744-a70d-82e1d11176c7
+  -
+    target_type: paragraph
+    target_uuid: f382237d-f363-4a6e-929c-7280222c63e5
+  -
+    target_type: paragraph
+    target_uuid: c75a26d4-ee0b-4cd5-9afc-28c603e60f99
+field_title:
+  -
+    value: 'Registration steps'
+_content_sync:
+  entity_type: block_content
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+    paragraph:
+      - paragraph.registation.b3d6941f-d0b5-4744-a70d-82e1d11176c7
+      - paragraph.registation.f382237d-f363-4a6e-929c-7280222c63e5
+      - paragraph.registation.c75a26d4-ee0b-4cd5-9afc-28c603e60f99
+_translations:
+  ar:
+    uuid:
+      -
+        value: 1a71312d-dd2d-4e75-abf2-f39f5deafed8
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: registation
+        target_type: block_content_type
+        target_uuid: cbc840ee-3497-41ec-820c-49a405b9d9de
+    revision_created:
+      -
+        value: '2022-07-02T19:57:16+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_user: {  }
+    revision_log: {  }
+    status:
+      -
+        value: true
+    info:
+      -
+        value: 'Homepage : registations'
+    changed:
+      -
+        value: '2022-08-07T06:39:46+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    reusable:
+      -
+        value: true
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    content_translation_created:
+      -
+        value: '2022-07-02T20:05:08+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_link:
+      -
+        uri: 'internal:/'
+        title: 'إنشاء حساب'
+        options: {  }
+    field_step:
+      -
+        target_type: paragraph
+        target_uuid: b3d6941f-d0b5-4744-a70d-82e1d11176c7
+      -
+        target_type: paragraph
+        target_uuid: f382237d-f363-4a6e-929c-7280222c63e5
+      -
+        target_type: paragraph
+        target_uuid: c75a26d4-ee0b-4cd5-9afc-28c603e60f99
+    field_title:
+      -
+        value: 'خطوات التسجيل'
+    _content_sync:
+      entity_type: block_content
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+        paragraph:
+          - paragraph.registation.b3d6941f-d0b5-4744-a70d-82e1d11176c7
+          - paragraph.registation.f382237d-f363-4a6e-929c-7280222c63e5
+          - paragraph.registation.c75a26d4-ee0b-4cd5-9afc-28c603e60f99

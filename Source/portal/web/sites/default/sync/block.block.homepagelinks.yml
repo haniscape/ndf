@@ -1,6 +1,6 @@
 uuid: 9c7825f1-3769-4cbf-b9df-1d65bad6efa0
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:link_services:99b1bf74-eb1b-404f-ad43-0565d5991cb0'
@@ -13,7 +13,7 @@ dependencies:
 id: homepagelinks
 theme: ndf_theme
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:99b1bf74-eb1b-404f-ad43-0565d5991cb0'
 settings:

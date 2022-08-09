@@ -12,7 +12,7 @@ _core:
 id: ndf_theme_title
 theme: ndf_theme
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: page_title_block
 settings:
@@ -25,7 +25,7 @@ visibility:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/article/*\r\n/apis\r\n/blog\r\n/contact\r\n/faq\r\n/forum\r\n/forum/*\r\n/search\r\n/search/*\r\n/user/*/plans\r\n/user/*/monetization/product-bundle/*/plan/*\r\n/home"
+    pages: "/article/*\r\n/apis\r\n/blog\r\n/contact\r\n/faq\r\n/forum\r\n/forum/*\r\n/search\r\n/search/*\r\n/user/*/plans\r\n/user/*/monetization/product-bundle/*/plan/*\r\n/home\r\n<front>"
   block_type:
     id: block_type
     uuid: 771d4f00-0a12-41f5-8818-35d1a98acf3f

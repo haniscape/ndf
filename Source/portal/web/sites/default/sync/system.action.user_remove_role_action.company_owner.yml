@@ -1,0 +1,14 @@
+uuid: c6028f82-492f-4c2d-96f9-9f5339c72d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.company_owner
+  module:
+    - user
+id: user_remove_role_action.company_owner
+label: 'Remove the Company owner role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: company_owner

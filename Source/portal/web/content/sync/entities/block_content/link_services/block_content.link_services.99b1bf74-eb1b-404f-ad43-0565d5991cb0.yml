@@ -1,0 +1,162 @@
+uuid:
+  -
+    value: 99b1bf74-eb1b-404f-ad43-0565d5991cb0
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: link_services
+    target_type: block_content_type
+    target_uuid: c02943fb-76d1-425b-a44c-a445516be429
+revision_created:
+  -
+    value: '2022-07-02T20:00:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log: {  }
+status:
+  -
+    value: true
+info:
+  -
+    value: 'Homepage : Links'
+changed:
+  -
+    value: '2022-07-02T20:01:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+reusable:
+  -
+    value: true
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+content_translation_created:
+  -
+    value: '2022-07-02T20:00:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_description:
+  -
+    value: 'يمكنك الإطلاع على خدماتنا واختيار ما يناسب منها التطبيق الخاص بك'
+field_link:
+  -
+    uri: 'internal:/'
+    title: 'عرض جميع الخدمات'
+    options: {  }
+field_link_service:
+  -
+    target_type: paragraph
+    target_uuid: 5e7e3782-1435-46a9-82a0-f37ad719e9cf
+  -
+    target_type: paragraph
+    target_uuid: 68c59bb3-ff71-45fa-91a5-170a53c0b42f
+  -
+    target_type: paragraph
+    target_uuid: a7c68eb7-219e-4994-969e-d02c83db7ebe
+field_title:
+  -
+    value: 'خدمات الربط'
+_content_sync:
+  entity_type: block_content
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+    paragraph:
+      - paragraph.link_service.5e7e3782-1435-46a9-82a0-f37ad719e9cf
+      - paragraph.link_service.68c59bb3-ff71-45fa-91a5-170a53c0b42f
+      - paragraph.link_service.a7c68eb7-219e-4994-969e-d02c83db7ebe
+_translations:
+  ar:
+    uuid:
+      -
+        value: 99b1bf74-eb1b-404f-ad43-0565d5991cb0
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: link_services
+        target_type: block_content_type
+        target_uuid: c02943fb-76d1-425b-a44c-a445516be429
+    revision_created:
+      -
+        value: '2022-07-02T20:00:37+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_user: {  }
+    revision_log: {  }
+    status:
+      -
+        value: true
+    info:
+      -
+        value: 'Homepage : Links'
+    changed:
+      -
+        value: '2022-07-02T20:05:05+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    reusable:
+      -
+        value: true
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    content_translation_created:
+      -
+        value: '2022-07-02T20:05:05+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_description:
+      -
+        value: 'يمكنك الإطلاع على خدماتنا واختيار ما يناسب منها التطبيق الخاص بك'
+    field_link:
+      -
+        uri: 'internal:/'
+        title: 'عرض جميع الخدمات'
+        options: {  }
+    field_link_service:
+      -
+        target_type: paragraph
+        target_uuid: 5e7e3782-1435-46a9-82a0-f37ad719e9cf
+      -
+        target_type: paragraph
+        target_uuid: 68c59bb3-ff71-45fa-91a5-170a53c0b42f
+      -
+        target_type: paragraph
+        target_uuid: a7c68eb7-219e-4994-969e-d02c83db7ebe
+    field_title:
+      -
+        value: 'خدمات الربط'
+    _content_sync:
+      entity_type: block_content
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+        paragraph:
+          - paragraph.link_service.5e7e3782-1435-46a9-82a0-f37ad719e9cf
+          - paragraph.link_service.68c59bb3-ff71-45fa-91a5-170a53c0b42f
+          - paragraph.link_service.a7c68eb7-219e-4994-969e-d02c83db7ebe

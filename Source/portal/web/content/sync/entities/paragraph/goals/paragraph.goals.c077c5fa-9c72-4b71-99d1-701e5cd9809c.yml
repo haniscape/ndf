@@ -1,0 +1,128 @@
+uuid:
+  -
+    value: c077c5fa-9c72-4b71-99d1-701e5cd9809c
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: goals
+    target_type: paragraphs_type
+    target_uuid: 22a5f374-024b-44db-820c-271b6adb8785
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-07-02T19:52:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '2'
+parent_type:
+  -
+    value: block_content
+parent_field_name:
+  -
+    value: field_goal
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2022-08-09T09:44:21+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_goals_icon: {  }
+field_goals_image:
+  -
+    alt: ''
+    title: ''
+    width: 300
+    height: 299
+    target_type: file
+    target_uuid: 896eed80-c91f-41c4-8127-29bbfbff7ddc
+field_goals_title:
+  -
+    value: 'Less time to bond'
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    file:
+      - file.file.896eed80-c91f-41c4-8127-29bbfbff7ddc
+_translations:
+  ar:
+    uuid:
+      -
+        value: c077c5fa-9c72-4b71-99d1-701e5cd9809c
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: goals
+        target_type: paragraphs_type
+        target_uuid: 22a5f374-024b-44db-820c-271b6adb8785
+    status:
+      -
+        value: true
+    created:
+      -
+        value: '2022-07-02T19:52:52+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    parent_id:
+      -
+        value: '2'
+    parent_type:
+      -
+        value: block_content
+    parent_field_name:
+      -
+        value: field_goal
+    behavior_settings:
+      -
+        value: {  }
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_changed:
+      -
+        value: '2022-08-09T09:44:21+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_goals_icon: {  }
+    field_goals_image:
+      -
+        alt: ''
+        title: ''
+        width: 300
+        height: 299
+        target_type: file
+        target_uuid: 896eed80-c91f-41c4-8127-29bbfbff7ddc
+    field_goals_title:
+      -
+        value: 'ﻭﻗﺖ ﺃﻗﻞ ﻟﻠﺈﺭﺗﺒﺎﻁ'
+    _content_sync:
+      entity_type: paragraph
+      entity_dependencies:
+        file:
+          - file.file.896eed80-c91f-41c4-8127-29bbfbff7ddc

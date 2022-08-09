@@ -1,0 +1,504 @@
+.path-frontpage {
+  #header-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    height: 80px;
+    padding: 5px 0;
+
+    #header {
+      width: 100%;
+
+      .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .region-nav-main {
+          display: flex;
+          justify-content: space-between;
+          height: 67px;
+          align-items: center;
+
+          #block-ndf-theme-main-menu {
+            height: 40px;
+
+            .nav-item {
+              min-width: 6rem;
+              text-align: center;
+
+              a {
+                color: $white;
+                border-bottom: 1.5px solid transparent;
+                transition: border .25s ease-out;
+                font-size: .85rem;
+                font-weight: 400;
+
+                &:hover {
+                  border-bottom: 1.5px solid #C6AA76;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+
+        #block-ndf-theme-menu-account {
+          height: 40px;
+
+          .nav-item {
+            min-width: 6rem;
+            text-align: center;
+
+            a {
+              color: $white;
+              border-bottom: 1.5px solid transparent;
+              transition: border .25s ease-out;
+              font-weight: 400;
+              font-size: .85rem;
+
+              &:hover {
+                border-bottom: 1.5px solid #C6AA76;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #header-normal {
+    position: unset;
+  }
+
+  #block-hompageheroblock {
+    background-image: url(/themes/custom/ndf_theme/images/home/hero-bg.jpeg);
+    width: 100%;
+    height: 750px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .watermark {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      background-position-y: 60%;
+
+      .field--name-field-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 1rem;
+        text-align: center;
+      }
+
+      .field--name-field-description {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 1rem 7rem;
+        text-align: center;
+        line-height: 2;
+      }
+    }
+  }
+
+
+  #block-homepagegoals {
+    .field--name-field-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 3rem 3rem 1rem;
+      text-align: center;
+      color: $ndf_dark_grey;
+    }
+
+    .field--name-field-description {
+      font-size: 20px;
+      font-weight: 300;
+      color: $ndf_grey;
+      margin: 1rem 7rem;
+      text-align: center;
+      line-height: 2;
+    }
+
+    .four-goals {
+      width: 75%;
+      margin: auto;
+
+      .field--name-field-goal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        .one-goal-wrapper {
+          position: relative;
+
+          .field--name-field-goals-title {
+            position: absolute;
+            bottom: 43%;
+            left: -10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            color: #3C3935;
+            width: 45%;
+            text-align: center;
+            line-height: 1;
+            font-size: calc(75% + .1rem);
+          }
+        }
+
+        .field__item:nth-of-type(odd) {
+          grid-row: 1;
+        }
+
+        .field__item:nth-of-type(even) {
+          grid-row: 2;
+        }
+
+        .field__item:nth-of-type(1) {
+          grid-column: 1;
+          transform: translate(20%, 10%);
+        }
+
+        .field__item:nth-of-type(2) {
+          grid-column: 2;
+          transform: translate(-20%, -10%);
+        }
+
+        .field__item:nth-of-type(3) {
+          grid-column: 3;
+          transform: translate(20%, 10%);
+        }
+
+        .field__item:nth-of-type(4) {
+          grid-column: 4;
+          transform: translate(-20%, -10%);
+        }
+      }
+    }
+  }
+
+
+  #block-homepageregistations {
+    background-color: $white;
+    padding: 3rem;
+
+    .field--name-field-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 3rem 3rem 1rem;
+      text-align: center;
+      color: $ndf_dark_grey;
+    }
+
+    .registration-wrapper {
+      .field--name-field-step {
+        background-color: $white;
+        display: flex;
+        width: 100%;
+        height: 15rem;
+        justify-content: center;
+        align-items: center;
+
+        .one-step-wrapper {
+          margin: 2rem;
+
+          .field--name-field-registation-description {
+            font-size: .9rem;
+            color: $ndf_grey;
+            display: block;
+            width: 70%;
+            text-align: justify;
+          }
+
+          .wrapper {
+            display: flex;
+
+            .field--name-field-step-number {
+              display: block;
+              width: 50px;
+              height: 50px;
+              background-image: url(/themes/custom/ndf_theme/images/icons/step-icon.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              font-size: 1rem;
+              color: $ndf_gold;
+              margin: 0 0.5rem;
+              text-align: center;
+              transform: translateY(-12px);
+
+              > .field__item {
+                width: 100%;
+                margin-top: 12px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .field--name-field-link {
+      width: 100%;
+      height: 7rem;
+      text-align: center;
+
+      a {
+        width: 12rem;
+        height: 3rem;
+        background-color: $ndf_gold;
+        color: $white;
+        padding: 0.75rem 5rem;
+        border-radius: 4px;
+        font-size: .85rem;
+      }
+    }
+
+  }
+
+
+  #block-views-block-home-products-block-block-home-products {
+
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 3rem 3rem 3rem;
+      text-align: center;
+      color: $ndf_dark_grey;
+    }
+
+    .home-products-wrapper {
+      padding: 3rem;
+      background-color: $ndf_gold;
+      background-blend-mode: darken;
+      margin: 7rem 0;
+      height: 14rem;
+
+      .action {
+        margin: 5rem auto;
+        width: 100%;
+        height: 10rem;
+        display: grid;
+        place-items: center;
+
+        button {
+          background-color: #C6AA76;
+          color: #fff;
+          padding: 0.65rem 6rem;
+          border: none;
+          border-radius: 3px;
+        }
+      }
+
+      .card-deck {
+        justify-content: center;
+        margin: auto;
+
+        .view-header {
+          margin-top: -8rem;
+          color: #7C7A77;
+          font-size: .85rem;
+        }
+
+        .view-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: -5rem auto;
+
+          .card.views-row {
+            height: 18rem;
+            max-width: 16rem;
+            margin: 0 3rem;
+            flex-direction: column;
+
+            .views-field-title {
+              padding: 1rem 1rem 1.5rem;
+              border-bottom: solid 1px $ndf_light_grey;
+              text-align: center;
+              color: $ndf_dark_grey;
+              font-size: .95rem;
+
+            }
+
+            .views-field-body {
+              padding: 1rem 2rem;
+              height: auto;
+              color: $ndf_grey;
+              font-size: .9rem;
+              text-align: center;
+              line-height: 1.75rem;
+            }
+
+            .views-field-view-node {
+              justify-self: flex-end;
+              align-self: center;
+              width: 90%;
+              text-align: center;
+              height: 2.75rem;
+              background: #fff;
+              border: 1px solid #C6AA76;
+              border-radius: 3px;
+              display: grid;
+              place-items: center;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+  #fifth-content-region {
+    margin: 12rem 0 5rem;
+    padding: 1rem;
+    background-size: cover;
+    height: 50rem;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+
+    .contact-message-hompage-contact-form {
+      width: 50%;
+      min-width: 400px;
+      margin: auto;
+
+      #contact-message-hompage-contact-form {
+        background-color: $white;
+        color: $ndf_dark_grey;
+        padding: 2rem;
+        margin: 3rem;
+        border-radius: 5px;
+
+        .form-item {
+          text-align: justify;
+        }
+
+        #edit-actions {
+          #edit-submit {
+            background-color: #C6AA76;
+            border: none;
+            margin: auto;
+            padding: 0.5rem 3rem;
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+  &.adminimal-admin-toolbar {
+    #header-absolute {
+      top: 79px;
+    }
+  }
+
+
+  #fourth-content-region {
+    .home-products-title {
+      width: 100%;
+
+      h3 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 3rem 3rem 1rem;
+        text-align: center;
+        color: #3C3935;
+      }
+    }
+
+    .action {
+      margin: 5rem auto;
+      width: 100%;
+      height: 10rem;
+      display: grid;
+      place-items: center;
+
+      button {
+        background-color: #C6AA76;
+        color: #fff;
+        padding: 0.65rem 6rem;
+        border: none;
+        border-radius: 3px;
+      }
+    }
+
+    #block-views-block-home-products-block-block-home-products1 {
+      .home-products-wrapper {
+        .card-deck {
+          justify-content: center;
+          margin: auto;
+
+          .view-header {
+            margin-top: -8rem;
+            color: #7C7A77;
+            font-size: .85rem;
+          }
+
+          .view-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -5rem auto;
+
+            .card.views-row {
+              height: 18rem;
+              max-width: 16rem;
+              margin: 0 3rem;
+              flex-direction: column;
+
+              .views-field-title {
+                padding: 1rem 1rem 1.5rem;
+                border-bottom: solid 1px $ndf_light_grey;
+                text-align: center;
+                color: $ndf_dark_grey;
+                font-size: .95rem;
+
+              }
+
+              .views-field-body {
+                padding: 1rem 2rem;
+                height: auto;
+                color: $ndf_grey;
+                font-size: .9rem;
+                text-align: center;
+                line-height: 1.75rem;
+              }
+
+              .views-field-view-node {
+                justify-self: flex-end;
+                align-self: center;
+                width: 90%;
+                text-align: center;
+                height: 2.75rem;
+                background: #fff;
+                border: 1px solid #C6AA76;
+                border-radius: 3px;
+                display: grid;
+                place-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+

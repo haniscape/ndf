@@ -15,6 +15,11 @@ regions:
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
   content: 'Main content'
+  banner: 'Hero Banner'
+  front_second_content: 'Front second content'
+  front_third_content: 'Front Third Content'
+  front_fourth_content: 'Front Fourth Content'
+  front_fifth_content: 'Front Fifth Content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: Footer

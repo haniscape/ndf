@@ -1,0 +1,56 @@
+uuid:
+  -
+    value: 0a9695d2-c5ad-4c12-8df0-c22a4eff3693
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: footer
+    target_type: block_content_type
+    target_uuid: e2d8974a-4531-43b5-bdae-b9cb56d0e9e4
+revision_created:
+  -
+    value: '2022-08-08T08:36:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log: {  }
+status:
+  -
+    value: true
+info:
+  -
+    value: 'Hompage : footer'
+changed:
+  -
+    value: '2022-08-08T08:36:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+reusable:
+  -
+    value: true
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+content_translation_created:
+  -
+    value: '2022-08-08T08:36:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+body: {  }
+_content_sync:
+  entity_type: block_content
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36

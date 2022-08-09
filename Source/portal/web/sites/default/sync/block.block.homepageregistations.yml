@@ -12,8 +12,8 @@ dependencies:
     - ndf_theme
 id: homepageregistations
 theme: ndf_theme
-region: content
-weight: -1
+region: front_third_content
+weight: -9
 provider: null
 plugin: 'block_content:1a71312d-dd2d-4e75-abf2-f39f5deafed8'
 settings:
