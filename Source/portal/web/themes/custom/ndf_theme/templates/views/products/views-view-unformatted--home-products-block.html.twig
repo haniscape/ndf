@@ -19,6 +19,17 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
+
+
+
+
+        {%- if bamboo_i18n_current_lang() == 'ar' %}
+          <h3>خدمات الربط</h3>
+        {% else %}
+          <h3>API Services</h3>
+        {% endif %}
+
+
 {% for row in rows %}
   {%
     set row_classes = [
