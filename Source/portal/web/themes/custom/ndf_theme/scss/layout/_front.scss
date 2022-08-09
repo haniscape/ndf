@@ -357,12 +357,6 @@
       }
 
 
-
-
-
-
-
-
     }
   }
 
@@ -383,13 +377,15 @@
 
       #contact-message-hompage-contact-form {
         background-color: $white;
-        color: $ndf_dark_grey ;
+        color: $ndf_dark_grey;
         padding: 2rem;
         margin: 3rem;
         border-radius: 5px;
+
         .form-item {
           text-align: justify;
         }
+
         #edit-actions {
           #edit-submit {
             background-color: #C6AA76;
@@ -409,6 +405,81 @@
   &.adminimal-admin-toolbar {
     #header-absolute {
       top: 79px;
+    }
+  }
+
+
+  #fourth-content-region {
+    .home-products-title {
+      width: 100%;
+
+      h3 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 3rem 3rem 1rem;
+        text-align: center;
+        color: #3C3935;
+      }
+    }
+
+    #block-views-block-home-products-block-block-home-products1 {
+      .home-products-wrapper {
+        .card-deck {
+          justify-content: center;
+          margin: auto;
+
+          .view-header {
+            margin-top: -8rem;
+            color: #7C7A77;
+            font-size: .85rem;
+          }
+
+          .view-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -5rem auto;
+
+            .card.views-row {
+              height: 18rem;
+              max-width: 16rem;
+              margin: 0 3rem;
+              flex-direction: column;
+
+              .views-field-title {
+                padding: 1rem 1rem 1.5rem;
+                border-bottom: solid 1px $ndf_light_grey;
+                text-align: center;
+                color: $ndf_dark_grey;
+                font-size: .95rem;
+
+              }
+
+              .views-field-body {
+                padding: 1rem 2rem;
+                height: auto;
+                color: $ndf_grey;
+                font-size: .9rem;
+                text-align: center;
+                line-height: 1.75rem;
+              }
+
+              .views-field-view-node {
+                justify-self: flex-end;
+                align-self: center;
+                width: 90%;
+                text-align: center;
+                height: 2.75rem;
+                background: #fff;
+                border: 1px solid #C6AA76;
+                border-radius: 3px;
+                display: grid;
+                place-items: center;
+              }
+            }
+          }
+        }
+      }
     }
   }
 

@@ -293,6 +293,55 @@
         font-size: .9rem; }
 .path-frontpage.adminimal-admin-toolbar #header-absolute {
   top: 79px; }
+.path-frontpage #fourth-content-region .home-products-title {
+  width: 100%; }
+  .path-frontpage #fourth-content-region .home-products-title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 3rem 3rem 1rem;
+    text-align: center;
+    color: #3C3935; }
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck {
+  justify-content: center;
+  margin: auto; }
+  .path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-header {
+    margin-top: -8rem;
+    color: #7C7A77;
+    font-size: .85rem; }
+  .path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -5rem auto; }
+    .path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row {
+      height: 18rem;
+      max-width: 16rem;
+      margin: 0 3rem;
+      flex-direction: column; }
+      .path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row .views-field-title {
+        padding: 1rem 1rem 1.5rem;
+        border-bottom: solid 1px #E8E8E8;
+        text-align: center;
+        color: #3C3935;
+        font-size: .95rem; }
+      .path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row .views-field-body {
+        padding: 1rem 2rem;
+        height: auto;
+        color: #7C7A77;
+        font-size: .9rem;
+        text-align: center;
+        line-height: 1.75rem; }
+      .path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row .views-field-view-node {
+        justify-self: flex-end;
+        align-self: center;
+        width: 90%;
+        text-align: center;
+        height: 2.75rem;
+        background: #fff;
+        border: 1px solid #C6AA76;
+        border-radius: 3px;
+        display: grid;
+        place-items: center; }
 
 * {
   margin: 0;
