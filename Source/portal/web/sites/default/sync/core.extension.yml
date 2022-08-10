@@ -93,6 +93,7 @@ module:
   permissions_by_term: 0
   quickedit: 0
   rdf: 0
+  recaptcha: 0
   responsive_image: 0
   rules: 0
   search: 0
