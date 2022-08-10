@@ -74,7 +74,9 @@ module:
   mobile_number: 0
   mysql: 0
   ndf_apigee: 0
+  ndf_register: 0
   ndf_services: 0
+  ndf_settings: 0
   node: 0
   options: 0
   page_cache: 0
