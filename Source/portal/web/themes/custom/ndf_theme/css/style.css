@@ -679,6 +679,39 @@ body.lang-ar .form-type-password button.shwpd {
   max-width: 100%;
 }
 
+.page-user-password main {
+  background-image: url("/themes/custom/ndf_theme/images/home/hero-bg.jpeg");
+  width: 100%;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-user-password main .region-content {
+  width: 600px;
+  height: 430px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 120px auto;
+  background: #ffffff;
+  color: #3C3935;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.page-user-password main .region-content #block-ndf-theme-title {
+  margin: 1rem 0;
+}
+.page-user-password main .region-content #block-ndf-theme-title .page-title {
+  font-weight: bold;
+  font-size: 1.65rem;
+  font-family: "Cairo-medium", sans-serif;
+}
+.page-user-password main .region-content .user-pass label {
+  display: flex;
+}
+.page-user-password main .region-content .g-recaptcha > div {
+  margin: auto;
+}
+
 @media (min-width: 991px) {
   .container {
     max-width: 940px;
