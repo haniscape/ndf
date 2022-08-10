@@ -1,0 +1,5 @@
+name: NDF Settings
+type: module
+description: Provides additional Settings functionality for the NDF site.
+package: NDF
+core_version_requirement: ^9 || ^10

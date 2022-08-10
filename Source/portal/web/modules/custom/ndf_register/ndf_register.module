@@ -1,1 +1,42 @@
 <?php
+
+/**
+ * @file
+ * Primary module hooks for NWC Register module.
+ */
+
+use \Drupal\Core\Url;
+
+/**
+ * Implements hook_form_alter().
+ */
+function ndf_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if($form_id === 'user_register_form') {
+    $form['actions']['submit']['#value'] = t('Create account');
+    // Remove inputs descriptions.
+    $form['field_first_name']['widget']['#description'] = '';
+    $form['field_first_name']['widget'][0]['#description'] = '';
+    $form['field_mobile_number']['widget']['#description'] = '';
+    $form['field_user_company']['widget'][0]['#description'] = '';
+    $form['field_last_name']['widget']['#description'] = '';
+    $form['field_last_name']['widget'][0]['#description'] = '';
+    $form['account']['mail']['#description'] = '';
+
+    // Altering placeholders.
+    $form['field_mobile_number']['widget'][0]['value']['#attributes']["placeholder"] = t('Enter a mobile number');
+    $form['field_user_company']['widget'][0]['value']['#attributes']["placeholder"] = t('Enter company name');
+    $form['field_first_name']['widget'][0]['value']['#attributes']["placeholder"] = t('Enter first name');
+    $form['field_last_name']['widget'][0]['value']['#attributes']["placeholder"] = t('Enter last name');
+    $form['account']['mail']["#attributes"]["placeholder"] = t('Enter email address');
+  }
+}
+
+/*
+ * Helper function to get config value by key
+ */
+function get_config($key) {
+  if(\Drupal::config('ndf_settings.settings')){
+    return \Drupal::config('ndf_settings.settings')->get($key);
+  }
+  return '';
+}

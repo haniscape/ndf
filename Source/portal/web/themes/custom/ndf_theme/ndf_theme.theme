@@ -13,6 +13,9 @@ use Drupal\Core\Template\Attribute;
 function ndf_theme_preprocess_html(&$variables) {
   // Add class to body tag based on role.
   $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['base_url'] = base_path();
+  $current_path = \Drupal::service('path.current')->getPath();
+  $variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
   $variables['attributes']['class'][] = "lang-".$language;
 }
 
@@ -23,6 +26,16 @@ function ndf_theme_page_attachments_alter(&$attachments){
   $language = \Drupal::languageManager()->getCurrentLanguage();
   $lang_css = $language->getId() === 'en' ? 'ltr' : 'rtl';
   $attachments['#attached']['library'][] = 'ndf_theme/styles-' . $lang_css;
+}
+
+/**
+ * Implements hook_preprocess_page_title().
+ */
+function ndf_theme_preprocess_page_title(&$variables) {
+  if (\Drupal::routeMatch()->getRouteName() === 'user.register') {
+    // Set the page title
+    $variables['title'] = t('Create account');
+  }
 }
 
 

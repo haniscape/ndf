@@ -1,0 +1,7 @@
+ndf_settings.ndf_settings:
+  path: '/admin/ndf-settings'
+  defaults:
+    _title: 'NDF Settings'
+    _form: 'Drupal\ndf_settings\Form\NDFSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
