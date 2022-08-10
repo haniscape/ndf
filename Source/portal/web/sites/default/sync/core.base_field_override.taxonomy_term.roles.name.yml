@@ -1,0 +1,18 @@
+uuid: a134305d-6b65-4f42-b11a-537aa6a0f1f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.roles
+id: taxonomy_term.roles.name
+field_name: name
+entity_type: taxonomy_term
+bundle: roles
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -34,6 +34,7 @@ module:
   comment: 0
   components: 0
   config: 0
+  config_translation: 0
   contact: 0
   contact_block: 0
   contact_storage: 0

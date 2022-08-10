@@ -674,6 +674,10 @@ body.lang-ar .form-type-password button.shwpd {
 .page-user-register main .region-content .user-register-form label {
   display: flex;
 }
+.page-user-register main .region-content .user-register-form .mobile-number-field .form-type-textfield input {
+  width: 100% !important;
+  max-width: 100%;
+}
 
 @media (min-width: 991px) {
   .container {
