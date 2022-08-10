@@ -1,0 +1,188 @@
+// Form Override.
+body {
+  form {
+    .validation-error-msg {
+      text-align: center;
+      width: 100%;
+      display: block;
+      color: $red;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+    }
+    details {
+      border: 0px;
+      clear: both;
+      summary {
+        text-align: center;
+        color: $black;
+        font-size: 20px;
+        pointer-events: none;
+        &::marker {
+          display: none;
+          content: '';
+        }
+        &:after {
+          display: none;
+        }
+      }
+      &[data-drupal-selector="edit-group-fg-r-user-workflow"] {
+        display: none;
+      }
+    }
+    .form-item {
+      .label,
+      label {
+        color: $ndf_dark_grey;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 26px;
+      }
+      input, select {
+        margin: 0px;
+        background-color: $white;
+        box-sizing: border-box;
+        height: 54px;
+        &:-moz-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &::-ms-input-placeholder,
+        &::placeholder,
+        &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+          color: $placholder;
+        }
+      }
+      .description {
+        display: none;
+      }
+      .error-msg {
+        position: absolute;
+        color: $red;
+        font-size: 15px;
+      }
+    }
+    .form-actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0px 100px 0px;
+      .form-submit.btn-primary {
+        border-radius: 5px;
+        background: $ndf_gold;
+        border-color: $ndf_gold;
+        box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
+        min-width: 250px;
+        height: 54px;
+        @include transition(background-color .3s, color .3s, border-color .3s);
+        &.disabled {
+          background: $ndf_gold;
+          border-color: $ndf_gold;
+          box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
+          cursor: no-drop;
+          &:hover, &:focus, &:active {
+            background: $ndf_gold_hover;
+            background-color: $ndf_gold_hover;
+            border-color: $ndf_gold_hover;
+          }
+        }
+        &:hover, &:focus, &:active {
+          background: $ndf_gold_hover;
+          background-color: $ndf_gold_hover;
+          border-color: $ndf_gold_hover;
+          box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25) !important;
+        }
+      }
+      .button--danger {
+        border-radius: 5px;
+        background: $danger;
+        border-color: $danger;
+        box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
+        min-width: 150px;
+        padding: 15px 10px;
+        color: $white;
+        text-align: center;
+        @include transition(background-color .3s, color .3s, border-color .3s);
+        &:hover, &:focus, &:active {
+          background: $danger_hover;
+          border-color: $danger_hover;
+          box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25) !important;
+          text-decoration: none;
+        }
+      }
+      a[data-drupal-selector="edit-cancel"],
+      #edit-cancel {
+        border-radius: 5px;
+        background: $danger;
+        border-color: $danger;
+        box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
+        min-width: 150px;
+        padding: 15px 10px;
+        color: $white;
+        text-align: center;
+        @include transition(background-color .3s, color .3s, border-color .3s);
+        &:hover, &:focus, &:active {
+          background: $danger_hover;
+          border-color: $danger_hover;
+          box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25) !important;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+.form-control:focus {
+  color: $black;
+  background-color: $white;
+  border-color: #AFAFAF;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(214, 230, 227, 11%);
+}
+
+.form-type-password {
+  input[type="password"] {
+    padding-#{$right}: 50px;
+  }
+  button.shwpd {
+    position: relative;
+    bottom: 5px;
+    #{$right}: 5px;
+    &:hover, &:focus, &:active {
+      border: 0px;
+      outline: none;
+      box-shadow: none;
+    }
+    &.eye-close {
+      background: url($theme-path + "/images/ui/eye-hide.png") no-repeat;
+      height: 24px;
+    }
+    &.eye-open {
+      background: url($theme-path + "/images/ui/eye-show.png") no-repeat;
+      height: 24px;
+    }
+  }
+}
+
+body.lang-ar {
+  .form-type-password {
+    button.shwpd {
+      margin-right: -2em;
+      margin-left: 0em;
+    }
+  }
+}
+
+.developer-app-confirm-form,
+.apigee-edge--form {
+  padding: 15px;
+  width: 1100px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 50px;
+}

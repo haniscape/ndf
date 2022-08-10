@@ -1,0 +1,36 @@
+.page-user-register{
+  main{
+    background-image: url($theme-path + "/images/auth/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+  }
+  .region-content{
+    width: 600px;
+    height:800px;
+    max-height:100%;
+    max-width:100%;
+    margin: auto;
+    background: $white;
+    color: $ndf_dark_grey;
+    border-radius:5px;
+    padding: 1rem;
+    #block-ndf-theme-title{
+      margin: 1rem 0;
+      .page-title {
+        font-weight: bold;
+        font-size: 1.65rem;
+        font-family:"Cairo-medium",sans-serif;
+      }
+    }
+    .user-register-form{
+      .field--name-field-date-of-birth .label{
+        display: flex;
+      }
+      label{
+        display: flex;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,5 @@
+ndf_settings.ndf_settings:
+  title: NDF Settings
+  parent: system.admin
+  route_name: ndf_settings.ndf_settings
+  weight: 10
