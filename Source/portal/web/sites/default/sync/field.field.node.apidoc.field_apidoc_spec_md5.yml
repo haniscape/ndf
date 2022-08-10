@@ -14,7 +14,7 @@ bundle: apidoc
 label: 'OpenAPI specification file MD5'
 description: 'OpenAPI specification file MD5.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

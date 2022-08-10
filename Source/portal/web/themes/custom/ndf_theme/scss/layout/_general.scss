@@ -2,21 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  body {
-    font-family: 'Cairo', sans-serif;
-    background-color: $ndf_offwhite;
-    a {
-      color: $ndf_dark_choco;
-      text-decoration: none;
-    }
-    ol {
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: $ndf_offwhite;
+  a {
+    color: $ndf_dark_choco;
+    text-decoration: none;
+  }
+  ol {
     list-style: none;
   }
 
   ul {
     list-style: none;
   }
-
-}
 }
