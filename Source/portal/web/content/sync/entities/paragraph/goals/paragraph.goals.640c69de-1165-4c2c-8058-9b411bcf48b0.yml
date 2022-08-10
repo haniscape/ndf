@@ -42,7 +42,7 @@ content_translation_outdated:
     value: false
 content_translation_changed:
   -
-    value: '2022-08-07T03:29:01+00:00'
+    value: '2022-08-09T09:44:21+00:00'
     format: 'Y-m-d\TH:i:sP'
 field_goals_icon: {  }
 field_goals_image:
@@ -107,7 +107,7 @@ _translations:
         value: false
     content_translation_changed:
       -
-        value: '2022-08-07T03:29:01+00:00'
+        value: '2022-08-09T09:44:21+00:00'
         format: 'Y-m-d\TH:i:sP'
     field_goals_icon: {  }
     field_goals_image:

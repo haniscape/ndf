@@ -1,17 +1,17 @@
-uuid: c9152da5-0d8f-4c0a-8307-c1d59ab3145c
+uuid: d7b1bbf4-a40f-41ad-b086-9908b286f365
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.apidoc
-id: node.apidoc.promote
-field_name: promote
-entity_type: node
-bundle: apidoc
-label: 'Promoted to front page'
+    - taxonomy.vocabulary.roles
+id: taxonomy_term.roles.status
+field_name: status
+entity_type: taxonomy_term
+bundle: roles
+label: Published
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 1

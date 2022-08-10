@@ -28,6 +28,16 @@ function ndf_theme_page_attachments_alter(&$attachments){
   $attachments['#attached']['library'][] = 'ndf_theme/styles-' . $lang_css;
 }
 
+/**
+ * Implements hook_preprocess_page_title().
+ */
+function ndf_theme_preprocess_page_title(&$variables) {
+  if (\Drupal::routeMatch()->getRouteName() === 'user.register') {
+    // Set the page title
+    $variables['title'] = t('Create account');
+  }
+}
+
 
 
 

@@ -30,7 +30,7 @@
   font-style: normal;
   font-display: swap;
 }
-.path-frontpage #header-absolute {
+#header-absolute {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,59 +39,61 @@
   height: 80px;
   padding: 5px 0;
 }
-.path-frontpage #header-absolute #header {
+#header-absolute #header {
   width: 100%;
 }
-.path-frontpage #header-absolute #header .navbar {
+#header-absolute #header .navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.path-frontpage #header-absolute #header .navbar .region-nav-main {
+#header-absolute #header .navbar .region-nav-main {
   display: flex;
   justify-content: space-between;
   height: 67px;
   align-items: center;
 }
-.path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu {
+#header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu {
   height: 40px;
 }
-.path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item {
+#header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item {
   min-width: 6rem;
   text-align: center;
 }
-.path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a {
+#header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a {
   color: #ffffff;
   border-bottom: 1.5px solid transparent;
   transition: border 0.25s ease-out;
   font-size: 0.85rem;
   font-weight: 400;
 }
-.path-frontpage #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a:hover {
+#header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a:hover {
   border-bottom: 1.5px solid #C6AA76;
   font-weight: 700;
 }
-.path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account {
+#header-absolute #header .navbar #block-ndf-theme-menu-account {
   height: 40px;
 }
-.path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item {
+#header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item {
   min-width: 6rem;
   text-align: center;
 }
-.path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a {
+#header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a {
   color: #ffffff;
   border-bottom: 1.5px solid transparent;
   transition: border 0.25s ease-out;
   font-weight: 400;
   font-size: 0.85rem;
 }
-.path-frontpage #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a:hover {
+#header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a:hover {
   border-bottom: 1.5px solid #C6AA76;
   font-weight: 700;
 }
-.path-frontpage #header-normal {
+
+#header-normal {
   position: unset;
 }
+
 .path-frontpage #block-hompageheroblock {
   background-image: url("/themes/custom/ndf_theme/images/home/hero-bg.jpeg");
   width: 100%;
@@ -314,7 +316,7 @@
   text-align: center;
   line-height: 1.75rem;
 }
-.path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-field-product-link {
+.path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-view-node {
   justify-self: flex-end;
   align-self: center;
   width: 90%;
@@ -359,6 +361,78 @@
 }
 .path-frontpage.adminimal-admin-toolbar #header-absolute {
   top: 79px;
+}
+.path-frontpage #fourth-content-region .home-products-title {
+  width: 100%;
+}
+.path-frontpage #fourth-content-region .home-products-title h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 3rem 3rem 1rem;
+  text-align: center;
+  color: #3C3935;
+}
+.path-frontpage #fourth-content-region .action {
+  margin: 5rem auto;
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+}
+.path-frontpage #fourth-content-region .action button {
+  background-color: #C6AA76;
+  color: #fff;
+  padding: 0.65rem 6rem;
+  border: none;
+  border-radius: 3px;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck {
+  justify-content: center;
+  margin: auto;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-header {
+  margin-top: -8rem;
+  color: #7C7A77;
+  font-size: 0.85rem;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -5rem auto;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row {
+  height: 18rem;
+  max-width: 16rem;
+  margin: 0 3rem;
+  flex-direction: column;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row .views-field-title {
+  padding: 1rem 1rem 1.5rem;
+  border-bottom: solid 1px #E8E8E8;
+  text-align: center;
+  color: #3C3935;
+  font-size: 0.95rem;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row .views-field-body {
+  padding: 1rem 2rem;
+  height: auto;
+  color: #7C7A77;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.path-frontpage #fourth-content-region #block-views-block-home-products-block-block-home-products1 .home-products-wrapper .card-deck .view-content .card.views-row .views-field-view-node {
+  justify-self: flex-end;
+  align-self: center;
+  width: 90%;
+  text-align: center;
+  height: 2.75rem;
+  background: #fff;
+  border: 1px solid #C6AA76;
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
 }
 
 * {
@@ -569,34 +643,35 @@ body.lang-ar .form-type-password button.shwpd {
 }
 
 .page-user-register main {
-  background-image: url("/themes/custom/ndf_theme/images/auth/bg.jpeg");
+  background-image: url("/themes/custom/ndf_theme/images/home/hero-bg.jpeg");
+  width: 100%;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5rem 0;
 }
-.page-user-register .region-content {
+.page-user-register main .region-content {
   width: 600px;
   height: 800px;
   max-height: 100%;
   max-width: 100%;
-  margin: auto;
+  margin: 120px auto;
   background: #ffffff;
   color: #3C3935;
   border-radius: 5px;
   padding: 1rem;
 }
-.page-user-register .region-content #block-ndf-theme-title {
+.page-user-register main .region-content #block-ndf-theme-title {
   margin: 1rem 0;
 }
-.page-user-register .region-content #block-ndf-theme-title .page-title {
+.page-user-register main .region-content #block-ndf-theme-title .page-title {
   font-weight: bold;
   font-size: 1.65rem;
   font-family: "Cairo-medium", sans-serif;
 }
-.page-user-register .region-content .user-register-form .field--name-field-date-of-birth .label {
+.page-user-register main .region-content .user-register-form .field--name-field-date-of-birth .label {
   display: flex;
 }
-.page-user-register .region-content .user-register-form label {
+.page-user-register main .region-content .user-register-form label {
   display: flex;
 }
 

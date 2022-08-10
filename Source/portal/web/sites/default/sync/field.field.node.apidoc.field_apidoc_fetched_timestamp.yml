@@ -14,7 +14,7 @@ bundle: apidoc
 label: 'Spec fetched from URL timestamp'
 description: 'When the OpenAPI spec file was last fetched from URL as a Unix timestamp.'
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 1587191891

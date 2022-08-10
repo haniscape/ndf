@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\nwc_settings\Form;
+namespace Drupal\ndf_settings\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;

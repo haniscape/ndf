@@ -1,19 +1,19 @@
-uuid: 5a210834-7309-44ce-a8c9-bdfb5a03652a
+uuid: e78140a2-478a-41b9-94d8-c9e9e456a07b
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.apidoc
+    - taxonomy.vocabulary.roles
   module:
     - path
-id: node.apidoc.path
+id: taxonomy_term.roles.path
 field_name: path
-entity_type: node
-bundle: apidoc
+entity_type: taxonomy_term
+bundle: roles
 label: 'URL alias'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
