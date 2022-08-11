@@ -1,0 +1,19 @@
+footer {
+  background-color: $ndf_dark_choco;
+  color: $white;
+
+  .top-footer {
+    row {
+      text-align: center;
+    }
+  }
+
+  .bottom-footer {
+    row {
+      .copyrights {
+        text-align: center;
+      }
+    }
+  }
+}
+
