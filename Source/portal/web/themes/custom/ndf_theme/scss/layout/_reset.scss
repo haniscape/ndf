@@ -1,5 +1,40 @@
 .page-user-password{
   main {
+      background-image: url($theme-path +"/images/home/hero-bg.jpeg");
+      width: 100%;
+      color: $white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .region-content{
+        width: 600px;
+        height:auto;
+        max-height:100%;
+        max-width:100%;
+        margin: 120px auto;
+        background: $white;
+        color: $ndf_dark_grey;
+        border-radius:5px;
+        padding: 1rem;
+        #block-ndf-theme-title{
+          margin: 1rem 0;
+          .page-title {
+            font-weight: bold;
+            font-size: 1.65rem;
+            font-family:"Cairo-medium",sans-serif;
+          }
+        }
+        .user-pass{
+          label{
+            display: flex;
+          }
+        }
+        .g-recaptcha > div{
+          margin: auto;
+        }
+      }
+    }
+}
+main.page-user-reset {
     background-image: url($theme-path +"/images/home/hero-bg.jpeg");
     width: 100%;
     color: $white;
@@ -7,7 +42,7 @@
     background-size: cover;
     .region-content{
       width: 600px;
-      height:430px;
+      height:auto;
       max-height:100%;
       max-width:100%;
       margin: 120px auto;
@@ -23,14 +58,22 @@
           font-family:"Cairo-medium",sans-serif;
         }
       }
-      .user-pass{
+      .user-form{
         label{
           display: flex;
+          margin: 1rem 0;
         }
+        .password-strength__title,
+        .js-password-confirm-message {
+          display:flex;
+        }
+      }
+      #password-policy-status{
+        display:none;
       }
       .g-recaptcha > div{
         margin: auto;
       }
     }
   }
-}
+
