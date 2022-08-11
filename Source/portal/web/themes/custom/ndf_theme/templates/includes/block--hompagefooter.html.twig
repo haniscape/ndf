@@ -1,14 +1,25 @@
 <footer role="contentinfo">
+
   <div class="top-footer">
-    <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-md-3 mb-3 mb-md-0">
+
+
+
+        <div class="col-md-2 mb-3 mb-md-0">
+         <div class="brand-white">
+           <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/logos/ndf-logo-white.svg">
+           <p class="slogan">{{ 'The developer portal to provide the services of the National Development Fund to third parties
+'|t }}</p>
+
+         </div>
+
+        <div class="col-md-2 mb-3 mb-md-0">
           <h5 class="heading">{{ 'Browse'|t }}</h5>
           {{ drupal_menu('browse') }}
         </div>
 
-        <div class="col-md-3 mb-3 mb-md-0">
+        <div class="col-md-2 mb-3 mb-md-0">
           <h5 class="heading">{{ 'Legal'|t }}</h5>
           {{ drupal_menu('legal') }}
         </div>
@@ -20,6 +31,30 @@
           <a href="mailto:info@ndf.goc.sa">info@ndf.goc.sa</a>
         </div>
 
+
+        <div class="col-md-2 mb-3 mb-md-0">
+          <div class="lang-switcher">
+          {% if url_query_string is not null %}
+            {% set url = current_path ~ '?' ~ url_query_string %}
+          {% else %}
+            {% set url = current_path %}
+          {% endif %}
+            <div class="lang">
+              <a href="{{ base_url }}/en{{url}}" class='eng-language'>English</a>
+            </div>
+            <div class="lang">
+              <a href="{{ base_url }}/ar{{url}}" class='ar-language'>العربية</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+  </div>
+
+  <div class="bottom-footer">
+      <div class="row align-items-center">
         <div class="col-md-3 mb-3 mb-md-0">
           <div class="social-icons">
             <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/facebook.svg">
@@ -27,8 +62,9 @@
             <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/twitter.svg">
           </div>
         </div>
+        <p class="copyrights">{{ 'All rights reserved, National Development Fund &#169; 2022'|t }}</p>
       </div>
-    </div>
   </div>
+
 
 </footer>
