@@ -59,10 +59,17 @@ class NDFSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Administrator Email'),
       '#default_value' => $config->get('admin_email'),
     ];
-    $form['contact_us']['address'] = [
-      '#type'  => 'textfield',
-      '#title' => $this->t('Address'),
-      '#default_value' => $config->get('address'),
+    $form['contact_us']['address_en'] = [
+      '#type' => 'text_format',
+      '#format' => 'full_html',
+      '#default_value' => $config->get('address_en.value'),
+      '#title' => $this->t('Address - EN'),
+    ];
+    $form['contact_us']['address_ar'] = [
+      '#type' => 'text_format',
+      '#format' => 'full_html',
+      '#default_value' => $config->get('address_ar.value'),
+      '#title' => $this->t('Address - AR'),
     ];
     $form['contact_us']['fax'] = [
       '#type'  => 'textfield',
@@ -124,13 +131,19 @@ class NDFSettingsForm extends ConfigFormBase {
       '#open'  => FALSE,
       '#title' => $this->t('Copyrights'),
     ];
-    $form['copyrights']['copyrights_txt'] = [
-      '#type'  => 'textfield',
+    $form['copyrights']['copyrights_txt_en'] = [
+      '#type' => 'text_format',
+      '#format' => 'full_html',
       '#open'  => TRUE,
-      '#size'  => '600',
-      '#maxlength' => 600,
-      '#title' => $this->t('Copyrights text'),
-      '#default_value' => $config->get('copyrights_txt'),
+      '#title' => $this->t('Copyrights text - EN'),
+      '#default_value' => $config->get('copyrights_txt_en.value'),
+    ];
+    $form['copyrights']['copyrights_txt_ar'] = [
+      '#type' => 'text_format',
+      '#format' => 'full_html',
+      '#open'  => TRUE,
+      '#title' => $this->t('Copyrights text - AR'),
+      '#default_value' => $config->get('copyrights_txt_ar.value'),
     ];
 
     return parent::buildForm($form, $form_state);
