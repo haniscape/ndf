@@ -1,7 +1,7 @@
 # Schema for the configuration files of the NWC Module module.
 ndf_settings.settings:
   type: config_object
-  label: 'NWC Module settings'
+  label: 'NDF Module settings'
   mapping:
     facebook_url:
       type: string
@@ -24,9 +24,26 @@ ndf_settings.settings:
     fax:
       type: string
       label: 'Fax'
-    address:
-      type: string
+    address_en:
+      type: text_format
+      format: 'full_html'
+      value: ''
       label: 'Address'
+    address_ar:
+      type: text_format
+      format: 'full_html'
+      value: ''
+      label: 'Address'
+    copyrights_txt_en:
+      type: text_format
+      format: 'full_html'
+      value: ''
+      label: 'Copyrights'
+    copyrights_txt_ar:
+      type: text_format
+      format: 'full_html'
+      value: ''
+      label: 'Copyrights'
     phone:
         type: string
         label: 'Phone'

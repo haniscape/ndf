@@ -1,0 +1,25 @@
+facebook_url: ''
+twitter_url: ''
+youtube_url: ''
+instagram_url: ''
+email: ''
+admin_email: ''
+fax: ''
+address_en:
+  value: ''
+  format: full_html
+address_ar:
+  value: ''
+  format: full_html
+copyrights_txt_en:
+  value: ''
+  format: full_html
+copyrights_txt_ar:
+  value: ''
+  format: full_html
+phone: ''
+map_location: ''
+address:
+  value: '<p>Test</p>'
+  format: full_html
+copyrights_txt: ''
