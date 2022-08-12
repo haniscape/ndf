@@ -2,11 +2,6 @@ display:
   default:
     display_title: الرئيسي
     display_options:
-      fields:
-        title:
-          separator: ', '
-        body:
-          separator: ', '
       pager:
         options:
           tags:
@@ -24,5 +19,14 @@ display:
           bef:
             general:
               secondary_label: 'الخيارات المتقدمة'
+      empty:
+        area:
+          content:
+            value: "<p>No API documentation is currently available.</p>\r\n"
+            format: basic_html
+      title: المنتجات
   page_1:
     display_title: الصفحة
+    display_options:
+      menu:
+        title: المنتجات

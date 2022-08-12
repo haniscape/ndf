@@ -504,7 +504,7 @@ display:
         title: Products
         description: 'API Catalog'
         weight: -49
-        enabled: true
+        enabled: false
         expanded: false
         menu_name: main
         parent: ''

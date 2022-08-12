@@ -1,27 +1,26 @@
 <footer role="contentinfo">
 
     <div class="top-footer">
-        <div class="row align-items-center">
+        <div class="wrapper">
 
 
-            <div class="col-md-2 mb-3 mb-md-0">
+
                 <div class="brand-white">
                     <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/logos/ndf-logo-white.svg">
                     <p class="slogan">{{ 'The developer portal to provide the services of the National Development Fund to third parties'|t }}</p>
-
                 </div>
 
-                <div class="col-md-2 mb-3 mb-md-0">
+                <div class="footer-menu-browse">
                     <h5 class="heading">{{ 'Browse'|t }}</h5>
                     {{ drupal_menu('browse') }}
                 </div>
 
-                <div class="col-md-2 mb-3 mb-md-0">
+                <div class="footer-menu-legal">
                     <h5 class="heading">{{ 'Legal'|t }}</h5>
                     {{ drupal_menu('legal') }}
                 </div>
 
-                <div class="col-md-3 mb-3 mb-md-0">
+                <div class="contact-us">
                     <h5 class="heading">{{ 'Contact us'|t }}</h5>
                     <p>2532 Shohadaa Suburb - Unit 10</p>
                     <p>Riyadh 7182-13241 Saudi Arabia</p>
@@ -29,8 +28,8 @@
                 </div>
 
 
-                <div class="col-md-2 mb-3 mb-md-0">
-                    <div class="lang-switcher">
+
+                    <div class="footer-lang-switcher">
                         {% if url_query_string is not null %}
                             {% set url = current_path ~ '?' ~ url_query_string %}
                         {% else %}
@@ -42,8 +41,8 @@
                         <div class="lang">
                             <a href="{{ base_url }}/ar{{ url }}" class='ar-language'>العربية</a>
                         </div>
-                    </div>
-                </div>
+                    </div>s
+
 
             </div>
         </div>

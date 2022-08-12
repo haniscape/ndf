@@ -2,20 +2,20 @@ _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 definitions:
   contact__site_page:
+    enabled: true
     menu_name: footer
     parent: ''
     weight: 0
     expanded: false
-    enabled: true
   apigee_edge_teams__teams:
+    enabled: false
     menu_name: account
     parent: ''
-    weight: -50
     expanded: false
-    enabled: false
+    weight: -50
   apigee_edge__apps:
+    enabled: false
     menu_name: account
     parent: ''
     weight: -30
     expanded: false
-    enabled: false

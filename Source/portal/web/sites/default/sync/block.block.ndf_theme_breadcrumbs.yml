@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - apigee_kickstart_enhancement
     - system
   theme:
     - ndf_theme
@@ -25,10 +24,4 @@ visibility:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/article/*\\r\\n/blog/*\r\n/user/login\r\n/user/register\r\n/user/password"
-  block_type:
-    id: block_type
-    uuid: fcae1b7e-6b9d-45f8-8c66-649e55466bae
-    bundles: {  }
-    is_adjacent: 0
-    negate: false
+    pages: '/article/*\r\n/blog/*'

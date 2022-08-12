@@ -1,0 +1,13 @@
+facebook_url: ''
+twitter_url: ''
+youtube_url: ''
+instagram_url: ''
+email: ''
+admin_email: ''
+fax: ''
+phone: ''
+map_location: ''
+address:
+  value: "<p>2532 Shohadaa Suburb - Unit 10</p>\r\n<p>Riyadh 7182-13241 Saudi Arabia</p>\r\n<a href=\"mailto:info@ndf.goc.sa\">info@ndf.goc.sa</a>"
+  format: full_html
+copyrights_txt: ''
