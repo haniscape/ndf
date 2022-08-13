@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse col-12 col-md-auto p-0 justify-content-end" id="navbarSupportedContent">
             {{ page.nav_main }}
             {{ page.nav_additional }}
-         {#   <div class="lang-switcher">
+            <div class="lang-switcher">
               {% if url_query_string is not null %}
                 {% set url = current_path ~ '?' ~ url_query_string %}
               {% else %}
@@ -36,7 +36,7 @@
                   <a href="{{ base_url }}/ar{{url}}" class='ar-language'>العربية</a>
                 </div>
               {% endif %}
-            </div>#}
+            </div>
           </div>
         </nav>
       {% endif %}

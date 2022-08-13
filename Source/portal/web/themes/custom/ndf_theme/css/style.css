@@ -236,11 +236,11 @@ footer {
       transform: translate(-20%, -10%); }
 .path-frontpage #block-homepageregistations {
   background-color: #ffffff;
-  padding: 3rem; }
+  padding: 1rem; }
   .path-frontpage #block-homepageregistations .field--name-field-title {
     font-size: 28px;
     font-weight: 600;
-    margin: 3rem 3rem 1rem;
+    padding: 2rem 0 0;
     text-align: center;
     color: #3C3935; }
   .path-frontpage #block-homepageregistations .registration-wrapper .field--name-field-step {
@@ -353,7 +353,7 @@ footer {
           display: grid;
           place-items: center; }
 .path-frontpage #fifth-content-region {
-  margin: 12rem 0 5rem;
+  margin: 1rem 0 0;
   padding: 1rem;
   background-size: cover;
   height: 50rem;
