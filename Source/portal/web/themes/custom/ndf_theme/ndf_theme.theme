@@ -17,6 +17,8 @@ function ndf_theme_preprocess_html(&$variables) {
   $current_path = \Drupal::service('path.current')->getPath();
   $variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
   $variables['attributes']['class'][] = "lang-".$language;
+  $url_query_string = \Drupal::request()->getQueryString();
+  $variables['url_query_string'] = $url_query_string;
 }
 
 /**

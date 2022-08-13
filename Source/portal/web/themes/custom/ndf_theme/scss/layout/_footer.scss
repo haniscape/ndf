@@ -1,0 +1,119 @@
+footer {
+  background-color: $ndf_dark_choco;
+  color: $white;
+
+  .top-footer {
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: fit-content;
+      padding: 3rem 0 0;
+      margin: 0 auto 2rem;
+
+      .footer-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: fit-content;
+
+        .heading {
+          color: $white;
+          font-size: 1rem;
+          font-weight: 500;
+          margin: 1rem 0;
+          height: fit-content;
+        }
+
+        .nav {
+          .nav-item {
+            height: fit-content;
+            margin: 0.5rem 0;
+            a {
+              color: $white;
+              text-decoration: none;
+              font-size: .85rem;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+
+      .footer-brand-white {
+        width: 35%;
+        padding: 1rem;
+
+        & > img {
+          height: auto;
+          margin: 0 0 1.5rem;
+          width: 165px;
+        }
+
+        .slogan {
+          color: $white;
+          font-size: .85rem;
+          font-weight: 300;
+        }
+
+      }
+
+      .footer-menu-browse {
+        width: 10%;
+      }
+
+      .footer-menu-legal {
+        width: 15%;
+      }
+
+      .footer-contact-us {
+        width: 25%;
+
+        p {
+          color: $white;
+          font-size: .85rem;
+          font-weight: 300;
+          margin: 1rem 0;
+        }
+      }
+
+      .footer-lang-switcher {
+        width: 10%;
+
+        .lang {
+          margin: 0.5rem 0;
+
+          a {
+            color: $white;
+            text-decoration: none;
+            font-size: .85rem;
+            font-weight: 300;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .bottom-footer {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .social-icons {
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 0 2rem;
+      }
+      .copyrights {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+

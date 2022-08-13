@@ -780,4 +780,12 @@ img {
   /* Standard */
 }
 
+/* Responsive Media Queries */
+@media only screen and (max-width: 767px) {
+  footer .top-footer .wrapper {
+    flex-direction: column; }
+    footer .top-footer .wrapper .footer-item {
+      width: 100%;
+      padding: 0.75rem 1.5rem; } }
+
 /*# sourceMappingURL=style-rtl.css.map */
