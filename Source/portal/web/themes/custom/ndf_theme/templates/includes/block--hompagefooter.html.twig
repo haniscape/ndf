@@ -1,10 +1,13 @@
+{% set lang = bamboo_i18n_current_lang() %}
 <footer role="contentinfo">
 
     <div class="top-footer">
         <div class="wrapper">
             <div class="footer-item footer-brand-white">
                 <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/logos/ndf-logo-white.svg">
-                <p class="slogan">{{ 'The developer portal to provide the services of the National Development Fund to third parties'|t }}</p>
+                <p class="slogan">
+                  {{ drupal_config('ndf_settings.settings','footer_slogin_'~lang) }}
+                </p>
             </div>
 
             <div class="footer-item footer-menu-browse">
@@ -19,9 +22,7 @@
 
             <div class="footer-item footer-contact-us">
                 <h5 class="heading">{{ 'Contact us'|t }}</h5>
-                <p>2532 Shohadaa Suburb - Unit 10</p>
-                <p>Riyadh 7182-13241 Saudi Arabia</p>
-                <a href="mailto:info@ndf.goc.sa">info@ndf.goc.sa</a>
+              {{ drupal_config('ndf_settings.settings','address_'~lang~'.value')|raw }}
             </div>
 
             <div class="footer-item footer-lang-switcher">
@@ -39,10 +40,7 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-
     <div class="bottom-footer">
         <div class="wrapper">
             <div class="social-icons">
@@ -50,9 +48,9 @@
                 <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/instagram.svg">
                 <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/twitter.svg">
             </div>
-            <p class="copyrights">{{ 'All rights reserved, National Development Fund &#169; 2022'|t }}</p>
+            <div class="copyrights">
+              {{ drupal_config('ndf_settings.settings','copyrights_txt_'~lang~'.value')|striptags|trim|render|raw }} &copy; {{ 'now' | date('Y') }}
+            </div>
         </div>
     </div>
-
-
 </footer>

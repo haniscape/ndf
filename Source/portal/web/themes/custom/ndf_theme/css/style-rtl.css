@@ -86,6 +86,101 @@
   position: unset;
 }
 
+footer {
+  background-color: #3D3935;
+  color: #ffffff;
+}
+footer .top-footer .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 3rem 0 0;
+  margin: 0 auto 2rem;
+}
+footer .top-footer .wrapper .footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: fit-content;
+}
+footer .top-footer .wrapper .footer-item .heading {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  height: fit-content;
+}
+footer .top-footer .wrapper .footer-item .nav .nav-item {
+  height: fit-content;
+  margin: 0.5rem 0;
+}
+footer .top-footer .wrapper .footer-item .nav .nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+footer .top-footer .wrapper .footer-brand-white {
+  width: 35%;
+  padding: 1rem;
+}
+footer .top-footer .wrapper .footer-brand-white > img {
+  height: auto;
+  margin: 0 0 1.5rem;
+  width: 165px;
+}
+footer .top-footer .wrapper .footer-brand-white .slogan {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+footer .top-footer .wrapper .footer-menu-browse {
+  width: 10%;
+}
+footer .top-footer .wrapper .footer-menu-legal {
+  width: 15%;
+}
+footer .top-footer .wrapper .footer-contact-us {
+  width: 25%;
+}
+footer .top-footer .wrapper .footer-contact-us p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+footer .top-footer .wrapper .footer-lang-switcher {
+  width: 10%;
+}
+footer .top-footer .wrapper .footer-lang-switcher .lang {
+  margin: 0.5rem 0;
+}
+footer .top-footer .wrapper .footer-lang-switcher .lang a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+footer .bottom-footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .bottom-footer .wrapper .social-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 2rem;
+}
+footer .bottom-footer .wrapper .copyrights {
+  text-align: center;
+  width: 100%;
+}
+
 .path-frontpage #block-hompageheroblock {
   background-image: url("/themes/custom/ndf_theme/images/home/hero-bg.jpeg");
   width: 100%;
@@ -783,9 +878,12 @@ img {
 /* Responsive Media Queries */
 @media only screen and (max-width: 767px) {
   footer .top-footer .wrapper {
-    flex-direction: column; }
-    footer .top-footer .wrapper .footer-item {
-      width: 100%;
-      padding: 0.75rem 1.5rem; } }
+    flex-direction: column;
+  }
+  footer .top-footer .wrapper .footer-item {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=style-rtl.css.map */
