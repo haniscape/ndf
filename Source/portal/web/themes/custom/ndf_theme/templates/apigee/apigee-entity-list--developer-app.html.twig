@@ -1,0 +1,82 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a list of Apigee entities.
+ *
+ * Available variables:
+ * - content: List of apigee entities.
+ * - view_mode: The view mode for the entities.
+ * - entity_type_id: The entity type id.
+ *
+ * @see template_preprocess_apigee_entities_list()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+  'apigee-entity-list',
+  'apigee-entity-list--' ~ entity_type_id|clean_class,
+  'apigee-entity-list--' ~ view_mode|clean_class,
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {% if content['items']|length > 2 %}
+    {% for item in  content['items'] %}
+
+      {% if item['#entity'] is not empty %}
+
+        {% set appName = item['#entity'].Name %}
+        {% set appId = item['#entity'].id %}
+        {% set displayName = get_app_displayname(appId) %}
+
+        <div class="card-green-shadow">
+          <div class="app-naming">
+            <a href="{{ path('entity.developer_app.canonical_by_developer', {'user': user.id,'app': appName} ) }}">{{ displayName|t }}</a>
+          </div>
+
+          <div class="app-status">
+            <div class="button-status unselectable {{item['#entity'].Status}}">
+              <span>{{item['#entity'].Status |capitalize|t }}</span>
+            </div>
+          </div>
+
+          <div class="app-actions">
+            <div class="action-icons-wrapper">
+
+              <div class="action-icon analytics unselectable">
+                <a href="{{ path('entity.developer_app.analytics_for_developer', {'user': user.id,'app': appName} ) }}">
+
+                  <span>{{'Analytics' |t }}</span>
+                </a>
+              </div>
+
+              <div class="action-icon edit unselectable">
+                <a href="{{ path('entity.developer_app.edit_form_for_developer', {'user': user.id,'app': appName}, {'query': {'destination': path('<current>') }} ) }}">
+
+                  <span>{{'Edit' |t }}</span>
+                </a>
+              </div>
+
+              <div class="action-icon delete unselectable">
+                <a href="{{ path('entity.developer_app.delete_form_for_developer', {'user': user.id,'app': appName},  {'query': {'destination': path('<current>') }}) }}">
+
+                  <span>{{'Delete' |t }}</span>
+                </a>
+              </div>
+
+              <div class="action-icon view unselectable">
+                <a href="{{ path('entity.developer_app.canonical_by_developer', {'user': user.id,'app': appName} ) }}">
+                  <span>{{'Details' |t }}</span>
+
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {{ "There are no applications created yet."|t }}
+  {% endif %}
+</div>

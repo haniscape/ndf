@@ -5,9 +5,21 @@ instagram_url: ''
 email: ''
 admin_email: ''
 fax: ''
+address_en:
+  value: ''
+  format: full_html
+address_ar:
+  value: ''
+  format: full_html
+copyrights_txt_en:
+  value: ''
+  format: full_html
+copyrights_txt_ar:
+  value: ''
+  format: full_html
 phone: ''
 map_location: ''
 address:
-  value: "<p>2532 Shohadaa Suburb - Unit 10</p>\r\n<p>Riyadh 7182-13241 Saudi Arabia</p>\r\n<a href=\"mailto:info@ndf.goc.sa\">info@ndf.goc.sa</a>"
+  value: '<p>Test</p>'
   format: full_html
 copyrights_txt: ''

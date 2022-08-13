@@ -1,0 +1,5 @@
+services:
+  Ndf_user_data.ndf_custom_twig:
+    class: Drupal\ndf_apigee\NdfCustomTwig
+    tags:
+      - { name: twig.extension }

@@ -1,4 +1,4 @@
-uuid: 13cb92f4-4a03-4caf-8b8f-55df9cc3b9fd
+uuid: 102ba6dc-62ad-4d3f-9d4b-5311827d2f7e
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,14 @@ dependencies:
     - views.view.home_products_block
   module:
     - apigee_kickstart_enhancement
-    - language
+    - system
     - views
   theme:
     - ndf_theme
 id: views_block__home_products_block_block_home_products
 theme: ndf_theme
 region: front_fourth_content
-weight: -10
+weight: 0
 provider: null
 plugin: 'views_block:home_products_block-block_home_products'
 settings:
@@ -26,14 +26,11 @@ settings:
 visibility:
   block_type:
     id: block_type
-    uuid: 13cb92f4-4a03-4caf-8b8f-55df9cc3b9fd
+    uuid: 102ba6dc-62ad-4d3f-9d4b-5311827d2f7e
     bundles: {  }
     is_adjacent: 0
     negate: false
-  language:
-    id: language
+  request_path:
+    id: request_path
     negate: false
-    context_mapping:
-      language: '@language.current_language_context:language_interface'
-    langcodes:
-      en: en
+    pages: '<front>'

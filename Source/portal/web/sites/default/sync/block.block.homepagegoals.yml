@@ -13,7 +13,7 @@ dependencies:
 id: homepagegoals
 theme: ndf_theme
 region: front_second_content
-weight: -11
+weight: -9
 provider: null
 plugin: 'block_content:a8f4bf38-9c71-4deb-9ba2-d8e31d55becb'
 settings:
