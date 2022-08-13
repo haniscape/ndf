@@ -2,48 +2,41 @@
 
     <div class="top-footer">
         <div class="wrapper">
+            <div class="footer-item footer-brand-white">
+                <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/logos/ndf-logo-white.svg">
+                <p class="slogan">{{ 'The developer portal to provide the services of the National Development Fund to third parties'|t }}</p>
+            </div>
 
+            <div class="footer-item footer-menu-browse">
+                <h5 class="heading">{{ 'Browse'|t }}</h5>
+                {{ drupal_menu('browse') }}
+            </div>
 
+            <div class="footer-item footer-menu-legal">
+                <h5 class="heading">{{ 'Legal'|t }}</h5>
+                {{ drupal_menu('legal') }}
+            </div>
 
-                <div class="brand-white">
-                    <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/logos/ndf-logo-white.svg">
-                    <p class="slogan">{{ 'The developer portal to provide the services of the National Development Fund to third parties'|t }}</p>
+            <div class="footer-item footer-contact-us">
+                <h5 class="heading">{{ 'Contact us'|t }}</h5>
+                <p>2532 Shohadaa Suburb - Unit 10</p>
+                <p>Riyadh 7182-13241 Saudi Arabia</p>
+                <a href="mailto:info@ndf.goc.sa">info@ndf.goc.sa</a>
+            </div>
+
+            <div class="footer-item footer-lang-switcher">
+                <h5 class="heading">{{ 'Language'|t }}</h5>
+                {% if url_query_string is not null %}
+                    {% set url = current_path ~ '?' ~ url_query_string %}
+                {% else %}
+                    {% set url = current_path %}
+                {% endif %}
+                <div class="lang">
+                    <a href="{{ base_url }}/en{{ url }}" class='eng-language'>English</a>
                 </div>
-
-                <div class="footer-menu-browse">
-                    <h5 class="heading">{{ 'Browse'|t }}</h5>
-                    {{ drupal_menu('browse') }}
+                <div class="lang">
+                    <a href="{{ base_url }}/ar{{ url }}" class='ar-language'>العربية</a>
                 </div>
-
-                <div class="footer-menu-legal">
-                    <h5 class="heading">{{ 'Legal'|t }}</h5>
-                    {{ drupal_menu('legal') }}
-                </div>
-
-                <div class="contact-us">
-                    <h5 class="heading">{{ 'Contact us'|t }}</h5>
-                    <p>2532 Shohadaa Suburb - Unit 10</p>
-                    <p>Riyadh 7182-13241 Saudi Arabia</p>
-                    <a href="mailto:info@ndf.goc.sa">info@ndf.goc.sa</a>
-                </div>
-
-
-
-                    <div class="footer-lang-switcher">
-                        {% if url_query_string is not null %}
-                            {% set url = current_path ~ '?' ~ url_query_string %}
-                        {% else %}
-                            {% set url = current_path %}
-                        {% endif %}
-                        <div class="lang">
-                            <a href="{{ base_url }}/en{{ url }}" class='eng-language'>English</a>
-                        </div>
-                        <div class="lang">
-                            <a href="{{ base_url }}/ar{{ url }}" class='ar-language'>العربية</a>
-                        </div>
-                    </div>s
-
-
             </div>
         </div>
 
@@ -51,13 +44,11 @@
     </div>
 
     <div class="bottom-footer">
-        <div class="row align-items-center">
-            <div class="col-md-3 mb-3 mb-md-0">
-                <div class="social-icons">
-                    <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/facebook.svg">
-                    <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/instagram.svg">
-                    <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/twitter.svg">
-                </div>
+        <div class="wrapper">
+            <div class="social-icons">
+                <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/facebook.svg">
+                <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/instagram.svg">
+                <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/icons/twitter.svg">
             </div>
             <p class="copyrights">{{ 'All rights reserved, National Development Fund &#169; 2022'|t }}</p>
         </div>
