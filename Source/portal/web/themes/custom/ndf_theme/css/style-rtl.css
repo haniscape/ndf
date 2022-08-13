@@ -52,18 +52,18 @@
               #header-absolute #header .navbar .region-nav-main #block-ndf-theme-main-menu .nav-item a:hover {
                 border-bottom: 1.5px solid #C6AA76;
                 font-weight: 700; }
-      #header-absolute #header .navbar #block-ndf-theme-menu-account {
+      #header-absolute #header .navbar #block-useraccountmenu {
         height: 40px; }
-        #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item {
+        #header-absolute #header .navbar #block-useraccountmenu .nav-item {
           min-width: 6rem;
           text-align: center; }
-          #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a {
+          #header-absolute #header .navbar #block-useraccountmenu .nav-item a {
             color: #ffffff;
             border-bottom: 1.5px solid transparent;
             transition: border .25s ease-out;
             font-weight: 400;
             font-size: .85rem; }
-            #header-absolute #header .navbar #block-ndf-theme-menu-account .nav-item a:hover {
+            #header-absolute #header .navbar #block-useraccountmenu .nav-item a:hover {
               border-bottom: 1.5px solid #C6AA76;
               font-weight: 700; }
 

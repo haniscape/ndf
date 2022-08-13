@@ -20,8 +20,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 17
   title: 0
+  link_type: 17
   file_extensions: 'yml yaml json'
   no_extension: false
   deferred_request: false
