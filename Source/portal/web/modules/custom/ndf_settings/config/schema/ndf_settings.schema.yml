@@ -50,3 +50,9 @@ ndf_settings.settings:
     map_location:
       type: string
       label: 'Phone'
+    footer_slogin_en:
+        type: string
+        label: 'Slogin EN'
+    footer_slogin_ar:
+      type: string
+      label: 'Slogin AR'

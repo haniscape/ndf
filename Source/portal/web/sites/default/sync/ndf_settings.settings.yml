@@ -6,19 +6,21 @@ email: ''
 admin_email: ''
 fax: ''
 address_en:
-  value: ''
+  value: "<p>2532 Shohadaa Suburb - Unit 10</p>\r\n\r\n<p>Riyadh 7182-13241 Saudi Arabia</p>\r\n\r\n<p><a href=\"mailto:info@ndf.goc.sa\">info@ndf.goc.sa</a></p>\r\n"
   format: full_html
 address_ar:
-  value: ''
+  value: "<p>2532 حي الشهداء ، وحدة 10</p>\r\n\r\n<p>الرياض 7182 - 13241 المملكة العربية السعودية</p>\r\n\r\n<p><a href=\"mailto:info@ndf.goc.sa\">info@ndf.goc.sa</a></p>\r\n"
   format: full_html
 copyrights_txt_en:
-  value: ''
+  value: "<p>All rights reserved to the National Development Fund</p>\r\n"
   format: full_html
 copyrights_txt_ar:
-  value: ''
+  value: "<p>جميع الحقوق محفوظة لصندوق التنمية الوطني&nbsp;</p>\r\n"
   format: full_html
 phone: ''
 map_location: ''
+footer_slogin_en: 'The developer portal to provide the services of the National Development Fund to third parties'
+footer_slogin_ar: 'بوابة المطور لتقديم خدمات صندوق التنمية الوطني للغير'
 address:
   value: '<p>Test</p>'
   format: full_html

@@ -131,6 +131,18 @@ class NDFSettingsForm extends ConfigFormBase {
       '#open'  => FALSE,
       '#title' => $this->t('Copyrights'),
     ];
+    $form['copyrights']['footer_slogin_ar'] = [
+      '#type' => 'textarea',
+      '#open'  => TRUE,
+      '#title' => $this->t('Footer Slogin text - AR'),
+      '#default_value' => $config->get('footer_slogin_ar'),
+    ];
+    $form['copyrights']['footer_slogin_en'] = [
+      '#type' => 'textarea',
+      '#open'  => TRUE,
+      '#title' => $this->t('Footer Slogin text - EN'),
+      '#default_value' => $config->get('footer_slogin_en'),
+    ];
     $form['copyrights']['copyrights_txt_en'] = [
       '#type' => 'text_format',
       '#format' => 'full_html',
