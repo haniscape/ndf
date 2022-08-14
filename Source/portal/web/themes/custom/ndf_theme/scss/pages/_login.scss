@@ -1,4 +1,5 @@
 .page-user-login {
+  position: relative;
   .wrapper-login-page {
     background-image: url($theme-path +"/images/home/hero-bg.jpeg");
     width: 100%;
@@ -20,7 +21,13 @@
         color: #0b2e13;
         .form-item {
           label {
-            
+            width: 100%;
+            text-align: justify;
+            margin-right: 0.5rem;
+            font-size: .9rem;
+            margin-bottom: 0;
+            font-weight: 400;
+            color: $ndf_dark_grey;
           }
         }
       }

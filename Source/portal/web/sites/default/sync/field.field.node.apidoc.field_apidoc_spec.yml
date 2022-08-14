@@ -16,7 +16,7 @@ bundle: apidoc
 label: 'OpenAPI specification'
 description: 'The spec snapshot.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

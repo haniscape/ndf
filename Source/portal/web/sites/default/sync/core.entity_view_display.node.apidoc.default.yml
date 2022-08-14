@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_logo
+    - field.field.node.apidoc.field_product_link
     - field.field.node.apidoc.field_role
     - field.field.node.apidoc.field_user_role
     - node.type.apidoc
@@ -39,6 +41,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_product_link:
     type: link
