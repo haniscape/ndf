@@ -6,28 +6,35 @@
   z-index: 9;
   height: 80px;
   padding: 5px 0;
+
   #header {
     width: 100%;
+
     .navbar {
       width: 100%;
       display: flex;
       justify-content: space-between;
+
       .region-nav-main {
         display: flex;
         justify-content: space-between;
         height: 67px;
         align-items: center;
+
         #block-ndf-theme-main-menu {
           height: 40px;
+
           .nav-item {
             min-width: 6rem;
             text-align: center;
+
             a {
               color: $white;
               border-bottom: 1.5px solid transparent;
               transition: border .25s ease-out;
               font-size: .85rem;
               font-weight: 400;
+
               &:hover {
                 border-bottom: 1.5px solid #C6AA76;
                 font-weight: 700;
@@ -36,23 +43,70 @@
           }
         }
       }
-      #block-useraccountmenu{
+
+      #block-useraccountmenu {
         height: 40px;
+
         .nav-item {
-          min-width: 6rem;
+          min-width: 10rem;
           text-align: center;
+
           a {
-            color: $white;
-            border-bottom: 1.5px solid transparent;
+            color: $ndf_gold;
+            background-color: transparent;
+            border: 1.5px solid $ndf_gold;
             transition: border .25s ease-out;
             font-weight: 400;
             font-size: .85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0 5px;
+
             &:hover {
-              border-bottom: 1.5px solid #C6AA76;
-              font-weight: 700;
+              color: $white;
+              background-color: $ndf_gold;
             }
           }
+
+          a[data-drupal-link-system-path="user/register"], a[data-drupal-link-system-path="user"] {
+            color: $white;
+            background-color: $ndf_gold;
+            border: 1.5px solid $ndf_gold;
+            transition: border .25s ease-out;
+            font-weight: 400;
+            font-size: .85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0 5px;
+          }
         }
+      }
+    }
+  }
+
+  .lang-switcher {
+    background-image: url($theme-path + "/images/icons/language-switch-globe.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: left;
+
+
+    .lang {
+      background-color: transparent;
+      border: none;
+      color: $white;
+      margin: 0 0.5rem;
+
+      a {
+        width: 5rem;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        appearance: none;
+        color: $white;
+        font-size: .85rem;
+
       }
     }
   }

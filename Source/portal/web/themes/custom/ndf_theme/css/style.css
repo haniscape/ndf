@@ -62,17 +62,50 @@
       #header-absolute #header .navbar #block-useraccountmenu {
         height: 40px; }
         #header-absolute #header .navbar #block-useraccountmenu .nav-item {
-          min-width: 6rem;
+          min-width: 10rem;
           text-align: center; }
           #header-absolute #header .navbar #block-useraccountmenu .nav-item a {
-            color: #ffffff;
-            border-bottom: 1.5px solid transparent;
+            color: #C6AA76;
+            background-color: transparent;
+            border: 1.5px solid #C6AA76;
             transition: border .25s ease-out;
             font-weight: 400;
-            font-size: .85rem; }
+            font-size: .85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0 5px; }
             #header-absolute #header .navbar #block-useraccountmenu .nav-item a:hover {
-              border-bottom: 1.5px solid #C6AA76;
-              font-weight: 700; }
+              color: #ffffff;
+              background-color: #C6AA76; }
+          #header-absolute #header .navbar #block-useraccountmenu .nav-item a[data-drupal-link-system-path="user/register"], #header-absolute #header .navbar #block-useraccountmenu .nav-item a[data-drupal-link-system-path="user"] {
+            color: #ffffff;
+            background-color: #C6AA76;
+            border: 1.5px solid #C6AA76;
+            transition: border .25s ease-out;
+            font-weight: 400;
+            font-size: .85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0 5px; }
+  #header-absolute .lang-switcher {
+    background-image: url("/themes/custom/ndf_theme/images/icons/language-switch-globe.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: left; }
+    #header-absolute .lang-switcher .lang {
+      background-color: transparent;
+      border: none;
+      color: #ffffff;
+      margin: 0 0.5rem; }
+      #header-absolute .lang-switcher .lang a {
+        width: 5rem;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        appearance: none;
+        color: #ffffff;
+        font-size: .85rem; }
 
 #header-normal {
   position: unset; }
@@ -120,7 +153,8 @@ footer {
       footer .top-footer .wrapper .footer-brand-white .slogan {
         color: #ffffff;
         font-size: .85rem;
-        font-weight: 300; }
+        font-weight: 300;
+        text-align: justify; }
     footer .top-footer .wrapper .footer-menu-browse {
       width: 10%; }
     footer .top-footer .wrapper .footer-menu-legal {
