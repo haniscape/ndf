@@ -1,0 +1,29 @@
+.page-user-login {
+  .wrapper-login-page {
+    background-image: url($theme-path +"/images/home/hero-bg.jpeg");
+    width: 100%;
+    height: 750px;
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .region-content {
+      color: $ndf_dark_grey;
+      background-color: $white;
+      width: 50vw;
+      min-width: 30rem;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      form.user-login-form {
+        color: #0b2e13;
+        .form-item {
+          label {
+            
+          }
+        }
+      }
+    }
+  }
+}

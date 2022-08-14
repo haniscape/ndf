@@ -14,7 +14,7 @@ _core:
 id: ndf_theme_main_menu
 theme: ndf_theme
 region: nav_main
-weight: -9
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

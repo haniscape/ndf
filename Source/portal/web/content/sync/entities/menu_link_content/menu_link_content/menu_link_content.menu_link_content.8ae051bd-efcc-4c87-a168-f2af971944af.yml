@@ -1,6 +1,6 @@
 uuid:
   -
-    value: 696c4815-8a7b-4478-89b5-7332a0597a4d
+    value: 8ae051bd-efcc-4c87-a168-f2af971944af
 langcode:
   -
     value: en
@@ -9,7 +9,7 @@ bundle:
     value: menu_link_content
 revision_created:
   -
-    value: '2019-11-07T01:19:50+00:00'
+    value: '2022-08-08T08:27:02+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_user: {  }
 revision_log_message: {  }
@@ -18,14 +18,14 @@ enabled:
     value: true
 title:
   -
-    value: 'Sign up'
+    value: FAQs
 description: {  }
 menu_name:
   -
-    value: account
+    value: browse
 link:
   -
-    uri: 'internal:/user/register'
+    uri: 'internal:/faqs'
     title: ''
     options: {  }
 external:
@@ -36,14 +36,14 @@ rediscover:
     value: true
 weight:
   -
-    value: -48
+    value: 0
 expanded:
   -
     value: false
 parent: {  }
 changed:
   -
-    value: '2022-08-13T23:27:18+00:00'
+    value: '2022-08-08T08:27:02+00:00'
     format: 'Y-m-d\TH:i:sP'
 default_langcode:
   -
@@ -59,26 +59,25 @@ content_translation_outdated:
     value: false
 content_translation_uid:
   -
-    target_id: 0
     target_type: user
-    target_uuid: cb224402-c8c5-45d1-bd12-7c3de60fd3f3
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
 content_translation_status:
   -
     value: true
 content_translation_created:
   -
-    value: '2022-08-13T22:04:20+00:00'
+    value: '2022-08-08T08:27:02+00:00'
     format: 'Y-m-d\TH:i:sP'
 _content_sync:
   entity_type: menu_link_content
   entity_dependencies:
     user:
-      - user.user.cb224402-c8c5-45d1-bd12-7c3de60fd3f3
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
 _translations:
   ar:
     uuid:
       -
-        value: 696c4815-8a7b-4478-89b5-7332a0597a4d
+        value: 8ae051bd-efcc-4c87-a168-f2af971944af
     langcode:
       -
         value: ar
@@ -87,7 +86,7 @@ _translations:
         value: menu_link_content
     revision_created:
       -
-        value: '2019-11-07T01:19:50+00:00'
+        value: '2022-08-08T08:27:02+00:00'
         format: 'Y-m-d\TH:i:sP'
     revision_user: {  }
     revision_log_message: {  }
@@ -96,14 +95,14 @@ _translations:
         value: true
     title:
       -
-        value: 'إنشاء حساب'
+        value: 'الأسئلة الشائعة'
     description: {  }
     menu_name:
       -
-        value: account
+        value: browse
     link:
       -
-        uri: 'internal:/user/register'
+        uri: 'internal:/faqs'
         title: ''
         options: {  }
     external:
@@ -114,14 +113,14 @@ _translations:
         value: true
     weight:
       -
-        value: -48
+        value: 0
     expanded:
       -
         value: false
     parent: {  }
     changed:
       -
-        value: '2022-08-13T23:27:18+00:00'
+        value: '2022-08-08T08:27:19+00:00'
         format: 'Y-m-d\TH:i:sP'
     default_langcode:
       -
@@ -144,7 +143,7 @@ _translations:
         value: true
     content_translation_created:
       -
-        value: '2022-08-06T22:46:29+00:00'
+        value: '2022-08-08T08:27:19+00:00'
         format: 'Y-m-d\TH:i:sP'
     _content_sync:
       entity_type: menu_link_content
