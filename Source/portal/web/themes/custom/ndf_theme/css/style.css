@@ -134,6 +134,47 @@
   color: #3C3935;
   margin-bottom: 1rem;
 }
+#header-normal .navbar-toggler {
+  border-color: #3C3935;
+}
+#header-normal .navbar-toggler .navbar-toggler-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "f0c9";
+}
+#header-normal .region-nav-main {
+  display: flex;
+  gap: 1rem;
+}
+#header-normal .region-nav-main #block-ndf-theme-main-menu .navbar-nav {
+  gap: 1rem;
+}
+#header-normal .region-nav-main #block-ndf-theme-main-menu .navbar-nav .nav-item .nav-link {
+  color: #3C3935;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#header-normal .region-nav-main #block-ndf-theme-main-menu .navbar-nav .nav-item .nav-link:hover {
+  color: #7B5B3E;
+  border-bottom: 2px solid #C6AA76;
+}
+#header-normal .region-nav-main .logged-user-menu .username {
+  border: 1px solid #C6AA76;
+  outline: none;
+}
+#header-normal .region-nav-main .logged-user-menu .username .icon {
+  margin-right: 0.5rem;
+}
+#header-normal .region-nav-main .logged-user-menu .dropdown-menu {
+  width: 100%;
+}
+#header-normal .region-nav-main .logged-user-menu .dropdown-menu .dropdown-item:hover {
+  background-color: #C6AA76;
+}
 
 footer {
   background-color: #3D3935;
@@ -1838,12 +1879,29 @@ img {
     padding: 0.75rem 1.5rem;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .path-apps-list .apigee-entity-list--developer-app .card-green-shadow .app-actions .action-icons-wrapper .action-icon {
     flex: 1;
   }
 }
 @media (max-width: 991px) {
+  #header-normal .container {
+    display: block;
+  }
+  #header-normal .region-nav-main {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  #header-normal .region-nav-main .logged-user-menu {
+    margin-top: 1rem;
+  }
+  #header-normal .nav-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .path-apps-list .apigee-entity-list--developer-app {
     padding: 0;
   }
