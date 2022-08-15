@@ -6,35 +6,28 @@
   z-index: 9;
   height: 80px;
   padding: 5px 0;
-
   #header {
     width: 100%;
-
     .navbar {
       width: 100%;
       display: flex;
       justify-content: space-between;
-
       .region-nav-main {
         display: flex;
         justify-content: space-between;
         height: 67px;
         align-items: center;
-
         #block-ndf-theme-main-menu {
           height: 40px;
-
           .nav-item {
             min-width: 6rem;
             text-align: center;
-
             a {
               color: $white;
               border-bottom: 1.5px solid transparent;
               transition: border .25s ease-out;
               font-size: .85rem;
               font-weight: 400;
-
               &:hover {
                 border-bottom: 1.5px solid #C6AA76;
                 font-weight: 700;
@@ -46,11 +39,9 @@
 
       #block-useraccountmenu {
         height: 40px;
-
         .nav-item {
           min-width: 10rem;
           text-align: center;
-
           a {
             color: $ndf_gold;
             background-color: transparent;
@@ -61,13 +52,11 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
             margin: 0 5px;
-
             &:hover {
               color: $white;
               background-color: $ndf_gold;
             }
           }
-
           a[data-drupal-link-system-path="user/register"], a[data-drupal-link-system-path="user"] {
             color: $white;
             background-color: $ndf_gold;
@@ -81,32 +70,50 @@
           }
         }
       }
+
+      .logged-user-menu{
+        .username{
+          border: 1px solid $white;
+          outline: none;
+          color: $white;
+          .icon{
+            margin-#{right}: .5rem;
+          }
+        }
+        .dropdown-menu{
+          width: 100%;
+          .dropdown-item{
+            &:hover{
+              background-color: $ndf_gold;
+            }
+          }
+        }
+      }
     }
   }
 
   .lang-switcher {
-    background-image: url($theme-path + "/images/icons/language-switch-globe.svg");
-    background-repeat: no-repeat;
-    background-size: 25%;
-    background-position: left;
-
-
+    margin-#{$left}:1rem;
     .lang {
       background-color: transparent;
       border: none;
       color: $white;
-      margin: 0 0.5rem;
-
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
       a {
-        width: 5rem;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         appearance: none;
         color: $white;
-        font-size: .85rem;
-
+        gap: 0.5rem;
+        font-size: 18px;
+        text-decoration:none;
+        img{
+          width: 25px;
+        }
       }
     }
   }
@@ -158,6 +165,32 @@
           &:hover{
             background-color: $ndf_gold;
           }
+        }
+      }
+    }
+  }
+  .lang-switcher {
+    margin-#{$left}:1rem;
+    .lang {
+      background-color: transparent;
+      border: none;
+      color: $ndf_gold;
+      margin: 0 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      a {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        appearance: none;
+        color: $ndf_gold;
+        gap: 0.5rem;
+        font-size: 18px;
+        text-decoration:none;
+        img{
+          width: 25px;
         }
       }
     }

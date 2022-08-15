@@ -33,6 +33,15 @@
       justify-content:space-between;
       width: 100%;
     }
+    .lang-switcher{
+      margin: 0;
+      .lang{
+        margin-top: .5rem;
+        a{
+          justify-content:flex-end;
+        }
+      }
+    }
   }
   // App list page.
   .path-apps-list {
