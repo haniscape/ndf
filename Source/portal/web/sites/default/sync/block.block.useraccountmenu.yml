@@ -12,7 +12,7 @@ dependencies:
 id: useraccountmenu
 theme: ndf_theme
 region: nav_main
-weight: 0
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:

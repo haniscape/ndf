@@ -13,7 +13,7 @@ dependencies:
 id: homepagelinks
 theme: ndf_theme
 region: content
-weight: -5
+weight: -3
 provider: null
 plugin: 'block_content:99b1bf74-eb1b-404f-ad43-0565d5991cb0'
 settings:
