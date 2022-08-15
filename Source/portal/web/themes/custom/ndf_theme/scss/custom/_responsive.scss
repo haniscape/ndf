@@ -1,0 +1,40 @@
+@media (max-width:769px){
+  .path-apps-list {
+    .apigee-entity-list--developer-app{
+      .card-green-shadow{
+        .app-actions{
+          .action-icons-wrapper{
+            .action-icon{
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .path-apps-list {
+    .apigee-entity-list--developer-app{
+      padding: 0;
+      .card-green-shadow{
+        display: block;
+        .app-naming {
+          .name{
+            flex-wrap: wrap;
+          }
+          .app-description{
+            margin-bottom:1rem;
+          }
+        }
+        .app-actions{
+          .action-icons-wrapper{
+            flex-wrap: wrap;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

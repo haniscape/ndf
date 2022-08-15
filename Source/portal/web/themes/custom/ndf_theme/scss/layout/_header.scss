@@ -112,6 +112,9 @@
   }
 }
 
-#header-normal {
-  position: unset;
+#header-normal{
+  background: $white;
+  position: static;
+  color: $ndf_dark_grey;
+  margin-bottom:1rem;
 }
