@@ -8,8 +8,8 @@ _core:
   default_config_hash: hwdHa18yjGOYn7Aag8iof5QKhzg6RPA4VCDEAmiVqP8
 id: ndf_theme_actions
 theme: ndf_theme
-region: header
-weight: -8
+region: content
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

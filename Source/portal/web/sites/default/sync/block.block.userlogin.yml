@@ -10,7 +10,7 @@ dependencies:
 id: userlogin
 theme: ndf_theme
 region: content
-weight: -4
+weight: -2
 provider: null
 plugin: user_login_block
 settings:

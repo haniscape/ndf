@@ -19,6 +19,13 @@ function ndf_theme_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = "lang-".$language;
   $url_query_string = \Drupal::request()->getQueryString();
   $variables['url_query_string'] = $url_query_string;
+
+  // Set body class.
+  $current_route_name = \Drupal::routeMatch()->getRouteName();
+
+  if ($current_route_name === 'entity.developer_app.collection_by_developer') {
+    $variables['attributes']['class'][] = 'path-apps-list';
+  }
 }
 
 /**

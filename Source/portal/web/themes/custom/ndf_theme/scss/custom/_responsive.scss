@@ -1,0 +1,60 @@
+@media (max-width:768px){
+  .path-apps-list {
+    .apigee-entity-list--developer-app{
+      .card-green-shadow{
+        .app-actions{
+          .action-icons-wrapper{
+            .action-icon{
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  // header
+  #header-normal{
+    .container{
+      display: block;
+    }
+    .region-nav-main {
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      .logged-user-menu{
+        margin-top: 1rem;
+      }
+    }
+    .nav-brand{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      width: 100%;
+    }
+  }
+  // App list page.
+  .path-apps-list {
+    .apigee-entity-list--developer-app{
+      padding: 0;
+      .card-green-shadow{
+        display: block;
+        .app-naming {
+          .name{
+            flex-wrap: wrap;
+          }
+          .app-description{
+            margin-bottom:1rem;
+          }
+        }
+        .app-actions{
+          .action-icons-wrapper{
+            flex-wrap: wrap;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

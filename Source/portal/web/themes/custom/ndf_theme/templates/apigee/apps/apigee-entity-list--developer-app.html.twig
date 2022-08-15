@@ -24,20 +24,19 @@
     {% for item in  content['items'] %}
 
       {% if item['#entity'] is not empty %}
-
         {% set appName = item['#entity'].Name %}
         {% set appId = item['#entity'].id %}
         {% set displayName = get_app_displayname(appId) %}
 
         <div class="card-green-shadow">
           <div class="app-naming">
-            <a href="{{ path('entity.developer_app.canonical_by_developer', {'user': user.id,'app': appName} ) }}">{{ displayName|t }}</a>
-          </div>
-
-          <div class="app-status">
-            <div class="button-status unselectable {{item['#entity'].Status}}">
-              <span>{{item['#entity'].Status |capitalize|t }}</span>
+            <div class="name">
+              <a href="{{ path('entity.developer_app.canonical_by_developer', {'user': user.id,'app': appName} ) }}">{{displayName}}</a>
+              <div class="button-status unselectable {{item['#entity'].Status}}">
+                <span>{{item['#entity'].Status |capitalize|t }}</span>
+              </div>
             </div>
+            <p class="app-description">{{ item['#entity'].description|truncate(50) }}</p>
           </div>
 
           <div class="app-actions">
@@ -45,21 +44,21 @@
 
               <div class="action-icon analytics unselectable">
                 <a href="{{ path('entity.developer_app.analytics_for_developer', {'user': user.id,'app': appName} ) }}">
-
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/ui/analytics_icon.png" alt="App Analytics"/>
                   <span>{{'Analytics' |t }}</span>
                 </a>
               </div>
 
               <div class="action-icon edit unselectable">
                 <a href="{{ path('entity.developer_app.edit_form_for_developer', {'user': user.id,'app': appName}, {'query': {'destination': path('<current>') }} ) }}">
-
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/ui/edit_icon.png" alt="Edit App"/>
                   <span>{{'Edit' |t }}</span>
                 </a>
               </div>
 
               <div class="action-icon delete unselectable">
                 <a href="{{ path('entity.developer_app.delete_form_for_developer', {'user': user.id,'app': appName},  {'query': {'destination': path('<current>') }}) }}">
-
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/ui/delete_icon.png" alt="Delete App"/>
                   <span>{{'Delete' |t }}</span>
                 </a>
               </div>
@@ -67,7 +66,7 @@
               <div class="action-icon view unselectable">
                 <a href="{{ path('entity.developer_app.canonical_by_developer', {'user': user.id,'app': appName} ) }}">
                   <span>{{'Details' |t }}</span>
-
+                  <img src="{{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/ui/details_icon.png" alt="View App Details"/>
                 </a>
               </div>
 
@@ -77,6 +76,6 @@
       {% endif %}
     {% endfor %}
   {% else %}
-    {{ "There are no applications created yet."|t }}
+    {{ "There are no applications created yet." }}
   {% endif %}
 </div>
