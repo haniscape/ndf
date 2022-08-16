@@ -1,0 +1,8 @@
+uuid: 04fdd247-ee36-4a31-8949-f09d06cea9f8
+langcode: en
+status: true
+dependencies: {  }
+name: 'API Type'
+vid: api_type
+description: 'Type of open api doc (snadbox - production)'
+weight: 0

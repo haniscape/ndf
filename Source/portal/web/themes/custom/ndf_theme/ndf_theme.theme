@@ -25,6 +25,12 @@ function ndf_theme_preprocess_html(&$variables) {
 
   if ($current_route_name === 'entity.developer_app.collection_by_developer') {
     $variables['attributes']['class'][] = 'path-apps-list';
+  } elseif ($current_route_name === 'entity.developer_app.canonical_by_developer') {
+    $variables['attributes']['class'][] = 'path-app-view';
+  } elseif ($current_route_name === 'entity.developer_app.analytics_for_developer') {
+    $variables['attributes']['class'][] = 'path-app-analytics';
+  } elseif ($current_route_name === 'entity.developer_app.edit_form_for_developer') {
+    $variables['attributes']['class'][] = 'path-app-edit';
   }
 }
 
@@ -45,6 +51,25 @@ function ndf_theme_preprocess_page_title(&$variables) {
     // Set the page title
     $variables['title'] = t('Create account');
   }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function ndf_theme_preprocess(&$variables) {
+  // Get user Id.
+  $variables['current_uid'] = \Drupal::currentUser()->id();
+
+  // Get app id in app page for twig.
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'entity.developer_app.canonical_by_developer') {
+    $app = \Drupal::routeMatch()->getParameter('app');
+    $variables['current_app_name'] = $app->getName();
+  }
+
+  // Set current language in vars.
+  $language_interface = \Drupal::languageManager()->getCurrentLanguage();
+  $variables['curr_lang'] = $language_interface->getId();
 }
 
 

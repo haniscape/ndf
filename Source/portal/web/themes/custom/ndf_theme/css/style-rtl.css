@@ -1155,8 +1155,8 @@ main.page-user-reset .region-content .g-recaptcha > div {
   padding: 30px;
 }
 .path-app-view .app-entity .header-section .add-keys a {
-  background-color: #1FA99A;
-  border: 1px solid #1FA99A;
+  background-color: #C6AA76;
+  border: 1px solid #C6AA76;
   text-align: center;
   border-right: 5px;
   color: #ffffff;
@@ -1191,11 +1191,11 @@ main.page-user-reset .region-content .g-recaptcha > div {
   margin-bottom: 30px;
 }
 .path-app-view .app-entity .content-section .app-info .app-name {
-  color: #0E8D7C;
+  color: #3C3935;
   font-size: 22px;
 }
 .path-app-view .app-entity .content-section .app-info .app-status .field__label {
-  display: none;
+  margin-bottom: 1rem;
 }
 .path-app-view .app-entity .content-section .app-info .app-status .field__item .wrapper--status {
   border-radius: 5px;
@@ -1218,7 +1218,7 @@ main.page-user-reset .region-content .g-recaptcha > div {
 }
 .path-app-view .app-entity .content-section .app-body .app-description .field__label {
   display: block;
-  color: #0E8D7C;
+  color: #3C3935;
   float: none;
   margin-bottom: 5px;
   font-size: 16px;
@@ -1228,7 +1228,7 @@ main.page-user-reset .region-content .g-recaptcha > div {
 }
 .path-app-view .app-entity .content-section .app-body .app-callbackurl .field__label {
   display: block;
-  color: #0E8D7C;
+  color: #3C3935;
   font-size: 16px;
   float: right;
 }
@@ -1238,422 +1238,107 @@ main.page-user-reset .region-content .g-recaptcha > div {
 .path-app-view .app-entity .content-section .app-body .app-callbackurl .field__item a {
   color: #000000;
 }
+.path-app-view .app-entity .content-section .app-body .app-createdat .field__label {
+  display: block;
+  color: #C6AA76;
+  font-size: 16px;
+  float: right;
+}
+.path-app-view .app-entity .content-section .app-body .app-createdat .field__item {
+  color: #000000;
+}
+.path-app-view .app-entity .content-section .app-body .app-createdat .field__item a {
+  color: #000000;
+}
+.path-app-view .app-entity .content-section .app-body .app-expireat .field__label {
+  display: block;
+  color: #C6AA76;
+  font-size: 16px;
+  float: right;
+}
+.path-app-view .app-entity .content-section .app-body .app-expireat .field__item {
+  color: #000000;
+}
+.path-app-view .app-entity .content-section .app-body .app-expireat .field__item a {
+  color: #000000;
+}
 .path-app-view .app-entity .content-section .app-credentials .section-title {
-  color: #0E8D7C;
+  color: #3C3935;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential {
-  border: 1px solid #DDDDDD;
-  margin-bottom: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top: 4px solid #0E8D7C;
-  background-color: #f5f9f8;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .head {
   overflow: hidden;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head .cred-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 12px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head .cred-info:hover {
-  cursor: pointer;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head .cred-info .cred-name {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .head .cred-info .cred-name {
   font-size: 16px;
-  color: #0E8D7C;
+  color: #3C3935;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head .cred-info .cred-status {
-  width: 100px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head .cred-info .cred-status .wrapper--status.indicator-status-ok {
-  background-color: #1FA92D;
-  color: #ffffff;
-  width: 100px;
-  display: block;
-  max-width: 100px;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 2px 10px 5px 10px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head .cred-info .cred-status .wrapper--status.indicator-status-error {
-  background-color: #DF3600;
-  color: #ffffff;
-  width: 100px;
-  display: block;
-  max-width: 100px;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 2px 10px 5px 10px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .head.active .cred-expand:before {
-  background-image: url("/themes/custom/ndf_theme/images/icon/expand_arrow_up.png");
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content {
-  padding: 15px;
-  display: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content {
+  background: #ffffff;
+  padding: 1rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property {
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property label {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  color: #0E8D7C;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret__value {
-  max-width: none;
-  font-size: 16px;
-  line-height: 30px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret__value__hidden {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  font-size: 20px;
-  line-height: 30px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons {
-  display: flex;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons .secret__toggle {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  color: #0E8D7C;
-  padding: 1px 5px 5px 5px;
-  margin-left: 20px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons .secret__toggle svg {
-  font-size: 16px;
-  margin-right: 2px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons .secret__toggle:focus {
-  border: 0px;
-  outline: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons .secret__copy button {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  color: #0E8D7C;
-  padding: 1px 5px 5px 5px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons .secret__copy button img {
-  width: 16px;
-  position: relative;
-  bottom: 3px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerKey .item-property .secret .secret-buttons .secret__copy button:focus {
-  border: 0px;
-  outline: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property {
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property label {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  color: #0E8D7C;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret__value {
-  max-width: none;
-  font-size: 16px;
-  line-height: 30px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret__value__hidden {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  font-size: 20px;
-  line-height: 30px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons {
-  display: flex;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons .secret__toggle {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  color: #0E8D7C;
-  padding: 1px 5px 5px 5px;
-  margin-left: 20px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons .secret__toggle svg {
-  font-size: 16px;
-  margin-right: 2px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons .secret__toggle:focus {
-  border: 0px;
-  outline: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons .secret__copy button {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  color: #0E8D7C;
-  padding: 1px 5px 5px 5px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons .secret__copy button img {
-  width: 16px;
-  position: relative;
-  bottom: 3px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-codes .cred-consumerSecret .item-property .secret .secret-buttons .secret__copy button:focus {
-  border: 0px;
-  outline: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions {
-  display: flex;
   justify-content: space-between;
-  border-top: 1px solid #eee;
-  padding: 15px 0px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-date {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-date .date .item-property {
-  display: flex;
-  flex-direction: column;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-date .date .item-property label {
-  color: #1FA99A;
-  padding: 0px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke {
-  width: 50%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper {
-  position: static !important;
-  background-color: transparent;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget {
-  background-color: transparent;
-  border: 0px;
-  background: none;
-  border-radius: 0px;
-  padding-left: 0px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton {
-  display: flex;
-  border: 0px;
-  padding: 0px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li {
-  border: 0px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li a {
-  background-color: transparent;
-  color: #1FA99A;
-  padding: 0px 2px 3px 2px;
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li a:hover, .path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li a:focus {
-  text-decoration: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li:hover, .path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li:focus {
-  background: transparent;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-action {
-  display: block !important;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle {
-  display: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle button {
-  background-color: transparent;
-  background-image: none;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle button .dropbutton-arrow {
-  color: #1FA99A;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle button .dropbutton-arrow:hover {
-  background-color: transparent;
-  background: transparent;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.revoke {
-  margin-left: 10px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.revoke a {
-  background-color: #ffffff;
-  border: 1px solid #7B5B3E;
-  border-radius: 5px;
-  padding: 3px 10px 5px 10px;
-  color: #7B5B3E;
-  background-image: none;
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  min-width: 80px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.revoke a:before {
-  content: "";
-  background-image: url("/themes/custom/ndf_theme/images/ui/revoke_color.svg");
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  -webkit-background-size: 18px 18px;
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 4px;
-  margin-left: 0.4375rem;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.delete a {
-  margin-left: 0px;
-  background-color: #ffffff;
-  border: 1px solid #d9534f;
-  border-radius: 5px;
-  padding: 3px 10px 5px 10px;
-  color: #d9534f;
-  background-image: none;
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  min-width: 80px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.delete a:before {
-  content: "";
-  background-image: url("/themes/custom/ndf_theme/images/ui/delete_color.svg");
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  -webkit-background-size: 18px 18px;
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 4px;
-  margin-left: 0.4375rem;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .wrapper--secondary label {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  color: #1FA99A;
-  font-weight: bold;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .wrapper--secondary > div {
-  background-color: #ffffff;
-  padding: 15px;
-  border: 1px solid #DDDDDD;
-  border-radius: 5px;
-  display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .wrapper--secondary .api-product-list-row {
-  margin-bottom: 15px;
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property {
   display: flex;
-  justify-content: space-between;
-  flex: 0 0 50%;
+  flex-direction: column;
+  gap: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .wrapper--secondary .api-product-list-row .api-product-name {
-  line-height: 28px;
-}
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .wrapper--secondary .api-product-list-row .wrapper--status.indicator-status-ok {
-  background-color: #d6e6de;
-  color: #1FA99A;
-  font-size: 15px;
-  width: 100px;
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property .secret .secret-buttons,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property .secret .secret-buttons {
   display: flex;
-  border-radius: 20px;
-  max-width: 100px;
-  padding: 4px 4px 7px 4px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-right: auto;
-  margin-left: 100px;
+  gap: 2rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .acc-credential .content .wrapper--secondary .api-product-list-row .wrapper--status.indicator-status-error {
-  background-color: #DDDDDE;
-  color: #575757;
-  font-size: 15px;
-  width: 100px;
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property .secret .secret-buttons .secret__toggle,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property .secret .secret-buttons button.secret__copy,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property .secret .secret-buttons .secret__toggle,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property .secret .secret-buttons button.secret__copy {
+  background: transparent;
+  border: 1px solid #C6AA76;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+  color: #C6AA76;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-date-actions {
+  align-self: flex-start;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-date-actions .cred-status .wrapper--status.indicator-status-ok {
+  background-color: #1FA92D;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+}
+.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #C6AA76;
+  margin-bottom: 1rem;
+}
+.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary > div {
+  background-color: #C6AA76;
+  padding: 1rem;
+  overflow-y: scroll;
+  margin-bottom: 2rem;
   display: flex;
-  border-radius: 20px;
-  max-width: 100px;
-  padding: 4px 4px 7px 4px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-right: auto;
-  margin-left: 100px;
+}
+.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary > div .api-product-list-row {
+  flex-basis: 50%;
+  display: list-item;
+  margin-right: 1.3em;
+  list-style-type: unset;
+  color: #3C3935;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary > div .api-product-list-row .wrapper--status {
+  display: none;
 }
 
 .path-app-analytics form.apigee-edge-developer-app-analytics {
@@ -1770,104 +1455,6 @@ html[lang=ar] .path-apps-list .action-icon.view img {
   margin: 10px 0px;
 }
 
-.cred-accordion {
-  border: 1px solid #DDDDDD;
-  margin-bottom: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top: 4px solid #0E8D7C;
-  background-color: #f5f9f8;
-  overflow: hidden;
-}
-.cred-accordion .card {
-  padding: 0px;
-  border: 0px;
-  border-radius: 0px;
-  box-shadow: none;
-  height: auto;
-}
-.cred-accordion .card .card-header {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  border: 0;
-  background-color: #f5f9f8;
-  padding: 12px 12px;
-}
-.cred-accordion .card .card-header:hover {
-  cursor: pointer;
-}
-.cred-accordion .card .card-header legend .fieldset-legend {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center;
-  font-size: 16px;
-  color: #1FA99A;
-  font-weight: bold;
-}
-.cred-accordion .card .card-header legend .fieldset-legend .wrapper--status.indicator-status-ok {
-  background-color: #1FA92D;
-  color: #ffffff;
-  width: 100px;
-  display: block;
-  max-width: 100px;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 2px 10px 5px 10px;
-  font-weight: normal;
-}
-.cred-accordion .card .card-header legend .fieldset-legend .wrapper--status.indicator-status-error {
-  background-color: #DF3600;
-  color: #ffffff;
-  width: 100px;
-  display: block;
-  max-width: 100px;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 2px 10px 5px 10px;
-  font-weight: normal;
-}
-.cred-accordion .card .card-header.collapsed legend:after {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.cred-accordion .card .card-body {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
-  background-color: #f5f9f8;
-  padding: 15px;
-}
-.cred-accordion .card .card-body .fieldset-wrapper fieldset {
-  margin: 0px;
-}
-.cred-accordion .card .card-body .fieldset-wrapper fieldset legend span {
-  font-size: 16px;
-}
-.cred-accordion .card .card-body .fieldset-wrapper .checkbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.cred-accordion .card .card-body .fieldset-wrapper .checkbox .js-form-item {
-  flex: 0 0 300px;
-}
-
 @media (min-width: 991px) {
   .container {
     max-width: 940px;
@@ -1961,6 +1548,22 @@ img {
   .path-apps-list .apigee-entity-list--developer-app .card-green-shadow .app-actions .action-icons-wrapper {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .path-app-view .app-entity .content-section .app-info {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .path-app-view .app-entity .content-section .app-info .field--name-status {
+    margin-bottom: 1rem;
+  }
+  .path-app-view .app-entity .content-section .apis-list .wrapper--secondary > div {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .path-app-view .app-entity .content-section .apis-list .wrapper--secondary > div .api-product-list-row {
+    flex-basis: 100%;
   }
 }
 

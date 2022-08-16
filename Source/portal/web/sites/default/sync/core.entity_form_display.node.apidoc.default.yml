@@ -11,13 +11,14 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_product_link
     - field.field.node.apidoc.field_role
+    - field.field.node.apidoc.field_type
     - field.field.node.apidoc.field_user_role
     - node.type.apidoc
   module:
     - file
     - file_link
-    - link
     - path
     - text
 _core:
@@ -87,6 +88,12 @@ content:
   field_role:
     type: options_select
     weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_type:
+    type: options_select
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,532 @@
+.path-apps-list {
+  main{
+    background-image: url($theme-path + "/images/home-watermark-"+ $dir +".svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #block-ndf-theme-actions {
+    .action-links {
+      padding-left: 25px;
+      li {
+        a.button-action {
+          background-color: $action_green;
+          color: $white;
+          border: 1px solid $action_green;
+          border-radius: 3px;
+          text-align: center;
+          min-width: 124px;
+          @include transition(all .3s);
+          &:hover, &:focus {
+            background-color: $action_green_hover;
+            border-color: $action_green_hover;
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .apigee-entity-list--developer-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    .card-green-shadow {
+      width: 100%;
+      background: $white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      border: 1px solid $border_light;
+      .app-naming {
+        .name {
+          display: flex;
+          align-content: center;
+          justify-content: space-between;
+          width: 400px;
+          max-width: 100%;
+          a {
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            color: $black;
+            &:hover, &:focus {
+              text-decoration: none;
+            }
+          }
+          .button-status{
+            background: $status_approved;
+            color: $action_green;
+            border-radius: 20px;
+            padding: 0.3rem 0.5rem;
+          }
+        }
+        .app-description{
+          margin-top: 1rem;
+          margin-bottom: 0;
+          display: flex;
+        }
+      }
+      .app-status {
+        margin-left: auto;
+        .button-status {
+          font-size: 16px;
+          color: $white;
+          padding: 1px 16px 5px 16px;
+          margin: 0px 10px;
+          border-radius: 15px;
+          &.approved {
+            background-color: $status_green;
+          }
+          &.revoked {
+            background-color: $status_red;
+          }
+        }
+      }
+      .app-actions {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .action-icons-wrapper {
+          display: flex;
+          .action-icon {
+            margin: 0px 4px;
+            a {
+              display: block;
+              padding: 3px 10px 5px 10px;
+              min-width: 80px;
+              text-align: center;
+              border-radius: 5px;
+              background-color: $white;
+              &:hover, &:focus {
+                text-decoration: none;
+              }
+              img {
+                height: 10px;
+                width: auto;
+              }
+            }
+            &.analytics {
+              a {
+                background-color: $action_green;
+                border: 1px solid $action_green;
+                color: $white;
+                img {
+                  position: relative;
+                  bottom: 2px;
+                  height: 10px;
+                  margin-#{$right}: 2px;
+                }
+              }
+            }
+            &.edit {
+              a {
+                background-color: $action_blue;
+                border: 1px solid $action_blue;
+                color: $white;
+                img {
+                  position: relative;
+                  bottom: 2px;
+                  margin-#{$right}: 2px;
+                }
+              }
+            }
+            &.delete {
+              a {
+                background-color: $action_red;
+                border: 1px solid $action_red;
+                color: $white;
+                img {
+                  position: relative;
+                  bottom: 2px;
+                  margin-#{$right}: 2px;
+                }
+              }
+            }
+            &.view {
+              a {
+                color: $action_primary;
+                border: 1px solid $action_primary;
+                img {
+                  position: relative;
+                  bottom: 2px;
+                  height: 16px;
+                  margin-#{$left}: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+// App view
+.path-app-view {
+  .app-entity {
+    padding: 30px;
+    .header-section {
+      .add-keys {
+        a {
+          background-color: $ndf_gold;
+          border: 1px solid $ndf_gold;
+          text-align: center;
+          border-right: 5px;
+          color: $white;
+          padding: 5px 12px 8px 12px;
+          font-size: 1rem;
+          line-height: 1.5;
+          border-radius: 0.25rem;
+          display: flex;
+          align-items: center;
+          width: 120px;
+          text-align: center;
+          justify-content: center;
+          &:hover, &:focus {
+            text-decoration: none;
+          }
+          &:before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url($theme-path + "/images/ui/add_icon.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-#{$right}: 5px;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+    .content-section {
+      .app-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        .app-name {
+          color: $ndf_dark_grey;
+          font-size: 22px;
+        }
+        .app-status {
+          .field__label {
+          margin-bottom:1rem;
+          }
+          .field__item {
+            .wrapper--status {
+              border-radius: 5px;
+              font-size: 17px;
+              padding: 2px 10px 5px 10px;
+              &.indicator-status-ok {
+                background-color: $status_green;
+                border: 1px solid $status_green;
+              }
+              &.indicator-status-error {
+                background-color: $status_red;
+                border: 1px solid $status_red;
+              }
+            }
+          }
+        }
+      }
+      .app-body {
+        margin-bottom: 40px;
+        .app-description {
+          margin-bottom: 15px;
+          .field__label {
+            display: block;
+            color: $ndf_dark_grey;
+            float: none;
+            margin-bottom: 5px;
+            font-size: 16px;
+          }
+          .field__item {
+            color: $black;
+          }
+        }
+        .app-callbackurl {
+          .field__label {
+            display: block;
+            color: $ndf_dark_grey;
+            font-size: 16px;
+            float: #{$left};
+          }
+          .field__item {
+            color: $black;
+            a {
+              color: $black;
+            }
+          }
+        }
+        .app-createdat {
+          .field__label {
+            display: block;
+            color: $ndf_gold;
+            font-size: 16px;
+            float: #{$left};
+          }
+          .field__item {
+            color: $black;
+            a {
+              color: $black;
+            }
+          }
+        }
+        .app-expireat {
+          .field__label {
+            display: block;
+            color: $ndf_gold;
+            font-size: 16px;
+            float: #{$left};
+          }
+          .field__item {
+            color: $black;
+            a {
+              color: $black;
+            }
+          }
+        }
+      }
+      .app-credentials {
+        .section-title {
+          color: $ndf_dark_grey;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+        .app-credential-item {
+          .head {
+            overflow: hidden;
+            .cred-info {
+              .cred-name {
+                font-size: 16px;
+                color: $ndf_dark_grey;
+                font-weight: bold;
+                margin-bottom:1rem;
+              }
+            }
+          }
+          .content {
+            background: $white;
+            padding: 1rem;
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            margin-bottom:1rem;
+            .cred-consumerKey,
+            .cred-consumerSecret{
+              .item-property{
+                display:flex;
+                flex-direction:column;
+                gap: 1rem;
+                .secret {
+                  .secret-buttons {
+                    display:flex;
+                    gap: 2rem;
+                    .secret__toggle,
+                    button.secret__copy{
+                      background: transparent;
+                      border:1px solid $ndf_gold;
+                      padding: .3rem .5rem;
+                      border-radius:2px;
+                      color: $ndf_gold;
+                    }
+                  }
+                }
+              }
+            }
+            .cred-date-actions{
+              align-self:flex-start;
+              .cred-status{
+                .wrapper--status.indicator-status-ok{
+                  background-color:$status_green;
+                  padding: 0.3rem 0.8rem;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+        .apis-list{
+          .wrapper--secondary{
+            label{
+              font-size:18px;
+              font-weight: bold;
+              color: $ndf_gold;
+              margin-bottom:1rem;
+            }
+            &>div{
+              background-color:$ndf_gold;
+              padding: 1rem;
+              overflow-y: scroll;
+              margin-bottom:2rem;
+              display: flex;
+              .api-product-list-row{
+                flex-basis:50%;
+                display: list-item;
+                margin-#{$left}: 1.3em;
+                list-style-type: unset;
+                color: $ndf_dark_grey;
+                margin-bottom:1rem;
+                font-size:18px;
+                .wrapper--status{
+                  display:none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Analytics page
+.path-app-analytics {
+  form.apigee-edge-developer-app-analytics {
+    padding: 15px;
+    width: 1100px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 50px;
+    [data-drupal-selector="edit-timezone"] {
+      display: none;
+    }
+    #edit-label-container {
+      order: 1;
+      position: relative;
+      font-size: 1.25rem;
+    }
+    .js-form-item-metrics {
+      order: 2;
+      margin-#{$right}: 0px;
+      margin-#{$left}: 0px;
+    }
+    .js-form-item-quick-date-picker {
+      order: 3;
+      margin-#{$right}: 0px;
+      margin-#{$left}: 0px;
+    }
+    #range-group {
+      order: 4;
+      display: flex;
+      margin-bottom: 20px;
+      display: none;
+      &.show {
+        display: flex !important;
+      }
+      #edit-since {
+        width: 50%;
+        display: flex;
+        //justify-content: space-around;
+        &:before {
+          content: 'From';
+          width: 70px;
+          text-align: #{$left};
+        }
+        .js-form-item {
+          width: calc(50% - 35px);
+          padding: 0px 10px;
+          input {
+            width: 100%;
+          }
+        }
+      }
+      #edit-date-separator-container {
+        display: none;
+      }
+      #edit-until {
+        width: 50%;
+        display: flex;
+        //justify-content: space-around;
+        &:before {
+          content: 'To';
+          width: 70px;
+          text-align: center;
+        }
+        .js-form-item {
+          width: calc(50% - 35px);
+          padding: 0px 10px;
+          &:last-child {
+            padding-#{$right}: 0px;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .form-submit {
+      order: 5;
+      display: inline-block;
+      width: 100px;
+      margin-#{$right}: 0px;
+      margin-#{$left}: auto;
+    }
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  #chart_container {
+    padding: 15px 0px;
+  }
+}
+
+
+html[lang="ar"] {
+  .path-app-analytics {
+    form.apigee-edge-developer-app-analytics {
+      #range-group {
+        #edit-since:before {
+          content: 'من';
+        }
+        #edit-until:before {
+          content: 'إلى';
+        }
+      }
+    }
+  }
+  .path-apps-list {
+    .action-icon.view {
+      img {
+        transform: rotate(179deg);
+      }
+    }
+  }
+}
+
+// Edit app page.
+.path-app-edit {
+  form.developer-app-edit-for-developer-form {
+    [data-drupal-selector="edit-credential"] {
+      &:before {
+        content: 'Credentials';
+        display: block;
+        color: $green;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        height: 26px;
+      }
+      > fieldset {
+        margin: 10px 0px;
+      }
+    }
+  }
+}
