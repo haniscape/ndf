@@ -12,7 +12,10 @@ dependencies:
     - field.field.node.apidoc.field_apidoc_spec_file_source
     - field.field.node.apidoc.field_apidoc_spec_md5
     - field.field.node.apidoc.field_categories
+    - field.field.node.apidoc.field_product_link
     - field.field.node.apidoc.field_role
+    - field.field.node.apidoc.field_type
+    - field.field.node.apidoc.field_user_role
     - node.type.apidoc
   module:
     - text
@@ -41,6 +44,7 @@ hidden:
   field_categories: true
   field_product_link: true
   field_role: true
+  field_type: true
   field_user_role: true
   langcode: true
   links: true
