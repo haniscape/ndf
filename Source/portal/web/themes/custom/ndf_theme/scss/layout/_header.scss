@@ -112,6 +112,13 @@
   }
 }
 
-#header-normal {
-  position: unset;
+
+/* header override in case admin logged in */
+body {
+  &.adminimal-admin-toolbar {
+    #header-absolute {
+      top: 79px;
+    }
+  }
 }
+

@@ -3,7 +3,7 @@
   .wrapper-apis-page {
     background-image: url($theme-path +"/images/home/hero-bg.jpeg");
     width: 100%;
-    height: 750px;
+    min-height: 900px;
     color: $white;
     background-repeat: no-repeat;
     background-size: cover;

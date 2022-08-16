@@ -100,8 +100,9 @@
         color: #ffffff;
         font-size: .85rem; }
 
-#header-normal {
-  position: unset; }
+/* header override in case admin logged in */
+body.adminimal-admin-toolbar #header-absolute {
+  top: 79px; }
 
 footer {
   background-color: #3D3935;
@@ -407,8 +408,6 @@ footer {
           margin: auto;
           padding: 0.5rem 3rem;
           font-size: .9rem; }
-  .path-frontpage.adminimal-admin-toolbar #header-absolute {
-    top: 79px; }
   .path-frontpage #fourth-content-region .home-products-title {
     width: 100%; }
     .path-frontpage #fourth-content-region .home-products-title h3 {
@@ -708,7 +707,7 @@ body.lang-ar .form-type-password button.shwpd {
   .path-apis .wrapper-apis-page {
     background-image: url("/themes/custom/ndf_theme/images/home/hero-bg.jpeg");
     width: 100%;
-    height: 750px;
+    min-height: 900px;
     color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;

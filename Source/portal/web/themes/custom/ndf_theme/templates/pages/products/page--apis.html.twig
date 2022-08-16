@@ -42,16 +42,17 @@
  * @see html.html.twig
  */
 #}
-
+{% set nav_classes = 'navbar navbar-expand-lg' ~
+  (b4_navbar_schema != 'none' ? " navbar-#{b4_navbar_schema}" : ' ') ~
+  (b4_navbar_schema != 'none' ? (b4_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ') %}
 
 <div class="wrapper-apis-page">
-
   {% include directory ~ '/templates/includes/header-absolute.html.twig' %}
 
   <main role="main">
     {{ page.content }}
   </main>
-
 </div>
 
 {% if page.footer %}
