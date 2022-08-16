@@ -66,4 +66,31 @@
       }
     }
   }
+
+  // App details.
+  .path-app-view {
+    .app-entity {
+      .content-section {
+        .app-info{
+          flex-direction:column-reverse;
+          align-items: flex-start;
+          .field--name-status{
+            margin-bottom:1rem;
+          }
+        }
+        .apis-list{
+          .wrapper--secondary{
+            &>div{
+              flex-wrap: wrap;
+              flex-direction: column;
+              align-items: flex-start;
+              .api-product-list-row{
+                flex-basis:100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -47,7 +47,7 @@
   ] %}
 {% endif %}
 
-
+{#{{ dd(entity) }}#}
 {% set displayName = get_app_displayname(entity.id) %}
 
 <div class="app-entity">
@@ -72,7 +72,6 @@
         {{ content.status }}
       </div>
     </div>
-
     <div class="app-body">
       <div class="app-description">
         {{ content.description }}
@@ -80,12 +79,18 @@
       <div class="app-callbackurl">
         {{ content.callbackUrl }}
       </div>
+      <div class="app-createdat">
+        {{ content.createdAt }}
+      </div>
+      <div class="app-expireat">
+        {{ content.expiresAt }}
+      </div>
     </div>
 
     <div class="app-credentials">
-      <div class="section-title">
-        {{ 'Credentials'|t }}
-      </div>
+{#      <div class="section-title">#}
+{#        {{ 'Credentials'|t }}#}
+{#      </div>#}
       {{ content.credentials }}
     </div>
   </div>
