@@ -271,9 +271,9 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        langcode:
-          id: langcode
-          table: node
+        langcode_1:
+          id: langcode_1
+          table: node_field_data
           field: langcode
           relationship: none
           group_type: group

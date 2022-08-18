@@ -2,9 +2,16 @@ uuid: 53491232-6682-422a-b863-70ff48d7ece4
 langcode: en
 status: true
 dependencies:
+  module:
+    - menu_ui
   enforced:
     module:
       - apigee_api_catalog
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: XCwo5CRMKhYf_Q0IHFvTQ4ijViTHXbF6bnu9ZSN49qI
 name: 'OpenAPI Doc'
