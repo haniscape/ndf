@@ -59,39 +59,7 @@
 {% include directory ~ '/templates/includes/header.html.twig' %}
 
 <main role="main">
-  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-  {%
-    set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
-  %}
-
-  {%
-    set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
-  %}
-
-  {%
-    set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
-  %}
-
-  {# Banner region #}
-  {% if page.banner %}
-    <div id="banner">
-      <div class="banner-region">
-        {{ page.banner }}
-      </div>
-    </div>
-  {% endif %}
-
   <div class="{{ b4_top_container }}">
-    {% if page.breadcrumb %}
-      {{ page.breadcrumb }}
-    {% endif %}
-    <div class="row no-gutters">
-      {% if page.sidebar_first %}
-        <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
-          {{ page.sidebar_first }}
-        </div>
-      {% endif %}
       <div class="order-1 order-lg-2 {{ content_classes }}">
         {% if page.custom_title %}
           <div id="custom-title">
@@ -109,7 +77,6 @@
       {% endif %}
     </div>
   </div>
-
 </main>
 
 {% if page.footer %}
