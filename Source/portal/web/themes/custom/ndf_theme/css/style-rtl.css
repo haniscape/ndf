@@ -1455,6 +1455,43 @@ html[lang=ar] .path-apps-list .action-icon.view img {
   margin: 10px 0px;
 }
 
+.path-add-app form.apigee-edge--form input[type=text],
+.path-add-app form.apigee-edge--form input[type=url],
+.path-add-app form.apigee-edge--form textarea {
+  border: 1px solid #C6AA76;
+}
+.path-add-app form.apigee-edge--form legend {
+  display: none;
+}
+.path-add-app form.apigee-edge--form label {
+  color: #7B5B3E;
+}
+.path-add-app form.apigee-edge--form .form-radios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.path-add-app form.apigee-edge--form .form-radios .form-item-field-type {
+  display: flex;
+  flex-basis: 20%;
+  align-items: center;
+  gap: 1rem;
+}
+.path-add-app form.apigee-edge--form .form-radios .form-item-field-type .form-control {
+  width: 10%;
+  color: #C6AA76;
+  accent-color: #C6AA76;
+}
+.path-add-app form.apigee-edge--form .form-checkboxes .form-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.path-add-app form.apigee-edge--form .form-checkboxes .form-item input {
+  width: 20px;
+}
+
 @media (min-width: 991px) {
   .container {
     max-width: 940px;

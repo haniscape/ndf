@@ -530,3 +530,50 @@ html[lang="ar"] {
     }
   }
 }
+
+// Add new app.
+.path-add-app{
+  form.apigee-edge--form {
+    input[type="text"],
+    input[type="url"],
+    textarea {
+      border: 1px solid $ndf_gold;
+    }
+    legend{
+      display:none;
+    }
+    label{
+      color:$ndf_label;
+    }
+    .form-radios{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      .form-item-field-type{
+        display:flex;
+        flex-basis:20%;
+        align-items: center;
+        gap: 1rem;
+        .form-control{
+          width: 10%;
+          color:$ndf_gold;
+          accent-color:$ndf_gold;
+          &[checked="checked"]{
+          }
+        }
+      }
+    }
+    .form-checkboxes {
+      .form-item{
+        display:flex;
+        align-items: center;
+        gap: 1rem;
+        input{
+          width:20px;
+        }
+      }
+    }
+  }
+}
+

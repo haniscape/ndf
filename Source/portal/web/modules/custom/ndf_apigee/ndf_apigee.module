@@ -22,6 +22,25 @@ function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
     // Get matched products.
     $matched_products = array_intersect($products, $org_products);
     $form['api_products']['#options'] = $matched_products;
+
+    // Filter api products based on type.
+    $api_type = $form['field_type']['widget']['#default_value'];
+    $api_products_by_type = \Drupal::service('ndf_services.product_service')->getApiProducts($api_type);
+    $org_products = $form['api_products']['#options'];
+    $filtered_products = array_intersect($api_products_by_type, $org_products);
+
+    $form['api_products']['#options'] = $filtered_products;
+    $form['#prefix'] = "<div id='api-products-wrapper'>";
+    $form['#sufix'] = "</div>";
+    $form['field_type']['widget']['#ajax'] = [
+      'callback' => '_get_api_products_by_type',
+      'event' => 'change',
+      'wrapper' => 'api-products-wrapper',
+      'progress' => [
+        'type' => 'throbber',
+        'message' => t('Load products...'),
+      ],
+    ];
   }
 
   if ($form_id == 'developer_app_edit_for_developer_form') {
@@ -42,6 +61,7 @@ function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
     }
 
   }
+
 }
 
 /**
@@ -71,5 +91,20 @@ function _validateAppFormatterSelection(&$form, $form_state) {
   if (strlen($orignal_app_display_name) > APP_DISPLAY_NAME_LENGTH) {
     $form_state->setError($form['displayName'], t('The length of display name with prefix more than @length characters.', ['@length' => APP_DISPLAY_NAME_LENGTH]));
   }
+}
+
+/**
+ * Get api products based on section type.
+ */
+function _get_api_products_by_type(&$form,$form_state) {
+  $api_type = $form['field_type']['widget']['#default_value'];
+  \Drupal::logger('ndf')->debug("Type id: ".$api_type);
+  if (!empty($api_type)) {
+    $api_products_by_type = \Drupal::service('ndf_services.product_service')->getApiProducts($api_type);
+    $org_products = $form['api_products']['#options'];
+    $filtered_products = array_intersect($api_products_by_type, $org_products);
+    $form['api_products']['#options'] = $filtered_products;
+  }
+  return $form;
 }
 

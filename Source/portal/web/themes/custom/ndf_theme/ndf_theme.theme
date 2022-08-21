@@ -31,6 +31,8 @@ function ndf_theme_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'path-app-analytics';
   } elseif ($current_route_name === 'entity.developer_app.edit_form_for_developer') {
     $variables['attributes']['class'][] = 'path-app-edit';
+  } elseif ($current_route_name === 'entity.developer_app.add_form_for_developer') {
+    $variables['attributes']['class'][] = 'path-add-app';
   }
 }
 
