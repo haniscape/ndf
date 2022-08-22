@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.developer_app.collapsible_card
+    - field.field.developer_app.developer_app.field_type
   module:
     - apigee_edge
 _core:
@@ -73,6 +74,7 @@ hidden:
   createdBy: true
   developerId: true
   displayName: true
+  field_type: true
   lastModifiedBy: true
   name: true
   scopes: true

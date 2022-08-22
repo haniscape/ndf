@@ -31,6 +31,8 @@ function ndf_theme_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'path-app-analytics';
   } elseif ($current_route_name === 'entity.developer_app.edit_form_for_developer') {
     $variables['attributes']['class'][] = 'path-app-edit';
+  } elseif ($current_route_name === 'entity.developer_app.add_form_for_developer') {
+    $variables['attributes']['class'][] = 'path-add-app';
   }
 }
 
@@ -47,9 +49,12 @@ function ndf_theme_page_attachments_alter(&$attachments){
  * Implements hook_preprocess_page_title().
  */
 function ndf_theme_preprocess_page_title(&$variables) {
-  if (\Drupal::routeMatch()->getRouteName() === 'user.register') {
+  $current_route_name = \Drupal::routeMatch()->getRouteName();
+  if ($current_route_name=== 'user.register') {
     // Set the page title
     $variables['title'] = t('Create account');
+  } elseif ($current_route_name === 'entity.developer_app.add_form_for_developer') {
+    $variables['title'] = t('Create New App');
   }
 }
 
@@ -73,6 +78,38 @@ function ndf_theme_preprocess(&$variables) {
 }
 
 
+/**
+ * @param array $suggestions
+ * @param array $variables
+ * @param $hook
+ */
+function ndf_theme_theme_suggestions_fieldset_alter(array &$suggestions, array $variables, $hook) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
 
+  if (isset($variables['element']['#name'])) {
+    $id = str_replace("-", "_", $variables['element']['#name']);
+    $suggestions[] = $hook . '__' . $id;
 
+    if ($route_name == 'entity.developer_app.edit_form_for_developer') {
+      $suggestions[] = $hook . '__' . str_replace('-','_', 'developer_app_edit_form' . '--' . $variables['element']['#parents']['0'] . '--' . $variables['element']['#type']);
+    }
+  }
+}
 
+/**
+ * Implements hook_suggestions_form_element_alter().
+ */
+function ndf_theme_theme_suggestions_form_element_alter(array &$suggestions, array $variables, $hook) {
+  // Get the current path
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'entity.developer_app.add_form_for_developer') {
+    if (isset($variables['element']['#type']) && $variables['element']['#type'] === 'checkbox') {
+      $suggestions[] = $hook . '__' . str_replace('-','_', 'developer_app_edit_form' . '--' . $variables['element']['#parents']['0'] . '--' . $variables['element']['#type']);
+    }
+  } elseif ($route_name === 'entity.developer_app.edit_form_for_developer') {
+    if (isset($variables['element']['#type']) && $variables['element']['#type'] == 'checkbox') {
+      $suggestions[] = $hook . '__' . str_replace('-','_', 'developer_app_edit_form' . '--' . $variables['element']['#parents']['0'] . '--' . $variables['element']['#type']);
+    }
+  }
+
+}

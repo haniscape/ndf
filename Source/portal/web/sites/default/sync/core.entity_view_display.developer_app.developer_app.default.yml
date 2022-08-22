@@ -2,6 +2,8 @@ uuid: d9eab568-fa92-4902-9d66-050d03fab70e
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.developer_app.developer_app.field_type
   module:
     - apigee_edge
 _core:
@@ -39,6 +41,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
     region: content
   lastModifiedAt:
     type: timestamp_ago

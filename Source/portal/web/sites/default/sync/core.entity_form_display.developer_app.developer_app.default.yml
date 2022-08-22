@@ -2,6 +2,8 @@ uuid: 9e41b004-a211-4782-ba16-e5597f1c178d
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.developer_app.developer_app.field_type
   module:
     - apigee_edge
 _core:
@@ -13,7 +15,7 @@ mode: default
 content:
   callbackUrl:
     type: app_callback_url
-    weight: 1
+    weight: 2
     region: content
     settings:
       size: 60
@@ -24,7 +26,7 @@ content:
     third_party_settings: {  }
   description:
     type: string_textarea
-    weight: 2
+    weight: 1
     region: content
     settings:
       rows: 5
@@ -37,5 +39,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_type:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

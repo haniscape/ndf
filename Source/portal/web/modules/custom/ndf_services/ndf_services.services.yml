@@ -2,3 +2,7 @@ services:
   ndf_services.user_service:
     class: Drupal\ndf_services\Service\UserService
     arguments: ['@entity_type.manager', '@current_user']
+
+  ndf_services.product_service:
+    class: Drupal\ndf_services\Service\ProductService
+    arguments: ['@entity_type.manager', '@current_user']
