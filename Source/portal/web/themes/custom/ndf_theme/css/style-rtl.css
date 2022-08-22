@@ -1275,60 +1275,159 @@ main.page-user-reset .region-content .g-recaptcha > div {
   font-size: 16px;
   color: #3C3935;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .path-app-view .app-entity .content-section .app-credentials .app-credential-item .content {
   background: #ffffff;
   padding: 1rem;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property,
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerKey .item-property,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerSecret .item-property {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property .secret .secret-buttons,
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property .secret .secret-buttons {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerKey .item-property .secret .secret-buttons,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerSecret .item-property .secret .secret-buttons {
   display: flex;
   gap: 2rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property .secret .secret-buttons .secret__toggle,
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerKey .item-property .secret .secret-buttons button.secret__copy,
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property .secret .secret-buttons .secret__toggle,
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-consumerSecret .item-property .secret .secret-buttons button.secret__copy {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerKey .item-property .secret .secret-buttons .secret__toggle,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerKey .item-property .secret .secret-buttons button.secret__copy,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerSecret .item-property .secret .secret-buttons .secret__toggle,
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-consumerSecret .item-property .secret .secret-buttons button.secret__copy {
   background: transparent;
   border: 1px solid #C6AA76;
   padding: 0.3rem 0.5rem;
   border-radius: 2px;
   color: #C6AA76;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-date-actions {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions {
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
 }
-.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .cred-date-actions .cred-status .wrapper--status.indicator-status-ok {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-status .wrapper--status.indicator-status-ok {
   background-color: #1FA92D;
   padding: 0.3rem 0.8rem;
   border-radius: 5px;
 }
-.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary label {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper {
+  position: static !important;
+  background-color: transparent;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget {
+  background-color: transparent;
+  border: 0px;
+  background: none;
+  border-radius: 0px;
+  padding-left: 10px;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton {
+  display: flex;
+  border: 0px;
+  padding: 0px;
+  justify-content: end;
+  flex-direction: column;
+  gap: 1rem;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li {
+  border: 0px;
+  flex: 1;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li a {
+  background-color: transparent;
+  color: #3C3935;
+  padding: 0px 2px 3px 2px;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li a:hover, .path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li a:focus {
+  text-decoration: none;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li:hover, .path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li:focus {
+  background: transparent;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-action {
+  display: block !important;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle {
+  display: none;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle button {
+  background-color: transparent;
+  background-image: none;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle button .dropbutton-arrow {
+  color: #3C3935;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.dropbutton-toggle button .dropbutton-arrow:hover {
+  background-color: transparent;
+  background: transparent;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.revoke a {
+  border: 1px solid #3C3935;
+  border-radius: 5px;
+  padding: 3px 10px 5px 10px;
+  color: #3C3935;
+  background-image: none;
+  text-transform: uppercase;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.revoke a:before {
+  content: "";
+  background-image: url("/themes/custom/ndf_theme/images/icons/revoke_icon.svg");
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  -webkit-background-size: 18px 18px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 4px;
+  margin-left: 0.4375rem;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.delete a {
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  border-radius: 5px;
+  padding: 3px 10px 5px 10px;
+  background-image: none;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .details .cred-date-actions .cred-revoke .dropbutton-wrapper .dropbutton-widget .dropbutton li.delete a:before {
+  content: "";
+  background-image: url("/themes/custom/ndf_theme/images/icons/delete_icon.svg");
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  -webkit-background-size: 18px 18px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 4px;
+  margin-left: 0.4375rem;
+}
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .apis-list .wrapper--secondary label {
   font-size: 18px;
   font-weight: bold;
   color: #C6AA76;
   margin-bottom: 1rem;
 }
-.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary > div {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .apis-list .wrapper--secondary > div {
   background-color: #C6AA76;
   padding: 1rem;
   overflow-y: scroll;
   margin-bottom: 2rem;
   display: flex;
 }
-.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary > div .api-product-list-row {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .apis-list .wrapper--secondary > div .api-product-list-row {
   flex-basis: 50%;
   display: list-item;
   margin-right: 1.3em;
@@ -1337,7 +1436,7 @@ main.page-user-reset .region-content .g-recaptcha > div {
   margin-bottom: 1rem;
   font-size: 18px;
 }
-.path-app-view .app-entity .content-section .app-credentials .apis-list .wrapper--secondary > div .api-product-list-row .wrapper--status {
+.path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .apis-list .wrapper--secondary > div .api-product-list-row .wrapper--status {
   display: none;
 }
 
