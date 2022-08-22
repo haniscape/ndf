@@ -1442,35 +1442,76 @@ html[lang=ar] .path-apps-list .action-icon.view img {
   transform: rotate(179deg);
 }
 
-.path-app-edit form.developer-app-edit-for-developer-form [data-drupal-selector=edit-credential]:before {
-  content: "Credentials";
-  display: block;
-  color: #1FA99A;
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 5px;
-  height: 26px;
+.path-app-edit form.apigee-edge--form input[type=text],
+.path-app-edit form.apigee-edge--form input[type=url],
+.path-app-edit form.apigee-edge--form textarea {
+  border: 1px solid #C6AA76;
 }
-.path-app-edit form.developer-app-edit-for-developer-form [data-drupal-selector=edit-credential] > fieldset {
-  margin: 10px 0px;
+.path-app-edit form.apigee-edge--form fieldset[data-drupal-selector=edit-field-type] legend {
+  display: none;
+}
+.path-app-edit form.apigee-edge--form .form-radios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.path-app-edit form.apigee-edge--form .form-radios label {
+  color: #7B5B3E;
+}
+.path-app-edit form.apigee-edge--form .form-radios .form-item-field-type {
+  display: flex;
+  flex-basis: 20%;
+  align-items: center;
+  gap: 1rem;
+}
+.path-app-edit form.apigee-edge--form .form-radios .form-item-field-type .form-control {
+  width: 10%;
+  color: #C6AA76;
+  accent-color: #C6AA76;
+}
+.path-app-edit form.apigee-edge--form .form-checkboxes .form-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.path-app-edit form.apigee-edge--form .form-checkboxes .form-item input {
+  width: 20px;
 }
 
+.path-add-app form.apigee-edge--form label {
+  display: flex;
+  align-items: flex-start;
+}
 .path-add-app form.apigee-edge--form input[type=text],
 .path-add-app form.apigee-edge--form input[type=url],
 .path-add-app form.apigee-edge--form textarea {
-  border: 1px solid #C6AA76;
+  border: 2px solid #C6AA76;
 }
-.path-add-app form.apigee-edge--form legend {
+.path-add-app form.apigee-edge--form fieldset[data-drupal-selector=edit-field-type] legend {
   display: none;
 }
-.path-add-app form.apigee-edge--form label {
-  color: #7B5B3E;
+.path-add-app form.apigee-edge--form fieldset[data-drupal-selector=edit-api-products] legend {
+  color: #3C3935;
+  padding-right: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.path-add-app form.apigee-edge--form .card .card-header {
+  padding: 0;
+}
+.path-add-app form.apigee-edge--form .card .card-body {
+  border: 20px solid #F3EBDA;
+  overflow-y: scroll;
 }
 .path-add-app form.apigee-edge--form .form-radios {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
+}
+.path-add-app form.apigee-edge--form .form-radios label {
+  color: #7B5B3E;
 }
 .path-add-app form.apigee-edge--form .form-radios .form-item-field-type {
   display: flex;
@@ -1483,10 +1524,17 @@ html[lang=ar] .path-apps-list .action-icon.view img {
   color: #C6AA76;
   accent-color: #C6AA76;
 }
+.path-add-app form.apigee-edge--form .form-checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .path-add-app form.apigee-edge--form .form-checkboxes .form-item {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .path-add-app form.apigee-edge--form .form-checkboxes .form-item input {
   width: 20px;

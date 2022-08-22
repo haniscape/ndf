@@ -41,6 +41,7 @@ function ndf_apigee_form_alter(&$form, $form_state, $form_id) {
         'message' => t('Load products...'),
       ],
     ];
+    $form['actions']['submit']['#value'] = t('Add App');
   }
 
   if ($form_id == 'developer_app_edit_for_developer_form') {
@@ -98,7 +99,6 @@ function _validateAppFormatterSelection(&$form, $form_state) {
  */
 function _get_api_products_by_type(&$form,$form_state) {
   $api_type = $form['field_type']['widget']['#default_value'];
-  \Drupal::logger('ndf')->debug("Type id: ".$api_type);
   if (!empty($api_type)) {
     $api_products_by_type = \Drupal::service('ndf_services.product_service')->getApiProducts($api_type);
     $org_products = $form['api_products']['#options'];
