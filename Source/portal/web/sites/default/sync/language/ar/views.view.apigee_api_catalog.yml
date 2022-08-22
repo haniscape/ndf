@@ -1,7 +1,17 @@
 display:
   default:
-    display_title: الرئيسي
     display_options:
+      empty:
+        area:
+          content:
+            format: basic_html
+            value: "<p>No API documentation is currently available.</p>\r\n"
+      title: 'API Catalog'
+      fields:
+        title:
+          separator: ', '
+        body:
+          separator: ', '
       pager:
         options:
           tags:
@@ -19,14 +29,11 @@ display:
           bef:
             general:
               secondary_label: 'الخيارات المتقدمة'
-      empty:
-        area:
-          content:
-            value: "<p>No API documentation is currently available.</p>\r\n"
-            format: basic_html
-      title: المنتجات
+    display_title: الرئيسي
   page_1:
     display_title: الصفحة
     display_options:
       menu:
         title: المنتجات
+        description: 'API Catalog'
+label: 'API Catalog'
