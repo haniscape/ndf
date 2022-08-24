@@ -20,6 +20,12 @@ footer {
         align-items: flex-start;
         justify-content: flex-start;
         height: fit-content;
+        &.footer-contact-us {
+          a {
+            color: $white;
+            text-decoration: none;
+          }
+        }
 
         .heading {
           color: $white;
