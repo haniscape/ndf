@@ -917,6 +917,13 @@ body.lang-ar .form-type-password button.shwpd {
 .page-user-login .wrapper-login-page .region-content form.user-login-form {
   color: #0b2e13;
 }
+.page-user-login .wrapper-login-page .region-content form.user-login-form .forget-link a {
+  color: #C6AA76;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
 .page-user-password main {
   background-image: url("/themes/custom/ndf_theme/images/home/hero-bg.jpeg");
   width: 100%;

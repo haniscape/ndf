@@ -20,7 +20,15 @@
         color: #0b2e13;
         .form-item {
           label {
-            
+
+          }
+        }
+        .forget-link{
+          a{
+            color: $ndf_gold;
+            display: flex;
+            align-items: flex-start;
+            text-decoration: none;
           }
         }
       }
