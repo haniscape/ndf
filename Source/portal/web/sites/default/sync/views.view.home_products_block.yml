@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.storage.node.body
     - field.storage.node.field_product_link
     - node.type.apidoc
@@ -273,7 +274,7 @@ display:
             operator_list: {  }
         langcode:
           id: langcode
-          table: node
+          table: node_field_data
           field: langcode
           relationship: none
           group_type: group
@@ -316,11 +317,14 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: card
-          default_row_class: true
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
       query:
         type: views_query
         options:
@@ -331,7 +335,18 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: card-deck
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<p>You can view our services and choose what suits your application</p>'
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
