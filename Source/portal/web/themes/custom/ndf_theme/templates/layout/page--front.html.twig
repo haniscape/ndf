@@ -112,7 +112,7 @@
   {# Front fourth content region #}
   {% if page.front_fourth_content %}
     <div id="fourth-content-region">
-      <div class="front-fourth-content-region">
+      <div class="front-fourth-content-region"  style="background-image: url({{ base_url }}/{{ bamboo_path_system('theme', 'ndf_theme') }}/images/home/{{ bamboo_i18n_current_lang() == 'ar' ? 'home-watermark-rtl.svg' : 'home-watermark.svg' }})">
         <div class="home-products-title">
           {%- if bamboo_i18n_current_lang() == 'ar' %}
             <h3>خدمات الربط</h3>

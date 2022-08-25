@@ -394,71 +394,79 @@ footer {
       padding: 0.75rem 5rem;
       border-radius: 4px;
       font-size: .85rem; }
-.path-frontpage #block-views-block-home-products-block-block-home-products h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin: 3rem 3rem 3rem;
-  text-align: center;
-  color: #3C3935; }
-.path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper {
-  padding: 3rem;
-  background-color: #C6AA76;
-  background-blend-mode: darken;
-  margin: 7rem 0;
-  height: 14rem; }
-  .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .action {
-    margin: 5rem auto;
-    width: 100%;
-    height: 10rem;
-    display: grid;
-    place-items: center; }
-    .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .action button {
-      background-color: #C6AA76;
-      color: #fff;
-      padding: 0.65rem 6rem;
-      border: none;
-      border-radius: 3px; }
-  .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck {
-    justify-content: center;
-    margin: auto; }
-    .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-header {
-      margin-top: -8rem;
-      color: #7C7A77;
-      font-size: .85rem; }
-    .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content {
-      display: flex;
+.path-frontpage .front-fourth-content-region {
+  height: 33rem; }
+  .path-frontpage .front-fourth-content-region h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 3rem 3rem 3rem;
+    text-align: center;
+    color: #3C3935; }
+  .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper {
+    padding: 3rem;
+    background-color: #C6AA76;
+    background-blend-mode: darken;
+    margin: 5rem 0;
+    height: 14rem; }
+    .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .action {
+      margin: 5rem auto;
+      width: 100%;
+      height: 10rem;
+      display: grid;
+      place-items: center; }
+      .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .action button {
+        background-color: #C6AA76;
+        color: #fff;
+        padding: 0.65rem 6rem;
+        border: none;
+        border-radius: 3px; }
+    .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck {
       justify-content: center;
-      align-items: center;
-      margin: -5rem auto; }
-      .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row {
-        height: 18rem;
-        max-width: 16rem;
-        margin: 0 3rem;
-        flex-direction: column; }
-        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-title {
-          padding: 1rem 1rem 1.5rem;
-          border-bottom: solid 1px #E8E8E8;
-          text-align: center;
-          color: #3C3935;
-          font-size: .95rem; }
-        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-body {
-          padding: 1rem 2rem;
-          height: auto;
-          color: #7C7A77;
-          font-size: .9rem;
-          text-align: center;
-          line-height: 1.75rem; }
-        .path-frontpage #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .card.views-row .views-field-view-node {
-          justify-self: flex-end;
-          align-self: center;
-          width: 90%;
-          text-align: center;
-          height: 2.75rem;
-          background: #fff;
-          border: 1px solid #C6AA76;
-          border-radius: 3px;
-          display: grid;
-          place-items: center; }
+      margin: auto; }
+      .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-header {
+        margin-top: -8rem;
+        color: #7C7A77;
+        font-size: .85rem; }
+      .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -5rem auto; }
+        .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .home-prod-card {
+          height: 18rem;
+          max-width: 15rem;
+          margin: 0 1rem;
+          flex-direction: column;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          box-shadow: #63636333;
+          background-color: #fff;
+          border-radius: 2px; }
+          .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .home-prod-card h4 {
+            padding: 1rem 1rem 1.5rem;
+            border-bottom: solid 1px #E8E8E8;
+            text-align: center;
+            color: #3C3935;
+            font-size: .95rem; }
+          .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .home-prod-card .field--name-body p {
+            padding: 1rem 2rem;
+            height: auto;
+            color: #7C7A77;
+            font-size: .9rem;
+            text-align: center;
+            line-height: 1.75rem; }
+          .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .card-deck .view-content .home-prod-card .views-field-view-node {
+            justify-self: flex-end;
+            align-self: center;
+            width: 90%;
+            text-align: center;
+            height: 2.75rem;
+            background: #fff;
+            border: 1px solid #C6AA76;
+            border-radius: 3px;
+            display: grid;
+            place-items: center; }
 .path-frontpage #fifth-content-region {
   margin: 1rem 0 0;
   padding: 1rem;
