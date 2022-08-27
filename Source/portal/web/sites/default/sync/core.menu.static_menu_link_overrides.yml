@@ -14,11 +14,11 @@ definitions:
     expanded: false
     enabled: false
   apigee_edge__apps:
+    weight: -49
     menu_name: account
     parent: ''
-    weight: -47
     expanded: false
-    enabled: false
+    enabled: true
   user__page:
     menu_name: account
     parent: ''
@@ -26,8 +26,8 @@ definitions:
     expanded: false
     enabled: true
   user__logout:
+    weight: -48
     menu_name: account
     parent: ''
-    weight: -49
-    expanded: false
     enabled: true
+    expanded: false

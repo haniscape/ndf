@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      header:
+        area_text_custom:
+          content: '<p>يمكنك الإطلاع على خدماتنا واختيار ما يناسب منها التطبيق الخاص بك</p>'

@@ -8,4 +8,5 @@ timeouts: 300
 status: true
 tracks: globally_enabled
 user_one: false
-ignore_role: {  }
+ignore_role:
+  - administrator
