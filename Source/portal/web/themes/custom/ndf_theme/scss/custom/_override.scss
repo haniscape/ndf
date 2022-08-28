@@ -52,3 +52,33 @@ img {
     }
   }
 }
+
+
+
+@media only screen and (max-width: 867px) {
+  .path-frontpage {
+    .front-fourth-content-region {
+      height: fit-content;
+      #block-views-block-home-products-block-block-home-products {
+        padding: 1rem 0 0;
+        .home-products-wrapper {
+          height: fit-content;
+          & > .card-deck {
+            height: fit-content;
+            > div {
+              .view-content {
+                grid-gap: 1rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 16rem));
+                max-width: 800px;
+              }
+            }
+          }
+          .action {
+            margin: 8rem auto 0;
+          }
+        }
+      }
+    }
+  }
+}
