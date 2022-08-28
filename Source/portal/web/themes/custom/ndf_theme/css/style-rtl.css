@@ -1211,82 +1211,7 @@ main.page-user-reset {
         .path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .apis-list .wrapper--secondary > div .api-product-list-row .wrapper--status {
           display: none; }
 
-.path-app-analytics form.apigee-edge-developer-app-analytics {
-  padding: 15px;
-  width: 1100px;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-top: 50px; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics [data-drupal-selector="edit-timezone"] {
-    display: none; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics #edit-label-container {
-    order: 1;
-    position: relative;
-    font-size: 1.25rem; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics .js-form-item-metrics {
-    order: 2;
-    margin-left: 0px;
-    margin-right: 0px; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics .js-form-item-quick-date-picker {
-    order: 3;
-    margin-left: 0px;
-    margin-right: 0px; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics #range-group {
-    order: 4;
-    display: flex;
-    margin-bottom: 20px;
-    display: none; }
-    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group.show {
-      display: flex !important; }
-    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since {
-      width: 50%;
-      display: flex; }
-      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since:before {
-        content: 'From';
-        width: 70px;
-        text-align: right; }
-      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since .js-form-item {
-        width: calc(50% - 35px);
-        padding: 0px 10px; }
-        .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since .js-form-item input {
-          width: 100%; }
-    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-date-separator-container {
-      display: none; }
-    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until {
-      width: 50%;
-      display: flex; }
-      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until:before {
-        content: 'To';
-        width: 70px;
-        text-align: center; }
-      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until .js-form-item {
-        width: calc(50% - 35px);
-        padding: 0px 10px; }
-        .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until .js-form-item:last-child {
-          padding-left: 0px; }
-        .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until .js-form-item input {
-          width: 100%; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics .form-submit {
-    order: 5;
-    display: inline-block;
-    width: 100px;
-    margin-left: 0px;
-    margin-right: auto; }
-  .path-app-analytics form.apigee-edge-developer-app-analytics .form-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    margin-right: 0px; }
-.path-app-analytics #chart_container {
-  padding: 15px 0px; }
-
-html[lang="ar"] .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since:before {
-  content: 'من'; }
-html[lang="ar"] .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until:before {
-  content: 'إلى'; }
-html[lang="ar"] .path-apps-list .action-icon.view img {
+.path-apps-list .action-icon.view img {
   transform: rotate(179deg); }
 
 .path-app-edit form.apigee-edge--form input[type="text"],
@@ -1370,6 +1295,143 @@ html[lang="ar"] .path-apps-list .action-icon.view img {
   background-image: url("/themes/custom/ndf_theme/images/home-watermark-rtl.svg");
   background-repeat: no-repeat;
   background-size: cover; }
+  .path-app-analytics main form.apigee-edge-developer-app-analytics [data-drupal-selector="edit-date-separator-container"] {
+    display: none; }
+  .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-date-separator-container {
+    display: none; }
+  .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls .form-date {
+      width: 10rem;
+      height: 42px;
+      border: 1px solid #C6AA76;
+      color: #7B5B3E; }
+      .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls .form-date::-webkit-calendar-picker-indicator {
+        display: block;
+        background-image: url("/themes/custom/ndf_theme/images/icons/pick-date.svg");
+        background-size: 100% 100%;
+        background-position: center center;
+        max-height: 30px;
+        max-weight: 30px;
+        border: none; }
+    .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls .form-time {
+      width: 10rem;
+      height: 42px;
+      border: 1px solid #C6AA76;
+      color: #7B5B3E; }
+      .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls .form-time::-webkit-calendar-picker-indicator {
+        display: block;
+        background-image: url("/themes/custom/ndf_theme/images/icons/pick-time.svg");
+        background-size: 100% 100%;
+        background-position: center center;
+        max-height: 30px;
+        max-weight: 30px;
+        border: none; }
+    .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls #edit-metrics, .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls edit-quick-date-picker {
+      min-width: 100%;
+      height: 42px;
+      border: 1px solid #C6AA76;
+      color: #7B5B3E; }
+    .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls #edit-quick-date-picker {
+      min-width: 100%;
+      height: 42px;
+      border: 1px solid #C6AA76;
+      color: #7B5B3E; }
+    .path-app-analytics main form.apigee-edge-developer-app-analytics #edit-controls .form-submit {
+      background-color: #C6AA76;
+      color: #fff;
+      border: none;
+      margin: 1rem 0;
+      width: 8rem; }
+  .path-app-analytics main form.apigee-edge-developer-app-analytics #chart_container {
+    padding: 1rem;
+    height: 25rem;
+    width: 100%;
+    border: 1px solid #3C3935;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    color: #7B5B3E;
+    background-color: #ffffff; }
+
+.path-app-analytics form.apigee-edge-developer-app-analytics {
+  padding: 15px;
+  width: 1100px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 50px; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics [data-drupal-selector="edit-date-separator-container"] {
+    display: none; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics [data-drupal-selector="edit-timezone"] {
+    display: none; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics #edit-label-container {
+    order: 1;
+    position: relative;
+    font-size: 1.25rem; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics .js-form-item-metrics {
+    order: 2;
+    margin-left: 0px;
+    margin-right: 0px; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics .js-form-item-quick-date-picker {
+    order: 3;
+    margin-left: 0px;
+    margin-right: 0px; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics #range-group {
+    order: 4;
+    display: flex;
+    margin-bottom: 20px;
+    display: none; }
+    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group.show {
+      display: flex !important; }
+    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since {
+      width: 50%;
+      display: flex; }
+      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since:before {
+        content: 'From';
+        width: 70px;
+        text-align: right; }
+      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since .js-form-item {
+        width: calc(50% - 35px);
+        padding: 0px 10px; }
+        .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since .js-form-item input {
+          width: 100%; }
+    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-date-separator-container {
+      display: none; }
+    .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until {
+      width: 50%;
+      display: flex; }
+      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until:before {
+        content: 'To';
+        width: 70px;
+        text-align: center; }
+      .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until .js-form-item {
+        width: calc(50% - 35px);
+        padding: 0px 10px; }
+        .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until .js-form-item:last-child {
+          padding-left: 0px; }
+        .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until .js-form-item input {
+          width: 100%; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics .form-submit {
+    order: 5;
+    display: inline-block;
+    width: 100px;
+    margin-left: 0px;
+    margin-right: auto; }
+  .path-app-analytics form.apigee-edge-developer-app-analytics .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px; }
+.path-app-analytics #chart_container {
+  padding: 15px 0px; }
+
+html[lang="ar"] .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-since:before {
+  content: 'من'; }
+html[lang="ar"] .path-app-analytics form.apigee-edge-developer-app-analytics #range-group #edit-until:before {
+  content: 'إلى'; }
 
 @media (min-width: 991px) {
   .container {
@@ -1397,29 +1459,6 @@ img {
   user-select: none;
   /* Standard */ }
 
-/* Responsive Media Queries */
-@media only screen and (max-width: 767px) {
-  footer .top-footer .wrapper {
-    flex-direction: column; }
-    footer .top-footer .wrapper .footer-item {
-      width: 100%;
-      padding: 0.75rem 1.5rem; } }
-@media only screen and (max-width: 867px) {
-  .path-frontpage .front-fourth-content-region {
-    height: fit-content; }
-    .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products {
-      padding: 1rem 0 0; }
-      .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper {
-        height: fit-content; }
-        .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper > .card-deck {
-          height: fit-content; }
-          .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper > .card-deck > div .view-content {
-            grid-gap: 1rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 16rem));
-            max-width: 800px; }
-        .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .action {
-          margin: 8rem auto 0; } }
 @media (max-width: 768px) {
   .path-apps-list .apigee-entity-list--developer-app .card-green-shadow .app-actions .action-icons-wrapper .action-icon {
     flex: 1; } }
@@ -1466,5 +1505,27 @@ img {
     align-items: flex-start; }
     .path-app-view .app-entity .content-section .apis-list .wrapper--secondary > div .api-product-list-row {
       flex-basis: 100%; } }
+@media only screen and (max-width: 767px) {
+  footer .top-footer .wrapper {
+    flex-direction: column; }
+    footer .top-footer .wrapper .footer-item {
+      width: 100%;
+      padding: 0.75rem 1.5rem; } }
+@media only screen and (max-width: 867px) {
+  .path-frontpage .front-fourth-content-region {
+    height: fit-content; }
+    .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products {
+      padding: 1rem 0 0; }
+      .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper {
+        height: fit-content; }
+        .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper > .card-deck {
+          height: fit-content; }
+          .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper > .card-deck > div .view-content {
+            grid-gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 16rem));
+            max-width: 800px; }
+        .path-frontpage .front-fourth-content-region #block-views-block-home-products-block-block-home-products .home-products-wrapper .action {
+          margin: 8rem auto 0; } }
 
 /*# sourceMappingURL=style-rtl.css.map */

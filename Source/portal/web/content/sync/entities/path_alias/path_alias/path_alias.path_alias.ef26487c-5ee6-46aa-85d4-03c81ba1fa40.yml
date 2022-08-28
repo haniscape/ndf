@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: ef26487c-5ee6-46aa-85d4-03c81ba1fa40
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/8
+alias:
+  -
+    value: /apis/geo-location
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

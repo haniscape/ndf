@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 3748d7db-3115-4125-9f07-560f94bfb14e
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/3
+alias:
+  -
+    value: /forum/sales-apis
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

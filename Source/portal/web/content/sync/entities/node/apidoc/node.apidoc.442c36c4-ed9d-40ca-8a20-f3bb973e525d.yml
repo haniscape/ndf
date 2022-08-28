@@ -1,0 +1,114 @@
+uuid:
+  -
+    value: 442c36c4-ed9d-40ca-8a20-f3bb973e525d
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: apidoc
+    target_type: node_type
+    target_uuid: 53491232-6682-422a-b863-70ff48d7ece4
+revision_timestamp:
+  -
+    value: '2022-08-28T07:11:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+title:
+  -
+    value: 'Electronic Payment 4'
+created:
+  -
+    value: '2022-08-28T07:09:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2022-08-28T07:11:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+body:
+  -
+    value: "<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>\r\n"
+    format: basic_html
+    processed: '<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>'
+    summary: ''
+    summary_processed: ''
+field_api_product:
+  -
+    target_id: 'test 2'
+    target_type: api_product
+    target_uuid: null
+field_apidoc_fetched_timestamp:
+  -
+    value: '2020-04-18T06:38:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_apidoc_file_link: {  }
+field_apidoc_spec:
+  -
+    display: true
+    description: ''
+    target_type: file
+    target_uuid: a7e9d33d-3d16-4a4a-90b2-89c6160a7966
+field_apidoc_spec_file_source:
+  -
+    value: file
+field_apidoc_spec_md5:
+  -
+    value: 753dda60262ef4bc86c67c28e512c227
+field_categories:
+  -
+    target_type: taxonomy_term
+    target_uuid: a09a32c1-fa1f-403b-888c-e02616998419
+field_product_link: {  }
+field_role: {  }
+field_type:
+  -
+    target_type: taxonomy_term
+    target_uuid: 2798ecd6-cea5-4ab4-ba41-b661e8cea19d
+field_user_role: {  }
+field_what_can_show:
+  -
+    value: "<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how&nbsp;You can pay for services Set up payment gateways for our customers so that it is not a matter of how&nbsp;You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>\r\n"
+    format: basic_html
+    processed: "<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how\_You can pay for services Set up payment gateways for our customers so that it is not a matter of how\_You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>"
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+    file:
+      - file.file.a7e9d33d-3d16-4a4a-90b2-89c6160a7966
+    taxonomy_term:
+      - taxonomy_term.api_category.a09a32c1-fa1f-403b-888c-e02616998419
+      - taxonomy_term.api_type.2798ecd6-cea5-4ab4-ba41-b661e8cea19d
+path:
+  -
+    alias: /api/5

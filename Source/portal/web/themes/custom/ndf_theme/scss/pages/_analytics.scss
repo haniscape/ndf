@@ -3,7 +3,225 @@
     background-image: url($theme-path + "/images/home-watermark-"+ $dir +".svg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    form.apigee-edge-developer-app-analytics {
+      [data-drupal-selector="edit-date-separator-container"] {
+        display: none;
+      }
+      #edit-date-separator-container {
+        display: none;
+      }
+
+      #edit-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .form-date {
+          width: 10rem;
+          height: 42px;
+          border: 1px solid $ndf_gold;
+          color: $ndf_label;
+
+          &::-webkit-calendar-picker-indicator {
+            display: block;
+            background-image: url($theme-path + "/images/icons/pick-date.svg");
+            background-size: 100% 100%;
+            background-position: center center;
+            max-height: 30px;
+            max-weight: 30px;
+            border: none;
+          }
+        }
+
+        .form-time {
+          width: 10rem;
+          height: 42px;
+          border: 1px solid $ndf_gold;
+          color: $ndf_label;
+
+          &::-webkit-calendar-picker-indicator {
+            display: block;
+            background-image: url($theme-path + "/images/icons/pick-time.svg");
+            background-size: 100% 100%;
+            background-position: center center;
+            max-height: 30px;
+            max-weight: 30px;
+            border: none;
+          }
+        }
+
+        #edit-metrics, edit-quick-date-picker {
+          min-width: 100%;
+          height: 42px;
+          border: 1px solid $ndf_gold;
+          color: $ndf_label;
+        }
+
+        #edit-quick-date-picker {
+          min-width: 100%;
+          height: 42px;
+          border: 1px solid $ndf_gold;
+          color: $ndf_label;
+
+        }
+
+
+        .form-submit {
+          background-color: #C6AA76;
+          color: #fff;
+          border: none;
+          margin: 1rem 0;
+          width: 8rem;
+        }
+      }
+
+
+      #chart_container {
+        padding: 1rem;
+        height: 25rem;
+        width: 100%;
+        border: 1px solid $ndf_dark_grey;
+        border-radius: 1rem;
+        margin: 3rem 0;
+        color: $ndf_label;
+        background-color: $white;
+      }
+
+
+    }
+  }
+}
+
+
+// Analytics page
+.path-app-analytics {
+  form.apigee-edge-developer-app-analytics {
+    padding: 15px;
+    width: 1100px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 50px;
+
+    [data-drupal-selector="edit-date-separator-container"] {
+      display: none;
+    }
+    [data-drupal-selector="edit-timezone"] {
+      display: none;
+    }
+
+    #edit-label-container {
+      order: 1;
+      position: relative;
+      font-size: 1.25rem;
+    }
+
+    .js-form-item-metrics {
+      order: 2;
+      margin-#{$right}: 0px;
+      margin-#{$left}: 0px;
+    }
+
+    .js-form-item-quick-date-picker {
+      order: 3;
+      margin-#{$right}: 0px;
+      margin-#{$left}: 0px;
+    }
+
+    #range-group {
+      order: 4;
+      display: flex;
+      margin-bottom: 20px;
+      display: none;
+
+      &.show {
+        display: flex !important;
+      }
+
+      #edit-since {
+        width: 50%;
+        display: flex;
+        //justify-content: space-around;
+        &:before {
+          content: 'From';
+          width: 70px;
+          text-align: #{$left};
+        }
+
+        .js-form-item {
+          width: calc(50% - 35px);
+          padding: 0px 10px;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+
+      #edit-date-separator-container {
+        display: none;
+      }
+
+      #edit-until {
+        width: 50%;
+        display: flex;
+        //justify-content: space-around;
+        &:before {
+          content: 'To';
+          width: 70px;
+          text-align: center;
+        }
+
+        .js-form-item {
+          width: calc(50% - 35px);
+          padding: 0px 10px;
+
+          &:last-child {
+            padding-#{$right}: 0px;
+          }
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .form-submit {
+      order: 5;
+      display: inline-block;
+      width: 100px;
+      margin-#{$right}: 0px;
+      margin-#{$left}: auto;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 
+  #chart_container {
+    padding: 15px 0px;
+  }
+}
 
+
+html[lang="ar"] {
+  .path-app-analytics {
+    form.apigee-edge-developer-app-analytics {
+      #range-group {
+        #edit-since:before {
+          content: 'من';
+        }
+
+        #edit-until:before {
+          content: 'إلى';
+        }
+      }
+    }
+  }
 }

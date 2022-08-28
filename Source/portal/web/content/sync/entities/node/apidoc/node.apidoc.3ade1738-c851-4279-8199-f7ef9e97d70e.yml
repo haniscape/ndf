@@ -1,0 +1,220 @@
+uuid:
+  -
+    value: 3ade1738-c851-4279-8199-f7ef9e97d70e
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: apidoc
+    target_type: node_type
+    target_uuid: 53491232-6682-422a-b863-70ff48d7ece4
+revision_timestamp:
+  -
+    value: '2022-08-25T13:02:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+title:
+  -
+    value: 'Electronic Payment 1'
+created:
+  -
+    value: '2022-08-24T20:45:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2022-08-25T13:02:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+body:
+  -
+    value: "<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>\r\n"
+    format: basic_html
+    processed: '<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>'
+    summary: ''
+    summary_processed: ''
+field_api_product:
+  -
+    target_id: test
+    target_type: api_product
+    target_uuid: null
+field_apidoc_fetched_timestamp:
+  -
+    value: '2020-04-18T06:38:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_apidoc_file_link: {  }
+field_apidoc_spec:
+  -
+    display: true
+    description: ''
+    target_type: file
+    target_uuid: f9cde67d-1190-40e4-8304-179b5cf52e61
+field_apidoc_spec_file_source:
+  -
+    value: file
+field_apidoc_spec_md5:
+  -
+    value: 753dda60262ef4bc86c67c28e512c227
+field_categories:
+  -
+    target_type: taxonomy_term
+    target_uuid: 82a2a2ab-741c-4331-9ee5-211c8d4fd5cf
+field_product_link: {  }
+field_role: {  }
+field_type:
+  -
+    target_type: taxonomy_term
+    target_uuid: fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+field_user_role: {  }
+field_what_can_show: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+    file:
+      - file.file.f9cde67d-1190-40e4-8304-179b5cf52e61
+    taxonomy_term:
+      - taxonomy_term.api_category.82a2a2ab-741c-4331-9ee5-211c8d4fd5cf
+      - taxonomy_term.api_type.fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+path:
+  -
+    alias: /api/4
+_translations:
+  ar:
+    uuid:
+      -
+        value: 3ade1738-c851-4279-8199-f7ef9e97d70e
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: apidoc
+        target_type: node_type
+        target_uuid: 53491232-6682-422a-b863-70ff48d7ece4
+    revision_timestamp:
+      -
+        value: '2022-08-25T13:02:48+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    revision_log: {  }
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    title:
+      -
+        value: 'السداد الإلكتروني'
+    created:
+      -
+        value: '2022-08-24T20:45:52+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    changed:
+      -
+        value: '2022-08-25T13:02:48+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    promote:
+      -
+        value: true
+    sticky:
+      -
+        value: false
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected: {  }
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    body:
+      -
+        value: "<p>يمكنك الدفع مقابل الخدمات إعداد بوابات الدفع لعملائنا بحيث لا يتعلق الأمر بكيفية</p>\r\n"
+        format: basic_html
+        processed: '<p>يمكنك الدفع مقابل الخدمات إعداد بوابات الدفع لعملائنا بحيث لا يتعلق الأمر بكيفية</p>'
+        summary: ''
+        summary_processed: ''
+    field_api_product:
+      -
+        target_id: test
+        target_type: api_product
+        target_uuid: null
+    field_apidoc_fetched_timestamp:
+      -
+        value: '2020-04-18T06:38:11+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_apidoc_file_link: {  }
+    field_apidoc_spec:
+      -
+        display: true
+        description: ''
+        target_type: file
+        target_uuid: f9cde67d-1190-40e4-8304-179b5cf52e61
+    field_apidoc_spec_file_source:
+      -
+        value: file
+    field_apidoc_spec_md5:
+      -
+        value: 753dda60262ef4bc86c67c28e512c227
+    field_categories:
+      -
+        target_type: taxonomy_term
+        target_uuid: 82a2a2ab-741c-4331-9ee5-211c8d4fd5cf
+    field_product_link: {  }
+    field_role: {  }
+    field_type:
+      -
+        target_type: taxonomy_term
+        target_uuid: fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+    field_user_role: {  }
+    field_what_can_show: {  }
+    _content_sync:
+      entity_type: node
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+        file:
+          - file.file.f9cde67d-1190-40e4-8304-179b5cf52e61
+        taxonomy_term:
+          - taxonomy_term.api_category.82a2a2ab-741c-4331-9ee5-211c8d4fd5cf
+          - taxonomy_term.api_type.fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+    path:
+      -
+        alias: /api/4

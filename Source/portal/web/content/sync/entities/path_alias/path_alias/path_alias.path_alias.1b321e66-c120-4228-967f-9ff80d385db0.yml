@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 1b321e66-c120-4228-967f-9ff80d385db0
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/7
+alias:
+  -
+    value: /apis/data-append
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

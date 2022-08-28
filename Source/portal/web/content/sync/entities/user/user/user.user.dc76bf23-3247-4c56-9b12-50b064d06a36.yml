@@ -1,0 +1,82 @@
+uuid:
+  -
+    value: dc76bf23-3247-4c56-9b12-50b064d06a36
+langcode:
+  -
+    value: en
+name:
+  -
+    value: admin
+created:
+  -
+    value: '2022-06-21T13:29:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2022-08-08T15:46:34+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+first_name:
+  -
+    value: Firstname
+last_name:
+  -
+    value: Lastname
+apigee_edge_developer_id:
+  -
+    value: TcL3JkHB1QyNAUTT
+email_tfa_status: {  }
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid: {  }
+content_translation_status:
+  -
+    value: true
+content_translation_created: {  }
+field_date_of_birth:
+  -
+    value: '2022-08-01'
+field_first_name:
+  -
+    value: mostafa
+field_last_name:
+  -
+    value: mohamed
+field_last_password_reset: {  }
+field_mobile_number:
+  -
+    value: '+201010117790'
+    country: EG
+    local_number: '01010117790'
+    verified: false
+    tfa: false
+field_password_expiration: {  }
+field_pending_expire_sent: {  }
+field_user_company:
+  -
+    value: 'Cloudypedia Egypt'
+_content_sync:
+  entity_type: user
+  entity_dependencies: {  }
+pass:
+  -
+    value: $S$EnANdfSrTqmAEzwedSMOnQk0JOB9EMmPZICT8fpWiaUmn.aaeVpo
+    pre_hashed: true
+mail:
+  value: mostafa.m@cloudypedia.com
+status:
+  value: '1'
+roles:
+  - authenticated
+  - administrator

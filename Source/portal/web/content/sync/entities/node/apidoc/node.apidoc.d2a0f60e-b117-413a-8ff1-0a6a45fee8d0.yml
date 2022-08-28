@@ -1,0 +1,237 @@
+uuid:
+  -
+    value: d2a0f60e-b117-413a-8ff1-0a6a45fee8d0
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: apidoc
+    target_type: node_type
+    target_uuid: 53491232-6682-422a-b863-70ff48d7ece4
+revision_timestamp:
+  -
+    value: '2022-08-25T13:28:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+title:
+  -
+    value: 'Electronic Payment 3'
+created:
+  -
+    value: '2022-08-08T15:47:55+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2022-08-25T13:28:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+body:
+  -
+    value: "<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>\r\n"
+    format: basic_html
+    processed: '<p>You can pay for services Set up payment gateways for our customers so that it is not a matter of how</p>'
+    summary: ''
+    summary_processed: ''
+field_api_product:
+  -
+    target_id: test
+    target_type: api_product
+    target_uuid: null
+field_apidoc_fetched_timestamp:
+  -
+    value: '2020-04-18T06:38:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_apidoc_file_link: {  }
+field_apidoc_spec:
+  -
+    display: true
+    description: ''
+    target_type: file
+    target_uuid: 8810ffe4-dbef-4acf-bf7f-1388f6079b7c
+field_apidoc_spec_file_source:
+  -
+    value: file
+field_apidoc_spec_md5:
+  -
+    value: 753dda60262ef4bc86c67c28e512c227
+field_categories:
+  -
+    target_type: taxonomy_term
+    target_uuid: a63cae7c-c969-487a-a6f5-6a66a045c447
+  -
+    target_type: taxonomy_term
+    target_uuid: 53652a5b-1721-414f-b30b-ee13a8ea06a6
+field_product_link: {  }
+field_role: {  }
+field_type:
+  -
+    target_type: taxonomy_term
+    target_uuid: fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+field_user_role: {  }
+field_what_can_show:
+  -
+    value: "<p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.</p>\r\n\r\n<ul>\r\n\t<li>kshdfgjsd</li>\r\n\t<li>sdfjghsjdhf</li>\r\n</ul>\r\n"
+    format: basic_html
+    processed: |-
+      <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.</p>
+
+      <ul><li>kshdfgjsd</li>
+      	<li>sdfjghsjdhf</li>
+      </ul>
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+    file:
+      - file.file.8810ffe4-dbef-4acf-bf7f-1388f6079b7c
+    taxonomy_term:
+      - taxonomy_term.api_category.a63cae7c-c969-487a-a6f5-6a66a045c447
+      - taxonomy_term.api_category.53652a5b-1721-414f-b30b-ee13a8ea06a6
+      - taxonomy_term.api_type.fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+path:
+  -
+    alias: /api/2
+_translations:
+  ar:
+    uuid:
+      -
+        value: d2a0f60e-b117-413a-8ff1-0a6a45fee8d0
+    langcode:
+      -
+        value: ar
+    type:
+      -
+        target_id: apidoc
+        target_type: node_type
+        target_uuid: 53491232-6682-422a-b863-70ff48d7ece4
+    revision_timestamp:
+      -
+        value: '2022-08-25T13:28:30+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    revision_uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    revision_log: {  }
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_type: user
+        target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+    title:
+      -
+        value: 'السداد الإلكتروني'
+    created:
+      -
+        value: '2022-08-08T15:47:55+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    changed:
+      -
+        value: '2022-08-25T13:28:30+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    promote:
+      -
+        value: true
+    sticky:
+      -
+        value: false
+    default_langcode:
+      -
+        value: false
+    revision_translation_affected: {  }
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    body:
+      -
+        value: "<p>يمكنك الدفع مقابل الخدمات إعداد بوابات الدفع لعملائنا بحيث لا يتعلق الأمر بكيفية</p>\r\n"
+        format: basic_html
+        processed: '<p>يمكنك الدفع مقابل الخدمات إعداد بوابات الدفع لعملائنا بحيث لا يتعلق الأمر بكيفية</p>'
+        summary: ''
+        summary_processed: ''
+    field_api_product:
+      -
+        target_id: test
+        target_type: api_product
+        target_uuid: null
+    field_apidoc_fetched_timestamp:
+      -
+        value: '2020-04-18T06:38:11+00:00'
+        format: 'Y-m-d\TH:i:sP'
+    field_apidoc_file_link: {  }
+    field_apidoc_spec:
+      -
+        display: true
+        description: ''
+        target_type: file
+        target_uuid: 8810ffe4-dbef-4acf-bf7f-1388f6079b7c
+    field_apidoc_spec_file_source:
+      -
+        value: file
+    field_apidoc_spec_md5:
+      -
+        value: 753dda60262ef4bc86c67c28e512c227
+    field_categories:
+      -
+        target_type: taxonomy_term
+        target_uuid: a63cae7c-c969-487a-a6f5-6a66a045c447
+      -
+        target_type: taxonomy_term
+        target_uuid: 53652a5b-1721-414f-b30b-ee13a8ea06a6
+    field_product_link: {  }
+    field_role: {  }
+    field_type:
+      -
+        target_type: taxonomy_term
+        target_uuid: fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+    field_user_role: {  }
+    field_what_can_show: {  }
+    _content_sync:
+      entity_type: node
+      entity_dependencies:
+        user:
+          - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36
+        file:
+          - file.file.8810ffe4-dbef-4acf-bf7f-1388f6079b7c
+        taxonomy_term:
+          - taxonomy_term.api_category.a63cae7c-c969-487a-a6f5-6a66a045c447
+          - taxonomy_term.api_category.53652a5b-1721-414f-b30b-ee13a8ea06a6
+          - taxonomy_term.api_type.fe8d977a-c98b-44d6-b12a-0a2dfa5f31b7
+    path:
+      -
+        alias: /api/2
