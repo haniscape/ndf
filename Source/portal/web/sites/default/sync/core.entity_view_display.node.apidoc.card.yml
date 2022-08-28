@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.apidoc.field_role
     - field.field.node.apidoc.field_type
     - field.field.node.apidoc.field_user_role
+    - field.field.node.apidoc.field_what_can_show
     - node.type.apidoc
   module:
     - text
@@ -46,5 +47,6 @@ hidden:
   field_role: true
   field_type: true
   field_user_role: true
+  field_what_can_show: true
   langcode: true
   links: true

@@ -1,0 +1,21 @@
+uuid: 61c53016-eb79-4ef1-96dd-792636581bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_can_show
+    - node.type.apidoc
+  module:
+    - text
+id: node.apidoc.field_what_can_show
+field_name: field_what_can_show
+entity_type: node
+bundle: apidoc
+label: 'what can show'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

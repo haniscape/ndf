@@ -1,0 +1,45 @@
+uuid: eb06e191-a7d5-4628-b07e-c0731e32b9e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+_core:
+  default_config_hash: h71nUfq8PfSX8D7kJ9t9YWcWZiUN8lUxwqQHIOrCxpI
+id: opendoc_api_full
+label: opendoc-api-full
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  19ae49b9-885e-4935-947e-1ac1caf4dee4:
+    id: node_type
+    negate: false
+    uuid: 19ae49b9-885e-4935-947e-1ac1caf4dee4
+    context_mapping:
+      node: node
+    bundles:
+      landing: landing
+      page: page
+  e6e4ec85-90d7-4e10-bdd0-a6164440bc78:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e6e4ec85-90d7-4e10-bdd0-a6164440bc78
+    context_mapping:
+      node: node
+    bundles:
+      apidoc: apidoc
+  4662c0af-e2a2-4fd6-b57b-5aa8cae67bf3:
+    id: language
+    negate: false
+    uuid: 4662c0af-e2a2-4fd6-b57b-5aa8cae67bf3
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      ar: ar
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language
