@@ -1366,6 +1366,11 @@ html[lang="ar"] .path-apps-list .action-icon.view img {
     .path-add-app form.apigee-edge--form .form-checkboxes .form-item input {
       width: 20px; }
 
+.path-app-analytics main {
+  background-image: url("/themes/custom/ndf_theme/images/home-watermark-rtl.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 @media (min-width: 991px) {
   .container {
     max-width: 940px; } }
