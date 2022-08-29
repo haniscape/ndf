@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 8810ffe4-dbef-4acf-bf7f-1388f6079b7c
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: dc76bf23-3247-4c56-9b12-50b064d06a36
+filename:
+  -
+    value: openapi_1.json
+uri:
+  -
+    value: 'public://apidoc_specs/openapi_1.json'
+    url: /sites/default/files/apidoc_specs/openapi_1.json
+filemime:
+  -
+    value: application/octet-stream
+filesize:
+  -
+    value: 31432
+status:
+  -
+    value: true
+created:
+  -
+    value: '2022-08-24T20:46:53+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2022-08-24T20:46:55+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.dc76bf23-3247-4c56-9b12-50b064d06a36

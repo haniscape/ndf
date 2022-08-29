@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 7d4e22be-fff7-413f-a7a2-259f8a77c7f6
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/11
+alias:
+  -
+    value: /apis/payment-transaction
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

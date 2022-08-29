@@ -30,7 +30,7 @@
  */
 #}
 
-
+<div class="prod-card">
 {% for field in fields -%}
   {{ field.separator }}
   {%- if field.wrapper_element -%}
@@ -56,3 +56,4 @@
 
   {%- endif %}
 {%- endfor %}
+</div>

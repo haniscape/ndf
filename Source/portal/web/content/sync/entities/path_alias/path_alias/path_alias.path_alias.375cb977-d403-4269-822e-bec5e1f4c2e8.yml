@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 375cb977-d403-4269-822e-bec5e1f4c2e8
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/2
+alias:
+  -
+    value: /forum/comments-suggestions
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 59c07469-0d08-4b2e-967c-8d09f0951206
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/4
+alias:
+  -
+    value: /forum/miscellaneous
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

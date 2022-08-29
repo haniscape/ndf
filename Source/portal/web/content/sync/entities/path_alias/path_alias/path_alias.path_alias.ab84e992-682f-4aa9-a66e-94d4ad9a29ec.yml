@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: ab84e992-682f-4aa9-a66e-94d4ad9a29ec
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /node/5
+alias:
+  -
+    value: /api/5
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

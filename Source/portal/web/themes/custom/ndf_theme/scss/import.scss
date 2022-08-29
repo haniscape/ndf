@@ -1,12 +1,14 @@
 // Include custom sub theme.
 @import 'custom/variables';
 @import 'layout/header', 'layout/footer';
-@import 'layout/front', 'layout/general';
+@import 'pages/front', 'layout/general';
 @import 'layout/form';
-@import 'layout/register';
-@import 'layout/login';
+@import 'pages/register';
+@import 'pages/login';
 @import 'layout/reset';
-@import 'layout/app';
+@import 'pages/app';
+@import 'pages/analytics';
+@import 'pages/apis';
 @import 'custom/override';
 @import 'custom/responsive';
 

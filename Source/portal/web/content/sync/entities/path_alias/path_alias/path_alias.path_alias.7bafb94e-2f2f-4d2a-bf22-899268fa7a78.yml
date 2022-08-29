@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 7bafb94e-2f2f-4d2a-bf22-899268fa7a78
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/9
+alias:
+  -
+    value: /apis/identity
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

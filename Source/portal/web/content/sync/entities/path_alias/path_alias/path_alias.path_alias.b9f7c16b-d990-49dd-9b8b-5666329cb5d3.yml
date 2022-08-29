@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: b9f7c16b-d990-49dd-9b8b-5666329cb5d3
+langcode:
+  -
+    value: ar
+path:
+  -
+    value: /node/2
+alias:
+  -
+    value: /api/2
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

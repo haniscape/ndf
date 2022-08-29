@@ -1,0 +1,17 @@
+uuid:
+  -
+    value: 7d104a02-cef5-444f-af00-8c96ae920265
+langcode:
+  -
+    value: en
+path:
+  -
+    value: /taxonomy/term/10
+alias:
+  -
+    value: /apis/mobile
+status:
+  -
+    value: true
+_content_sync:
+  entity_type: path_alias

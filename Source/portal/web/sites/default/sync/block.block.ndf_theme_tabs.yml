@@ -32,4 +32,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "<front>\r\n/user/login\r\n/user/register\r\n/user/password\r\n/user/*/apps/*"
+    pages: "<front>\r\n/user/login\r\n/user/register\r\n/user/password\r\n/user/*/apps/*\r\n/api/*"

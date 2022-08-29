@@ -1,0 +1,19 @@
+uuid: 7e169d88-3d1d-4512-a239-5e47f2b9ab05
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_what_can_show
+field_name: field_what_can_show
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
