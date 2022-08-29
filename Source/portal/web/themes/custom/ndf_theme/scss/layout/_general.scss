@@ -17,4 +17,9 @@ body {
   ul {
     list-style: none;
   }
+  #block-ndf-theme-breadcrumbs {
+    .breadcrumb {
+      background-color: transparent;
+    }
+  }
 }
