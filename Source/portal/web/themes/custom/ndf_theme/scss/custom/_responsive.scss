@@ -12,6 +12,67 @@
       }
     }
   }
+
+  .path-frontpage{
+
+    #block-hompageheroblock {
+        .watermark {
+          .field--name-field-description {
+            margin: auto;
+          }
+        }
+      }
+
+      #block-homepagegoals{
+        .field--name-field-description{
+          margin: auto;
+        }
+      }
+
+      #fifth-content-region{
+    .contact-message-hompage-contact-form {
+            width: 100%;
+            min-width: auto;
+            #contact-message-hompage-contact-form{
+                 margin: 0;
+            }
+
+        }
+       }
+
+       #block-homepageregistations{
+    .registration-wrapper{
+    .field--name-field-step{
+    .one-step-wrapper{
+    .wrapper{
+           display: block;
+    }
+    }
+    }
+    }
+        .registration-wrapper {
+          .field--name-field-step {
+            display: block;
+            height: auto;
+            text-align: center;
+          }
+        }
+
+        .registration-wrapper {
+          .field--name-field-step {
+            .one-step-wrapper {
+              .field--name-field-registation-description {
+                display: block;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+          }
+
+   }
+
 }
 
 @media (max-width: 991px) {
