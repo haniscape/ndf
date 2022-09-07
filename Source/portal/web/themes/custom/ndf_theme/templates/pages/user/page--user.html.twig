@@ -42,26 +42,80 @@
  * @see html.html.twig
  */
 #}
-{% set nav_classes = 'navbar navbar-expand-lg' ~
+{%
+  set nav_classes = 'navbar navbar-expand-lg' ~
   (b4_navbar_schema != 'none' ? " navbar-#{b4_navbar_schema}" : ' ') ~
   (b4_navbar_schema != 'none' ? (b4_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ') %}
+  (b4_navbar_bg_schema != 'none' ? " bg-#{b4_navbar_bg_schema}" : ' ')
+%}
 
-{% set footer_classes = ' ' ~
+{%
+  set footer_classes = ' ' ~
   (b4_footer_schema != 'none' ? " footer-#{b4_footer_schema}" : ' ') ~
   (b4_footer_schema != 'none' ? (b4_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
-  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ') %}
+  (b4_footer_bg_schema != 'none' ? " bg-#{b4_footer_bg_schema}" : ' ')
+%}
 
 {% include directory ~ '/templates/includes/header-absolute.html.twig' %}
 
-{% include directory ~ '/templates/pages/components/_user-page.html.twig' %}
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+  {%
+    set sidebar_first_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
+  %}
+
+  {%
+    set sidebar_second_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-sm-6 col-lg-3' : 'col-12 col-lg-3'
+  %}
+
+  {%
+    set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
+  %}
+
+  {# Banner region #}
+  {% if page.banner %}
+    <div id="banner">
+      <div class="banner-region">
+        {{ page.banner }}
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="{{ b4_top_container }}">
+    {% if page.breadcrumb %}
+      {{ page.breadcrumb }}
+    {% endif %}
+    <div class="row no-gutters">
+      {% if page.sidebar_first %}
+        <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
+          {{ page.sidebar_first }}
+        </div>
+      {% endif %}
+      <div class="order-1 order-lg-2 {{ content_classes }}">
+        {% if page.custom_title %}
+          <div id="custom-title">
+            <div class="custom-title-region">
+              {{ page.custom_title }}
+            </div>
+          </div>
+        {% endif %}
+        {{ page.content }}
+      </div>
+      {% if page.sidebar_second %}
+        <div class="order-3 {{ sidebar_second_classes }}">
+          {{ page.sidebar_second }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+</main>
 
 {% if page.footer %}
   <footer class="mt-auto {{ footer_classes }}">
-    <div class="container">
+    <div class="{{ b4_top_container }}">
       {{ page.footer }}
     </div>
   </footer>
 {% endif %}
-
-

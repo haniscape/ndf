@@ -23,3 +23,15 @@ body {
     }
   }
 }
+
+#block-ndf-theme-title {
+  padding: 0;
+  margin: 6rem auto 1rem;
+  height: 3rem;
+  width: 100%;
+  h1.page-title {
+    font-size: 1.5rem;
+    color: $black;
+    font-weight: 500;
+  }
+}
