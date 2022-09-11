@@ -782,3 +782,5 @@ $settings['config_sync_directory'] = 'sites/default/sync';
 // Content sync
 global $content_directories;
 $content_directories['sync'] = $app_root.'/content/sync';
+
+

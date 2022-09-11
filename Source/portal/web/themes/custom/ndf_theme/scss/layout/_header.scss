@@ -6,28 +6,35 @@
   z-index: 9;
   height: 80px;
   padding: 5px 0;
+
   #header {
     width: 100%;
+
     .navbar {
       width: 100%;
       display: flex;
       justify-content: space-between;
+
       .region-nav-main {
         display: flex;
         justify-content: space-between;
         height: 67px;
         align-items: center;
+
         #block-ndf-theme-main-menu {
           height: 40px;
+
           .nav-item {
             min-width: 6rem;
             text-align: center;
+
             a {
               color: $white;
               border-bottom: 1.5px solid transparent;
               transition: border .25s ease-out;
               font-size: .85rem;
               font-weight: 400;
+
               &:hover {
                 border-bottom: 1.5px solid #C6AA76;
                 font-weight: 700;
@@ -39,9 +46,11 @@
 
       #block-useraccountmenu {
         height: 40px;
+
         .nav-item {
           min-width: 10rem;
           text-align: center;
+
           a {
             color: $ndf_gold;
             background-color: transparent;
@@ -52,11 +61,13 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
             margin: 0 5px;
+
             &:hover {
               color: $white;
               background-color: $ndf_gold;
             }
           }
+
           a[data-drupal-link-system-path="user/register"], a[data-drupal-link-system-path="user"] {
             color: $white;
             background-color: $ndf_gold;
@@ -71,19 +82,22 @@
         }
       }
 
-      .logged-user-menu{
-        .username{
+      .logged-user-menu {
+        .username {
           border: 1px solid $ndf_gold;
           outline: none;
           color: $white;
-          .icon{
+
+          .icon {
             margin-#{right}: .5rem;
           }
         }
-        .dropdown-menu{
+
+        .dropdown-menu {
           width: 100%;
-          .dropdown-item{
-            &:hover{
+
+          .dropdown-item {
+            &:hover {
               background-color: $ndf_gold;
             }
           }
@@ -93,7 +107,8 @@
   }
 
   .lang-switcher {
-    margin-#{$left}:1rem;
+    margin-#{$left}: 1rem;
+
     .lang {
       background-color: transparent;
       border: none;
@@ -101,6 +116,7 @@
       display: flex;
       gap: 0.5rem;
       align-items: center;
+
       a {
         height: 40px;
         display: flex;
@@ -110,8 +126,9 @@
         color: $white;
         gap: 0.5rem;
         font-size: 18px;
-        text-decoration:none;
-        img{
+        text-decoration: none;
+
+        img {
           width: 25px;
         }
       }
@@ -119,58 +136,71 @@
   }
 }
 
-#header-normal{
+/* Header Normal */
+#header-normal {
   background: $white;
   position: static;
   color: $ndf_dark_grey;
-  margin-bottom:1rem;
-  .navbar-toggler{
+  margin-bottom: 1rem;
+
+  .navbar-toggler {
     border-color: $ndf_dark_grey;
-    .navbar-toggler-icon{
+
+    .navbar-toggler-icon {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       content: "f0c9";
     }
   }
+
   .region-nav-main {
-    display:flex;
+    display: flex;
     gap: 1rem;
-    #block-ndf-theme-main-menu{
-      .navbar-nav{
+
+    #block-ndf-theme-main-menu {
+      .navbar-nav {
         gap: 1rem;
-        .nav-item{
-          .nav-link{
+
+        .nav-item {
+          .nav-link {
             color: $ndf_dark_grey;
-            border-bottom:2px solid transparent;
+            border-bottom: 2px solid transparent;
             @include transition(all .3s);
-            &:hover{
+
+            &:hover {
               color: $action_brown;
-              border-bottom:2px solid $ndf_gold;
+              border-bottom: 2px solid $ndf_gold;
             }
           }
         }
       }
     }
-    .logged-user-menu{
-      .username{
+
+    .logged-user-menu {
+      .username {
         border: 1px solid $ndf_gold;
         outline: none;
-        .icon{
+
+        .icon {
           margin-#{right}: .5rem;
         }
       }
-      .dropdown-menu{
+
+      .dropdown-menu {
         width: 100%;
-        .dropdown-item{
-          &:hover{
+
+        .dropdown-item {
+          &:hover {
             background-color: $ndf_gold;
           }
         }
       }
     }
   }
+
   .lang-switcher {
-    margin-#{$left}:1rem;
+    margin-#{$left}: 1rem;
+
     .lang {
       background-color: transparent;
       border: none;
@@ -179,6 +209,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
       a {
         height: 40px;
         display: flex;
@@ -188,11 +219,123 @@
         color: $ndf_gold;
         gap: 0.5rem;
         font-size: 18px;
-        text-decoration:none;
-        img{
+        text-decoration: none;
+
+        img {
           width: 25px;
         }
       }
     }
   }
 }
+
+
+/* Header Dark */
+#header-dark {
+  background-image: url($theme-path +"/images/home/header-dark-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  color: $white;
+
+
+  #header {
+    width: 100%;
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .navbar-toggler {
+        border-color: $white;
+
+        .navbar-toggler-icon {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "f0c9";
+        }
+      }
+
+      .region-nav-main {
+        display: flex;
+        gap: 1rem;
+
+        #block-ndf-theme-main-menu {
+          .navbar-nav {
+            gap: 1rem;
+
+            .nav-item {
+              .nav-link {
+                color: $white;
+                border-bottom: 2px solid transparent;
+                @include transition(all .3s);
+
+                &:hover {
+                  color: $white;
+                  border-bottom: 2px solid $ndf_gold;
+                }
+              }
+            }
+          }
+        }
+
+        .logged-user-menu {
+          .username {
+            border: 1px solid $ndf_gold;
+            outline: none;
+
+            .icon {
+              margin-#{right}: .5rem;
+            }
+
+            span {
+              color: $white;
+            }
+          }
+
+          .dropdown-menu {
+            width: 100%;
+
+            .dropdown-item {
+              &:hover {
+                background-color: $ndf_gold;
+              }
+            }
+          }
+        }
+      }
+
+      .lang-switcher {
+        margin-#{$left}: 1rem;
+
+        .lang {
+          background-color: transparent;
+          border: none;
+          color: $ndf_gold;
+          margin: 0 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          a {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            appearance: none;
+            color: $ndf_gold;
+            gap: 0.5rem;
+            font-size: 18px;
+            text-decoration: none;
+
+            img {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
