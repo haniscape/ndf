@@ -7,6 +7,6 @@ routes: "email_tfa.verifiy\r\nuser.logout"
 timeouts: 300
 status: true
 tracks: globally_enabled
-user_one: false
+user_one: true
 ignore_role:
   - administrator
