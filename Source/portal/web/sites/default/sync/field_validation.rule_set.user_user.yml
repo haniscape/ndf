@@ -18,3 +18,23 @@ field_validation_rules:
     field_name: mail
     column: value
     error_message: 'Email must be more than 1 characters and less than 100 characters.'
+  d6a5ce2b-2fab-4149-b53f-a809b841a614:
+    id: regex_field_validation_rule
+    title: 'User first name regex validation'
+    data:
+      setting: '/^[^<,\"@{}()*$%?=>:|;#0-9]*$/i'
+    weight: 2
+    uuid: d6a5ce2b-2fab-4149-b53f-a809b841a614
+    field_name: field_first_name
+    column: value
+    error_message: 'Invalid first name'
+  be60b695-de26-4261-9ca4-52bd9a1f70e7:
+    id: regex_field_validation_rule
+    title: 'User last name regex validation'
+    data:
+      setting: '/^[^<,\"@{}()*$%?=>:|;#0-9]*$/i'
+    weight: 3
+    uuid: be60b695-de26-4261-9ca4-52bd9a1f70e7
+    field_name: field_last_name
+    column: value
+    error_message: 'Invalid last name'
