@@ -1,0 +1,20 @@
+uuid: 683350b8-69de-47b1-9893-9f8a0c5babcd
+langcode: en
+status: true
+dependencies: {  }
+name: user_user
+label: 'user user validation'
+entity_type: user
+bundle: user
+field_validation_rules:
+  918d48d9-b7a1-4ca6-a639-28025a334011:
+    id: length_field_validation_rule
+    title: 'User email validation'
+    data:
+      min: '1'
+      max: '100'
+    weight: 1
+    uuid: 918d48d9-b7a1-4ca6-a639-28025a334011
+    field_name: mail
+    column: value
+    error_message: 'Email must be more than 1 characters and less than 100 characters.'
