@@ -42,6 +42,7 @@
     "drupal/core-recommended": "^9",
     "drupal/ctools": "3.9",
     "drupal/field_validation": "1.0-beta3",
+    "drupal/flood_control": "2.2.4",
     "drupal/google_analytics": "3.1",
     "drupal/jsonapi_extras": "3.17",
     "drupal/mobile_number": "2.0.0-alpha5",
