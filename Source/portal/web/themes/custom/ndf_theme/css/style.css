@@ -1293,9 +1293,6 @@ main.page-user-reset {
         color: #3C3935;
         margin-bottom: 1rem;
         font-size: 18px; }
-        .path-app-view .app-entity .content-section .app-credentials .app-credential-item .content .apis-list .wrapper--secondary > div .api-product-list-row .wrapper--status {
-          display: none; }
-
 .path-apps-list .action-icon.view img {
   transform: rotate(179deg); }
 
