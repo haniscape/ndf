@@ -33,6 +33,23 @@ function ndf_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
   if(\Drupal::routeMatch()->getRouteName() === 'user.reset') {
     $form['actions']['submit']['#value']  = t('Save');
   }
+
+  // Alter the login form.
+  if ($form_id == 'user_login_form') {
+    // Add placeholders.
+    $form["name"]["#attributes"]["placeholder"] = t("Enter email address");
+    $form["pass"]["#attributes"]["placeholder"] = t("Enter password");
+
+    $url = Url::fromRoute('user.pass')->toString();
+    $form['pass']['#suffix'] = '<div class="forget-link"><a href="'.$url.'">'.t('Forgot your password?').'</a></div>';
+    $register_url = Url::fromRoute('user.register')->toString();
+    $form['actions']['#suffix'] = '<div class="register-link"><span>'.t("Don't have an account?").'</span><a href="'.$register_url.'">'.t('Register now').'</a></div>';
+  }
+
+
+
+
+
 }
 
 /*
