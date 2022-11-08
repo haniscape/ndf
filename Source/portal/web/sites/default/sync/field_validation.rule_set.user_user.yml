@@ -38,3 +38,15 @@ field_validation_rules:
     field_name: field_last_name
     column: value
     error_message: 'Invalid last name'
+  9ccb1fe6-f657-47e8-bfa0-2f413ac4ad7a:
+    id: date_range_field_validation_rule
+    title: 'birth day'
+    data:
+      min: ''
+      max: '-0 day'
+      cycle: global
+    weight: 4
+    uuid: 9ccb1fe6-f657-47e8-bfa0-2f413ac4ad7a
+    field_name: field_date_of_birth
+    column: value
+    error_message: 'Invalid Date of Birth'
