@@ -4,8 +4,9 @@ langcode: en
 entity_label_singular: App
 entity_label_plural: Apps
 cache_expiration: 900
-credential_lifetime: 0
+required_base_fields:
+  - callbackUrl
+  - displayName
 locked_base_fields:
   - displayName
-required_base_fields:
-  - displayName
+credential_lifetime: 0
