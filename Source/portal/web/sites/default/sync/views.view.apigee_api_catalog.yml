@@ -414,7 +414,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: string
-          operator: '='
+          operator: contains
           value: ''
           group: 1
           exposed: true
@@ -434,6 +434,10 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              governmental_developer: '0'
+              ndf_developer: '0'
+              supervise_entity_developer: '0'
+              company_owner: '0'
             placeholder: ''
           is_grouped: false
           group_info:
