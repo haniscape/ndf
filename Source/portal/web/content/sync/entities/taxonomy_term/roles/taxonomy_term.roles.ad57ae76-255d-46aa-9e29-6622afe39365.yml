@@ -1,0 +1,58 @@
+uuid:
+  -
+    value: ad57ae76-255d-46aa-9e29-6622afe39365
+langcode:
+  -
+    value: en
+vid:
+  -
+    target_id: roles
+    target_type: taxonomy_vocabulary
+    target_uuid: 1e5fd642-333e-43e4-b6b3-cea0f50f1cc6
+revision_created:
+  -
+    value: '2022-08-07T08:31:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+name:
+  -
+    value: 'Authenticated user'
+description:
+  -
+    value: null
+    format: null
+    processed: ''
+weight:
+  -
+    value: 0
+parent:
+  -
+    target_id: 0
+changed:
+  -
+    value: '2022-08-08T15:33:49+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_uid: {  }
+content_translation_created: {  }
+field_roles_name:
+  -
+    value: authenticated
+_content_sync:
+  entity_type: taxonomy_term
+  entity_dependencies: {  }
