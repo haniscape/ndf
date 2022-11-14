@@ -1,0 +1,27 @@
+uuid: b3059d20-cf4d-43cd-8838-77f8ee471771
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_kickstart_enhancement
+    - language
+  theme:
+    - ndf_theme
+id: languageswitcher
+theme: ndf_theme
+region: nav_main
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility:
+  block_type:
+    id: block_type
+    uuid: b3059d20-cf4d-43cd-8838-77f8ee471771
+    bundles: {  }
+    is_adjacent: 0
+    negate: false
