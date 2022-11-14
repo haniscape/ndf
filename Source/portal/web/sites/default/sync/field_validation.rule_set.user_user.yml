@@ -30,26 +30,6 @@ field_validation_rules:
     field_name: field_date_of_birth
     column: value
     error_message: 'Invalid Date of Birth'
-  a818f40d-85c3-485e-9a65-c9c9e28a4100:
-    id: regex_field_validation_rule
-    title: 'User first name regex validation'
-    data:
-      setting: '/^[^<,\"@{}()*$%?=>:|;#0-9 ]*$/i'
-    weight: 2
-    uuid: a818f40d-85c3-485e-9a65-c9c9e28a4100
-    field_name: field_first_name
-    column: value
-    error_message: 'Invalid first name'
-  af3d2645-c931-4f2c-b6d1-87acada82d83:
-    id: regex_field_validation_rule
-    title: 'User last name regex validation'
-    data:
-      setting: '/^[^<,\"@{}()*$%?=>:|;#0-9 ]*$/i '
-    weight: 3
-    uuid: af3d2645-c931-4f2c-b6d1-87acada82d83
-    field_name: field_last_name
-    column: value
-    error_message: 'Invalid last name'
   812b805f-0096-4ebe-a49a-819fa85473ec:
     id: length_field_validation_rule
     title: lastname
@@ -61,3 +41,23 @@ field_validation_rules:
     field_name: field_last_name
     column: value
     error_message: 'Invalid last name'
+  2bd3bb7e-db88-47f7-ace2-d33caf0310bc:
+    id: regex_field_validation_rule
+    title: 'User last name regex validation'
+    data:
+      setting: '-_./^[^<,\"@{}()*$%?=>:|;#0-9 ]*$/i '
+    weight: 3
+    uuid: 2bd3bb7e-db88-47f7-ace2-d33caf0310bc
+    field_name: field_last_name
+    column: value
+    error_message: 'Invalid last name'
+  4f6c9b56-8e42-4fe7-95f0-8af807c739ff:
+    id: regex_field_validation_rule
+    title: 'User first name regex validation'
+    data:
+      setting: '-_./^[^<,\"@{}()*$%?=>:|;#0-9 ]*$/i '
+    weight: 2
+    uuid: 4f6c9b56-8e42-4fe7-95f0-8af807c739ff
+    field_name: field_first_name
+    column: value
+    error_message: 'Invalid first name'
