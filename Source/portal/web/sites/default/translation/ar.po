@@ -16964,3 +16964,9 @@ msgid "Legal"
 msgstr "القانون"
 msgid "Contact us"
 msgstr "اتصل بنا"
+
+msgid "Description exceed max limit"
+msgstr "الوصف تجاوز الحد الأقصى"
+
+msgid "App name not valid, only letters,numbers and spaces"
+msgstr "اسم التطبيق غير صالح ، فقط أحرف وأرقام ومسافات"
