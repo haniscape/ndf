@@ -783,4 +783,7 @@ $settings['config_sync_directory'] = 'sites/default/sync';
 global $content_directories;
 $content_directories['sync'] = $app_root.'/content/sync';
 
+$_SERVER['HTTPS'] = 'on';
+$settings['reverse_proxy'] = TRUE;
+$settings['reverse_proxy_addresses'] = array($_SERVER['REMOTE_ADDR']);
 
