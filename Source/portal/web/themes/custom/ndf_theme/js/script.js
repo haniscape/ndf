@@ -61,4 +61,20 @@
       }
     })
   }
+
+  // Make submit button disabled if the email input is empty in forget password form
+  if ($('form').hasClass('user-pass')) {
+    var emailInput = $("input[type='email']");
+    var emailVal = emailInput.val();
+    var formSubmitBtn = $('.form-submit');
+
+    // onchange mail
+    $(emailInput).each(function () {
+      $(this).val().length == 0 ? $(formSubmitBtn).attr('disabled', true) : $(formSubmitBtn).attr('disabled', false);
+      $(this).on('input', function () {
+        $(this).val().length == 0 ? $(formSubmitBtn).attr('disabled', true) : $(formSubmitBtn).attr('disabled', false);
+      });
+    });
+  }
+
 })(jQuery, drupalSettings);
