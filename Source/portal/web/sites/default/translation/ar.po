@@ -16970,3 +16970,6 @@ msgstr "الوصف تجاوز الحد الأقصى"
 
 msgid "App name not valid, only letters,numbers and spaces"
 msgstr "اسم التطبيق غير صالح ، فقط أحرف وأرقام ومسافات"
+
+msgid "Callback URL exceed max limit"
+msgstr "الرابط تجاوز الحد الأقصى"
