@@ -61,3 +61,14 @@ field_validation_rules:
     field_name: field_first_name
     column: value
     error_message: 'Invalid frist name'
+  297cf80c-9f63-4b26-a1d5-e10f11b7726f:
+    id: length_field_validation_rule
+    title: fristname
+    data:
+      min: '1'
+      max: '50'
+    weight: 6
+    uuid: 297cf80c-9f63-4b26-a1d5-e10f11b7726f
+    field_name: field_first_name
+    column: value
+    error_message: 'Invalid last name'

@@ -5,6 +5,7 @@ entity_label_singular: App
 entity_label_plural: Apps
 cache_expiration: 900
 required_base_fields:
+  - description
   - callbackUrl
   - displayName
 locked_base_fields:
