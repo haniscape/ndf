@@ -1,0 +1,42 @@
+uuid: 9c4e47c3-00f9-45ee-a509-0e5ec9e871b5
+langcode: en
+status: true
+dependencies: {  }
+name: contact_message_contact_us
+label: 'contact_message contact_us validation'
+entity_type: contact_message
+bundle: contact_us
+field_validation_rules:
+  e9964719-d3af-4b02-82c7-6ca8b0545fcc:
+    id: length_field_validation_rule
+    title: name
+    data:
+      min: '1'
+      max: '50'
+    weight: 1
+    uuid: e9964719-d3af-4b02-82c7-6ca8b0545fcc
+    field_name: name
+    column: value
+    error_message: 'Invalid Name'
+  4661aa42-e4be-4541-b4ff-e85e3ef9a852:
+    id: length_field_validation_rule
+    title: subject
+    data:
+      min: '1'
+      max: '50'
+    weight: 2
+    uuid: 4661aa42-e4be-4541-b4ff-e85e3ef9a852
+    field_name: subject
+    column: value
+    error_message: 'Invalid Subject'
+  512f4b06-b896-4cf9-873f-659dc710d498:
+    id: length_field_validation_rule
+    title: Body
+    data:
+      min: '1'
+      max: '500'
+    weight: 3
+    uuid: 512f4b06-b896-4cf9-873f-659dc710d498
+    field_name: message
+    column: value
+    error_message: 'Invalid Message'
