@@ -79,6 +79,7 @@ module:
   mobile_number: 0
   mysql: 0
   ndf_apigee: 0
+  ndf_apps: 0
   ndf_register: 0
   ndf_services: 0
   ndf_settings: 0
