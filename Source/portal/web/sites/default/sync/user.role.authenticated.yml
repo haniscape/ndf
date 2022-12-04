@@ -5,7 +5,6 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
-    - apigee_edge
     - apigee_edge_teams
     - comment
     - contact
@@ -26,17 +25,10 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'add_api_key own developer_app'
-  - 'analytics own developer_app'
-  - 'create developer_app'
   - 'decline own team invitation'
-  - 'delete own developer_app'
-  - 'delete_api_key own developer_app'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'update own developer_app'
   - 'use text format basic_html'
   - 'view media'
-  - 'view own developer_app'
   - 'view published apidoc entities'

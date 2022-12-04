@@ -10,4 +10,10 @@ weight: 5
 is_admin: null
 permissions:
   - 'add_api_key own developer_app'
+  - 'analytics own developer_app'
+  - 'bypass api product access control'
+  - 'create developer_app'
+  - 'delete own developer_app'
   - 'delete_api_key own developer_app'
+  - 'update own developer_app'
+  - 'view own developer_app'
