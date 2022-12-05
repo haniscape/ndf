@@ -16976,3 +16976,12 @@ msgid "Reset your password"
 msgstr "إعادة تعيين كلمة المرور"
 msgid "Password reset instructions will be sent to your registered email address."
 msgstr "تعليمات إعادة تعيين كلمة المرور سيتم إرسالها لعوان بريدك الإلكتروني المسجل"
+
+msgid "Description exceed max limit"
+msgstr "الوصف تجاوز الحد الأقصى"
+
+msgid "App name not valid, only letters,numbers and spaces"
+msgstr "اسم التطبيق غير صالح ، فقط أحرف وأرقام ومسافات"
+
+msgid "Callback URL exceed max limit"
+msgstr "الرابط تجاوز الحد الأقصى"

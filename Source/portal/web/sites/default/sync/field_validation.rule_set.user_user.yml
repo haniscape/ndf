@@ -30,34 +30,45 @@ field_validation_rules:
     field_name: field_date_of_birth
     column: value
     error_message: 'Invalid Date of Birth'
-  a818f40d-85c3-485e-9a65-c9c9e28a4100:
-    id: regex_field_validation_rule
-    title: 'User first name regex validation'
-    data:
-      setting: '/^[^<,\"@{}()*$%?=>:|;#0-9 ]*$/i'
-    weight: 2
-    uuid: a818f40d-85c3-485e-9a65-c9c9e28a4100
-    field_name: field_first_name
-    column: value
-    error_message: 'Invalid first name'
-  af3d2645-c931-4f2c-b6d1-87acada82d83:
-    id: regex_field_validation_rule
-    title: 'User last name regex validation'
-    data:
-      setting: '/^[^<,\"@{}()*$%?=>:|;#0-9 ]*$/i '
-    weight: 3
-    uuid: af3d2645-c931-4f2c-b6d1-87acada82d83
-    field_name: field_last_name
-    column: value
-    error_message: 'Invalid last name'
-  812b805f-0096-4ebe-a49a-819fa85473ec:
+  33f076ac-29d4-4adb-b821-4fb78d4e998c:
     id: length_field_validation_rule
     title: lastname
     data:
       min: '1'
       max: '50'
     weight: 5
-    uuid: 812b805f-0096-4ebe-a49a-819fa85473ec
+    uuid: 33f076ac-29d4-4adb-b821-4fb78d4e998c
     field_name: field_last_name
+    column: value
+    error_message: 'Invalid last name'
+  1ad2954a-4724-4dac-8399-ad068e71cea6:
+    id: regex_field_validation_rule
+    title: 'User last name regex validation'
+    data:
+      setting: '/^[^<,\"_@{}()*$%?=>:|;#0-9 ]*$/i'
+    weight: 3
+    uuid: 1ad2954a-4724-4dac-8399-ad068e71cea6
+    field_name: field_last_name
+    column: value
+    error_message: 'Invalid last name'
+  06b7ce1f-0250-41a6-9d4b-3485dd62439b:
+    id: regex_field_validation_rule
+    title: 'Fristname ragex'
+    data:
+      setting: '/^[^<,\"@_{}()*$%?=>:|;#0-9 ]*$/i'
+    weight: 5
+    uuid: 06b7ce1f-0250-41a6-9d4b-3485dd62439b
+    field_name: field_first_name
+    column: value
+    error_message: 'Invalid frist name'
+  297cf80c-9f63-4b26-a1d5-e10f11b7726f:
+    id: length_field_validation_rule
+    title: fristname
+    data:
+      min: '1'
+      max: '50'
+    weight: 6
+    uuid: 297cf80c-9f63-4b26-a1d5-e10f11b7726f
+    field_name: field_first_name
     column: value
     error_message: 'Invalid last name'

@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for ndf_apps module.
+ */
+
+ define('APP_DESCRIPTION_LENGTH', 300);
+ define('APP_URL_LENGTH', 100);
+
+function ndf_apps_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if($form_id == 'developer_app_edit_for_developer_form' || $form_id == 'developer-app-add-for-developer-form'){
+     $form['description']['widget'][0]['value']['#attributes']['maxlength'] = APP_DESCRIPTION_LENGTH;
+     $form['callbackUrl']['widget'][0]['value']['#maxlength'] = APP_URL_LENGTH;
+     $form['#validate'][] = 'check_app_form_inputs_length';
+     $form['#validate'][] = 'validate_app_form';
+  }
+}
+
+function check_app_form_inputs_length(&$form, \Drupal\Core\Form\FormStateInterface $form_state){
+  $values = $form_state->getValues();
+  $description_txt = $values['description'][0]['value'];
+
+  if (strlen($description_txt) > APP_DESCRIPTION_LENGTH) {
+    $form_state->setErrorByName('description', t('Description exceed max limit'));
+  }
+}
+
+function validate_app_form(&$form, \Drupal\Core\Form\FormStateInterface $form_state){
+  $values = $form_state->getValues();
+  $app_name = $values['displayName'][0]['value'];
+
+   if (!preg_match("/([A-Za-z0-9 _-]+)/", $app_name)) {
+    $form_state->setErrorByName('displayName', t('App name not valid, only letters,numbers and spaces'));
+  }
+}

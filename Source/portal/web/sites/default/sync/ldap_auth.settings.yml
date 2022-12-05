@@ -1,0 +1,29 @@
+miniorange_ldap_license_key: null
+miniorange_ldap_customer_id: ''
+miniorange_ldap_customer_admin_token: ''
+miniorange_ldap_customer_api_key: ''
+miniorange_ldap_name: ''
+miniorange_ldap_enable_login: false
+miniorange_ldap_username_attribute: ''
+miniorange_ldap_email_attribute: mail
+miniorange_ldap_disable_autocreate_users: false
+miniorange_ldap_default_role: ''
+miniorange_ldap_status: ''
+miniorange_ldap_customer_admin_phone: null
+miniorange_ldap_tx_id: null
+miniorange_ldap_customer_admin_password: ''
+miniorange_ldap_base_url: ''
+_core:
+  default_config_hash: JARsz0MdTksEYH9J79GzVcR6KlZIVCWLpkm31dT0mnA
+miniorange_ldap_idp_customer_admin_email: null
+miniorange_ldap_login_by: 0
+miniorange_ldap_steps: '0'
+miniorange_ldap_inst_time_ref: 1669014083
+miniorange_ldap_license_page_visited: 'False'
+miniorange_ldap_contacted_server: 'Did not Try'
+miniorange_ldap_test_connection: 'Did not Try'
+miniorange_ldap_drupal_login: 'Did not Try'
+miniorange_ldap_server_port_number: '389'
+miniorange_ldap_custom_username_attribute: samaccountName
+miniorange_ldap_feedback_status: '1'
+miniorange_ldap_auth_uninstall_status: 0

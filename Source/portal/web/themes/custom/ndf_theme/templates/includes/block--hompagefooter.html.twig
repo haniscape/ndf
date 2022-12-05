@@ -27,17 +27,7 @@
 
             <div class="footer-item footer-lang-switcher">
                 <h5 class="heading">{{ 'Language'|t }}</h5>
-                {% if url_query_string is not null %}
-                    {% set url = current_path ~ '?' ~ url_query_string %}
-                {% else %}
-                    {% set url = current_path %}
-                {% endif %}
-                <div class="lang">
-                    <a href="{{ base_url }}/{{ url }}">English</a>
-                </div>
-                <div class="lang">
-                    <a href="{{ base_url }}/ar{{ url }}">العربية</a>
-                </div>
+                {{ bamboo_render_entity('block', 'languageswitcher') }}
             </div>
         </div>
     </div>

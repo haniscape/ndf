@@ -4,3 +4,6 @@ display:
       header:
         area_text_custom:
           content: '<p>يمكنك الإطلاع على خدماتنا واختيار ما يناسب منها التطبيق الخاص بك</p>'
+      fields:
+        view_node:
+          text: 'عرض التفاصيل'
