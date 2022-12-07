@@ -16,6 +16,9 @@ function ndf_apps_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_
      $form['callbackUrl']['widget'][0]['value']['#maxlength'] = APP_URL_LENGTH;
      $form['#validate'][] = 'validate_app_form';
   }
+  if($form_id == 'email_tfa_verify_form'){
+     unset($form['interrupt']);
+  }  
 }
 
 function check_app_form_inputs_length(&$form, \Drupal\Core\Form\FormStateInterface $form_state){
