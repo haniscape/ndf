@@ -41,26 +41,6 @@ field_validation_rules:
     field_name: field_last_name
     column: value
     error_message: 'Invalid last name'
-  1ad2954a-4724-4dac-8399-ad068e71cea6:
-    id: regex_field_validation_rule
-    title: 'User last name regex validation'
-    data:
-      setting: '/^[^<,\"_@{}()*$%?=>:|;#0-9 ]*$/i'
-    weight: 3
-    uuid: 1ad2954a-4724-4dac-8399-ad068e71cea6
-    field_name: field_last_name
-    column: value
-    error_message: 'Invalid last name'
-  06b7ce1f-0250-41a6-9d4b-3485dd62439b:
-    id: regex_field_validation_rule
-    title: 'Fristname ragex'
-    data:
-      setting: '/^[^<,\"@_{}()*$%?=>:|;#0-9 ]*$/i'
-    weight: 5
-    uuid: 06b7ce1f-0250-41a6-9d4b-3485dd62439b
-    field_name: field_first_name
-    column: value
-    error_message: 'Invalid frist name'
   6743124e-cd14-407b-ab9e-8adb203134cc:
     id: length_field_validation_rule
     title: fristname
@@ -72,3 +52,23 @@ field_validation_rules:
     field_name: field_first_name
     column: value
     error_message: 'Invalid Frist name'
+  5c4bf638-e67f-4d5e-bc83-20cc4fe64a29:
+    id: regex_field_validation_rule
+    title: 'User last name regex validation'
+    data:
+      setting: '/^[^<,\"_@{}()*$%?=>:|;#0-9 ]*$\i'
+    weight: 3
+    uuid: 5c4bf638-e67f-4d5e-bc83-20cc4fe64a29
+    field_name: field_last_name
+    column: value
+    error_message: 'Invalid last name'
+  8224f3f1-7df4-42af-8f69-79f5a10202db:
+    id: regex_field_validation_rule
+    title: 'Fristname ragex'
+    data:
+      setting: '/^[^<,\"@_{}()*$%?=>:|;#0-9 ]*$\i'
+    weight: 5
+    uuid: 8224f3f1-7df4-42af-8f69-79f5a10202db
+    field_name: field_first_name
+    column: value
+    error_message: 'Invalid frist name'
